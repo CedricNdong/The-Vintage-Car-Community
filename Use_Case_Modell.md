@@ -22,11 +22,11 @@
 | Nachbedingung |Der Lagerhalter hat ein Konto erstellt.|
 | Hauptszenario |1. Der Lagerhalter geht auf die Registrierungsseite.<br>2. Das System zeigt die Registrierungsseite an.<br>3. Der Lagerhalter gibt seine E-Mail-Adresse und sein Passwort ein.<br>4. Das System verifiziert die Eingaben.<br>Das System legt ein Lagerkonto an.<br>6. Die Profilseite wird geöffnet.<br>7. Der Lagerverwalter gibt seine Daten ein.<br>8. Der Lagerhalter drückt auf die Schaltfläche "Speichern".|
 | Alternativszenarien |                      |
-| Ausnahme szenarien |            ...             |
+| Ausnahme szenarien |4a. Die E-Mail wurde bereits registriert.<br>5. Das System zeigt die Meldung "Ihre E-Mail ist bereits registriert" an.|
 
 <hr>
 
-### StR.L.2: Detailbeschreibung
+### StR.L.2: Kurzbeschreibung
 
 | Abschnitt | Beschreibung |
 | --- | --- |
@@ -37,7 +37,18 @@
 | Auslösendes Ereignis (Trigger) |                 Lagerhalter möchte eine Service anbieten                    |
 | Beschreibung |             Die Lagerhalter sollen verschiedene Services für die Einlagerung von Fahrzeugen anbieten können, z.B. Einschweißen des Fahrzeuges in Folie, Glasbox etc.            |
 | Beziehung zu anderen Use Cases |            ...       |
+<br>
 
+### StR.L.2: Detailbeschreibung
+
+| Auslösendes Ereignis | Inhalt |
+| --- | --- |
+| Auslösendes Ereignis  | Der Lagerhalter möchte eine Dienstleistung anbieten. |
+| Vorbedingung | Der Lagerhalter hat ein Konto.|
+| Nachbedingung |Der Lagerhalter stellt seine Service zur Verfügung.|
+| Hauptszenario |1. Der Lagerhalter klickt auf "Lager Service anbieten".<br>2. Das System zeigt ein Formular an.<br>3. Der Lagerhalter gibt einen Servicenamen und die Beschreibung der service ein.<br>4. Der Lagerhalter bestätigt seine Eingabe.<br>5. Das System verknüpft die angebotene Dienstleistung mit dem Profil des Lagerhalters.|
+| Alternativszenarien |                      |
+| Ausnahme szenarien |4a. Die E-Mail wurde bereits registriert.<br>5. Das System eigt die Meldung "Ihre E-Mail ist bereits registriert" an.|
 
 <hr>
 
