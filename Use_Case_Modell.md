@@ -415,15 +415,25 @@ eingestellt |
 # Sequenzdaigramme
 
 ![](Diagrams/E1.png)
+<br>
 ![](Diagrams/E6.png)
+<br>
 ![](Diagrams/L1.png)
+<br>
 ![](Diagrams/L2.png)
+<br>
 ![](Diagrams/L3.png)
+<br>
 ![](Diagrams/L4.png)
+<br>
 ![](Diagrams/L7.png)
+<br>
 ![](Diagrams/L6.png)
+<br>
 ![](Diagrams/StR_EA_1.png)
+<br>
 ![](Diagrams/StR_W2.png)
+<br>
 ![](Diagrams/StR_W_1.png)
 
 # Domänenmodell
