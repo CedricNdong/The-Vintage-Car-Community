@@ -415,3 +415,7 @@ eingestellt |
 # Domänenmodell
 
 ![](Diagrams/out/domainmodel/domainmodel.svg)
+
+# UI Erster Entwurf
+
+![](Diagrams/unknown.png)
