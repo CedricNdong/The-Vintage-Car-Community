@@ -1,0 +1,3 @@
+Offene Punkte Liste
+Welche Fahrzeugkategorien gibt es?
+Welche Fahrzeugmarken und deutsche Großstädte sollen im System dargestellt werden?

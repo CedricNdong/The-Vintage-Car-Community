@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Use_Case_Modell.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="use-case-diagramm">Use Case Diagramm</h1>
+<p><img src="Diagrams/usecases.svg" alt=""></p>
+<h1 id="anforderungsspezifikationen">Anforderungsspezifikationen</h1>
+<h3 id="strl1-kurzbeschreibung">StR.L.1: Kurzbeschreibung</h3>
+<table>
+<thead>
+<tr>
+<th>Abschnitt</th>
+<th>Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>Lagerhalter  Konto anlegen</td>
+</tr>
+<tr>
+<td>Primärer Akteur</td>
+<td>Lagerhalter</td>
+</tr>
+<tr>
+<td>Weitere Akteure</td>
+<td>...</td>
+</tr>
+<tr>
+<td>Stakeholder-Ziel(e)</td>
+<td>Konto anlegen, Ort des Einlagerns, Kosten für der Einlagerung, Servicezeiten und Lagerungbedigungen eingeben</td>
+</tr>
+<tr>
+<td>Auslösendes Ereignis (Trigger)</td>
+<td>Lagerhalter möchte sich registerieren</td>
+</tr>
+<tr>
+<td>Beschreibung</td>
+<td>Registrieren von dem Lagerhalter, dazu Ort des Einlagerns, Kosten für die Einlagerung Servicezeiten und Lagerbedigungen (z.B. beheizt, UV-geschutzt, Klimatisiert, 24h Zugang, Wachschutz) eingeben</td>
+</tr>
+<tr>
+<td>Beziehung zu anderen Use Cases</td>
+<td>...</td>
+</tr>
+</tbody>
+</table>
+<br>
+<h3 id="strl1-detailbeschreibung">StR.L.1: Detailbeschreibung</h3>
+<table>
+<thead>
+<tr>
+<th>Auslösendes Ereignis</th>
+<th>Inhalt</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Auslösendes Ereignis</td>
+<td>Der Lagerhalter möchte sich registrieren</td>
+</tr>
+<tr>
+<td>Vorbedingung</td>
+<td>Der Lagerhalter hat eine gültige E-Mail Adresse</td>
+</tr>
+<tr>
+<td>Nachbedingung</td>
+<td>Der Lagerhalter hat ein Konto erstellt.</td>
+</tr>
+<tr>
+<td>Hauptszenario</td>
+<td>1. Der Lagerhalter geht auf die Registrierungsseite.<br>2. Das System zeigt die Registrierungsseite an.<br>3. Der Lagerhalter gibt seine E-Mail-Adresse und sein Passwort ein.<br>4. Das System verifiziert die Eingaben.<br>Das System legt ein Lagerkonto an.<br>6. Die Profilseite wird geöffnet.<br>7. Der Lagerverwalter gibt seine Daten ein.<br>8. Der Lagerhalter drückt auf die Schaltfläche &quot;Speichern&quot;.</td>
+</tr>
+<tr>
+<td>Alternativszenarien</td>
+<td></td>
+</tr>
+<tr>
+<td>Ausnahme szenarien</td>
+<td>...</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="strl2-detailbeschreibung">StR.L.2: Detailbeschreibung</h3>
+<table>
+<thead>
+<tr>
+<th>Abschnitt</th>
+<th>Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>Einlagerungsservices anbieten</td>
+</tr>
+<tr>
+<td>Primärer Akteur</td>
+<td>Lagerhalter</td>
+</tr>
+<tr>
+<td>Weitere Akteure</td>
+<td>...</td>
+</tr>
+<tr>
+<td>Stakeholder-Ziel(e)</td>
+<td>Verschiedenen Services für die Einlager, wie Einschweißen anbieten</td>
+</tr>
+<tr>
+<td>Auslösendes Ereignis (Trigger)</td>
+<td>Lagerhalter möchte eine Service anbieten</td>
+</tr>
+<tr>
+<td>Beschreibung</td>
+<td>Die Lagerhalter sollen verschiedene Services für die Einlagerung von Fahrzeugen anbieten können, z.B. Einschweißen des Fahrzeuges in Folie, Glasbox etc.</td>
+</tr>
+<tr>
+<td>Beziehung zu anderen Use Cases</td>
+<td>...</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="strl3">StR.L.3:</h3>
+<table>
+<thead>
+<tr>
+<th>Abschnitt</th>
+<th>Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>Kapazitäten angeben</td>
+</tr>
+<tr>
+<td>Primärer Akteur</td>
+<td>Lagerhalter</td>
+</tr>
+<tr>
+<td>Weitere Akteure</td>
+<td>...</td>
+</tr>
+<tr>
+<td>Stakeholder-Ziel(e)</td>
+<td>Lagerhalter sollen auch angeben können, wie viele Plätze in welcher Kategorie für Fahrzeuge momentan zur Verfügung stehen</td>
+</tr>
+<tr>
+<td>Auslösendes Ereignis (Trigger)</td>
+<td>Lagerhalter möchte die Anzahl der verfügbaren Plätze angeben</td>
+</tr>
+<tr>
+<td>Beschreibung</td>
+<td>Eingeben der aktuellen Anzahl von Plätzen und iherer Kategorie, die zur Verfügung stehen</td>
+</tr>
+<tr>
+<td>Beziehung zu anderen Use Cases</td>
+<td>...</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="strl4">StR.L.4:</h3>
+<table>
+<thead>
+<tr>
+<th>Abschnitt</th>
+<th>Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>Spezialgebiet angeben</td>
+</tr>
+<tr>
+<td>Primärer Akteur</td>
+<td>Lagerhalter</td>
+</tr>
+<tr>
+<td>Weitere Akteure</td>
+<td>...</td>
+</tr>
+<tr>
+<td>Stakeholder-Ziel(e)</td>
+<td>Der Lagerhalter gibt an, auf welche Fahrzeugmarken er spezialisiert ist .</td>
+</tr>
+<tr>
+<td>Auslösendes Ereignis (Trigger)</td>
+<td>Der Lagerhalter möchte sein Spezialgebiet angeben</td>
+</tr>
+<tr>
+<td>Beschreibung</td>
+<td>Der Lagerhalter wählt Fahrzeugmarken, auf sie er spezialisiert ist. Die Auswahlsliste soll auf dem System  vorhalten</td>
+</tr>
+<tr>
+<td>Beziehung zu anderen Use Cases</td>
+<td>...</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="strl5">StR.L.5:</h3>
+<table>
+<thead>
+<tr>
+<th>Abschnitt</th>
+<th>Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>Infromationen bereitstellen</td>
+</tr>
+<tr>
+<td>Primärer Akteur</td>
+<td>Lagerhalter</td>
+</tr>
+<tr>
+<td>Weitere Akteure</td>
+<td>...</td>
+</tr>
+<tr>
+<td>Stakeholder-Ziel(e)</td>
+<td>Informationen über die Fahrbereitschaft des jeweiligen Fahrzeuges zur Verfügung stellen</td>
+</tr>
+<tr>
+<td>Auslösendes Ereignis (Trigger)</td>
+<td>Lagerhalter möchte Informationen über die Fahrbereitschaft  angeben/aktualisieren</td>
+</tr>
+<tr>
+<td>Beschreibung</td>
+<td>aktuelle Informationen über  den Wartungsstand des jeweiligen Fahrzeuges sollen bereitgestellt</td>
+</tr>
+<tr>
+<td>Beziehung zu anderen Use Cases</td>
+<td>...</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="strl6">StR.L.6 :</h3>
+<table>
+<thead>
+<tr>
+<th>Abschnitt</th>
+<th>Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>Reparaturanfragen an Werkstätten einstellen</td>
+</tr>
+<tr>
+<td>Primärer Akteur</td>
+<td>Lagerhalter</td>
+</tr>
+<tr>
+<td>Weitere Akteure</td>
+<td>Werkstatt</td>
+</tr>
+<tr>
+<td>Stakeholder-Ziel(e)</td>
+<td>Die Lagerhalter können Anfragen zu Reparaturen und Wartungsarbeiten einstellen.</td>
+</tr>
+<tr>
+<td>Auslösendes Ereignis (Trigger)</td>
+<td>Knopf drücken</td>
+</tr>
+<tr>
+<td>Beschreibung</td>
+<td>Die Lagerhalter können Anfragen zu Reparaturen und Wartungsarbeiten an registrierte Werkstätten in der Nähe einstellen.</td>
+</tr>
+<tr>
+<td>Beziehung zu anderen Use Cases</td>
+<td>...</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="strl7">StR.L.7:</h3>
+<table>
+<thead>
+<tr>
+<th>Abschnitt</th>
+<th>Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>Termin mit Werkstatt vereinbaren</td>
+</tr>
+<tr>
+<td>Primärer Akteur</td>
+<td>Lagerhalter</td>
+</tr>
+<tr>
+<td>Weitere Akteure</td>
+<td>Werkstattt</td>
+</tr>
+<tr>
+<td>Stakeholder-Ziel(e)</td>
+<td>Termine für Reparaturen oder Wartungsarbeiten vereinbaren</td>
+</tr>
+<tr>
+<td>Auslösendes Ereignis (Trigger)</td>
+<td>Button drücken</td>
+</tr>
+<tr>
+<td>Beschreibung</td>
+<td>Der  Lagerhalter vereinbart einen Termin mit der Werkstatt für Reparaturen oder Wartungsarbeiten. Der Lagerhalter wählt über eine Kalender aus verfügbaren Terminen aus</td>
+</tr>
+<tr>
+<td>Beziehung zu anderen Use Cases</td>
+<td>...</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="stre2">StR.E.2:</h3>
+<table>
+<thead>
+<tr>
+<th>Abschnitt</th>
+<th>Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>Stellplatz suchen</td>
+</tr>
+<tr>
+<td>Primärer Akteur</td>
+<td>Einlagerer</td>
+</tr>
+<tr>
+<td>Weitere Akteure</td>
+<td>...</td>
+</tr>
+<tr>
+<td>Stakeholder-Ziel(e)</td>
+<td>Der Einlagerer sucht einen passenden Stellplatz</td>
+</tr>
+<tr>
+<td>Auslösendes Ereignis (Trigger)</td>
+<td>Suchknopf drücken</td>
+</tr>
+<tr>
+<td>Beschreibung</td>
+<td>Die Sucherergebnisse sollen die Anschrift des Standortes, zusammen mit dessen Merkmalen (z.B. Wachschutz, Klimatisierung, Anzahl freier Stellplätze etc.) und vor Ort angebotenen Services (Einschweißen, Glasbox) mit den entsprechenden Konditionen an.</td>
+</tr>
+<tr>
+<td>Beziehung zu anderen Use Cases</td>
+<td>...</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="stre3">StR.E.3:</h3>
+<table>
+<thead>
+<tr>
+<th>Abschnitt</th>
+<th>Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>Anfrage an Lagerhalter</td>
+</tr>
+<tr>
+<td>Primärer Akteur</td>
+<td>Einlagerer</td>
+</tr>
+<tr>
+<td>Weitere Akteure</td>
+<td>Lagerhalter</td>
+</tr>
+<tr>
+<td>Stakeholder-Ziel(e)</td>
+<td>Die Einlagerer sollen Anfragen an Lagerhalter stellen können, um die Detailinformationen zum Standort zu erhalten und ein Angebot anfordern zu können.</td>
+</tr>
+<tr>
+<td>Auslösendes Ereignis (Trigger)</td>
+<td>Anfrage an Lagerhalter schicken</td>
+</tr>
+<tr>
+<td>Beschreibung</td>
+<td>Die Einlagerer stellen Anfragen an Lagerhalter, um die Detailinformationen zum Standort zu erhalten</td>
+</tr>
+<tr>
+<td>Beziehung zu anderen Use Cases</td>
+<td>...</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="stre4">StR.E.4:</h3>
+<table>
+<thead>
+<tr>
+<th>Abschnitt</th>
+<th>Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>Einlagerungsangebot annehmen/ablehnen</td>
+</tr>
+<tr>
+<td>Primärer Akteur</td>
+<td>Einlagerer</td>
+</tr>
+<tr>
+<td>Weitere Akteure</td>
+<td>...</td>
+</tr>
+<tr>
+<td>Stakeholder-Ziel(e)</td>
+<td>Die Einlagerer können ein Angebot annehmen oder ablehnen</td>
+</tr>
+<tr>
+<td>Auslösendes Ereignis (Trigger)</td>
+<td>Knopf drücken</td>
+</tr>
+<tr>
+<td>Beschreibung</td>
+<td>Die Einlagerer können ein Angebot annehmen oder ablehnen.</td>
+</tr>
+<tr>
+<td>Beziehung zu anderen Use Cases</td>
+<td>In Einlagerungsangebot anfordern inkludiert</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="stre5">StR.E.5:</h3>
+<table>
+<thead>
+<tr>
+<th>Abschnitt</th>
+<th>Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>Erzatzteile zu Fahrzeug suchen</td>
+</tr>
+<tr>
+<td>Primärer Akteur</td>
+<td>Einlagerer</td>
+</tr>
+<tr>
+<td>Weitere Akteure</td>
+<td>...</td>
+</tr>
+<tr>
+<td>Stakeholder-Ziel(e)</td>
+<td>Erzatzteile für Fahrzeug suchen</td>
+</tr>
+<tr>
+<td>Auslösendes Ereignis (Trigger)</td>
+<td>Suchworte eingeben und Knopf drücken</td>
+</tr>
+<tr>
+<td>Beschreibung</td>
+<td>Die Einlagerer können Ersatz- und Zubehörteile zu ihrem Fahrzeug suchen, die von Ersatzteilhändlern angeboten werden.</td>
+</tr>
+<tr>
+<td>Beziehung zu anderen Use Cases</td>
+<td>...</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="stre6">StR.E.6:</h3>
+<table>
+<thead>
+<tr>
+<th>Abschnitt</th>
+<th>Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>Termin vereinbaren</td>
+</tr>
+<tr>
+<td>Primärer Akteur</td>
+<td>Einlagerer</td>
+</tr>
+<tr>
+<td>Weitere Akteure</td>
+<td>Lagerhalter</td>
+</tr>
+<tr>
+<td>Stakeholder-Ziel(e)</td>
+<td>Einlagerer   macht einen Termin   mit dem Lagerhalter aus</td>
+</tr>
+<tr>
+<td>Auslösendes Ereignis (Trigger)</td>
+<td>Knopf drücken</td>
+</tr>
+<tr>
+<td>Beschreibung</td>
+<td>Die Einlagerer können Termine für das Entgegennehmen und die Rückgabe ihres Fahrzeuges mit dem Lagerhalter vereinbaren</td>
+</tr>
+<tr>
+<td>Beziehung zu anderen Use Cases</td>
+<td>...</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="stre7">StR.E.7:</h3>
+<table>
+<thead>
+<tr>
+<th>Abschnitt</th>
+<th>Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>zusätzliches Angebot buchen</td>
+</tr>
+<tr>
+<td>Primärer Akteur</td>
+<td>Einlagerer</td>
+</tr>
+<tr>
+<td>Weitere Akteure</td>
+<td>...</td>
+</tr>
+<tr>
+<td>Stakeholder-Ziel(e)</td>
+<td>Zusätzliche  angebotene Service von Lagerhalter buchen</td>
+</tr>
+<tr>
+<td>Auslösendes Ereignis (Trigger)</td>
+<td>Einlagerer können die vom Lagerhalter angebotenen Services  buchen</td>
+</tr>
+<tr>
+<td>Beschreibung</td>
+<td>Die Einlagerer können zusätzliche Services buchen, die vom Lagerhalter angeboten werden</td>
+</tr>
+<tr>
+<td>Beziehung zu anderen Use Cases</td>
+<td>...</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="stre8">StR.E.8:</h3>
+<table>
+<thead>
+<tr>
+<th>Abschnitt</th>
+<th>Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>Ersatz- und Zubehörteile reservieren</td>
+</tr>
+<tr>
+<td>Primärer Akteur</td>
+<td>Einlagerer</td>
+</tr>
+<tr>
+<td>Weitere Akteure</td>
+<td>...</td>
+</tr>
+<tr>
+<td>Stakeholder-Ziel(e)</td>
+<td>die angebotenen Ersatz- und Zubehörteile reservieren</td>
+</tr>
+<tr>
+<td>Auslösendes Ereignis (Trigger)</td>
+<td>Knopf drücken</td>
+</tr>
+<tr>
+<td>Beschreibung</td>
+<td>angebotene Ersatz- und Zubehörteile reservieren.</td>
+</tr>
+<tr>
+<td>Beziehung zu anderen Use Cases</td>
+<td>...</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="strw1">StR.W.1:</h3>
+<table>
+<thead>
+<tr>
+<th>Abschnitt</th>
+<th>Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>Werkstatt Konto anlegen</td>
+</tr>
+<tr>
+<td>Primärer Akteur</td>
+<td>Werkstatt</td>
+</tr>
+<tr>
+<td>Weitere Akteure</td>
+<td>...</td>
+</tr>
+<tr>
+<td>Stakeholder-Ziel(e)</td>
+<td>Registrierung der Werkstattinhabern</td>
+</tr>
+<tr>
+<td>Auslösendes Ereignis (Trigger)</td>
+<td>Knopf drücken</td>
+</tr>
+<tr>
+<td>Beschreibung</td>
+<td>Werkstattinhaber registriert sich und gibt Informationen über seine Werkstatt</td>
+</tr>
+<tr>
+<td>Beziehung zu anderen Use Cases</td>
+<td>In Werkstattservice anbieten  inkludiert</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="strw2">StR.W.2:</h3>
+<table>
+<thead>
+<tr>
+<th>Abschnitt</th>
+<th>Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>Werkstattservice anbieten</td>
+</tr>
+<tr>
+<td>Primärer Akteur</td>
+<td>Werkstatt</td>
+</tr>
+<tr>
+<td>Weitere Akteure</td>
+<td>...</td>
+</tr>
+<tr>
+<td>Stakeholder-Ziel(e)</td>
+<td>Werkstattinhaber können nach der Registrierung angeben, welche Arbeiten angeboten werden und ggf. auf welche Fahrzeughersteller sich der Werkstattinhaber spezialisiert hat.</td>
+</tr>
+<tr>
+<td>Auslösendes Ereignis (Trigger)</td>
+<td>Werkstattinhaber möchte eine Service anbieten</td>
+</tr>
+<tr>
+<td>Beschreibung</td>
+<td>Werstatt gibt Welche Fahrzeughersteller sich spezialisiert  ein       und welche Arbeiten Angebot er nimmt ZB Kosten , Arbeitszeit usw.</td>
+</tr>
+<tr>
+<td>Beziehung zu anderen Use Cases</td>
+<td>Werkstatt Konto anlegen</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="strea1">StR.EA.1:</h3>
+<table>
+<thead>
+<tr>
+<th>Abschnitt</th>
+<th>Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>Ersatzteilhandler Konto anlegen</td>
+</tr>
+<tr>
+<td>Primärer Akteur</td>
+<td>Ersatzteilhandler</td>
+</tr>
+<tr>
+<td>Weitere Akteure</td>
+<td>...</td>
+</tr>
+<tr>
+<td>Stakeholder-Ziel(e)</td>
+<td>Informationen zum Unternehmen einstellen.</td>
+</tr>
+<tr>
+<td>Auslösendes Ereignis (Trigger)</td>
+<td>Button drücken</td>
+</tr>
+<tr>
+<td>Beschreibung</td>
+<td>Informationen zum Unternehmen eingeben.</td>
+</tr>
+<tr>
+<td>Beziehung zu anderen Use Cases</td>
+<td>...</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="strea2">StR.EA.2:</h3>
+<table>
+<thead>
+<tr>
+<th>Abschnitt</th>
+<th>Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>Ersatz- oder Zubehörteile verwalten</td>
+</tr>
+<tr>
+<td>Primärer Akteur</td>
+<td>Ersatzteilhandler</td>
+</tr>
+<tr>
+<td>Weitere Akteure</td>
+<td>...</td>
+</tr>
+<tr>
+<td>Stakeholder-Ziel(e)</td>
+<td>Ersatz- oder Zubehörteile anbieten oder löschen</td>
+</tr>
+<tr>
+<td>Auslösendes Ereignis (Trigger)</td>
+<td>Ersatz- oder Zubehörteile hinzufügen oder löschen</td>
+</tr>
+<tr>
+<td>Beschreibung</td>
+<td>Verfügbare Ersatz- oder Zubehörteile anbieten und den angebotenen Artikel ggf. wieder löschen.</td>
+</tr>
+<tr>
+<td>Beziehung zu anderen Use Cases</td>
+<td>...</td>
+</tr>
+</tbody>
+</table>
+<h1 id="dom%C3%A4nenmodell">Domänenmodell</h1>
+<p><img src="Diagrams/out/domainmodel/domainmodel.svg" alt=""></p>
+
+</body>
+</html>

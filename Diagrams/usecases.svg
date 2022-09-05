@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="1137px" preserveAspectRatio="none" style="width:1436px;height:1137px;background:#FFFFFF;" version="1.1" viewBox="0 0 1436 1137" width="1436px" zoomAndPan="magnify"><defs/><g><!--MD5=[c3e97fed644131e807bab9f4508f7da4]
+cluster VintageCarCommunity--><g id="cluster_VintageCarCommunity"><rect fill="none" height="1124" rx="3.5" ry="3.5" style="stroke:#696969;stroke-width:1.0;" width="1093" x="136" y="7"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="182" x="591.5" y="21.9951">VintageCarCommunity</text></g><g id="elem_WKRegistrieren"><ellipse cx="675.1701" cy="941.134" fill="#F1F1F1" rx="108.6701" ry="24.134" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="183" x="583.6701" y="943.9807">Werkstatt Konto anlegen</text></g><g id="elem_W_Angebot"><ellipse cx="291.9455" cy="922.1891" fill="#F1F1F1" rx="81.4455" ry="18.6891" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="122" x="229.8109" y="925.409">Service anbieten</text></g><g id="elem_LHRegisterieren"><ellipse cx="292.0557" cy="154.9111" fill="#F1F1F1" rx="110.0557" ry="24.4111" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="186" x="199.0557" y="157.7578">Lagehalter Konto anlegen</text></g><g id="elem_Services"><ellipse cx="291.9263" cy="233.7853" fill="#F1F1F1" rx="84.4263" ry="19.2853" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="129" x="227.305" y="236.6739">Services anbieten</text></g><g id="elem_Reparaturen"><ellipse cx="291.995" cy="317.799" fill="#F1F1F1" rx="131.995" ry="28.799" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="136" x="221.995" y="312.4972">Reparaturanfragen</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="188" x="197.995" y="328.7941">an Werkstätten einstellen</text></g><g id="elem_Capacities"><ellipse cx="291.9095" cy="404.0819" fill="#F1F1F1" rx="95.9095" ry="21.5819" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="155" x="214.4095" y="406.9286">Kapazitäten angeben</text></g><g id="elem_Fahrzeugsmarken"><ellipse cx="291.8807" cy="487.101" fill="#F1F1F1" rx="82.3807" ry="26.101" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="100" x="238.8807" y="482.7001">Spezialgebiet</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="63" x="259.3807" y="498.997">angeben</text></g><g id="elem_Info"><ellipse cx="292.0271" cy="573.8054" fill="#F1F1F1" rx="117.0271" ry="25.8054" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="201" x="191.5271" y="576.6521">Informationen bereitstellen</text></g><g id="elem_LHTermin"><ellipse cx="292.1894" cy="665.9379" fill="#F1F1F1" rx="140.1894" ry="30.4379" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="246" x="167.1894" y="668.7846">Termin mit werkstatt vereinbaren</text></g><g id="elem_ELTermin"><ellipse cx="1065.6635" cy="439.1327" fill="#F1F1F1" rx="86.1635" ry="19.6327" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="133" x="999.1635" y="441.9794">Termin vereibaren</text></g><g id="elem_AngebotM"><ellipse cx="291.788" cy="750.8576" fill="#F1F1F1" rx="82.288" ry="18.8576" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="124" x="228.9505" y="753.9838">Angebot machen</text></g><g id="elem_Platz"><ellipse cx="1065.288" cy="193.8576" fill="#F1F1F1" rx="82.288" ry="18.8576" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="124" x="1002.4505" y="196.9838">Stellplatz suchen</text></g><g id="elem_Anfrage"><ellipse cx="1065.5329" cy="360.8066" fill="#F1F1F1" rx="104.5329" ry="23.3066" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="174" x="978.5329" y="363.6533">Anfragen an Lagerhalter</text></g><g id="elem_AngebotAn"><ellipse cx="1065.3518" cy="904.0704" fill="#F1F1F1" rx="88.3518" ry="20.0704" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="138" x="996.3518" y="906.917">Angebot anfordern</text></g><g id="elem_Antwort"><ellipse cx="291.9738" cy="827.8948" fill="#F1F1F1" rx="99.9738" ry="22.3948" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="164" x="209.9738" y="830.7414">Anfragen beantworten</text></g><g id="elem_Action"><ellipse cx="1065.5673" cy="810.2135" fill="#F1F1F1" rx="99.0673" ry="22.2135" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="162" x="984.5673" y="813.0601">Angebot an-/ablehnen</text></g><g id="elem_ETSuche"><ellipse cx="1065.4187" cy="112.1837" fill="#F1F1F1" rx="126.4187" ry="27.6837" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="221" x="954.9187" y="115.0304">Ersatzteile zu Fahrzeug suchen</text></g><g id="elem_extraAngebot"><ellipse cx="1065.6502" cy="274.93" fill="#F1F1F1" rx="122.6502" ry="26.93" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="213" x="959.1502" y="277.7767">Zusätzliches Angebot buchen</text></g><g id="elem_Reparaturanfragen"><ellipse cx="291.975" cy="69.195" fill="#F1F1F1" rx="121.475" ry="26.695" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="157" x="210.475" y="64.7941">Reparaturanfragen an</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="127" x="225.475" y="81.091">Werkstatt stellen</text></g><g id="elem_EHRegisterieren"><ellipse cx="1065.6232" cy="988.2246" fill="#F1F1F1" rx="131.6232" ry="28.7246" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="232" x="949.6232" y="991.0713">Ersatzteilhandler Konto anlegen</text></g><g id="elem_Pauschal"><ellipse cx="1065.4927" cy="1082.7985" fill="#F1F1F1" rx="144.4927" ry="31.2985" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="255" x="935.9927" y="1085.6452">Pauschalbetrag in Rechnung stellen</text></g><g id="elem_anbieten"><ellipse cx="1065.4927" cy="720.7985" fill="#F1F1F1" rx="144.4927" ry="31.2985" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="255" x="935.9927" y="723.6452">Ersatz- oder Zubehörteile anbieten</text></g><g id="elem_loschen"><ellipse cx="1065.712" cy="623.8424" fill="#F1F1F1" rx="139.712" ry="30.3424" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="245" x="941.212" y="626.6891">Ersatz- oder Zubehörteile löschen</text></g><g id="elem_reservieren"><ellipse cx="1065.3682" cy="525.8736" fill="#F1F1F1" rx="147.3682" ry="31.8736" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="265" x="932.8682" y="528.7203">Ersatz- und Zubehörteile reservieren</text></g><g id="elem_GMN810410"><path d="M570.5,468 L570.5,531.5313 A3.5,3.5 0 0 0 574,535.0313 L776,535.0313 A3.5,3.5 0 0 0 779.5,531.5313 L779.5,474.5 L769.5,464.5 L574,464.5 A3.5,3.5 0 0 0 570.5,468 " fill="#7FFFD4" style="stroke:#181818;stroke-width:1.5;"/><path d="M769.5,464.5 L769.5,472.75 A1.75,1.75 0 0 0 771.25,474.5 L779.5,474.5 L769.5,464.5 " fill="#7FFFD4" style="stroke:#181818;stroke-width:1.0;"/><text fill="#454645" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="184" x="576.5" y="481.5669">"Sucherergebnisse enthalten</text><text fill="#454645" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="181" x="576.5" y="496.6997">die Anschrift zusammen mit</text><text fill="#454645" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="173" x="576.5" y="511.8325">dessen Merkmalen und vor</text><text fill="#454645" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="176" x="576.5" y="526.9653">Ort angebotenen Services."</text></g><g id="elem_GMN810413"><path d="M599,574 L599,622.3984 A3.5,3.5 0 0 0 602.5,625.8984 L747.5,625.8984 A3.5,3.5 0 0 0 751,622.3984 L751,580.5 L741,570.5 L602.5,570.5 A3.5,3.5 0 0 0 599,574 " fill="#7FFFD4" style="stroke:#181818;stroke-width:1.5;"/><path d="M741,570.5 L741,578.75 A1.75,1.75 0 0 0 742.75,580.5 L751,580.5 L741,570.5 " fill="#7FFFD4" style="stroke:#181818;stroke-width:1.0;"/><text fill="#454645" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="88" x="605" y="587.5669">"Die Suche ist</text><text fill="#454645" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="106" x="605" y="602.6997">nur für deutsche</text><text fill="#454645" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="131" x="605" y="617.8325">Großstädte möglich"</text></g><g id="elem_GMN810416"><path d="M598,1003.5 L598,1036.7656 A3.5,3.5 0 0 0 601.5,1040.2656 L748.5,1040.2656 A3.5,3.5 0 0 0 752,1036.7656 L752,1018 L942.129,998.079 L752,1010 L752,1010 L742,1000 L601.5,1000 A3.5,3.5 0 0 0 598,1003.5 " fill="#7FFFD4" style="stroke:#181818;stroke-width:1.5;"/><path d="M742,1000 L742,1008.25 A1.75,1.75 0 0 0 743.75,1010 L752,1010 L742,1000 " fill="#7FFFD4" style="stroke:#181818;stroke-width:1.5;"/><text fill="#454645" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="133" x="604" y="1017.0669">"Samt Informationen</text><text fill="#454645" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="125" x="604" y="1032.1997">zum Unternehmen"</text></g><g id="elem_GMN810419"><path d="M555,152 L555,170.1328 A3.5,3.5 0 0 0 558.5,173.6328 L604.732,173.6328 L357.631,221.617 L612.732,173.6328 L791.5,173.6328 A3.5,3.5 0 0 0 795,170.1328 L795,158.5 L785,148.5 L558.5,148.5 A3.5,3.5 0 0 0 555,152 " fill="#7FFFD4" style="stroke:#181818;stroke-width:1.5;"/><path d="M785,148.5 L785,156.75 A1.75,1.75 0 0 0 786.75,158.5 L795,158.5 L785,148.5 " fill="#7FFFD4" style="stroke:#181818;stroke-width:1.5;"/><text fill="#454645" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="219" x="561" y="165.5669">z.B. Einschweißen des Fahrzeuges</text></g><g id="elem_GMN810422"><path d="M582.5,46 L582.5,92.49 L374.267,138.58 L582.5,100.49 L582.5,109.5313 A3.5,3.5 0 0 0 586,113.0313 L764,113.0313 A3.5,3.5 0 0 0 767.5,109.5313 L767.5,52.5 L757.5,42.5 L586,42.5 A3.5,3.5 0 0 0 582.5,46 " fill="#7FFFD4" style="stroke:#181818;stroke-width:1.5;"/><path d="M757.5,42.5 L757.5,50.75 A1.75,1.75 0 0 0 759.25,52.5 L767.5,52.5 L757.5,42.5 " fill="#7FFFD4" style="stroke:#181818;stroke-width:1.5;"/><text fill="#454645" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="164" x="588.5" y="59.5669">"Samt Ort des Einlagerns,</text><text fill="#454645" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="129" x="588.5" y="74.6997">Einlagerungskosten,</text><text fill="#454645" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="86" x="588.5" y="89.8325">Servicezeiten</text><text fill="#454645" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="152" x="588.5" y="104.9653">und Lagerbedingungen"</text></g><g id="elem_GMN810425"><path d="M575,212 L575,260.3984 A3.5,3.5 0 0 0 578.5,263.8984 L771.5,263.8984 A3.5,3.5 0 0 0 775,260.3984 L775,218.5 L765,208.5 L578.5,208.5 A3.5,3.5 0 0 0 575,212 " fill="#7FFFD4" style="stroke:#181818;stroke-width:1.5;"/><path d="M765,208.5 L765,216.75 A1.75,1.75 0 0 0 766.75,218.5 L775,218.5 L765,208.5 " fill="#7FFFD4" style="stroke:#181818;stroke-width:1.0;"/><text fill="#454645" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="175" x="581" y="225.5669">"Wie viele Plätze in welcher</text><text fill="#454645" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="154" x="581" y="240.6997">Kategorie für Fahrzeuge</text><text fill="#454645" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="98" x="581" y="255.8325">verfügbar sind"</text></g><g id="elem_GMN810428"><path d="M570.5,302.5 L570.5,335.7656 A3.5,3.5 0 0 0 574,339.2656 L776,339.2656 A3.5,3.5 0 0 0 779.5,335.7656 L779.5,309 L769.5,299 L574,299 A3.5,3.5 0 0 0 570.5,302.5 " fill="#7FFFD4" style="stroke:#181818;stroke-width:1.5;"/><path d="M769.5,299 L769.5,307.25 A1.75,1.75 0 0 0 771.25,309 L779.5,309 L769.5,299 " fill="#7FFFD4" style="stroke:#181818;stroke-width:1.0;"/><text fill="#454645" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="188" x="576.5" y="316.0669">"Auf welche Fahrzeugmarken</text><text fill="#454645" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="176" x="576.5" y="331.1997">Lagerhalter spezialisiert ist"</text></g><g id="elem_GMN810431"><path d="M591.5,378 L591.5,426.3984 A3.5,3.5 0 0 0 595,429.8984 L755,429.8984 A3.5,3.5 0 0 0 758.5,426.3984 L758.5,384.5 L748.5,374.5 L595,374.5 A3.5,3.5 0 0 0 591.5,378 " fill="#7FFFD4" style="stroke:#181818;stroke-width:1.5;"/><path d="M748.5,374.5 L748.5,382.75 A1.75,1.75 0 0 0 750.25,384.5 L758.5,384.5 L748.5,374.5 " fill="#7FFFD4" style="stroke:#181818;stroke-width:1.0;"/><text fill="#454645" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="138" x="597.5" y="391.5669">"Fahrbereitschaft und</text><text fill="#454645" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="125" x="597.5" y="406.6997">Wartungsstand des</text><text fill="#454645" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="146" x="597.5" y="421.8325">jeweiligen Fahrzeuges"</text></g><g id="elem_GMN810434"><path d="M587.5,754.5 L587.5,787.7656 A3.5,3.5 0 0 0 591,791.2656 L759,791.2656 A3.5,3.5 0 0 0 762.5,787.7656 L762.5,761 L752.5,751 L591,751 A3.5,3.5 0 0 0 587.5,754.5 " fill="#7FFFD4" style="stroke:#181818;stroke-width:1.5;"/><path d="M752.5,751 L752.5,759.25 A1.75,1.75 0 0 0 754.25,761 L762.5,761 L752.5,751 " fill="#7FFFD4" style="stroke:#181818;stroke-width:1.0;"/><text fill="#454645" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="132" x="593.5" y="768.0669">"Detailinformationen</text><text fill="#454645" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="154" x="593.5" y="783.1997">zum Standort anfragen"</text></g><g id="elem_GMN810437"><path d="M606,830 L606,878.3984 A3.5,3.5 0 0 0 609.5,881.8984 L740.5,881.8984 A3.5,3.5 0 0 0 744,878.3984 L744,836.5 L734,826.5 L609.5,826.5 A3.5,3.5 0 0 0 606,830 " fill="#7FFFD4" style="stroke:#181818;stroke-width:1.5;"/><path d="M734,826.5 L734,834.75 A1.75,1.75 0 0 0 735.75,836.5 L744,836.5 L734,826.5 " fill="#7FFFD4" style="stroke:#181818;stroke-width:1.0;"/><text fill="#454645" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="111" x="612" y="843.5669">"Entgegennahme</text><text fill="#454645" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="96" x="612" y="858.6997">oder Rückgabe</text><text fill="#454645" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="117" x="612" y="873.8325">eines Fahrzeuges"</text></g><g id="elem_GMN810440"><path d="M626,664 L626,712.3984 A3.5,3.5 0 0 0 629.5,715.8984 L720.5,715.8984 A3.5,3.5 0 0 0 724,712.3984 L724,670.5 L714,660.5 L629.5,660.5 A3.5,3.5 0 0 0 626,664 " fill="#7FFFD4" style="stroke:#181818;stroke-width:1.5;"/><path d="M714,660.5 L714,668.75 A1.75,1.75 0 0 0 715.75,670.5 L724,670.5 L714,660.5 " fill="#7FFFD4" style="stroke:#181818;stroke-width:1.0;"/><text fill="#454645" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="67" x="632" y="677.5669">"Wird vom</text><text fill="#454645" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="73" x="632" y="692.6997">Lagerhalter</text><text fill="#454645" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="74" x="632" y="707.8325">angeboten"</text></g><g id="elem_GMN810443"><path d="M579,1078.5 L579,1111.7656 A3.5,3.5 0 0 0 582.5,1115.2656 L767.5,1115.2656 A3.5,3.5 0 0 0 771,1111.7656 L771,1096.0645 L922.309,1087.392 L771,1088.0645 L771,1085 L761,1075 L582.5,1075 A3.5,3.5 0 0 0 579,1078.5 " fill="#7FFFD4" style="stroke:#181818;stroke-width:1.5;"/><path d="M761,1075 L761,1083.25 A1.75,1.75 0 0 0 762.75,1085 L771,1085 L761,1075 " fill="#7FFFD4" style="stroke:#181818;stroke-width:1.5;"/><text fill="#454645" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="67" x="585" y="1092.0669">"Wird dem</text><text fill="#454645" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="171" x="585" y="1107.1997">Ersatzteilhändlern gestellt"</text></g><!--MD5=[c37f3a4f40fbd09c37a83d08a6c262e2]
+entity Lagerhalter--><g id="elem_Lagerhalter"><ellipse cx="47.5" cy="416.5" fill="#454645" rx="8" ry="8" style="stroke:#454645;stroke-width:0.5;"/><path d="M47.5,424.5 L47.5,451.5 M34.5,432.5 L60.5,432.5 M47.5,451.5 L34.5,466.5 M47.5,451.5 L60.5,466.5 " fill="none" style="stroke:#454645;stroke-width:0.5;"/><text fill="#454645" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="83" x="6" y="480.9951">Lagerhalter</text></g><!--MD5=[9805712dd9de588b3638fa846fe13b08]
+entity Einlagerer--><g id="elem_Einlagerer"><ellipse cx="1352.5" cy="289.5" fill="#454645" rx="8" ry="8" style="stroke:#454645;stroke-width:0.5;"/><path d="M1352.5,297.5 L1352.5,324.5 M1339.5,305.5 L1365.5,305.5 M1352.5,324.5 L1339.5,339.5 M1352.5,324.5 L1365.5,339.5 " fill="none" style="stroke:#454645;stroke-width:0.5;"/><text fill="#454645" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="73" x="1316" y="353.9951">Einlagerer</text></g><!--MD5=[adaf63ae44107282f11a4721b57d4e85]
+entity Werkstatt--><g id="elem_Werkstatt"><ellipse cx="47.5" cy="892.5" fill="#454645" rx="8" ry="8" style="stroke:#454645;stroke-width:0.5;"/><path d="M47.5,900.5 L47.5,927.5 M34.5,908.5 L60.5,908.5 M47.5,927.5 L34.5,942.5 M47.5,927.5 L60.5,942.5 " fill="none" style="stroke:#454645;stroke-width:0.5;"/><text fill="#454645" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="74" x="10.5" y="956.9951">Werkstatt</text></g><!--MD5=[2cc768934b08c67e18c234bd95d76cfb]
+entity Erzatzhandler--><g id="elem_Erzatzhandler"><ellipse cx="1352.5" cy="691.5" fill="#454645" rx="8" ry="8" style="stroke:#454645;stroke-width:0.5;"/><path d="M1352.5,699.5 L1352.5,726.5 M1339.5,707.5 L1365.5,707.5 M1352.5,726.5 L1339.5,741.5 M1352.5,726.5 L1365.5,741.5 " fill="none" style="stroke:#454645;stroke-width:0.5;"/><text fill="#454645" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="100" x="1302.5" y="755.9951">Erzatzhandler</text></g><!--MD5=[97ab183161fd5d1db7fba7485cf76add]
+entity Admin--><g id="elem_Admin"><ellipse cx="1352.5" cy="1053.5" fill="#454645" rx="8" ry="8" style="stroke:#454645;stroke-width:0.5;"/><path d="M1352.5,1061.5 L1352.5,1088.5 M1339.5,1069.5 L1365.5,1069.5 M1352.5,1088.5 L1339.5,1103.5 M1352.5,1088.5 L1365.5,1103.5 " fill="none" style="stroke:#454645;stroke-width:0.5;"/><text fill="#454645" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="153" x="1276" y="1117.9951">CommunityBetreiber</text></g><!--MD5=[e3b096486b7912d7cd0270e5ac35bc7f]
+link Anfrage to AngebotAn--><g id="link_Anfrage_AngebotAn"><path d="M970.138,370.84 C950.54,377.063 931.727,386.821 918,402 C860.22,465.895 822.809,704.595 855,784.5 C878.123,841.897 944.289,872.801 996.332,888.7 " fill="none" id="Anfrage-to-AngebotAn" style="stroke:#454645;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#454645" points="1001.323,890.193,993.8469,883.7815,996.5327,888.7601,991.5542,891.4459,1001.323,890.193" style="stroke:#454645;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="61" x="826" y="780.5669">«extend»</text></g><!--MD5=[f48a85a2d5a4c0a4166f02d7f9b96aca]
+link AngebotAn to Action--><g id="link_AngebotAn_Action"><path d="M1065.5,883.603 C1065.5,870.138 1065.5,852.329 1065.5,837.601 " fill="none" id="AngebotAn-to-Action" style="stroke:#454645;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#454645" points="1065.5,832.329,1061.5,841.329,1065.5,837.329,1069.5,841.329,1065.5,832.329" style="stroke:#454645;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="61" x="1023.5" y="862.5669">«include»</text></g><!--MD5=[0e0b1274bddc98026e03509d18e99733]
+link W_Angebot to WKRegistrieren--><g id="link_W_Angebot_WKRegistrieren"><path d="M371.943,925.937 C427.382,928.701 502.283,932.437 563.628,935.496 " fill="none" id="W_Angebot-to-WKRegistrieren" style="stroke:#454645;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#454645" points="568.769,935.752,559.979,931.3096,563.7752,935.5035,559.5813,939.2997,568.769,935.752" style="stroke:#454645;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="61" x="463" y="926.0669">«include»</text></g><!--MD5=[0e0b1274bddc98026e03509d18e99733]
+link W_Angebot to WKRegistrieren--><!--MD5=[bac40e20cb4a31ed3d34650e801b9c55]
+link WKRegistrieren to reservieren--><!--MD5=[c4c34b20608fd5f733f156b926c9ebae]
+link WKRegistrieren to ELTermin--><!--MD5=[faf55b3915219796265819b617d24537]
+link WKRegistrieren to Platz--><!--MD5=[5255d53edc5a0c918aae52b2bbc7fb9d]
+link WKRegistrieren to Anfrage--><!--MD5=[ef841c28d8cad57cad968d028507cc49]
+link WKRegistrieren to ETSuche--><!--MD5=[4785e50fb059ec66652b6cdc3058ce3b]
+link WKRegistrieren to extraAngebot--><!--MD5=[e061c3213457c9f3838a727785743f72]
+link WKRegistrieren to Pauschal--><!--MD5=[ce4ec235fc800d415ae8a509a7fedd1c]
+link WKRegistrieren to Action--><!--MD5=[ce8b8c053a4b698859a2bff107d4e623]
+link WKRegistrieren to anbieten--><!--MD5=[ef73c2b059c752e028fd4f1c4ce2b10c]
+link WKRegistrieren to AngebotAn--><!--MD5=[f9e244000da824575ff03229b88e0625]
+link WKRegistrieren to loschen--><!--MD5=[4616243eb2c1c76e61e068766bc2334b]
+link WKRegistrieren to EHRegisterieren--><!--MD5=[f21c8f459ddd514d1b81ff582d4bdb4c]
+link GMN810410 to ETSuche--><g id="link_GMN810410_ETSuche"><path d="M773.362,464.451 C781.215,459.328 788.581,453.534 795,447 C893.109,347.123 814.033,250.763 918,157 C931.732,144.62 948.806,135.64 966.394,129.13 " fill="none" id="GMN810410-ETSuche" style="stroke:#454645;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/></g><!--MD5=[23fd358118567a042e7fa3dd2cb069ab]
+link GMN810413 to Platz--><g id="link_GMN810413_Platz"><path d="M751.202,577.65 C766.652,571.325 782.116,563.236 795,553 C853.2,506.765 860.731,483.147 888,414 C918.398,336.92 861.78,290.867 918,230 C934.971,211.626 959.667,201.951 983.964,197.042 " fill="none" id="GMN810413-Platz" style="stroke:#454645;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/></g><!--MD5=[fadd214cbb8b3a361bffe20578f07751]
+link Capacities to GMN810425--><g id="link_Capacities_GMN810425"><path d="M361.006,388.997 C384.107,382.715 409.703,374.413 432,364 C491.754,336.095 496.43,311.312 555,281 C567.162,274.706 580.413,268.821 593.512,263.516 " fill="none" id="Capacities-GMN810425" style="stroke:#454645;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/></g><!--MD5=[837c4cd52bc49bd797966819a91c1d24]
+link Fahrzeugsmarken to GMN810428--><g id="link_Fahrzeugsmarken_GMN810428"><path d="M357.549,470.999 C381.552,463.912 408.62,454.536 432,443 C491.818,413.484 495.219,386.591 555,357 C568.897,350.121 584.314,344.12 599.318,339.044 " fill="none" id="Fahrzeugsmarken-GMN810428" style="stroke:#454645;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/></g><!--MD5=[21092a143ec44b08cbfb1a5d516ad798]
+link Info to GMN810431--><g id="link_Info_GMN810431"><path d="M368.827,554.317 C389.767,547.731 412.172,539.58 432,530 C491.381,501.309 496.43,477.312 555,447 C567.162,440.706 580.413,434.821 593.512,429.516 " fill="none" id="Info-GMN810431" style="stroke:#454645;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/></g><!--MD5=[c6813462fadaf2bfda856204aa5651be]
+link GMN810434 to Anfrage--><g id="link_GMN810434_Anfrage"><path d="M761.407,750.996 C773.28,746.185 784.865,740.266 795,733 C851.566,692.444 861.501,671.36 888,607 C923.057,521.853 857.171,471.129 918,402 C931.522,386.633 950.283,376.813 969.872,370.589 " fill="none" id="GMN810434-Anfrage" style="stroke:#454645;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/></g><!--MD5=[87eb76e2a74e49b443e4f234f3f84ef0]
+link GMN810437 to ELTermin--><g id="link_GMN810437_ELTermin"><path d="M744.131,839.305 C762.507,832.599 781.119,822.919 795,809 C821.814,782.112 796.147,753.688 825,729 C846.723,710.413 868.599,737 888,716 C960.945,637.041 846.805,556.541 918,476 C933.984,457.918 957.4,448.054 980.842,442.836 " fill="none" id="GMN810437-ELTermin" style="stroke:#454645;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/></g><!--MD5=[f7bf5eace48c7c35a647bda962683b21]
+link GMN810440 to extraAngebot--><g id="link_GMN810440_extraAngebot"><path d="M724.165,675.848 C746.962,668.636 773.772,657.931 795,643 C847.087,606.363 861.87,592.073 888,534 C927.409,446.417 855.687,393.082 918,320 C929.739,306.232 945.578,296.604 962.511,289.887 " fill="none" id="GMN810440-extraAngebot" style="stroke:#454645;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/></g><!--MD5=[69b1581180401af77d330f33661adc13]
+link Werkstatt to W_Angebot--><g id="link_Werkstatt_W_Angebot"><path d="M84.5428,922 C116.303,922 163.834,922 205.286,922 " fill="none" id="Werkstatt-to-W_Angebot" style="stroke:#454645;stroke-width:1.0;"/><polygon fill="#454645" points="210.31,922,201.31,918,205.31,922,201.31,926,210.31,922" style="stroke:#454645;stroke-width:1.0;"/></g><!--MD5=[74c9e9c1a4f36fff8517619c5cd83521]
+reverse link Pauschal to Admin--><g id="link_Pauschal_Admin"><path d="M1215.3,1083 C1236.29,1083 1257.09,1083 1275.89,1083 " fill="none" id="Pauschal-backto-Admin" style="stroke:#454645;stroke-width:1.0;"/><polygon fill="#454645" points="1210.25,1083,1219.25,1087,1215.25,1083,1219.25,1079,1210.25,1083" style="stroke:#454645;stroke-width:1.0;"/></g><!--MD5=[a4eeac28b51ed81411aa931f030a5422]
+reverse link EHRegisterieren to Erzatzhandler--><g id="link_EHRegisterieren_Erzatzhandler"><path d="M1181.4,971.049 C1201.37,964.34 1220.86,954.999 1237,942 C1295.89,894.559 1327.77,808.706 1342.05,759.126 " fill="none" id="EHRegisterieren-backto-Erzatzhandler" style="stroke:#454645;stroke-width:1.0;"/><polygon fill="#454645" points="1176.6,972.613,1186.3951,973.6405,1181.356,971.0701,1183.9264,966.0309,1176.6,972.613" style="stroke:#454645;stroke-width:1.0;"/></g><!--MD5=[6428d041c65a491ef913d8a0aefba126]
+reverse link anbieten to Erzatzhandler--><g id="link_anbieten_Erzatzhandler"><path d="M1215.31,721 C1246.8,721 1277.88,721 1302.37,721 " fill="none" id="anbieten-backto-Erzatzhandler" style="stroke:#454645;stroke-width:1.0;"/><polygon fill="#454645" points="1210.25,721,1219.25,725,1215.25,721,1219.25,717,1210.25,721" style="stroke:#454645;stroke-width:1.0;"/></g><!--MD5=[e1ac8585a1cff3dd0490fae32dbfc6dc]
+reverse link loschen to Erzatzhandler--><g id="link_loschen_Erzatzhandler"><path d="M1161.91,648.501 C1186.57,655.476 1212.94,663.506 1237,672 C1258.82,679.702 1282.4,689.526 1302.46,698.352 " fill="none" id="loschen-backto-Erzatzhandler" style="stroke:#454645;stroke-width:1.0;"/><polygon fill="#454645" points="1157,647.121,1164.5766,653.4135,1161.8123,648.478,1166.7478,645.7137,1157,647.121" style="stroke:#454645;stroke-width:1.0;"/></g><!--MD5=[2a516f86ee3f82adc491a0e2fa9cc4d2]
+reverse link reservieren to Einlagerer--><g id="link_reservieren_Einlagerer"><path d="M1182.23,503.294 C1201.54,496.434 1220.6,487.534 1237,476 C1280.46,445.432 1313.78,393.051 1332.99,357.267 " fill="none" id="reservieren-backto-Einlagerer" style="stroke:#454645;stroke-width:1.0;"/><polygon fill="#454645" points="1177.31,504.995,1187.1245,505.817,1182.0326,503.3527,1184.4969,498.2608,1177.31,504.995" style="stroke:#454645;stroke-width:1.0;"/></g><!--MD5=[dbaccb37a898cadf5a6b6db317144556]
+reverse link ELTermin to Einlagerer--><g id="link_ELTermin_Einlagerer"><path d="M1146.26,428.725 C1175.63,423.14 1208.64,414.681 1237,402 C1265.69,389.172 1294.31,368.422 1315.77,350.879 " fill="none" id="ELTermin-backto-Einlagerer" style="stroke:#454645;stroke-width:1.0;"/><polygon fill="#454645" points="1141.2,429.665,1150.7797,431.9518,1146.1157,428.7507,1149.3168,424.0867,1141.2,429.665" style="stroke:#454645;stroke-width:1.0;"/></g><!--MD5=[4c1e9b8d96c4deb3b6865b67c5ac44e4]
+reverse link Platz to Einlagerer--><g id="link_Platz_Einlagerer"><path d="M1145.27,203 C1174.98,208.336 1208.46,216.76 1237,230 C1266.12,243.511 1294.64,265.64 1315.93,284.452 " fill="none" id="Platz-backto-Einlagerer" style="stroke:#454645;stroke-width:1.0;"/><polygon fill="#454645" points="1140.16,202.105,1148.341,207.5887,1145.086,202.9622,1149.7125,199.7072,1140.16,202.105" style="stroke:#454645;stroke-width:1.0;"/></g><!--MD5=[b790c1227b28e304e403e36b88183541]
+reverse link Anfrage to Einlagerer--><g id="link_Anfrage_Einlagerer"><path d="M1158.7,347.412 C1212.25,339.521 1276.67,330.028 1315.82,324.258 " fill="none" id="Anfrage-backto-Einlagerer" style="stroke:#454645;stroke-width:1.0;"/><polygon fill="#454645" points="1153.56,348.17,1163.0468,350.816,1158.5066,347.4415,1161.8812,342.9014,1153.56,348.17" style="stroke:#454645;stroke-width:1.0;"/></g><!--MD5=[6d7331550bcb617b08aeae460cd602cb]
+reverse link ETSuche to Einlagerer--><g id="link_ETSuche_Einlagerer"><path d="M1176.02,128.83 C1197.45,135.36 1218.88,144.42 1237,157 C1282.27,188.423 1315.68,243.848 1334.37,280.999 " fill="none" id="ETSuche-backto-Einlagerer" style="stroke:#454645;stroke-width:1.0;"/><polygon fill="#454645" points="1171.16,127.39,1178.6451,133.7911,1175.9523,128.8163,1180.9271,126.1235,1171.16,127.39" style="stroke:#454645;stroke-width:1.0;"/></g><!--MD5=[9bfe45fca660d3e1c971bed7565a2878]
+reverse link extraAngebot to Einlagerer--><g id="link_extraAngebot_Einlagerer"><path d="M1171.39,291.193 C1222.17,299.034 1279.82,307.934 1315.93,313.508 " fill="none" id="extraAngebot-backto-Einlagerer" style="stroke:#454645;stroke-width:1.0;"/><polygon fill="#454645" points="1166.18,290.389,1174.4553,295.7293,1171.1202,291.1602,1175.6893,287.8251,1166.18,290.389" style="stroke:#454645;stroke-width:1.0;"/></g><!--MD5=[63575f010b8136bae5d072953de60de5]
+link Lagerhalter to Reparaturanfragen--><g id="link_Lagerhalter_Reparaturanfragen"><path d="M52.7224,407.783 C62.1215,329.555 87.2129,155 128,113 C141.742,98.85 159.524,89.1 178.271,82.41 " fill="none" id="Lagerhalter-to-Reparaturanfragen" style="stroke:#454645;stroke-width:1.0;"/><polygon fill="#454645" points="183.056,80.77,173.2461,79.8949,178.3246,82.3867,175.8328,87.4652,183.056,80.77" style="stroke:#454645;stroke-width:1.0;"/></g><!--MD5=[a538314d77c6118eb1c422442138b89a]
+link Lagerhalter to Antwort--><g id="link_Lagerhalter_Antwort"><path d="M52.3623,484.099 C61.2253,563.96 85.5892,745.067 128,788 C144.632,804.837 167.119,815.017 190.07,821.069 " fill="none" id="Lagerhalter-to-Antwort" style="stroke:#454645;stroke-width:1.0;"/><polygon fill="#454645" points="194.973,822.298,187.2173,816.2276,190.1234,821.081,185.27,823.987,194.973,822.298" style="stroke:#454645;stroke-width:1.0;"/></g><!--MD5=[80fb037959c43d10f0a96e8b213eb722]
+link Lagerhalter to AngebotM--><g id="link_Lagerhalter_AngebotM"><path d="M48.3961,484.136 C50.4119,542.421 63.1872,653.279 128,714 C148.634,733.331 177.173,743.307 204.611,748.249 " fill="none" id="Lagerhalter-to-AngebotM" style="stroke:#454645;stroke-width:1.0;"/><polygon fill="#454645" points="209.72,749.114,201.5136,743.6684,204.7901,748.2797,200.1787,751.5562,209.72,749.114" style="stroke:#454645;stroke-width:1.0;"/></g><!--MD5=[e462ea3e05368d4980c27a1e710efdc6]
+link Lagerhalter to LHRegisterieren--><g id="link_Lagerhalter_LHRegisterieren"><path d="M49.6922,407.568 C53.5262,352.85 68.7882,252.937 128,197 C143.831,182.044 164.259,172.237 185.265,165.848 " fill="none" id="Lagerhalter-to-LHRegisterieren" style="stroke:#454645;stroke-width:1.0;"/><polygon fill="#454645" points="190.327,164.376,180.5681,163.048,185.5258,165.772,182.8018,170.7298,190.327,164.376" style="stroke:#454645;stroke-width:1.0;"/></g><!--MD5=[e80091a4a72584d30501efd3a8e11049]
+link Lagerhalter to Services--><g id="link_Lagerhalter_Services"><path d="M55.4857,407.836 C64.8815,367.67 85.5769,305.573 128,271 C149.388,253.569 177.374,243.983 204.107,238.818 " fill="none" id="Lagerhalter-to-Services" style="stroke:#454645;stroke-width:1.0;"/><polygon fill="#454645" points="209.082,237.904,199.5076,235.5951,204.1642,238.807,200.9524,243.4636,209.082,237.904" style="stroke:#454645;stroke-width:1.0;"/></g><!--MD5=[7f9ebe02bd79ab0df74538debc2fa1ae]
+link Lagerhalter to Reparaturen--><g id="link_Lagerhalter_Reparaturen"><path d="M78.415,407.846 C92.0884,392.618 109.384,376.102 128,365 C146.383,354.037 167.465,345.511 188.231,338.922 " fill="none" id="Lagerhalter-to-Reparaturen" style="stroke:#454645;stroke-width:1.0;"/><polygon fill="#454645" points="193.218,337.374,183.4366,336.2235,188.443,338.8571,185.8095,343.8635,193.218,337.374" style="stroke:#454645;stroke-width:1.0;"/></g><!--MD5=[0da982063ca2e20e8476e21cc0053a90]
+link Lagerhalter to Capacities--><g id="link_Lagerhalter_Capacities"><path d="M89.089,438.97 C122.128,433.248 169.79,424.993 210.511,417.94 " fill="none" id="Lagerhalter-to-Capacities" style="stroke:#454645;stroke-width:1.0;"/><polygon fill="#454645" points="215.441,417.086,205.8906,414.6796,210.5143,417.9388,207.2551,422.5624,215.441,417.086" style="stroke:#454645;stroke-width:1.0;"/></g><!--MD5=[f07463d56d09f7e7466066f610051b10]
+link Lagerhalter to Fahrzeugsmarken--><g id="link_Lagerhalter_Fahrzeugsmarken"><path d="M89.089,452.862 C123.035,458.602 172.418,466.951 213.849,473.956 " fill="none" id="Lagerhalter-to-Fahrzeugsmarken" style="stroke:#454645;stroke-width:1.0;"/><polygon fill="#454645" points="218.86,474.803,210.6536,469.3574,213.9301,473.9687,209.3187,477.2452,218.86,474.803" style="stroke:#454645;stroke-width:1.0;"/></g><!--MD5=[75fbbc9122d452ec89c89bae76771454]
+link Lagerhalter to Info--><g id="link_Lagerhalter_Info"><path d="M76.6048,484.031 C90.432,500.324 108.347,518.265 128,530 C147.77,541.805 170.757,550.508 193.123,556.902 " fill="none" id="Lagerhalter-to-Info" style="stroke:#454645;stroke-width:1.0;"/><polygon fill="#454645" points="198.185,558.313,190.5897,552.0432,193.3686,556.9704,188.4414,559.7493,198.185,558.313" style="stroke:#454645;stroke-width:1.0;"/></g><!--MD5=[da5d7735640fb89bab914ffcd210bfd9]
+link Lagerhalter to LHTermin--><g id="link_Lagerhalter_LHTermin"><path d="M56.5693,484.189 C66.7236,523.022 87.9108,582.275 128,617 C142.087,629.202 159.127,638.366 176.809,645.248 " fill="none" id="Lagerhalter-to-LHTermin" style="stroke:#454645;stroke-width:1.0;"/><polygon fill="#454645" points="181.811,647.129,174.795,640.217,177.131,645.369,171.979,647.705,181.811,647.129" style="stroke:#454645;stroke-width:1.0;"/></g><!--MD5=[d62a48799c8efc1a2d6c024c7f5fe589]
+@startuml
+!theme vibrant
+left to right direction
+
+actor Lagerhalter as Lagerhalter
+actor Einlagerer as Einlagerer
+actor Werkstatt as Werkstatt
+actor Erzatzhandler as Erzatzhandler
+actor CommunityBetreiber as Admin
+
+
+rectangle VintageCarCommunity {
+
+usecase "Werkstatt Konto anlegen" as WKRegistrieren
+usecase "Service anbieten" as W_Angebot
+usecase "Lagehalter Konto anlegen" as LHRegisterieren
+usecase "Services anbieten" as Services
+usecase "Reparaturanfragen \nan Werkstätten einstellen" as Reparaturen
+usecase "Kapazitäten angeben" as Capacities
+usecase "Spezialgebiet\n angeben" as Fahrzeugsmarken
+usecase "Informationen bereitstellen" as Info
+usecase "Termin mit werkstatt vereinbaren " as LHTermin
+usecase "Termin vereibaren" as ELTermin
+usecase "Angebot machen" as AngebotM
+usecase "Stellplatz suchen" as Platz
+usecase "Anfragen an Lagerhalter" as Anfrage
+usecase "Angebot anfordern" as AngebotAn
+usecase "Anfragen beantworten" as Antwort
+usecase "Angebot an-/ablehnen" as Action
+usecase "Ersatzteile zu Fahrzeug suchen" as ETSuche
+usecase "Zusätzliches Angebot buchen" as extraAngebot
+usecase "Reparaturanfragen an\nWerkstatt stellen" as Reparaturanfragen
+usecase "Ersatzteilhandler Konto anlegen" as EHRegisterieren
+usecase "Pauschalbetrag in Rechnung stellen " as Pauschal
+usecase "Ersatz- oder Zubehörteile anbieten " as anbieten
+usecase "Ersatz- oder Zubehörteile löschen " as loschen
+usecase "Ersatz- und Zubehörteile reservieren" as reservieren
+
+Anfrage .> AngebotAn : <<extend>>
+AngebotAn .> Action : <<include>>
+W_Angebot .> WKRegistrieren : <<include>>
+
+
+(WKRegistrieren) -[hidden]- (reservieren)
+(WKRegistrieren) -[hidden]- (ELTermin)
+(WKRegistrieren) -[hidden]- (Platz)
+(WKRegistrieren) -[hidden]- (Anfrage)
+(WKRegistrieren) -[hidden]- (ETSuche)
+(WKRegistrieren) -[hidden]- (extraAngebot)
+(WKRegistrieren) -[hidden]- (Pauschal)
+(WKRegistrieren) -[hidden]- (Action)
+(WKRegistrieren) -[hidden]- (anbieten)
+(WKRegistrieren) -[hidden]- (AngebotAn)
+(W_Angebot) -[hidden]- (WKRegistrieren)
+(WKRegistrieren) -[hidden]- (loschen)
+(WKRegistrieren) -[hidden]- (EHRegisterieren)
+
+note left of ETSuche: "Sucherergebnisse enthalten \ndie Anschrift zusammen mit\ndessen Merkmalen und vor\nOrt angebotenen Services."
+note left of (Platz) : "Die Suche ist\nnur für deutsche\nGroßstädte möglich"
+note left of EHRegisterieren : "Samt Informationen\nzum Unternehmen"
+note right of (Services) : z.B. Einschweißen des Fahrzeuges
+note right of (LHRegisterieren) : "Samt Ort des Einlagerns,\nEinlagerungskosten,\nServicezeiten \nund Lagerbedingungen"
+
+note right of Capacities : "Wie viele Plätze in welcher \nKategorie für Fahrzeuge\nverfügbar sind"
+note right of Fahrzeugsmarken : "Auf welche Fahrzeugmarken\nLagerhalter spezialisiert ist"
+note right of Info : "Fahrbereitschaft und\nWartungsstand des\njeweiligen Fahrzeuges"
+note left of Anfrage: "Detailinformationen\nzum Standort anfragen"
+note left of ELTermin: "Entgegennahme\noder Rückgabe \neines Fahrzeuges"
+note left of extraAngebot : "Wird vom \nLagerhalter \nangeboten"
+note left of Pauschal: "Wird dem \nErsatzteilhändlern gestellt"
+}
+
+
+Werkstatt - -> W_Angebot
+
+(Pauschal) <- - Admin
+
+EHRegisterieren <- - Erzatzhandler 
+(anbieten) <- - Erzatzhandler
+(loschen) <- - Erzatzhandler
+
+(reservieren) <- - Einlagerer
+(ELTermin) <- - Einlagerer
+(Platz) <- - Einlagerer
+Anfrage <- - Einlagerer
+ETSuche <- - Einlagerer
+extraAngebot <- - Einlagerer
+
+Lagerhalter - -> Reparaturanfragen
+Lagerhalter - -> Antwort
+Lagerhalter - -> AngebotM
+Lagerhalter - -> LHRegisterieren
+Lagerhalter - -> Services
+Lagerhalter - -> Reparaturen
+Lagerhalter - -> Capacities
+Lagerhalter - -> Fahrzeugsmarken
+Lagerhalter - -> Info
+Lagerhalter - -> LHTermin
+@enduml
+
+@startuml
+skinparam BackgroundColor FFFFFF
+skinparam shadowing false
+skinparam RoundCorner 7
+skinparam ArrowColor 454645
+skinparam FontColor 454645
+skinparam SequenceLifeLineBorderColor 696969
+skinparam SequenceGroupHeaderFontColor 454645
+skinparam SequenceGroupFontColor 696969
+skinparam SequenceGroupBorderColor 696969
+skinparam SequenceGroupBorderThickness 1
+
+skinparam sequenceDivider {
+    BorderColor 454645
+    BorderThickness 1
+    FontColor 454645
+}
+
+skinparam participant {
+    BackgroundColor FF6347
+    BorderColor 454645
+    FontColor FFFFFF
+    BorderThickness 1.5
+}
+
+skinparam database {
+    BackgroundColor 00FFFF
+    BorderColor 454645
+    FontColor 454645
+}
+
+skinparam entity {
+    BackgroundColor FFE552
+    BorderColor 454645
+    FontColor 454645
+}
+
+skinparam note {
+    BackgroundColor 7FFFD4
+    BorderColor 454645
+    FontColor 454645
+    BorderThickness 1.5
+}
+
+skinparam actor {
+    BackgroundColor 454645
+    BorderColor 454645
+    FontColor 454645
+}
+
+skinparam boundary {
+    BackgroundColor FFE552
+    BorderColor 454645
+    FontColor 454645
+}
+
+skinparam control {
+    BackgroundColor FFE552
+    BorderColor 454645
+    FontColor 454645
+}
+
+skinparam collections {
+    BackgroundColor FF5F42
+    BorderColor 454645
+    FontColor 454645
+}
+
+skinparam queue {
+    BackgroundColor FF6347
+    BorderColor 454645
+    FontColor FFF
+    BorderThickness 1.5
+}
+left to right direction
+
+actor Lagerhalter as Lagerhalter
+actor Einlagerer as Einlagerer
+actor Werkstatt as Werkstatt
+actor Erzatzhandler as Erzatzhandler
+actor CommunityBetreiber as Admin
+
+
+rectangle VintageCarCommunity {
+
+usecase "Werkstatt Konto anlegen" as WKRegistrieren
+usecase "Service anbieten" as W_Angebot
+usecase "Lagehalter Konto anlegen" as LHRegisterieren
+usecase "Services anbieten" as Services
+usecase "Reparaturanfragen \nan Werkstätten einstellen" as Reparaturen
+usecase "Kapazitäten angeben" as Capacities
+usecase "Spezialgebiet\n angeben" as Fahrzeugsmarken
+usecase "Informationen bereitstellen" as Info
+usecase "Termin mit werkstatt vereinbaren " as LHTermin
+usecase "Termin vereibaren" as ELTermin
+usecase "Angebot machen" as AngebotM
+usecase "Stellplatz suchen" as Platz
+usecase "Anfragen an Lagerhalter" as Anfrage
+usecase "Angebot anfordern" as AngebotAn
+usecase "Anfragen beantworten" as Antwort
+usecase "Angebot an-/ablehnen" as Action
+usecase "Ersatzteile zu Fahrzeug suchen" as ETSuche
+usecase "Zusätzliches Angebot buchen" as extraAngebot
+usecase "Reparaturanfragen an\nWerkstatt stellen" as Reparaturanfragen
+usecase "Ersatzteilhandler Konto anlegen" as EHRegisterieren
+usecase "Pauschalbetrag in Rechnung stellen " as Pauschal
+usecase "Ersatz- oder Zubehörteile anbieten " as anbieten
+usecase "Ersatz- oder Zubehörteile löschen " as loschen
+usecase "Ersatz- und Zubehörteile reservieren" as reservieren
+
+Anfrage .> AngebotAn : <<extend>>
+AngebotAn .> Action : <<include>>
+W_Angebot .> WKRegistrieren : <<include>>
+
+
+(WKRegistrieren) -[hidden]- (reservieren)
+(WKRegistrieren) -[hidden]- (ELTermin)
+(WKRegistrieren) -[hidden]- (Platz)
+(WKRegistrieren) -[hidden]- (Anfrage)
+(WKRegistrieren) -[hidden]- (ETSuche)
+(WKRegistrieren) -[hidden]- (extraAngebot)
+(WKRegistrieren) -[hidden]- (Pauschal)
+(WKRegistrieren) -[hidden]- (Action)
+(WKRegistrieren) -[hidden]- (anbieten)
+(WKRegistrieren) -[hidden]- (AngebotAn)
+(W_Angebot) -[hidden]- (WKRegistrieren)
+(WKRegistrieren) -[hidden]- (loschen)
+(WKRegistrieren) -[hidden]- (EHRegisterieren)
+
+note left of ETSuche: "Sucherergebnisse enthalten \ndie Anschrift zusammen mit\ndessen Merkmalen und vor\nOrt angebotenen Services."
+note left of (Platz) : "Die Suche ist\nnur für deutsche\nGroßstädte möglich"
+note left of EHRegisterieren : "Samt Informationen\nzum Unternehmen"
+note right of (Services) : z.B. Einschweißen des Fahrzeuges
+note right of (LHRegisterieren) : "Samt Ort des Einlagerns,\nEinlagerungskosten,\nServicezeiten \nund Lagerbedingungen"
+
+note right of Capacities : "Wie viele Plätze in welcher \nKategorie für Fahrzeuge\nverfügbar sind"
+note right of Fahrzeugsmarken : "Auf welche Fahrzeugmarken\nLagerhalter spezialisiert ist"
+note right of Info : "Fahrbereitschaft und\nWartungsstand des\njeweiligen Fahrzeuges"
+note left of Anfrage: "Detailinformationen\nzum Standort anfragen"
+note left of ELTermin: "Entgegennahme\noder Rückgabe \neines Fahrzeuges"
+note left of extraAngebot : "Wird vom \nLagerhalter \nangeboten"
+note left of Pauschal: "Wird dem \nErsatzteilhändlern gestellt"
+}
+
+
+Werkstatt - -> W_Angebot
+
+(Pauschal) <- - Admin
+
+EHRegisterieren <- - Erzatzhandler 
+(anbieten) <- - Erzatzhandler
+(loschen) <- - Erzatzhandler
+
+(reservieren) <- - Einlagerer
+(ELTermin) <- - Einlagerer
+(Platz) <- - Einlagerer
+Anfrage <- - Einlagerer
+ETSuche <- - Einlagerer
+extraAngebot <- - Einlagerer
+
+Lagerhalter - -> Reparaturanfragen
+Lagerhalter - -> Antwort
+Lagerhalter - -> AngebotM
+Lagerhalter - -> LHRegisterieren
+Lagerhalter - -> Services
+Lagerhalter - -> Reparaturen
+Lagerhalter - -> Capacities
+Lagerhalter - -> Fahrzeugsmarken
+Lagerhalter - -> Info
+Lagerhalter - -> LHTermin
+@enduml
+
+PlantUML version 1.2022.8beta2(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
