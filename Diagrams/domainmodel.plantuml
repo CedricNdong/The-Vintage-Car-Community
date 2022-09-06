@@ -1,0 +1,201 @@
+@startuml
+
+abstract Benutzer {
+  Vornahme
+  Nachname
+  MailAdresse
+}
+
+abstract  Einrichtung {
+  Name
+  Ort
+}
+
+abstract Ware {
+  Name
+  Beschreibung
+  Kosten
+}
+
+class Ort {
+  Strasse
+  Hausnummer
+  Zusatz
+  Plz
+  Stadt
+  Bundesland
+}
+
+class Lagerhalter {
+  Lager
+}
+
+class Einlagerer {
+  Fahrzeuge
+}
+
+class WerkstattInhaber {
+  Werkstaette
+}
+
+class Ersatzteilhandler {
+  Unternehmen
+}
+
+class Stellplatz {
+  IstVerfuegbar
+  Massen
+}
+
+class Fahrzeug {
+  Kategorie
+  Marke
+  Modell
+  IstFahrbereit
+  IstInWartung
+  Anmerkung
+}
+
+class Termin {
+  Ort
+  Datum
+  Dauer
+  Zweck
+}
+
+class Service {
+}
+
+class Lager {
+  Konditionen
+  Einlagerungsbetrag
+  Servicezeiten
+  Stellplaetze
+  Kapazitaet
+  FreiePlaetze
+}
+
+class Servicezeiten {
+  Von
+  Bis
+}
+
+class ErsatzteilArtikel {
+  Zustand
+  IstReserviert
+}
+
+class Werkstatt {
+  Services
+  Fahrzeugmarken
+}
+
+class Unternehmen {
+  Waren
+}
+
+class Anfrage {
+  Von
+  An
+  Nachricht
+}
+
+class Angebot {
+  Anbieter
+  Kunde
+  Ware
+  Status
+  Betrag
+  Ablaufsdatum
+}
+
+enum AngebotStatus {
+  Angenommen
+  Abgelehnt
+  Bevorstehend
+}
+
+enum Kondition {
+  Beheizt
+  UvGeschuetzt
+  Klimatisiert
+  ImmerZugaenglich
+  Wachschutz
+}
+
+enum FahrzeugKategorie {
+  Cabriolet
+  Kleinstwagen
+  Kleinwagen
+  Kompaktklasse
+  Mittelklasse
+  ObereMittelklasse
+  Luxus
+  Suv
+  Van
+  }
+
+enum Fahrzeugmarke {
+  Porsche
+  Bugatti
+  Volkswagen
+  MercedesBenz
+  BMW
+  Audi
+  Opel
+  Skoda
+  Ford
+  }
+
+enum Artikelzustand {
+  Neu
+  Gebraucht
+}
+
+
+Benutzer <|-- Lagerhalter 
+Benutzer <|-- Einlagerer 
+Benutzer <|-- WerkstattInhaber 
+Benutzer <|-- Ersatzteilhandler 
+
+Lager -right-|> Einrichtung  
+Werkstatt -right-|> Einrichtung 
+Unternehmen -right-|> Einrichtung 
+
+Lagerhalter "1" *-- "1..*" Lager : besitzt > 
+Lagerhalter "*" -- "*" Werkstatt : arbeitet\nmit > 
+Lagerhalter "*" -- "*" Termin : vereinbart >
+Lagerhalter "1" -up- "*" Angebot : macht >
+
+WerkstattInhaber "1" *-- "1..*" Werkstatt : besitzt >
+
+Ersatzteilhandler "1" *-- "1..*" Unternehmen : besitzt >
+Unternehmen "1" -- "*" ErsatzteilArtikel : verkauft >
+
+Einrichtung "1" -- "1" Ort : befindet\nsich\nam >
+Termin "1" -- "1" Ort : findetstatt\nam >
+
+Einlagerer "1" -- "*" Termin : vereinbart >
+
+
+Lager "1" -- "1..*" Servicezeiten : ist\nverfügbar\nin  >
+Lager "1" *-- "*" Kondition : beschreibt <
+Lager "1" -- "1..*" Stellplatz : verfügt\nüber >
+Lager "1" -- "*" Service : bietet > 
+
+Fahrzeug "1" -- "1" FahrzeugKategorie : hat <
+Fahrzeug "1" -- "1" Fahrzeugmarke : hat <
+
+Fahrzeug "1" -- "1" Stellplatz : ist\nzugeordnet <
+Einlagerer "1" *-left- "1..*" Fahrzeug : besitzt <
+Einlagerer "1" *-- "*" Lager : sucht <
+Anfrage "*" -- "1" Einlagerer : schickt\nan\nLagerhalter <
+Anfrage "*" -- "1" Lagerhalter : schickt\nan\nWerkstatt <
+
+Werkstatt "1" -- "1..*" Service : bietet > 
+
+Service  --|> Ware
+ErsatzteilArtikel  --|> Ware
+Artikelzustand "1" -up- "1" ErsatzteilArtikel : beschreibt >
+AngebotStatus "1" -left- "1" Angebot : beschreibt\nden Status\nvon <
+@enduml

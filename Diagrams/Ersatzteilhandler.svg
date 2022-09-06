@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="513px" preserveAspectRatio="none" style="width:715px;height:513px;background:#FFFFFF;" version="1.1" viewBox="0 0 715 513" width="715px" zoomAndPan="magnify"><defs/><g><!--MD5=[c3e97fed644131e807bab9f4508f7da4]
+cluster VintageCarCommunity--><g id="cluster_VintageCarCommunity"><rect fill="none" height="500" rx="3.5" ry="3.5" style="stroke:#696969;stroke-width:1.0;" width="327" x="150" y="7"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="182" x="222.5" y="21.9951">VintageCarCommunity</text></g><g id="elem_Registerieren"><ellipse cx="313.6232" cy="71.2246" fill="#F1F1F1" rx="131.6232" ry="28.7246" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="232" x="197.6232" y="74.0713">Ersatzteilhandler Konto anlegen</text></g><g id="elem_Pauschal"><ellipse cx="313.4927" cy="165.7985" fill="#F1F1F1" rx="144.4927" ry="31.2985" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="255" x="183.9927" y="168.6452">Pauschalbetrag in Rechnung stellen</text></g><g id="elem_anbieten"><ellipse cx="313.4927" cy="263.7985" fill="#F1F1F1" rx="144.4927" ry="31.2985" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="255" x="183.9927" y="266.6452">Ersatz- oder Zubehörteile anbieten</text></g><g id="elem_loschen"><ellipse cx="313.712" cy="360.8424" fill="#F1F1F1" rx="139.712" ry="30.3424" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="245" x="189.212" y="363.6891">Ersatz- oder Zubehörteile löschen</text></g><g id="elem_reservieren"><ellipse cx="313.3682" cy="458.8736" fill="#F1F1F1" rx="147.3682" ry="31.8736" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="265" x="180.8682" y="461.7203">Ersatz- und Zubehörteile reservieren</text></g><!--MD5=[2cc768934b08c67e18c234bd95d76cfb]
+entity Erzatzhandler--><g id="elem_Erzatzhandler"><ellipse cx="56" cy="234.5" fill="#454645" rx="8" ry="8" style="stroke:#454645;stroke-width:0.5;"/><path d="M56,242.5 L56,269.5 M43,250.5 L69,250.5 M56,269.5 L43,284.5 M56,269.5 L69,284.5 " fill="none" style="stroke:#454645;stroke-width:0.5;"/><text fill="#454645" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="100" x="6" y="298.9951">Erzatzhandler</text></g><!--MD5=[97ab183161fd5d1db7fba7485cf76add]
+entity Admin--><g id="elem_Admin"><ellipse cx="614.5" cy="135.5" fill="#454645" rx="8" ry="8" style="stroke:#454645;stroke-width:0.5;"/><path d="M614.5,143.5 L614.5,170.5 M601.5,151.5 L627.5,151.5 M614.5,170.5 L601.5,185.5 M614.5,170.5 L627.5,185.5 " fill="none" style="stroke:#454645;stroke-width:0.5;"/><text fill="#454645" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="153" x="538" y="199.9951">CommunityBetreiber</text></g><!--MD5=[9805712dd9de588b3638fa846fe13b08]
+entity Einlagerer--><g id="elem_Einlagerer"><ellipse cx="56" cy="429.5" fill="#454645" rx="8" ry="8" style="stroke:#454645;stroke-width:0.5;"/><path d="M56,437.5 L56,464.5 M43,445.5 L69,445.5 M56,464.5 L43,479.5 M56,464.5 L69,479.5 " fill="none" style="stroke:#454645;stroke-width:0.5;"/><text fill="#454645" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="73" x="19.5" y="493.9951">Einlagerer</text></g><g id="elem_NRegisterieren"><path d="M540,54.5 L540,67 L445.211,71 L540,75 L540,87.7656 A3.5,3.5 0 0 0 543.5,91.2656 L685.5,91.2656 A3.5,3.5 0 0 0 689,87.7656 L689,61 L679,51 L543.5,51 A3.5,3.5 0 0 0 540,54.5 " fill="#7FFFD4" style="stroke:#181818;stroke-width:1.5;"/><path d="M679,51 L679,59.25 A1.75,1.75 0 0 0 680.75,61 L689,61 L679,51 " fill="#7FFFD4" style="stroke:#181818;stroke-width:1.5;"/><text fill="#454645" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="128" x="546" y="68.0669">Samt Informationen</text><text fill="#454645" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="120" x="546" y="83.1997">zum Unternehmen</text></g><g id="elem_NPauschal"><path d="M521,241.5 L521,274.7656 A3.5,3.5 0 0 0 524.5,278.2656 L704.5,278.2656 A3.5,3.5 0 0 0 708,274.7656 L708,248 L698,238 L524.5,238 A3.5,3.5 0 0 0 521,241.5 " fill="#7FFFD4" style="stroke:#181818;stroke-width:1.5;"/><path d="M698,238 L698,246.25 A1.75,1.75 0 0 0 699.75,248 L708,248 L698,238 " fill="#7FFFD4" style="stroke:#181818;stroke-width:1.0;"/><text fill="#454645" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="62" x="527" y="255.0669">Wird dem</text><text fill="#454645" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="166" x="527" y="270.1997">Ersatzteilhändlern gestellt</text></g><!--MD5=[74c9e9c1a4f36fff8517619c5cd83521]
+reverse link Pauschal to Admin--><g id="link_Pauschal_Admin"><path d="M463.471,165.502 C489.295,165.415 515.139,165.329 537.923,165.253 " fill="none" id="Pauschal-backto-Admin" style="stroke:#454645;stroke-width:1.0;"/><polygon fill="#454645" points="458.307,165.519,467.3207,169.4881,463.307,165.5019,467.2932,161.4882,458.307,165.519" style="stroke:#454645;stroke-width:1.0;"/></g><!--MD5=[81c52e9ce13c4fc4ef41fc250af25bb9]
+link Erzatzhandler to Registerieren--><g id="link_Erzatzhandler_Registerieren"><path d="M69.5821,225.758 C82.5504,192.235 105.9968,144.657 142,117 C158.657,104.205 178.609,94.964 198.899,88.29 " fill="none" id="Erzatzhandler-to-Registerieren" style="stroke:#454645;stroke-width:1.0;"/><polygon fill="#454645" points="203.784,86.735,193.9946,85.6544,199.0197,88.2521,196.422,93.2773,203.784,86.735" style="stroke:#454645;stroke-width:1.0;"/></g><!--MD5=[4d74f82abbad284e6139796810b47dbc]
+link Erzatzhandler to anbieten--><g id="link_Erzatzhandler_anbieten"><path d="M106.263,264 C123.107,264 142.923,264 163.495,264 " fill="none" id="Erzatzhandler-to-anbieten" style="stroke:#454645;stroke-width:1.0;"/><polygon fill="#454645" points="168.741,264,159.741,260,163.741,264,159.741,268,168.741,264" style="stroke:#454645;stroke-width:1.0;"/></g><!--MD5=[5e36d28d6e877e08aa19de8eacd48884]
+link Erzatzhandler to loschen--><g id="link_Erzatzhandler_loschen"><path d="M106.279,295.155 C117.732,301.614 130.07,307.975 142,313 C164.357,322.418 189.126,330.589 212.697,337.388 " fill="none" id="Erzatzhandler-to-loschen" style="stroke:#454645;stroke-width:1.0;"/><polygon fill="#454645" points="217.707,338.818,210.1509,332.5009,212.8991,337.4453,207.9547,340.1935,217.707,338.818" style="stroke:#454645;stroke-width:1.0;"/></g><!--MD5=[39671cdadb819e06be32210ef71a6cb7]
+link Einlagerer to reservieren--><g id="link_Einlagerer_reservieren"><path d="M92.5262,459 C111.101,459 135.247,459 160.714,459 " fill="none" id="Einlagerer-to-reservieren" style="stroke:#454645;stroke-width:1.0;"/><polygon fill="#454645" points="165.824,459,156.824,455,160.824,459,156.824,463,165.824,459" style="stroke:#454645;stroke-width:1.0;"/></g><!--MD5=[2f44e6101bedf6d28ed481243706d44b]
+link Pauschal to NPauschal--><g id="link_Pauschal_NPauschal"><path d="M403.209,190.711 C429.599,198.273 458.53,206.772 485,215 C508.139,222.193 533.459,230.558 555.461,237.989 " fill="none" id="Pauschal-NPauschal" style="stroke:#454645;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/></g><!--MD5=[a994a3c4170de8901768ab7dabcea82a]
+@startuml
+!theme vibrant
+left to right direction
+skinparam packageStyle rectangle
+
+actor Erzatzhandler as Erzatzhandler
+actor CommunityBetreiber as Admin
+actor Einlagerer as Einlagerer
+
+note "Samt Informationen\nzum Unternehmen" as NRegisterieren
+note "Wird dem \nErsatzteilhändlern gestellt" as NPauschal
+
+rectangle VintageCarCommunity {
+usecase "Ersatzteilhandler Konto anlegen" as Registerieren
+usecase "Pauschalbetrag in Rechnung stellen " as Pauschal
+usecase "Ersatz- oder Zubehörteile anbieten " as anbieten
+usecase "Ersatz- oder Zubehörteile löschen " as loschen
+usecase "Ersatz- und Zubehörteile reservieren" as reservieren
+
+(Pauschal) <- - Admin
+Erzatzhandler - -> Registerieren
+Erzatzhandler - -> (anbieten)
+Erzatzhandler - -> (loschen)
+Einlagerer - -> reservieren
+}
+
+Registerieren .. NRegisterieren
+Pauschal .. NPauschal
+@enduml
+
+@startuml
+skinparam BackgroundColor FFFFFF
+skinparam shadowing false
+skinparam RoundCorner 7
+skinparam ArrowColor 454645
+skinparam FontColor 454645
+skinparam SequenceLifeLineBorderColor 696969
+skinparam SequenceGroupHeaderFontColor 454645
+skinparam SequenceGroupFontColor 696969
+skinparam SequenceGroupBorderColor 696969
+skinparam SequenceGroupBorderThickness 1
+
+skinparam sequenceDivider {
+    BorderColor 454645
+    BorderThickness 1
+    FontColor 454645
+}
+
+skinparam participant {
+    BackgroundColor FF6347
+    BorderColor 454645
+    FontColor FFFFFF
+    BorderThickness 1.5
+}
+
+skinparam database {
+    BackgroundColor 00FFFF
+    BorderColor 454645
+    FontColor 454645
+}
+
+skinparam entity {
+    BackgroundColor FFE552
+    BorderColor 454645
+    FontColor 454645
+}
+
+skinparam note {
+    BackgroundColor 7FFFD4
+    BorderColor 454645
+    FontColor 454645
+    BorderThickness 1.5
+}
+
+skinparam actor {
+    BackgroundColor 454645
+    BorderColor 454645
+    FontColor 454645
+}
+
+skinparam boundary {
+    BackgroundColor FFE552
+    BorderColor 454645
+    FontColor 454645
+}
+
+skinparam control {
+    BackgroundColor FFE552
+    BorderColor 454645
+    FontColor 454645
+}
+
+skinparam collections {
+    BackgroundColor FF5F42
+    BorderColor 454645
+    FontColor 454645
+}
+
+skinparam queue {
+    BackgroundColor FF6347
+    BorderColor 454645
+    FontColor FFF
+    BorderThickness 1.5
+}
+left to right direction
+skinparam packageStyle rectangle
+
+actor Erzatzhandler as Erzatzhandler
+actor CommunityBetreiber as Admin
+actor Einlagerer as Einlagerer
+
+note "Samt Informationen\nzum Unternehmen" as NRegisterieren
+note "Wird dem \nErsatzteilhändlern gestellt" as NPauschal
+
+rectangle VintageCarCommunity {
+usecase "Ersatzteilhandler Konto anlegen" as Registerieren
+usecase "Pauschalbetrag in Rechnung stellen " as Pauschal
+usecase "Ersatz- oder Zubehörteile anbieten " as anbieten
+usecase "Ersatz- oder Zubehörteile löschen " as loschen
+usecase "Ersatz- und Zubehörteile reservieren" as reservieren
+
+(Pauschal) <- - Admin
+Erzatzhandler - -> Registerieren
+Erzatzhandler - -> (anbieten)
+Erzatzhandler - -> (loschen)
+Einlagerer - -> reservieren
+}
+
+Registerieren .. NRegisterieren
+Pauschal .. NPauschal
+@enduml
+
+PlantUML version 1.2022.8beta2(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
