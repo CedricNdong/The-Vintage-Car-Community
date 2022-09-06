@@ -325,7 +325,7 @@ eingestellt |
 <hr>
 
 
-### StR.W.1:
+### StR.W.1: 
 | Abschnitt | Beschreibung |
 | --- | --- |
 | Name |                 Werkstatt Konto anlegen                     |
@@ -335,18 +335,21 @@ eingestellt |
 | Auslösendes Ereignis (Trigger) |                 Knopf drücken                     |
 | Beschreibung |           Werkstattinhaber registriert sich und gibt Informationen über seine Werkstatt            |
 | Beziehung zu anderen Use Cases |            In Werkstattservice anbieten  inkludiert           |
+<br>
+
 
 | Auslösendes Ereignis | Inhalt |
 | --- | --- |
-| Auslösendes Ereignis  | ... |
-| Vorbedingung | ... |
-| Nachbedingung | ... |
-| Hauptszenario | ... |
-| Alternativszenarien | ... |                      |
-| Ausnahme szenarien | ... |
+| Auslösendes Ereignis  |Werkstatt Konto anlegen|
+| Vorbedingung |Die Werkstatt hat eine valide E-mail Adresse .|
+| Nachbedingung |Die Werkstatt ist im System registriert|
+| Hauptszenario |1. Der Werkstatt geht auf die Registrierungsseite.<br>2.  Die Werkstatt gibt ihre E-Mail-Adresse und ihr Passwort ein.<br>3. Die Werkstatt klickt auf "Registrieren".<br>4. Das System überprüft die Eingaben.<br>5. Das System erstellt ein Konto für die Werkstatt.<br>6. Die Profilseite öffnet sich.<br>7. Der Werkstatt gibt seine Daten ein.<br>8. Der  Werkstatt klickt auf die Schaltfläche "Speichern"|
+| Alternativszenarien |                         |
+| Ausnahme szenarien |4a. Die E-mail wurde bereits registriert.<br>5a. Das System zeigt die Nachricht" Ihr Email ist schon angemeldet" an.|
+
 <hr>
 
-### StR.W.2:
+### StR.W.2: 
 
 | Abschnitt | Beschreibung |
 | --- | --- |
@@ -357,18 +360,21 @@ eingestellt |
 | Auslösendes Ereignis (Trigger) |            Werkstattinhaber möchte eine Service anbieten |
 | Beschreibung |            Werstatt gibt Welche Fahrzeughersteller sich spezialisiert  ein       und welche Arbeiten Angebot er nimmt ZB Kosten , Arbeitszeit usw. |      |
 | Beziehung zu anderen Use Cases |            Werkstatt Konto anlegen             |
+<br>
+
 
 | Auslösendes Ereignis | Inhalt |
 | --- | --- |
-| Auslösendes Ereignis  | ... |
-| Vorbedingung | ... |
-| Nachbedingung | ... |
-| Hauptszenario | ... |
-| Alternativszenarien | ... |                      |
-| Ausnahme szenarien | ... |
+| Auslösendes Ereignis  | Werkstattinhaber Service anbieten |
+| Vorbedingung | Der Werkstattinhaber hat ein Konto.|
+| Nachbedingung | Die Werkstatt erbringt ihren Service . |
+| Hauptszenario |1. Der Werkstattinhaber geht auf die Angebotsseite.<br>2. Der Werkstattinhaber gibt seine Anmeldedaten ein.<br>3. Der Werkstattinhaber klickt auf "Einloggen".<br>4. Das System überprüft die Eingaben.<br>5. die angebotsseite öffnet sich.<br>6. Der Werkstattinhaber klickt auf "Angebot hinzufügen" und füllt das Angebotsformular aus.<br>7. Der Werkstattinhaber klickt auf "Service anbieten".<br>8 Das system gibt das Angebot aus.|
+| Alternativszenarien |                         |
+| Ausnahme szenarien |                 |
+
 <hr>
 
-### StR.EA.1:
+### StR.EA.1: 
 
 | Abschnitt | Beschreibung |
 | --- | --- |
@@ -379,18 +385,21 @@ eingestellt |
 | Auslösendes Ereignis (Trigger) |                 Button drücken                     |
 | Beschreibung |            Informationen zum Unternehmen eingeben.             |
 | Beziehung zu anderen Use Cases |            ...             |
+<br>
+
 
 | Auslösendes Ereignis | Inhalt |
 | --- | --- |
-| Auslösendes Ereignis  | ... |
-| Vorbedingung | ... |
-| Nachbedingung | ... |
-| Hauptszenario | ... |
-| Alternativszenarien | ... |                      |
-| Ausnahme szenarien | ... |
+| Auslösendes Ereignis  |Ersatzteilhandler Konto anlegen .|
+| Vorbedingung | Der Ersatzteilhandler hat eine valide E-mail Adresse . |
+| Nachbedingung | Der Ersatzteilhandler registriert sich im System |
+| Hauptszenario | 1. Der Ersatzteilhandler geht auf die Registrierungsseite..<br>2. Der Ersatzteilhandler gibt seine E-Mail-Adresse und sein Passwort ein.<br>3. Der Ersatzteilhandler klickt auf "Registrieren".<br>4. Das System überprüft die Eingaben.<br>5. Das System erstellt ein Konto für den Ersatzteilhandler.<br>6. Die Profilseite öffnet sich.<br>7. Der Ersatzteilhandler gibt seine Daten ein.<br>8. Der  Ersatzteilhandler drückt auf die Schaltfläche "Speichern|
+| Alternativszenarien |                         |
+| Ausnahme szenarien |  4a. Die E-mail wurde bereits registriert.<br>5a. Das System zeigt die Nachricht" Ihr Email ist schon angemeldet" an.|
+
 <hr>
 
-### StR.EA.2: Kurzbeschreibung
+### StR.EA.2: 
 
 | Abschnitt | Beschreibung |
 | --- | --- |
@@ -403,15 +412,44 @@ eingestellt |
 | Beziehung zu anderen Use Cases |                        |
 <br>
 
+
 | Auslösendes Ereignis | Inhalt |
 | --- | --- |
 | Auslösendes Ereignis  | Ersatz- oder Zubehörteile verwalten. |
 | Vorbedingung | Der Ersatzteilhandler hat ein Konto.|
-| Nachbedingung |Der Ersatzteilhändler verwaltet seine Ersatz- oder Zubehörteile |
-| Hauptszenario |1. Der Ersatzteilhändler klickt auf "Verwaltung".<br>2. Das System gibt den angebotenen Artikel zurück.<br>3. Der Ersatzteilhändler wählt den Artikel aus.<br>4. Der Ersatzteilhändler klickt auf "Löschen".<br>5. Das System löscht den Artikel von der Website.|
-| Alternativszenarien |Fall für Bearbeiten<br>4b. Der Ersatzteilhändler klickt auf "edit".<br>5b. Das System gibt die Eintrag frei.<br>6b. Der Ersatzteilhändler gibt die neuen Informationen ein. und klickt auf "Speichern"<br>7b. Das System speichert die neuen Informationen. <br><br>Fall für angebot<br>3c. Der Ersatzteilhändler klickt auf "Hinzufügen".<br>4c. Das System gibt ein Formular aus.<br>5c. Der Ersatzteilhändler fühlt das Formular aus.<br>6c. Der Ersatzteilhändler klickt auf das Angebot.                     |
-| Ausnahme szenarien |                       |
+| Nachbedingung |Die gewünchte Ersatz- oder Zubehörteile  ist werwaltet.|
+| Hauptszenario |1. Der Ersatzteilhandler geht auf die Anmeldeseite und logt sich ein.<br>2. Der Ersatzteilhandler wählt einen Artikel aus.<br>3. Der Ersatzteilhandler klickt auf "Verwalten".<br>4. Der Ersatzteilhandler wählt die gewünschtefunktion aus.<br>5. Das system führt die gewünschtefunktion duch. |
+| Alternativszenarien |                    |
+| Ausnahme szenarien |               
+
+# Sequenzdaigramme
+
+![](Diagrams/E1.png)
+<br>
+![](Diagrams/E6.png)
+<br>
+![](Diagrams/L1.png)
+<br>
+![](Diagrams/L2.png)
+<br>
+![](Diagrams/L3.png)
+<br>
+![](Diagrams/L4.png)
+<br>
+![](Diagrams/L7.png)
+<br>
+![](Diagrams/L6.png)
+<br>
+![](Diagrams/StR_EA_1.png)
+<br>
+![](Diagrams/StR_W2.png)
+<br>
+![](Diagrams/StR_W_1.png)
 
 # Domänenmodell
 
 ![](Diagrams/out/domainmodel/domainmodel.svg)
+
+# UI Erster Entwurf
+
+![](Diagrams/unknown.png)
