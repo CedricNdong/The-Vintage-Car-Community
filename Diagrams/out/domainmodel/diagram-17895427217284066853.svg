@@ -1,0 +1,669 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="1427.8px" preserveAspectRatio="none" style="width:1552px;height:1427px;background:#FFFFFF;" version="1.1" viewBox="0 0 1552 1427" width="1552.1px" zoomAndPan="magnify"><defs/><g><!--MD5=[0c8199344457f6d35f1c8b4c6eadcf3f]
+class Benutzer--><rect codeLine="2" fill="#FEFECE" height="159.3367" id="Benutzer" rx="3.85" ry="3.85" style="stroke:#A80036;stroke-width:1.6500000000000001;" width="135.3" x="1074.15" y="30.25"/><ellipse cx="1110.945" cy="47.85" fill="#A9DCDF" rx="12.1" ry="12.1" style="stroke:#A80036;stroke-width:1.1;"/><path d="M1112.87,49.5 L1109.2434,49.5 L1108.7622,50.6 L1108.7622,50.6 L1109.2778,50.6 L1109.845,51.2875 L1109.845,51.7 L1109.845,52.1125 L1109.2778,52.8 L1108.7622,52.8 L1106.6825,52.8 L1106.0122,52.8 L1105.445,52.1125 L1105.445,51.7 L1105.445,51.2875 L1106.0122,50.6 L1106.6825,50.6 L1109.2263,44 L1108.2638,44 L1107.1122,44 L1106.545,43.3125 L1106.545,42.9 L1106.545,42.4875 L1107.1122,41.8 L1108.2638,41.8 L1112.3028,41.8 L1115.2591,50.6 L1115.8778,50.6 L1115.8778,50.6 L1116.445,51.2875 L1116.445,51.7 L1116.445,52.1125 L1115.8778,52.8 L1115.2591,52.8 L1113.1794,52.8 L1112.6122,52.8 L1112.045,52.1125 L1112.045,51.7 L1112.045,51.2875 L1112.6122,50.6 L1113.1794,50.6 L1113.1794,50.6 L1112.87,49.5 Z M1112.2684,47.3 L1110.945,43.3641 L1109.8106,47.3 L1112.2684,47.3 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="13.2" font-style="italic" lengthAdjust="spacing" textLength="55" x="1130.855" y="53.2512">Benutzer</text><line style="stroke:#A80036;stroke-width:1.6500000000000001;" x1="1075.25" x2="1208.35" y1="65.45" y2="65.45"/><polygon fill="none" points="1086.25,72.05,1090.65,76.45,1086.25,80.85,1081.85,76.45" style="stroke:#B38D22;stroke-width:1.1;"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="30.8" x="1096.15" y="82.4108">Id : int</text><polygon fill="none" points="1086.25,87.2695,1090.65,91.6695,1086.25,96.0695,1081.85,91.6695" style="stroke:#B38D22;stroke-width:1.1;"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="95.7" x="1096.15" y="97.6304">Vornahme : String</text><polygon fill="none" points="1086.25,102.4891,1090.65,106.8891,1086.25,111.2891,1081.85,106.8891" style="stroke:#B38D22;stroke-width:1.1;"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="96.8" x="1096.15" y="112.8499">Nachname : String</text><polygon fill="none" points="1086.25,117.7086,1090.65,122.1086,1086.25,126.5086,1081.85,122.1086" style="stroke:#B38D22;stroke-width:1.1;"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="106.7" x="1096.15" y="128.0694">MailAdresse : String</text><line style="stroke:#A80036;stroke-width:1.6500000000000001;" x1="1075.25" x2="1208.35" y1="135.1281" y2="135.1281"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="46.2" x="1080.75" y="152.089">SignUp()</text><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="37.4" x="1080.75" y="167.3085">Login()</text><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="99" x="1080.75" y="182.528">UpdateProfil(Profil)</text><!--MD5=[64bb754b361fa4df69d5fabb8f4dfb38]
+class Einrichtung--><rect codeLine="12" fill="#FEFECE" height="98.4586" id="Einrichtung" rx="3.85" ry="3.85" style="stroke:#A80036;stroke-width:1.6500000000000001;" width="103.4" x="1441" y="680.9"/><ellipse cx="1457.5" cy="698.5" fill="#A9DCDF" rx="12.1" ry="12.1" style="stroke:#A80036;stroke-width:1.1;"/><path d="M1459.425,700.15 L1455.7984,700.15 L1455.3172,701.25 L1455.3172,701.25 L1455.8328,701.25 L1456.4,701.9375 L1456.4,702.35 L1456.4,702.7625 L1455.8328,703.45 L1455.3172,703.45 L1453.2375,703.45 L1452.5672,703.45 L1452,702.7625 L1452,702.35 L1452,701.9375 L1452.5672,701.25 L1453.2375,701.25 L1455.7813,694.65 L1454.8188,694.65 L1453.6672,694.65 L1453.1,693.9625 L1453.1,693.55 L1453.1,693.1375 L1453.6672,692.45 L1454.8188,692.45 L1458.8578,692.45 L1461.8141,701.25 L1462.4328,701.25 L1462.4328,701.25 L1463,701.9375 L1463,702.35 L1463,702.7625 L1462.4328,703.45 L1461.8141,703.45 L1459.7344,703.45 L1459.1672,703.45 L1458.6,702.7625 L1458.6,702.35 L1458.6,701.9375 L1459.1672,701.25 L1459.7344,701.25 L1459.7344,701.25 L1459.425,700.15 Z M1458.8234,697.95 L1457.5,694.0141 L1456.3656,697.95 L1458.8234,697.95 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="13.2" font-style="italic" lengthAdjust="spacing" textLength="68.2" x="1472.9" y="703.9012">Einrichtung</text><line style="stroke:#A80036;stroke-width:1.6500000000000001;" x1="1442.1" x2="1543.3" y1="716.1" y2="716.1"/><polygon fill="none" points="1453.1,722.7,1457.5,727.1,1453.1,731.5,1448.7,727.1" style="stroke:#B38D22;stroke-width:1.1;"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="30.8" x="1463" y="733.0608">Id : int</text><polygon fill="none" points="1453.1,737.9195,1457.5,742.3195,1453.1,746.7195,1448.7,742.3195" style="stroke:#B38D22;stroke-width:1.1;"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="70.4" x="1463" y="748.2804">Name : String</text><polygon fill="none" points="1453.1,753.1391,1457.5,757.5391,1453.1,761.9391,1448.7,757.5391" style="stroke:#B38D22;stroke-width:1.1;"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="42.9" x="1463" y="763.4999">Ort : Ort</text><line style="stroke:#A80036;stroke-width:1.6500000000000001;" x1="1442.1" x2="1543.3" y1="770.5586" y2="770.5586"/><!--MD5=[49ae01acb227dd56221bf55985e7d4d0]
+class Ware--><rect codeLine="18" fill="#FEFECE" height="189.7758" id="Ware" rx="3.85" ry="3.85" style="stroke:#A80036;stroke-width:1.6500000000000001;" width="143" x="1052.7" y="1230.9"/><ellipse cx="1103.575" cy="1248.5" fill="#A9DCDF" rx="12.1" ry="12.1" style="stroke:#A80036;stroke-width:1.1;"/><path d="M1105.5,1250.15 L1101.8734,1250.15 L1101.3922,1251.25 L1101.3922,1251.25 L1101.9078,1251.25 L1102.475,1251.9375 L1102.475,1252.35 L1102.475,1252.7625 L1101.9078,1253.45 L1101.3922,1253.45 L1099.3125,1253.45 L1098.6422,1253.45 L1098.075,1252.7625 L1098.075,1252.35 L1098.075,1251.9375 L1098.6422,1251.25 L1099.3125,1251.25 L1101.8563,1244.65 L1100.8938,1244.65 L1099.7422,1244.65 L1099.175,1243.9625 L1099.175,1243.55 L1099.175,1243.1375 L1099.7422,1242.45 L1100.8938,1242.45 L1104.9328,1242.45 L1107.8891,1251.25 L1108.5078,1251.25 L1108.5078,1251.25 L1109.075,1251.9375 L1109.075,1252.35 L1109.075,1252.7625 L1108.5078,1253.45 L1107.8891,1253.45 L1105.8094,1253.45 L1105.2422,1253.45 L1104.675,1252.7625 L1104.675,1252.35 L1104.675,1251.9375 L1105.2422,1251.25 L1105.8094,1251.25 L1105.8094,1251.25 L1105.5,1250.15 Z M1104.8984,1247.95 L1103.575,1244.0141 L1102.4406,1247.95 L1104.8984,1247.95 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="13.2" font-style="italic" lengthAdjust="spacing" textLength="31.9" x="1126.125" y="1253.9012">Ware</text><line style="stroke:#A80036;stroke-width:1.6500000000000001;" x1="1053.8" x2="1194.6" y1="1266.1" y2="1266.1"/><polygon fill="none" points="1064.8,1272.7,1069.2,1277.1,1064.8,1281.5,1060.4,1277.1" style="stroke:#B38D22;stroke-width:1.1;"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="30.8" x="1074.7" y="1283.0608">Id : int</text><polygon fill="none" points="1064.8,1287.9195,1069.2,1292.3195,1064.8,1296.7195,1060.4,1292.3195" style="stroke:#B38D22;stroke-width:1.1;"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="70.4" x="1074.7" y="1298.2804">Name : String</text><polygon fill="none" points="1064.8,1303.1391,1069.2,1307.5391,1064.8,1311.9391,1060.4,1307.5391" style="stroke:#B38D22;stroke-width:1.1;"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="114.4" x="1074.7" y="1313.4999">Beschreibung : String</text><polygon fill="none" points="1064.8,1318.3586,1069.2,1322.7586,1064.8,1327.1586,1060.4,1322.7586" style="stroke:#B38D22;stroke-width:1.1;"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="82.5" x="1074.7" y="1328.7194">Kosten : double</text><line style="stroke:#A80036;stroke-width:1.6500000000000001;" x1="1053.8" x2="1194.6" y1="1335.7781" y2="1335.7781"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="88" x="1059.3" y="1352.739">AddWare(Ware)</text><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="108.9" x="1059.3" y="1367.9585">RemoveWare(Ware)</text><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="84.7" x="1059.3" y="1383.178">EditWare(Ware)</text><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="64.9" x="1059.3" y="1398.3976">GetWare(id)</text><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="62.7" x="1059.3" y="1413.6171">GetWaren()</text><!--MD5=[b96bfa1c0ec37f1345fdbe2e1c2ffebf]
+class Ort--><rect codeLine="31" fill="#FEFECE" height="174.5563" id="Ort" rx="3.85" ry="3.85" style="stroke:#A80036;stroke-width:1.6500000000000001;" width="132" x="1085.7" y="970.2"/><ellipse cx="1138.225" cy="987.8" fill="#ADD1B2" rx="12.1" ry="12.1" style="stroke:#A80036;stroke-width:1.1;"/><path d="M1140.425,983.95 Q1140.6484,983.4 1140.9063,983.125 Q1141.1641,982.85 1141.4563,982.85 Q1141.9719,982.85 1142.2984,983.1594 Q1142.625,983.4688 1142.625,984.1906 L1142.625,985.9094 Q1142.625,986.6313 1142.3156,986.9406 Q1142.0063,987.25 1141.525,987.25 Q1141.0953,987.25 1140.8203,987.0609 Q1140.5453,986.8719 1140.425,986.3734 Q1140.3734,986.0297 1140.1844,985.8406 Q1139.8406,985.4797 1139.2219,985.2734 Q1138.6031,985.05 1137.9844,985.05 Q1137.2109,985.05 1136.5578,985.3594 Q1135.9219,985.6688 1135.4234,986.3563 Q1134.925,987.0438 1134.925,987.9891 L1134.925,989.0031 Q1134.925,990.1375 1135.8531,990.8938 Q1136.7813,991.65 1138.4313,991.65 Q1139.4109,991.65 1140.0984,991.4266 Q1140.4938,991.3063 1140.9406,990.9109 Q1141.2328,990.6875 1141.3875,990.6188 Q1141.5422,990.55 1141.7313,990.55 Q1142.0922,990.55 1142.35,990.8422 Q1142.625,991.1172 1142.625,991.5125 Q1142.625,991.8906 1142.2469,992.3375 Q1141.6969,992.9906 1140.8203,993.3516 Q1139.6688,993.85 1138.2594,993.85 Q1136.6094,993.85 1135.2859,993.1969 Q1134.2203,992.6813 1133.4641,991.5641 Q1132.725,990.4469 1132.725,989.1234 L1132.725,987.9203 Q1132.725,986.5453 1133.3781,985.3422 Q1134.0484,984.1391 1135.2,983.5031 Q1136.3688,982.85 1137.675,982.85 Q1138.4656,982.85 1139.1531,983.125 Q1139.8406,983.4 1140.425,983.95 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="13.2" lengthAdjust="spacing" textLength="17.6" x="1160.775" y="993.2012">Ort</text><line style="stroke:#A80036;stroke-width:1.6500000000000001;" x1="1086.8" x2="1216.6" y1="1005.4" y2="1005.4"/><rect fill="none" height="6.6" style="stroke:#C82930;stroke-width:1.1;" width="6.6" x="1094.5" y="1014.2"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="80.3" x="1107.7" y="1022.3608">longitude : float</text><rect fill="none" height="6.6" style="stroke:#C82930;stroke-width:1.1;" width="6.6" x="1094.5" y="1029.4195"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="70.4" x="1107.7" y="1037.5804">latitude : float</text><rect fill="none" height="6.6" style="stroke:#C82930;stroke-width:1.1;" width="6.6" x="1094.5" y="1044.6391"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="82.5" x="1107.7" y="1052.7999">Strasse : String</text><rect fill="none" height="6.6" style="stroke:#C82930;stroke-width:1.1;" width="6.6" x="1094.5" y="1059.8586"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="91.3" x="1107.7" y="1068.0194">Hausnummer : int</text><rect fill="none" height="6.6" style="stroke:#C82930;stroke-width:1.1;" width="6.6" x="1094.5" y="1075.0781"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="78.1" x="1107.7" y="1083.239">Zusatz : String</text><rect fill="none" height="6.6" style="stroke:#C82930;stroke-width:1.1;" width="6.6" x="1094.5" y="1090.2977"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="56.1" x="1107.7" y="1098.4585">Plz : String</text><rect fill="none" height="6.6" style="stroke:#C82930;stroke-width:1.1;" width="6.6" x="1094.5" y="1105.5172"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="68.2" x="1107.7" y="1113.678">Stadt : String</text><rect fill="none" height="6.6" style="stroke:#C82930;stroke-width:1.1;" width="6.6" x="1094.5" y="1120.7367"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="103.4" x="1107.7" y="1128.8976">Bundesland : String</text><line style="stroke:#A80036;stroke-width:1.6500000000000001;" x1="1086.8" x2="1216.6" y1="1135.9563" y2="1135.9563"/><!--MD5=[46af90cad675ce6530d17991a87c0171]
+class Lagerhalter--><rect codeLine="42" fill="#FEFECE" height="113.6781" id="Lagerhalter" rx="3.85" ry="3.85" style="stroke:#A80036;stroke-width:1.6500000000000001;" width="132" x="797.5" y="365.2"/><ellipse cx="826.375" cy="382.8" fill="#ADD1B2" rx="12.1" ry="12.1" style="stroke:#A80036;stroke-width:1.1;"/><path d="M828.575,378.95 Q828.7984,378.4 829.0563,378.125 Q829.3141,377.85 829.6063,377.85 Q830.1219,377.85 830.4484,378.1594 Q830.775,378.4688 830.775,379.1906 L830.775,380.9094 Q830.775,381.6313 830.4656,381.9406 Q830.1563,382.25 829.675,382.25 Q829.2453,382.25 828.9703,382.0609 Q828.6953,381.8719 828.575,381.3734 Q828.5234,381.0297 828.3344,380.8406 Q827.9906,380.4797 827.3719,380.2734 Q826.7531,380.05 826.1344,380.05 Q825.3609,380.05 824.7078,380.3594 Q824.0719,380.6688 823.5734,381.3563 Q823.075,382.0438 823.075,382.9891 L823.075,384.0031 Q823.075,385.1375 824.0031,385.8938 Q824.9313,386.65 826.5813,386.65 Q827.5609,386.65 828.2484,386.4266 Q828.6438,386.3063 829.0906,385.9109 Q829.3828,385.6875 829.5375,385.6188 Q829.6922,385.55 829.8813,385.55 Q830.2422,385.55 830.5,385.8422 Q830.775,386.1172 830.775,386.5125 Q830.775,386.8906 830.3969,387.3375 Q829.8469,387.9906 828.9703,388.3516 Q827.8188,388.85 826.4094,388.85 Q824.7594,388.85 823.4359,388.1969 Q822.3703,387.6813 821.6141,386.5641 Q820.875,385.4469 820.875,384.1234 L820.875,382.9203 Q820.875,381.5453 821.5281,380.3422 Q822.1984,379.1391 823.35,378.5031 Q824.5188,377.85 825.825,377.85 Q826.6156,377.85 827.3031,378.125 Q827.9906,378.4 828.575,378.95 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="13.2" lengthAdjust="spacing" textLength="69.3" x="844.525" y="388.2012">Lagerhalter</text><line style="stroke:#A80036;stroke-width:1.6500000000000001;" x1="798.6" x2="928.4" y1="400.4" y2="400.4"/><rect fill="none" height="6.6" style="stroke:#C82930;stroke-width:1.1;" width="6.6" x="806.3" y="409.2"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="103.4" x="819.5" y="417.3608">Lager : List&lt;Lager&gt;</text><line style="stroke:#A80036;stroke-width:1.6500000000000001;" x1="798.6" x2="928.4" y1="424.4195" y2="424.4195"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="92.4" x="804.1" y="441.3804">AddLager(Lager)</text><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="91.3" x="804.1" y="456.5999">RemoveLager(id)</text><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="89.1" x="804.1" y="471.8194">EditLager(Lager)</text><!--MD5=[860833642c0535e880b23782329a64b1]
+class FahrzeugController--><rect codeLine="48" fill="#FEFECE" height="128.8977" id="FahrzeugController" rx="3.85" ry="3.85" style="stroke:#A80036;stroke-width:1.6500000000000001;" width="150.7" x="255.75" y="45.65"/><ellipse cx="272.25" cy="63.25" fill="#ADD1B2" rx="12.1" ry="12.1" style="stroke:#A80036;stroke-width:1.1;"/><path d="M274.45,59.4 Q274.6734,58.85 274.9313,58.575 Q275.1891,58.3 275.4813,58.3 Q275.9969,58.3 276.3234,58.6094 Q276.65,58.9188 276.65,59.6406 L276.65,61.3594 Q276.65,62.0813 276.3406,62.3906 Q276.0313,62.7 275.55,62.7 Q275.1203,62.7 274.8453,62.5109 Q274.5703,62.3219 274.45,61.8234 Q274.3984,61.4797 274.2094,61.2906 Q273.8656,60.9297 273.2469,60.7234 Q272.6281,60.5 272.0094,60.5 Q271.2359,60.5 270.5828,60.8094 Q269.9469,61.1188 269.4484,61.8063 Q268.95,62.4938 268.95,63.4391 L268.95,64.4531 Q268.95,65.5875 269.8781,66.3438 Q270.8063,67.1 272.4563,67.1 Q273.4359,67.1 274.1234,66.8766 Q274.5188,66.7563 274.9656,66.3609 Q275.2578,66.1375 275.4125,66.0688 Q275.5672,66 275.7563,66 Q276.1172,66 276.375,66.2922 Q276.65,66.5672 276.65,66.9625 Q276.65,67.3406 276.2719,67.7875 Q275.7219,68.4406 274.8453,68.8016 Q273.6938,69.3 272.2844,69.3 Q270.6344,69.3 269.3109,68.6469 Q268.2453,68.1313 267.4891,67.0141 Q266.75,65.8969 266.75,64.5734 L266.75,63.3703 Q266.75,61.9953 267.4031,60.7922 Q268.0734,59.5891 269.225,58.9531 Q270.3938,58.3 271.7,58.3 Q272.4906,58.3 273.1781,58.575 Q273.8656,58.85 274.45,59.4 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="13.2" lengthAdjust="spacing" textLength="115.5" x="287.65" y="68.6512">FahrzeugController</text><line style="stroke:#A80036;stroke-width:1.6500000000000001;" x1="256.85" x2="405.35" y1="80.85" y2="80.85"/><line style="stroke:#A80036;stroke-width:1.6500000000000001;" x1="256.85" x2="405.35" y1="89.65" y2="89.65"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="86.9" x="262.35" y="106.6108">GetFahrzeug(id)</text><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="84.7" x="262.35" y="121.8304">GetFahrzeuge()</text><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="132" x="262.35" y="137.0499">AddFahrzeug(Fahrzeug)</text><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="111.1" x="262.35" y="152.2694">RemoveFahrzeug(id)</text><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="128.7" x="262.35" y="167.489">EditFahrzeug(Fahrzeug)</text><!--MD5=[82f740c19873f6616f6e9cba47b2e277]
+class Einlagerer--><rect codeLine="55" fill="#FEFECE" height="174.5563" id="Einlagerer" rx="3.85" ry="3.85" style="stroke:#A80036;stroke-width:1.6500000000000001;" width="178.2" x="462" y="334.4"/><ellipse cx="515.075" cy="352" fill="#ADD1B2" rx="12.1" ry="12.1" style="stroke:#A80036;stroke-width:1.1;"/><path d="M517.275,348.15 Q517.4984,347.6 517.7563,347.325 Q518.0141,347.05 518.3063,347.05 Q518.8219,347.05 519.1484,347.3594 Q519.475,347.6688 519.475,348.3906 L519.475,350.1094 Q519.475,350.8313 519.1656,351.1406 Q518.8563,351.45 518.375,351.45 Q517.9453,351.45 517.6703,351.2609 Q517.3953,351.0719 517.275,350.5734 Q517.2234,350.2297 517.0344,350.0406 Q516.6906,349.6797 516.0719,349.4734 Q515.4531,349.25 514.8344,349.25 Q514.0609,349.25 513.4078,349.5594 Q512.7719,349.8688 512.2734,350.5563 Q511.775,351.2438 511.775,352.1891 L511.775,353.2031 Q511.775,354.3375 512.7031,355.0938 Q513.6313,355.85 515.2813,355.85 Q516.2609,355.85 516.9484,355.6266 Q517.3438,355.5063 517.7906,355.1109 Q518.0828,354.8875 518.2375,354.8188 Q518.3922,354.75 518.5813,354.75 Q518.9422,354.75 519.2,355.0422 Q519.475,355.3172 519.475,355.7125 Q519.475,356.0906 519.0969,356.5375 Q518.5469,357.1906 517.6703,357.5516 Q516.5188,358.05 515.1094,358.05 Q513.4594,358.05 512.1359,357.3969 Q511.0703,356.8813 510.3141,355.7641 Q509.575,354.6469 509.575,353.3234 L509.575,352.1203 Q509.575,350.7453 510.2281,349.5422 Q510.8984,348.3391 512.05,347.7031 Q513.2188,347.05 514.525,347.05 Q515.3156,347.05 516.0031,347.325 Q516.6906,347.6 517.275,348.15 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="13.2" lengthAdjust="spacing" textLength="62.7" x="537.625" y="357.4012">Einlagerer</text><line style="stroke:#A80036;stroke-width:1.6500000000000001;" x1="463.1" x2="639.1" y1="369.6" y2="369.6"/><rect fill="none" height="6.6" style="stroke:#C82930;stroke-width:1.1;" width="6.6" x="470.8" y="378.4"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="149.6" x="484" y="386.5608">Fahrzeuge : List&lt;Fahrzeug&gt;</text><line style="stroke:#A80036;stroke-width:1.6500000000000001;" x1="463.1" x2="639.1" y1="393.6195" y2="393.6195"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="118.8" x="468.6" y="410.5804">CreateAnfrage(Lager)</text><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="137.5" x="468.6" y="425.7999">BookStellplatz(stellplatzId)</text><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="105.6" x="468.6" y="441.0194">SearchLager(Stadt)</text><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="128.7" x="468.6" y="456.239">RequestAngebot(Lager)</text><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="102.3" x="468.6" y="471.4585">SearchErsatzteile()</text><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="106.7" x="468.6" y="486.678">BookService(Lager)</text><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="128.7" x="468.6" y="501.8976">ReserveArtikel(ArtikelId)</text><!--MD5=[f73fcac5efa58ac81ea6c4d5296cfef8]
+class WerkstattInhaber--><rect codeLine="67" fill="#FEFECE" height="113.6781" id="WerkstattInhaber" rx="3.85" ry="3.85" style="stroke:#A80036;stroke-width:1.6500000000000001;" width="198" x="997.7" y="365.2"/><ellipse cx="1041.425" cy="382.8" fill="#ADD1B2" rx="12.1" ry="12.1" style="stroke:#A80036;stroke-width:1.1;"/><path d="M1043.625,378.95 Q1043.8484,378.4 1044.1063,378.125 Q1044.3641,377.85 1044.6563,377.85 Q1045.1719,377.85 1045.4984,378.1594 Q1045.825,378.4688 1045.825,379.1906 L1045.825,380.9094 Q1045.825,381.6313 1045.5156,381.9406 Q1045.2063,382.25 1044.725,382.25 Q1044.2953,382.25 1044.0203,382.0609 Q1043.7453,381.8719 1043.625,381.3734 Q1043.5734,381.0297 1043.3844,380.8406 Q1043.0406,380.4797 1042.4219,380.2734 Q1041.8031,380.05 1041.1844,380.05 Q1040.4109,380.05 1039.7578,380.3594 Q1039.1219,380.6688 1038.6234,381.3563 Q1038.125,382.0438 1038.125,382.9891 L1038.125,384.0031 Q1038.125,385.1375 1039.0531,385.8938 Q1039.9813,386.65 1041.6313,386.65 Q1042.6109,386.65 1043.2984,386.4266 Q1043.6938,386.3063 1044.1406,385.9109 Q1044.4328,385.6875 1044.5875,385.6188 Q1044.7422,385.55 1044.9313,385.55 Q1045.2922,385.55 1045.55,385.8422 Q1045.825,386.1172 1045.825,386.5125 Q1045.825,386.8906 1045.4469,387.3375 Q1044.8969,387.9906 1044.0203,388.3516 Q1042.8688,388.85 1041.4594,388.85 Q1039.8094,388.85 1038.4859,388.1969 Q1037.4203,387.6813 1036.6641,386.5641 Q1035.925,385.4469 1035.925,384.1234 L1035.925,382.9203 Q1035.925,381.5453 1036.5781,380.3422 Q1037.2484,379.1391 1038.4,378.5031 Q1039.5688,377.85 1040.875,377.85 Q1041.6656,377.85 1042.3531,378.125 Q1043.0406,378.4 1043.625,378.95 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="13.2" lengthAdjust="spacing" textLength="102.3" x="1062.875" y="388.2012">WerkstattInhaber</text><line style="stroke:#A80036;stroke-width:1.6500000000000001;" x1="998.8" x2="1194.6" y1="400.4" y2="400.4"/><rect fill="none" height="6.6" style="stroke:#C82930;stroke-width:1.1;" width="6.6" x="1006.5" y="409.2"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="169.4" x="1019.7" y="417.3608">Werkstaette : List&lt;Werkstaette&gt;</text><line style="stroke:#A80036;stroke-width:1.6500000000000001;" x1="998.8" x2="1194.6" y1="424.4195" y2="424.4195"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="132" x="1004.3" y="441.3804">AddWerkstatt(Werkstatt)</text><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="111.1" x="1004.3" y="456.5999">RemoveWerkstatt(id)</text><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="128.7" x="1004.3" y="471.8194">EditWerkstatt(Werkstatt)</text><!--MD5=[af30e620ee7d9908b67e3bdbb5c1b943]
+class Ersatzteilhandler--><rect codeLine="74" fill="#FEFECE" height="113.6781" id="Ersatzteilhandler" rx="3.85" ry="3.85" style="stroke:#A80036;stroke-width:1.6500000000000001;" width="211.2" x="1234.2" y="365.2"/><ellipse cx="1284.525" cy="382.8" fill="#ADD1B2" rx="12.1" ry="12.1" style="stroke:#A80036;stroke-width:1.1;"/><path d="M1286.725,378.95 Q1286.9484,378.4 1287.2063,378.125 Q1287.4641,377.85 1287.7563,377.85 Q1288.2719,377.85 1288.5984,378.1594 Q1288.925,378.4688 1288.925,379.1906 L1288.925,380.9094 Q1288.925,381.6313 1288.6156,381.9406 Q1288.3063,382.25 1287.825,382.25 Q1287.3953,382.25 1287.1203,382.0609 Q1286.8453,381.8719 1286.725,381.3734 Q1286.6734,381.0297 1286.4844,380.8406 Q1286.1406,380.4797 1285.5219,380.2734 Q1284.9031,380.05 1284.2844,380.05 Q1283.5109,380.05 1282.8578,380.3594 Q1282.2219,380.6688 1281.7234,381.3563 Q1281.225,382.0438 1281.225,382.9891 L1281.225,384.0031 Q1281.225,385.1375 1282.1531,385.8938 Q1283.0813,386.65 1284.7313,386.65 Q1285.7109,386.65 1286.3984,386.4266 Q1286.7938,386.3063 1287.2406,385.9109 Q1287.5328,385.6875 1287.6875,385.6188 Q1287.8422,385.55 1288.0313,385.55 Q1288.3922,385.55 1288.65,385.8422 Q1288.925,386.1172 1288.925,386.5125 Q1288.925,386.8906 1288.5469,387.3375 Q1287.9969,387.9906 1287.1203,388.3516 Q1285.9688,388.85 1284.5594,388.85 Q1282.9094,388.85 1281.5859,388.1969 Q1280.5203,387.6813 1279.7641,386.5641 Q1279.025,385.4469 1279.025,384.1234 L1279.025,382.9203 Q1279.025,381.5453 1279.6781,380.3422 Q1280.3484,379.1391 1281.5,378.5031 Q1282.6688,377.85 1283.975,377.85 Q1284.7656,377.85 1285.4531,378.125 Q1286.1406,378.4 1286.725,378.95 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="13.2" lengthAdjust="spacing" textLength="101.2" x="1307.075" y="388.2012">Ersatzteilhandler</text><line style="stroke:#A80036;stroke-width:1.6500000000000001;" x1="1235.3" x2="1444.3" y1="400.4" y2="400.4"/><rect fill="none" height="6.6" style="stroke:#C82930;stroke-width:1.1;" width="6.6" x="1243" y="409.2"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="182.6" x="1256.2" y="417.3608">Unternehmen : List&lt;Unternehmen&gt;</text><line style="stroke:#A80036;stroke-width:1.6500000000000001;" x1="1235.3" x2="1444.3" y1="424.4195" y2="424.4195"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="171.6" x="1240.8" y="441.3804">AddUnternehmen(Unternehmen)</text><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="130.9" x="1240.8" y="456.5999">RemoveUnternehmen(id)</text><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="168.3" x="1240.8" y="471.8194">EditUnternehmen(Unternehmen)</text><!--MD5=[af65a2f22b8cbdd7f9f9ac29072c145a]
+class Stellplatz--><rect codeLine="81" fill="#FEFECE" height="83.2391" id="Stellplatz" rx="3.85" ry="3.85" style="stroke:#A80036;stroke-width:1.6500000000000001;" width="154" x="215.6" y="1015.85"/><ellipse cx="261.305" cy="1033.45" fill="#ADD1B2" rx="12.1" ry="12.1" style="stroke:#A80036;stroke-width:1.1;"/><path d="M263.505,1029.6 Q263.7284,1029.05 263.9863,1028.775 Q264.2441,1028.5 264.5363,1028.5 Q265.0519,1028.5 265.3784,1028.8094 Q265.705,1029.1188 265.705,1029.8406 L265.705,1031.5594 Q265.705,1032.2813 265.3956,1032.5906 Q265.0863,1032.9 264.605,1032.9 Q264.1753,1032.9 263.9003,1032.7109 Q263.6253,1032.5219 263.505,1032.0234 Q263.4534,1031.6797 263.2644,1031.4906 Q262.9206,1031.1297 262.3019,1030.9234 Q261.6831,1030.7 261.0644,1030.7 Q260.2909,1030.7 259.6378,1031.0094 Q259.0019,1031.3188 258.5034,1032.0063 Q258.005,1032.6938 258.005,1033.6391 L258.005,1034.6531 Q258.005,1035.7875 258.9331,1036.5438 Q259.8613,1037.3 261.5113,1037.3 Q262.4909,1037.3 263.1784,1037.0766 Q263.5738,1036.9563 264.0206,1036.5609 Q264.3128,1036.3375 264.4675,1036.2688 Q264.6222,1036.2 264.8113,1036.2 Q265.1722,1036.2 265.43,1036.4922 Q265.705,1036.7672 265.705,1037.1625 Q265.705,1037.5406 265.3269,1037.9875 Q264.7769,1038.6406 263.9003,1039.0016 Q262.7488,1039.5 261.3394,1039.5 Q259.6894,1039.5 258.3659,1038.8469 Q257.3003,1038.3313 256.5441,1037.2141 Q255.805,1036.0969 255.805,1034.7734 L255.805,1033.5703 Q255.805,1032.1953 256.4581,1030.9922 Q257.1284,1029.7891 258.28,1029.1531 Q259.4488,1028.5 260.755,1028.5 Q261.5456,1028.5 262.2331,1028.775 Q262.9206,1029.05 263.505,1029.6 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="13.2" lengthAdjust="spacing" textLength="53.9" x="283.195" y="1038.8512">Stellplatz</text><line style="stroke:#A80036;stroke-width:1.6500000000000001;" x1="216.7" x2="368.5" y1="1051.05" y2="1051.05"/><ellipse cx="227.7" cy="1063.15" rx="3.3" ry="3.3" style="stroke:#038048;stroke-width:1.1;fill:none;"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="125.4" x="237.6" y="1068.0108">IstVerfuegbar : boolean</text><rect fill="none" height="6.6" style="stroke:#C82930;stroke-width:1.1;" width="6.6" x="224.4" y="1075.0695"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="119.9" x="237.6" y="1083.2304">Massen : List&lt;Double&gt;</text><line style="stroke:#A80036;stroke-width:1.6500000000000001;" x1="216.7" x2="368.5" y1="1090.2891" y2="1090.2891"/><!--MD5=[7bd246584a64dd4b0f566e68c9a4a068]
+class Fahrzeug--><rect codeLine="86" fill="#FEFECE" height="174.5563" id="Fahrzeug" rx="3.85" ry="3.85" style="stroke:#A80036;stroke-width:1.6500000000000001;" width="190.3" x="174.35" y="334.4"/><ellipse cx="236.775" cy="352" fill="#ADD1B2" rx="12.1" ry="12.1" style="stroke:#A80036;stroke-width:1.1;"/><path d="M238.975,348.15 Q239.1984,347.6 239.4563,347.325 Q239.7141,347.05 240.0063,347.05 Q240.5219,347.05 240.8484,347.3594 Q241.175,347.6688 241.175,348.3906 L241.175,350.1094 Q241.175,350.8313 240.8656,351.1406 Q240.5563,351.45 240.075,351.45 Q239.6453,351.45 239.3703,351.2609 Q239.0953,351.0719 238.975,350.5734 Q238.9234,350.2297 238.7344,350.0406 Q238.3906,349.6797 237.7719,349.4734 Q237.1531,349.25 236.5344,349.25 Q235.7609,349.25 235.1078,349.5594 Q234.4719,349.8688 233.9734,350.5563 Q233.475,351.2438 233.475,352.1891 L233.475,353.2031 Q233.475,354.3375 234.4031,355.0938 Q235.3313,355.85 236.9813,355.85 Q237.9609,355.85 238.6484,355.6266 Q239.0438,355.5063 239.4906,355.1109 Q239.7828,354.8875 239.9375,354.8188 Q240.0922,354.75 240.2813,354.75 Q240.6422,354.75 240.9,355.0422 Q241.175,355.3172 241.175,355.7125 Q241.175,356.0906 240.7969,356.5375 Q240.2469,357.1906 239.3703,357.5516 Q238.2188,358.05 236.8094,358.05 Q235.1594,358.05 233.8359,357.3969 Q232.7703,356.8813 232.0141,355.7641 Q231.275,354.6469 231.275,353.3234 L231.275,352.1203 Q231.275,350.7453 231.9281,349.5422 Q232.5984,348.3391 233.75,347.7031 Q234.9188,347.05 236.225,347.05 Q237.0156,347.05 237.7031,347.325 Q238.3906,347.6 238.975,348.15 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="13.2" lengthAdjust="spacing" textLength="56.1" x="259.325" y="357.4012">Fahrzeug</text><line style="stroke:#A80036;stroke-width:1.6500000000000001;" x1="175.45" x2="363.55" y1="369.6" y2="369.6"/><rect fill="none" height="6.6" style="stroke:#C82930;stroke-width:1.1;" width="6.6" x="183.15" y="378.4"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="30.8" x="196.35" y="386.5608">Id : int</text><rect fill="none" height="6.6" style="stroke:#C82930;stroke-width:1.1;" width="6.6" x="183.15" y="393.6195"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="161.7" x="196.35" y="401.7804">Kategorie : FahrzeugKategorie</text><rect fill="none" height="6.6" style="stroke:#C82930;stroke-width:1.1;" width="6.6" x="183.15" y="408.8391"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="124.3" x="196.35" y="416.9999">Marke : Fahrzeugmarke</text><rect fill="none" height="6.6" style="stroke:#C82930;stroke-width:1.1;" width="6.6" x="183.15" y="424.0586"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="73.7" x="196.35" y="432.2194">Modell : String</text><ellipse cx="186.45" cy="442.5781" rx="3.3" ry="3.3" style="stroke:#038048;stroke-width:1.1;fill:none;"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="117.7" x="196.35" y="447.439">IstFahrbereit : boolean</text><ellipse cx="186.45" cy="457.7977" rx="3.3" ry="3.3" style="stroke:#038048;stroke-width:1.1;fill:none;"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="117.7" x="196.35" y="462.6585">IstInWartung : boolean</text><rect fill="none" height="6.6" style="stroke:#C82930;stroke-width:1.1;" width="6.6" x="183.15" y="469.7172"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="101.2" x="196.35" y="477.878">Anmerkung : String</text><line style="stroke:#A80036;stroke-width:1.6500000000000001;" x1="175.45" x2="363.55" y1="484.9367" y2="484.9367"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="121" x="180.95" y="501.8976">AddAnmerkung(string)</text><!--MD5=[31125956692c594013a7992b37afcc41]
+class Termin--><rect codeLine="97" fill="#FEFECE" height="159.3367" id="Termin" rx="3.85" ry="3.85" style="stroke:#A80036;stroke-width:1.6500000000000001;" width="166.1" x="782.65" y="650.65"/><ellipse cx="839.575" cy="668.25" fill="#ADD1B2" rx="12.1" ry="12.1" style="stroke:#A80036;stroke-width:1.1;"/><path d="M841.775,664.4 Q841.9984,663.85 842.2563,663.575 Q842.5141,663.3 842.8063,663.3 Q843.3219,663.3 843.6484,663.6094 Q843.975,663.9188 843.975,664.6406 L843.975,666.3594 Q843.975,667.0813 843.6656,667.3906 Q843.3563,667.7 842.875,667.7 Q842.4453,667.7 842.1703,667.5109 Q841.8953,667.3219 841.775,666.8234 Q841.7234,666.4797 841.5344,666.2906 Q841.1906,665.9297 840.5719,665.7234 Q839.9531,665.5 839.3344,665.5 Q838.5609,665.5 837.9078,665.8094 Q837.2719,666.1188 836.7734,666.8063 Q836.275,667.4938 836.275,668.4391 L836.275,669.4531 Q836.275,670.5875 837.2031,671.3438 Q838.1313,672.1 839.7813,672.1 Q840.7609,672.1 841.4484,671.8766 Q841.8438,671.7563 842.2906,671.3609 Q842.5828,671.1375 842.7375,671.0688 Q842.8922,671 843.0813,671 Q843.4422,671 843.7,671.2922 Q843.975,671.5672 843.975,671.9625 Q843.975,672.3406 843.5969,672.7875 Q843.0469,673.4406 842.1703,673.8016 Q841.0188,674.3 839.6094,674.3 Q837.9594,674.3 836.6359,673.6469 Q835.5703,673.1313 834.8141,672.0141 Q834.075,670.8969 834.075,669.5734 L834.075,668.3703 Q834.075,666.9953 834.7281,665.7922 Q835.3984,664.5891 836.55,663.9531 Q837.7188,663.3 839.025,663.3 Q839.8156,663.3 840.5031,663.575 Q841.1906,663.85 841.775,664.4 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="13.2" lengthAdjust="spacing" textLength="42.9" x="862.125" y="673.6512">Termin</text><line style="stroke:#A80036;stroke-width:1.6500000000000001;" x1="783.75" x2="947.65" y1="685.85" y2="685.85"/><rect fill="none" height="6.6" style="stroke:#C82930;stroke-width:1.1;" width="6.6" x="791.45" y="694.65"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="30.8" x="804.65" y="702.8108">Id : int</text><rect fill="none" height="6.6" style="stroke:#C82930;stroke-width:1.1;" width="6.6" x="791.45" y="709.8695"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="137.5" x="804.65" y="718.0304">Beteiligte : List&lt;Benutzer&gt;</text><rect fill="none" height="6.6" style="stroke:#C82930;stroke-width:1.1;" width="6.6" x="791.45" y="725.0891"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="42.9" x="804.65" y="733.2499">Ort : Ort</text><rect fill="none" height="6.6" style="stroke:#C82930;stroke-width:1.1;" width="6.6" x="791.45" y="740.3086"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="67.1" x="804.65" y="748.4694">Datum : Date</text><rect fill="none" height="6.6" style="stroke:#C82930;stroke-width:1.1;" width="6.6" x="791.45" y="755.5281"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="77" x="804.65" y="763.689">Dauer : double</text><rect fill="none" height="6.6" style="stroke:#C82930;stroke-width:1.1;" width="6.6" x="791.45" y="770.7477"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="78.1" x="804.65" y="778.9085">Zweck : String</text><line style="stroke:#A80036;stroke-width:1.6500000000000001;" x1="783.75" x2="947.65" y1="785.9672" y2="785.9672"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="35.2" x="789.25" y="802.928">Book()</text><!--MD5=[dbb8b4f13c7b21394f9d757e58732f45]
+class Service--><rect codeLine="107" fill="#FEFECE" height="83.2391" id="Service" rx="3.85" ry="3.85" style="stroke:#A80036;stroke-width:1.6500000000000001;" width="96.8" x="950.4" y="1015.85"/><ellipse cx="974.82" cy="1033.45" fill="#ADD1B2" rx="12.1" ry="12.1" style="stroke:#A80036;stroke-width:1.1;"/><path d="M977.02,1029.6 Q977.2434,1029.05 977.5013,1028.775 Q977.7591,1028.5 978.0513,1028.5 Q978.5669,1028.5 978.8934,1028.8094 Q979.22,1029.1188 979.22,1029.8406 L979.22,1031.5594 Q979.22,1032.2813 978.9106,1032.5906 Q978.6013,1032.9 978.12,1032.9 Q977.6903,1032.9 977.4153,1032.7109 Q977.1403,1032.5219 977.02,1032.0234 Q976.9684,1031.6797 976.7794,1031.4906 Q976.4356,1031.1297 975.8169,1030.9234 Q975.1981,1030.7 974.5794,1030.7 Q973.8059,1030.7 973.1528,1031.0094 Q972.5169,1031.3188 972.0184,1032.0063 Q971.52,1032.6938 971.52,1033.6391 L971.52,1034.6531 Q971.52,1035.7875 972.4481,1036.5438 Q973.3763,1037.3 975.0263,1037.3 Q976.0059,1037.3 976.6934,1037.0766 Q977.0888,1036.9563 977.5356,1036.5609 Q977.8278,1036.3375 977.9825,1036.2688 Q978.1372,1036.2 978.3263,1036.2 Q978.6872,1036.2 978.945,1036.4922 Q979.22,1036.7672 979.22,1037.1625 Q979.22,1037.5406 978.8419,1037.9875 Q978.2919,1038.6406 977.4153,1039.0016 Q976.2638,1039.5 974.8544,1039.5 Q973.2044,1039.5 971.8809,1038.8469 Q970.8153,1038.3313 970.0591,1037.2141 Q969.32,1036.0969 969.32,1034.7734 L969.32,1033.5703 Q969.32,1032.1953 969.9731,1030.9922 Q970.6434,1029.7891 971.795,1029.1531 Q972.9638,1028.5 974.27,1028.5 Q975.0606,1028.5 975.7481,1028.775 Q976.4356,1029.05 977.02,1029.6 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="13.2" lengthAdjust="spacing" textLength="44" x="991.98" y="1038.8512">Service</text><line style="stroke:#A80036;stroke-width:1.6500000000000001;" x1="951.5" x2="1046.1" y1="1051.05" y2="1051.05"/><rect fill="none" height="6.6" style="stroke:#C82930;stroke-width:1.1;" width="6.6" x="959.2" y="1059.85"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="45.1" x="972.4" y="1068.0108">Anbieter</text><line style="stroke:#A80036;stroke-width:1.6500000000000001;" x1="951.5" x2="1046.1" y1="1075.0695" y2="1075.0695"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="83.6" x="957" y="1092.0304">Book(Benutzer)</text><!--MD5=[34cf64358feb369e2ad86ddbb597b380]
+class Lager--><rect codeLine="112" fill="#FEFECE" height="235.4344" id="Lager" rx="3.85" ry="3.85" style="stroke:#A80036;stroke-width:1.6500000000000001;" width="215.6" x="528" y="612.7"/><ellipse cx="613.525" cy="630.3" fill="#ADD1B2" rx="12.1" ry="12.1" style="stroke:#A80036;stroke-width:1.1;"/><path d="M615.725,626.45 Q615.9484,625.9 616.2063,625.625 Q616.4641,625.35 616.7563,625.35 Q617.2719,625.35 617.5984,625.6594 Q617.925,625.9688 617.925,626.6906 L617.925,628.4094 Q617.925,629.1313 617.6156,629.4406 Q617.3063,629.75 616.825,629.75 Q616.3953,629.75 616.1203,629.5609 Q615.8453,629.3719 615.725,628.8734 Q615.6734,628.5297 615.4844,628.3406 Q615.1406,627.9797 614.5219,627.7734 Q613.9031,627.55 613.2844,627.55 Q612.5109,627.55 611.8578,627.8594 Q611.2219,628.1688 610.7234,628.8563 Q610.225,629.5438 610.225,630.4891 L610.225,631.5031 Q610.225,632.6375 611.1531,633.3938 Q612.0813,634.15 613.7313,634.15 Q614.7109,634.15 615.3984,633.9266 Q615.7938,633.8063 616.2406,633.4109 Q616.5328,633.1875 616.6875,633.1188 Q616.8422,633.05 617.0313,633.05 Q617.3922,633.05 617.65,633.3422 Q617.925,633.6172 617.925,634.0125 Q617.925,634.3906 617.5469,634.8375 Q616.9969,635.4906 616.1203,635.8516 Q614.9688,636.35 613.5594,636.35 Q611.9094,636.35 610.5859,635.6969 Q609.5203,635.1813 608.7641,634.0641 Q608.025,632.9469 608.025,631.6234 L608.025,630.4203 Q608.025,629.0453 608.6781,627.8422 Q609.3484,626.6391 610.5,626.0031 Q611.6688,625.35 612.975,625.35 Q613.7656,625.35 614.4531,625.625 Q615.1406,625.9 615.725,626.45 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="13.2" lengthAdjust="spacing" textLength="35.2" x="636.075" y="635.7012">Lager</text><line style="stroke:#A80036;stroke-width:1.6500000000000001;" x1="529.1" x2="742.5" y1="647.9" y2="647.9"/><rect fill="none" height="6.6" style="stroke:#C82930;stroke-width:1.1;" width="6.6" x="536.8" y="656.7"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="30.8" x="550" y="664.8608">Id : int</text><rect fill="none" height="6.6" style="stroke:#C82930;stroke-width:1.1;" width="6.6" x="536.8" y="671.9195"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="151.8" x="550" y="680.0804">Konditionen : List&lt;Kondition&gt;</text><rect fill="none" height="6.6" style="stroke:#C82930;stroke-width:1.1;" width="6.6" x="536.8" y="687.1391"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="169.4" x="550" y="695.2999">Werkstaette : List&lt;Werkstaette&gt;</text><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="0" x="553.3" y="710.5194"/><ellipse cx="540.1" cy="720.8781" rx="3.3" ry="3.3" style="stroke:#038048;stroke-width:1.1;fill:none;"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="129.8" x="550" y="725.739">Services : List&lt;Service&gt;</text><rect fill="none" height="6.6" style="stroke:#C82930;stroke-width:1.1;" width="6.6" x="536.8" y="732.7977"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="147.4" x="550" y="740.9585">Einlagerungsbetrag : double</text><rect fill="none" height="6.6" style="stroke:#C82930;stroke-width:1.1;" width="6.6" x="536.8" y="748.0172"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="187" x="550" y="756.178">Servicezeiten : List&lt;Servicezeiten&gt;</text><rect fill="none" height="6.6" style="stroke:#C82930;stroke-width:1.1;" width="6.6" x="536.8" y="763.2367"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="149.6" x="550" y="771.3976">Stellplaetze : List&lt;Stellplatz&gt;</text><rect fill="none" height="6.6" style="stroke:#C82930;stroke-width:1.1;" width="6.6" x="536.8" y="778.4563"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="78.1" x="550" y="786.6171">Kapazitaet : int</text><rect fill="none" height="6.6" style="stroke:#C82930;stroke-width:1.1;" width="6.6" x="536.8" y="793.6758"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="86.9" x="550" y="801.8366">FreiePlaetze : int</text><line style="stroke:#A80036;stroke-width:1.6500000000000001;" x1="529.1" x2="742.5" y1="808.8953" y2="808.8953"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="192.5" x="534.6" y="825.8562">StoreFahrzeug(Fahrzeug, Stellplatz)</text><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="139.7" x="534.6" y="841.0757">CreateAngebot(Werkstatt)</text><!--MD5=[9d3a27a8aec584c5e06e8d70a3003791]
+class Servicezeiten--><rect codeLine="127" fill="#FEFECE" height="83.2391" id="Servicezeiten" rx="3.85" ry="3.85" style="stroke:#A80036;stroke-width:1.6500000000000001;" width="114.4" x="456.5" y="1015.85"/><ellipse cx="473" cy="1033.45" fill="#ADD1B2" rx="12.1" ry="12.1" style="stroke:#A80036;stroke-width:1.1;"/><path d="M475.2,1029.6 Q475.4234,1029.05 475.6813,1028.775 Q475.9391,1028.5 476.2313,1028.5 Q476.7469,1028.5 477.0734,1028.8094 Q477.4,1029.1188 477.4,1029.8406 L477.4,1031.5594 Q477.4,1032.2813 477.0906,1032.5906 Q476.7813,1032.9 476.3,1032.9 Q475.8703,1032.9 475.5953,1032.7109 Q475.3203,1032.5219 475.2,1032.0234 Q475.1484,1031.6797 474.9594,1031.4906 Q474.6156,1031.1297 473.9969,1030.9234 Q473.3781,1030.7 472.7594,1030.7 Q471.9859,1030.7 471.3328,1031.0094 Q470.6969,1031.3188 470.1984,1032.0063 Q469.7,1032.6938 469.7,1033.6391 L469.7,1034.6531 Q469.7,1035.7875 470.6281,1036.5438 Q471.5563,1037.3 473.2063,1037.3 Q474.1859,1037.3 474.8734,1037.0766 Q475.2688,1036.9563 475.7156,1036.5609 Q476.0078,1036.3375 476.1625,1036.2688 Q476.3172,1036.2 476.5063,1036.2 Q476.8672,1036.2 477.125,1036.4922 Q477.4,1036.7672 477.4,1037.1625 Q477.4,1037.5406 477.0219,1037.9875 Q476.4719,1038.6406 475.5953,1039.0016 Q474.4438,1039.5 473.0344,1039.5 Q471.3844,1039.5 470.0609,1038.8469 Q468.9953,1038.3313 468.2391,1037.2141 Q467.5,1036.0969 467.5,1034.7734 L467.5,1033.5703 Q467.5,1032.1953 468.1531,1030.9922 Q468.8234,1029.7891 469.975,1029.1531 Q471.1438,1028.5 472.45,1028.5 Q473.2406,1028.5 473.9281,1028.775 Q474.6156,1029.05 475.2,1029.6 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="13.2" lengthAdjust="spacing" textLength="79.2" x="488.4" y="1038.8512">Servicezeiten</text><line style="stroke:#A80036;stroke-width:1.6500000000000001;" x1="457.6" x2="569.8" y1="1051.05" y2="1051.05"/><rect fill="none" height="6.6" style="stroke:#C82930;stroke-width:1.1;" width="6.6" x="465.3" y="1059.85"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="56.1" x="478.5" y="1068.0108">Von : Date</text><rect fill="none" height="6.6" style="stroke:#C82930;stroke-width:1.1;" width="6.6" x="465.3" y="1075.0695"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="50.6" x="478.5" y="1083.2304">Bis : Date</text><line style="stroke:#A80036;stroke-width:1.6500000000000001;" x1="457.6" x2="569.8" y1="1090.2891" y2="1090.2891"/><!--MD5=[09becafd4221b2910c4a85811339e3f6]
+class ErsatzteilArtikel--><rect codeLine="132" fill="#FEFECE" height="113.6781" id="ErsatzteilArtikel" rx="3.85" ry="3.85" style="stroke:#A80036;stroke-width:1.6500000000000001;" width="158.4" x="1256.2" y="1001"/><ellipse cx="1287.055" cy="1018.6" fill="#ADD1B2" rx="12.1" ry="12.1" style="stroke:#A80036;stroke-width:1.1;"/><path d="M1289.255,1014.75 Q1289.4784,1014.2 1289.7363,1013.925 Q1289.9941,1013.65 1290.2863,1013.65 Q1290.8019,1013.65 1291.1284,1013.9594 Q1291.455,1014.2688 1291.455,1014.9906 L1291.455,1016.7094 Q1291.455,1017.4313 1291.1456,1017.7406 Q1290.8363,1018.05 1290.355,1018.05 Q1289.9253,1018.05 1289.6503,1017.8609 Q1289.3753,1017.6719 1289.255,1017.1734 Q1289.2034,1016.8297 1289.0144,1016.6406 Q1288.6706,1016.2797 1288.0519,1016.0734 Q1287.4331,1015.85 1286.8144,1015.85 Q1286.0409,1015.85 1285.3878,1016.1594 Q1284.7519,1016.4688 1284.2534,1017.1563 Q1283.755,1017.8438 1283.755,1018.7891 L1283.755,1019.8031 Q1283.755,1020.9375 1284.6831,1021.6938 Q1285.6113,1022.45 1287.2613,1022.45 Q1288.2409,1022.45 1288.9284,1022.2266 Q1289.3238,1022.1063 1289.7706,1021.7109 Q1290.0628,1021.4875 1290.2175,1021.4188 Q1290.3722,1021.35 1290.5613,1021.35 Q1290.9222,1021.35 1291.18,1021.6422 Q1291.455,1021.9172 1291.455,1022.3125 Q1291.455,1022.6906 1291.0769,1023.1375 Q1290.5269,1023.7906 1289.6503,1024.1516 Q1288.4988,1024.65 1287.0894,1024.65 Q1285.4394,1024.65 1284.1159,1023.9969 Q1283.0503,1023.4813 1282.2941,1022.3641 Q1281.555,1021.2469 1281.555,1019.9234 L1281.555,1018.7203 Q1281.555,1017.3453 1282.2081,1016.1422 Q1282.8784,1014.9391 1284.03,1014.3031 Q1285.1988,1013.65 1286.505,1013.65 Q1287.2956,1013.65 1287.9831,1013.925 Q1288.6706,1014.2 1289.255,1014.75 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="13.2" lengthAdjust="spacing" textLength="91.3" x="1305.645" y="1024.0012">ErsatzteilArtikel</text><line style="stroke:#A80036;stroke-width:1.6500000000000001;" x1="1257.3" x2="1413.5" y1="1036.2" y2="1036.2"/><rect fill="none" height="6.6" style="stroke:#C82930;stroke-width:1.1;" width="6.6" x="1265" y="1045"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="129.8" x="1278.2" y="1053.1608">Zustand : Artikelzustand</text><rect fill="none" height="6.6" style="stroke:#C82930;stroke-width:1.1;" width="6.6" x="1265" y="1060.2195"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="118.8" x="1278.2" y="1068.3804">IstReserviert : boolean</text><line style="stroke:#A80036;stroke-width:1.6500000000000001;" x1="1257.3" x2="1413.5" y1="1075.4391" y2="1075.4391"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="85.8" x="1262.8" y="1092.3999">MarkReserved()</text><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="82.5" x="1262.8" y="1107.6194">MarkAvalibale()</text><!--MD5=[a52bd2023951d5ba61080116a5fa6ab0]
+class Werkstatt--><rect codeLine="139" fill="#FEFECE" height="83.2391" id="Werkstatt" rx="3.85" ry="3.85" style="stroke:#A80036;stroke-width:1.6500000000000001;" width="242" x="987.8" y="688.6"/><ellipse cx="1076.075" cy="706.2" fill="#ADD1B2" rx="12.1" ry="12.1" style="stroke:#A80036;stroke-width:1.1;"/><path d="M1078.275,702.35 Q1078.4984,701.8 1078.7563,701.525 Q1079.0141,701.25 1079.3063,701.25 Q1079.8219,701.25 1080.1484,701.5594 Q1080.475,701.8688 1080.475,702.5906 L1080.475,704.3094 Q1080.475,705.0313 1080.1656,705.3406 Q1079.8563,705.65 1079.375,705.65 Q1078.9453,705.65 1078.6703,705.4609 Q1078.3953,705.2719 1078.275,704.7734 Q1078.2234,704.4297 1078.0344,704.2406 Q1077.6906,703.8797 1077.0719,703.6734 Q1076.4531,703.45 1075.8344,703.45 Q1075.0609,703.45 1074.4078,703.7594 Q1073.7719,704.0688 1073.2734,704.7563 Q1072.775,705.4438 1072.775,706.3891 L1072.775,707.4031 Q1072.775,708.5375 1073.7031,709.2938 Q1074.6313,710.05 1076.2813,710.05 Q1077.2609,710.05 1077.9484,709.8266 Q1078.3438,709.7063 1078.7906,709.3109 Q1079.0828,709.0875 1079.2375,709.0188 Q1079.3922,708.95 1079.5813,708.95 Q1079.9422,708.95 1080.2,709.2422 Q1080.475,709.5172 1080.475,709.9125 Q1080.475,710.2906 1080.0969,710.7375 Q1079.5469,711.3906 1078.6703,711.7516 Q1077.5188,712.25 1076.1094,712.25 Q1074.4594,712.25 1073.1359,711.5969 Q1072.0703,711.0813 1071.3141,709.9641 Q1070.575,708.8469 1070.575,707.5234 L1070.575,706.3203 Q1070.575,704.9453 1071.2281,703.7422 Q1071.8984,702.5391 1073.05,701.9031 Q1074.2188,701.25 1075.525,701.25 Q1076.3156,701.25 1077.0031,701.525 Q1077.6906,701.8 1078.275,702.35 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="13.2" lengthAdjust="spacing" textLength="56.1" x="1098.625" y="711.6012">Werkstatt</text><line style="stroke:#A80036;stroke-width:1.6500000000000001;" x1="988.9" x2="1228.7" y1="723.8" y2="723.8"/><ellipse cx="999.9" cy="735.9" rx="3.3" ry="3.3" style="stroke:#038048;stroke-width:1.1;fill:none;"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="129.8" x="1009.8" y="740.7608">Services : List&lt;Service&gt;</text><ellipse cx="999.9" cy="751.1195" rx="3.3" ry="3.3" style="stroke:#038048;stroke-width:1.1;fill:none;"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="213.4" x="1009.8" y="755.9804">Fahrzeugmarken : List&lt;Fahrzeugmarke&gt;</text><line style="stroke:#A80036;stroke-width:1.6500000000000001;" x1="988.9" x2="1228.7" y1="763.0391" y2="763.0391"/><!--MD5=[2b1dc33b09e146a77c1273edbd68b088]
+class Unternehmen--><rect codeLine="144" fill="#FEFECE" height="68.0195" id="Unternehmen" rx="3.85" ry="3.85" style="stroke:#A80036;stroke-width:1.6500000000000001;" width="134.2" x="1268.3" y="696.3"/><ellipse cx="1291.73" cy="713.9" fill="#ADD1B2" rx="12.1" ry="12.1" style="stroke:#A80036;stroke-width:1.1;"/><path d="M1293.93,710.05 Q1294.1534,709.5 1294.4113,709.225 Q1294.6691,708.95 1294.9613,708.95 Q1295.4769,708.95 1295.8034,709.2594 Q1296.13,709.5688 1296.13,710.2906 L1296.13,712.0094 Q1296.13,712.7313 1295.8206,713.0406 Q1295.5113,713.35 1295.03,713.35 Q1294.6003,713.35 1294.3253,713.1609 Q1294.0503,712.9719 1293.93,712.4734 Q1293.8784,712.1297 1293.6894,711.9406 Q1293.3456,711.5797 1292.7269,711.3734 Q1292.1081,711.15 1291.4894,711.15 Q1290.7159,711.15 1290.0628,711.4594 Q1289.4269,711.7688 1288.9284,712.4563 Q1288.43,713.1438 1288.43,714.0891 L1288.43,715.1031 Q1288.43,716.2375 1289.3581,716.9938 Q1290.2863,717.75 1291.9363,717.75 Q1292.9159,717.75 1293.6034,717.5266 Q1293.9988,717.4063 1294.4456,717.0109 Q1294.7378,716.7875 1294.8925,716.7188 Q1295.0472,716.65 1295.2363,716.65 Q1295.5972,716.65 1295.855,716.9422 Q1296.13,717.2172 1296.13,717.6125 Q1296.13,717.9906 1295.7519,718.4375 Q1295.2019,719.0906 1294.3253,719.4516 Q1293.1738,719.95 1291.7644,719.95 Q1290.1144,719.95 1288.7909,719.2969 Q1287.7253,718.7813 1286.9691,717.6641 Q1286.23,716.5469 1286.23,715.2234 L1286.23,714.0203 Q1286.23,712.6453 1286.8831,711.4422 Q1287.5534,710.2391 1288.705,709.6031 Q1289.8738,708.95 1291.18,708.95 Q1291.9706,708.95 1292.6581,709.225 Q1293.3456,709.5 1293.93,710.05 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="13.2" lengthAdjust="spacing" textLength="83.6" x="1308.67" y="719.3012">Unternehmen</text><line style="stroke:#A80036;stroke-width:1.6500000000000001;" x1="1269.4" x2="1401.4" y1="731.5" y2="731.5"/><rect fill="none" height="6.6" style="stroke:#C82930;stroke-width:1.1;" width="6.6" x="1277.1" y="740.3"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="105.6" x="1290.3" y="748.4608">Waren : List&lt;Ware&gt;</text><line style="stroke:#A80036;stroke-width:1.6500000000000001;" x1="1269.4" x2="1401.4" y1="755.5195" y2="755.5195"/><!--MD5=[3a51f5f9612cfddd9c6c347bd05cc1ed]
+class Anfrage--><rect codeLine="148" fill="#FEFECE" height="128.8977" id="Anfrage" rx="3.85" ry="3.85" style="stroke:#A80036;stroke-width:1.6500000000000001;" width="119.9" x="491.15" y="45.65"/><ellipse cx="524.975" cy="63.25" fill="#ADD1B2" rx="12.1" ry="12.1" style="stroke:#A80036;stroke-width:1.1;"/><path d="M527.175,59.4 Q527.3984,58.85 527.6563,58.575 Q527.9141,58.3 528.2063,58.3 Q528.7219,58.3 529.0484,58.6094 Q529.375,58.9188 529.375,59.6406 L529.375,61.3594 Q529.375,62.0813 529.0656,62.3906 Q528.7563,62.7 528.275,62.7 Q527.8453,62.7 527.5703,62.5109 Q527.2953,62.3219 527.175,61.8234 Q527.1234,61.4797 526.9344,61.2906 Q526.5906,60.9297 525.9719,60.7234 Q525.3531,60.5 524.7344,60.5 Q523.9609,60.5 523.3078,60.8094 Q522.6719,61.1188 522.1734,61.8063 Q521.675,62.4938 521.675,63.4391 L521.675,64.4531 Q521.675,65.5875 522.6031,66.3438 Q523.5313,67.1 525.1813,67.1 Q526.1609,67.1 526.8484,66.8766 Q527.2438,66.7563 527.6906,66.3609 Q527.9828,66.1375 528.1375,66.0688 Q528.2922,66 528.4813,66 Q528.8422,66 529.1,66.2922 Q529.375,66.5672 529.375,66.9625 Q529.375,67.3406 528.9969,67.7875 Q528.4469,68.4406 527.5703,68.8016 Q526.4188,69.3 525.0094,69.3 Q523.3594,69.3 522.0359,68.6469 Q520.9703,68.1313 520.2141,67.0141 Q519.475,65.8969 519.475,64.5734 L519.475,63.3703 Q519.475,61.9953 520.1281,60.7922 Q520.7984,59.5891 521.95,58.9531 Q523.1188,58.3 524.425,58.3 Q525.2156,58.3 525.9031,58.575 Q526.5906,58.85 527.175,59.4 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="13.2" lengthAdjust="spacing" textLength="46.2" x="544.225" y="68.6512">Anfrage</text><line style="stroke:#A80036;stroke-width:1.6500000000000001;" x1="492.25" x2="609.95" y1="80.85" y2="80.85"/><rect fill="none" height="6.6" style="stroke:#C82930;stroke-width:1.1;" width="6.6" x="499.95" y="89.65"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="30.8" x="513.15" y="97.8108">Id : int</text><rect fill="none" height="6.6" style="stroke:#C82930;stroke-width:1.1;" width="6.6" x="499.95" y="104.8695"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="80.3" x="513.15" y="113.0304">Von : Benutzer</text><rect fill="none" height="6.6" style="stroke:#C82930;stroke-width:1.1;" width="6.6" x="499.95" y="120.0891"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="73.7" x="513.15" y="128.2499">An : Benutzer</text><rect fill="none" height="6.6" style="stroke:#C82930;stroke-width:1.1;" width="6.6" x="499.95" y="135.3086"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="91.3" x="513.15" y="143.4694">Nachricht : String</text><line style="stroke:#A80036;stroke-width:1.6500000000000001;" x1="492.25" x2="609.95" y1="150.5281" y2="150.5281"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="36.3" x="497.75" y="167.489">Send()</text><!--MD5=[f845a18fd2f6961b94cf33dd979781f5]
+class Angebot--><rect codeLine="156" fill="#FEFECE" height="204.9953" id="Angebot" rx="3.85" ry="3.85" style="stroke:#A80036;stroke-width:1.6500000000000001;" width="151.8" x="650.1" y="7.7"/><ellipse cx="696.795" cy="25.3" fill="#ADD1B2" rx="12.1" ry="12.1" style="stroke:#A80036;stroke-width:1.1;"/><path d="M698.995,21.45 Q699.2184,20.9 699.4763,20.625 Q699.7341,20.35 700.0263,20.35 Q700.5419,20.35 700.8684,20.6594 Q701.195,20.9688 701.195,21.6906 L701.195,23.4094 Q701.195,24.1313 700.8856,24.4406 Q700.5763,24.75 700.095,24.75 Q699.6653,24.75 699.3903,24.5609 Q699.1153,24.3719 698.995,23.8734 Q698.9434,23.5297 698.7544,23.3406 Q698.4106,22.9797 697.7919,22.7734 Q697.1731,22.55 696.5544,22.55 Q695.7809,22.55 695.1278,22.8594 Q694.4919,23.1688 693.9934,23.8563 Q693.495,24.5438 693.495,25.4891 L693.495,26.5031 Q693.495,27.6375 694.4231,28.3938 Q695.3513,29.15 697.0013,29.15 Q697.9809,29.15 698.6684,28.9266 Q699.0638,28.8063 699.5106,28.4109 Q699.8028,28.1875 699.9575,28.1188 Q700.1122,28.05 700.3013,28.05 Q700.6622,28.05 700.92,28.3422 Q701.195,28.6172 701.195,29.0125 Q701.195,29.3906 700.8169,29.8375 Q700.2669,30.4906 699.3903,30.8516 Q698.2388,31.35 696.8294,31.35 Q695.1794,31.35 693.8559,30.6969 Q692.7903,30.1813 692.0341,29.0641 Q691.295,27.9469 691.295,26.6234 L691.295,25.4203 Q691.295,24.0453 691.9481,22.8422 Q692.6184,21.6391 693.77,21.0031 Q694.9388,20.35 696.245,20.35 Q697.0356,20.35 697.7231,20.625 Q698.4106,20.9 698.995,21.45 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="13.2" lengthAdjust="spacing" textLength="49.5" x="718.905" y="30.7012">Angebot</text><line style="stroke:#A80036;stroke-width:1.6500000000000001;" x1="651.2" x2="800.8" y1="42.9" y2="42.9"/><rect fill="none" height="6.6" style="stroke:#C82930;stroke-width:1.1;" width="6.6" x="658.9" y="51.7"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="30.8" x="672.1" y="59.8608">Id : int</text><rect fill="none" height="6.6" style="stroke:#C82930;stroke-width:1.1;" width="6.6" x="658.9" y="66.9195"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="103.4" x="672.1" y="75.0804">Anbieter : Benutzer</text><rect fill="none" height="6.6" style="stroke:#C82930;stroke-width:1.1;" width="6.6" x="658.9" y="82.1391"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="92.4" x="672.1" y="90.2999">Kunde : Benutzer</text><rect fill="none" height="6.6" style="stroke:#C82930;stroke-width:1.1;" width="6.6" x="658.9" y="97.3586"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="67.1" x="672.1" y="105.5194">Ware : Ware</text><rect fill="none" height="6.6" style="stroke:#C82930;stroke-width:1.1;" width="6.6" x="658.9" y="112.5781"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="123.2" x="672.1" y="120.739">Status : AngebotStatus</text><rect fill="none" height="6.6" style="stroke:#C82930;stroke-width:1.1;" width="6.6" x="658.9" y="127.7977"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="80.3" x="672.1" y="135.9585">Betrag : double</text><rect fill="none" height="6.6" style="stroke:#C82930;stroke-width:1.1;" width="6.6" x="658.9" y="143.0172"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="107.8" x="672.1" y="151.178">Ablaufsdatum : Date</text><line style="stroke:#A80036;stroke-width:1.6500000000000001;" x1="651.2" x2="800.8" y1="158.2367" y2="158.2367"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="36.3" x="656.7" y="175.1976">Send()</text><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="47.3" x="656.7" y="190.4171">Accept()</text><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="41.8" x="656.7" y="205.6366">Reject()</text><!--MD5=[7a8e94a12e4e36fcbce1259f03db5535]
+class AngebotStatus--><rect codeLine="169" fill="#FEFECE" height="98.4586" id="AngebotStatus" rx="3.85" ry="3.85" style="stroke:#A80036;stroke-width:1.6500000000000001;" width="123.2" x="911.9" y="60.5"/><ellipse cx="928.4" cy="78.1" fill="#EB937F" rx="12.1" ry="12.1" style="stroke:#A80036;stroke-width:1.1;"/><path d="M926.75,79.2 L926.75,81.4 L931.15,81.4 L931.15,80.3 L931.15,79.7672 L931.8375,79.2 L932.25,79.2 L932.6625,79.2 L933.35,79.7672 L933.35,80.3 L933.35,83.6 L924.55,83.6 L924.0172,83.6 L923.45,82.9125 L923.45,82.5 L923.45,82.0875 L924.0172,81.4 L924.55,81.4 L924.55,81.4 L924.55,74.8 L924.55,74.8 L924.0172,74.8 L923.45,74.1125 L923.45,73.7 L923.45,73.2875 L924.0172,72.6 L924.55,72.6 L933.35,72.6 L933.35,75.9 L933.35,76.4328 L932.6625,77 L932.25,77 L931.8375,77 L931.15,76.4328 L931.15,75.9 L931.15,74.8 L926.75,74.8 L926.75,77 L927.85,77 L927.85,76.4672 L927.85,76.4672 L928.5375,75.9 L928.95,75.9 L929.3625,75.9 L930.05,76.4672 L930.05,77 L930.05,79.2 L930.05,79.7328 L929.3625,80.3 L929.3625,80.3 L928.95,80.3 L928.5375,80.3 L927.85,79.7328 L927.85,79.7328 L927.85,79.2 L926.75,79.2 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="13.2" lengthAdjust="spacing" textLength="88" x="943.8" y="83.5012">AngebotStatus</text><line style="stroke:#A80036;stroke-width:1.6500000000000001;" x1="913" x2="1034" y1="95.7" y2="95.7"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="72.6" x="918.5" y="112.6608">Angenommen</text><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="53.9" x="918.5" y="127.8804">Abgelehnt</text><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="74.8" x="918.5" y="143.0999">Bevorstehend</text><line style="stroke:#A80036;stroke-width:1.6500000000000001;" x1="913" x2="1034" y1="150.1586" y2="150.1586"/><!--MD5=[56653b26176c478162972c14adba182f]
+class Kondition--><rect codeLine="175" fill="#FEFECE" height="128.8977" id="Kondition" rx="3.85" ry="3.85" style="stroke:#A80036;stroke-width:1.6500000000000001;" width="108.9" x="609.95" y="993.3"/><ellipse cx="633.875" cy="1010.9" fill="#EB937F" rx="12.1" ry="12.1" style="stroke:#A80036;stroke-width:1.1;"/><path d="M632.225,1012 L632.225,1014.2 L636.625,1014.2 L636.625,1013.1 L636.625,1012.5672 L637.3125,1012 L637.725,1012 L638.1375,1012 L638.825,1012.5672 L638.825,1013.1 L638.825,1016.4 L630.025,1016.4 L629.4922,1016.4 L628.925,1015.7125 L628.925,1015.3 L628.925,1014.8875 L629.4922,1014.2 L630.025,1014.2 L630.025,1014.2 L630.025,1007.6 L630.025,1007.6 L629.4922,1007.6 L628.925,1006.9125 L628.925,1006.5 L628.925,1006.0875 L629.4922,1005.4 L630.025,1005.4 L638.825,1005.4 L638.825,1008.7 L638.825,1009.2328 L638.1375,1009.8 L637.725,1009.8 L637.3125,1009.8 L636.625,1009.2328 L636.625,1008.7 L636.625,1007.6 L632.225,1007.6 L632.225,1009.8 L633.325,1009.8 L633.325,1009.2672 L633.325,1009.2672 L634.0125,1008.7 L634.425,1008.7 L634.8375,1008.7 L635.525,1009.2672 L635.525,1009.8 L635.525,1012 L635.525,1012.5328 L634.8375,1013.1 L634.8375,1013.1 L634.425,1013.1 L634.0125,1013.1 L633.325,1012.5328 L633.325,1012.5328 L633.325,1012 L632.225,1012 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="13.2" lengthAdjust="spacing" textLength="57.2" x="650.925" y="1016.3012">Kondition</text><line style="stroke:#A80036;stroke-width:1.6500000000000001;" x1="611.05" x2="717.75" y1="1028.5" y2="1028.5"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="39.6" x="616.55" y="1045.4608">Beheizt</text><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="75.9" x="616.55" y="1060.6804">UvGeschuetzt</text><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="56.1" x="616.55" y="1075.8999">Klimatisiert</text><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="95.7" x="616.55" y="1091.1194">ImmerZugaenglich</text><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="67.1" x="616.55" y="1106.339">Wachschutz</text><line style="stroke:#A80036;stroke-width:1.6500000000000001;" x1="611.05" x2="717.75" y1="1113.3977" y2="1113.3977"/><!--MD5=[7dd0ce52598075edf89712e7ff4c9808]
+class FahrzeugKategorie--><rect codeLine="183" fill="#FEFECE" height="189.7758" id="FahrzeugKategorie" rx="3.85" ry="3.85" style="stroke:#A80036;stroke-width:1.6500000000000001;" width="149.6" x="339.9" y="635.25"/><ellipse cx="356.4" cy="652.85" fill="#EB937F" rx="12.1" ry="12.1" style="stroke:#A80036;stroke-width:1.1;"/><path d="M354.75,653.95 L354.75,656.15 L359.15,656.15 L359.15,655.05 L359.15,654.5172 L359.8375,653.95 L360.25,653.95 L360.6625,653.95 L361.35,654.5172 L361.35,655.05 L361.35,658.35 L352.55,658.35 L352.0172,658.35 L351.45,657.6625 L351.45,657.25 L351.45,656.8375 L352.0172,656.15 L352.55,656.15 L352.55,656.15 L352.55,649.55 L352.55,649.55 L352.0172,649.55 L351.45,648.8625 L351.45,648.45 L351.45,648.0375 L352.0172,647.35 L352.55,647.35 L361.35,647.35 L361.35,650.65 L361.35,651.1828 L360.6625,651.75 L360.25,651.75 L359.8375,651.75 L359.15,651.1828 L359.15,650.65 L359.15,649.55 L354.75,649.55 L354.75,651.75 L355.85,651.75 L355.85,651.2172 L355.85,651.2172 L356.5375,650.65 L356.95,650.65 L357.3625,650.65 L358.05,651.2172 L358.05,651.75 L358.05,653.95 L358.05,654.4828 L357.3625,655.05 L357.3625,655.05 L356.95,655.05 L356.5375,655.05 L355.85,654.4828 L355.85,654.4828 L355.85,653.95 L354.75,653.95 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="13.2" lengthAdjust="spacing" textLength="114.4" x="371.8" y="658.2512">FahrzeugKategorie</text><line style="stroke:#A80036;stroke-width:1.6500000000000001;" x1="341" x2="488.4" y1="670.45" y2="670.45"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="46.2" x="346.5" y="687.4108">Cabriolet</text><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="72.6" x="346.5" y="702.6304">Kleinstwagen</text><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="62.7" x="346.5" y="717.8499">Kleinwagen</text><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="79.2" x="346.5" y="733.0694">Kompaktklasse</text><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="60.5" x="346.5" y="748.289">Mittelklasse</text><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="93.5" x="346.5" y="763.5085">ObereMittelklasse</text><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="33" x="346.5" y="778.728">Luxus</text><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="20.9" x="346.5" y="793.9476">Suv</text><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="22" x="346.5" y="809.1671">Van</text><line style="stroke:#A80036;stroke-width:1.6500000000000001;" x1="341" x2="488.4" y1="816.2258" y2="816.2258"/><!--MD5=[6a53b3997234ff3ef08ab8521bba0201]
+class Fahrzeugmarke--><rect codeLine="195" fill="#FEFECE" height="189.7758" id="Fahrzeugmarke" rx="3.85" ry="3.85" style="stroke:#A80036;stroke-width:1.6500000000000001;" width="129.8" x="7.7" y="635.25"/><ellipse cx="24.2" cy="652.85" fill="#EB937F" rx="12.1" ry="12.1" style="stroke:#A80036;stroke-width:1.1;"/><path d="M22.55,653.95 L22.55,656.15 L26.95,656.15 L26.95,655.05 L26.95,654.5172 L27.6375,653.95 L28.05,653.95 L28.4625,653.95 L29.15,654.5172 L29.15,655.05 L29.15,658.35 L20.35,658.35 L19.8172,658.35 L19.25,657.6625 L19.25,657.25 L19.25,656.8375 L19.8172,656.15 L20.35,656.15 L20.35,656.15 L20.35,649.55 L20.35,649.55 L19.8172,649.55 L19.25,648.8625 L19.25,648.45 L19.25,648.0375 L19.8172,647.35 L20.35,647.35 L29.15,647.35 L29.15,650.65 L29.15,651.1828 L28.4625,651.75 L28.05,651.75 L27.6375,651.75 L26.95,651.1828 L26.95,650.65 L26.95,649.55 L22.55,649.55 L22.55,651.75 L23.65,651.75 L23.65,651.2172 L23.65,651.2172 L24.3375,650.65 L24.75,650.65 L25.1625,650.65 L25.85,651.2172 L25.85,651.75 L25.85,653.95 L25.85,654.4828 L25.1625,655.05 L25.1625,655.05 L24.75,655.05 L24.3375,655.05 L23.65,654.4828 L23.65,654.4828 L23.65,653.95 L22.55,653.95 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="13.2" lengthAdjust="spacing" textLength="94.6" x="39.6" y="658.2512">Fahrzeugmarke</text><line style="stroke:#A80036;stroke-width:1.6500000000000001;" x1="8.8" x2="136.4" y1="670.45" y2="670.45"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="44" x="14.3" y="687.4108">Porsche</text><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="36.3" x="14.3" y="702.6304">Bugatti</text><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="67.1" x="14.3" y="717.8499">Volkswagen</text><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="80.3" x="14.3" y="733.0694">MercedesBenz</text><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="27.5" x="14.3" y="748.289">BMW</text><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="24.2" x="14.3" y="763.5085">Audi</text><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="24.2" x="14.3" y="778.728">Opel</text><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="33" x="14.3" y="793.9476">Skoda</text><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="24.2" x="14.3" y="809.1671">Ford</text><line style="stroke:#A80036;stroke-width:1.6500000000000001;" x1="8.8" x2="136.4" y1="816.2258" y2="816.2258"/><!--MD5=[86a7a5fc6855f9c5c157463e983e5517]
+class Artikelzustand--><rect codeLine="207" fill="#FEFECE" height="83.2391" id="Artikelzustand" rx="3.85" ry="3.85" style="stroke:#A80036;stroke-width:1.6500000000000001;" width="118.8" x="1276" y="1284.25"/><ellipse cx="1292.5" cy="1301.85" fill="#EB937F" rx="12.1" ry="12.1" style="stroke:#A80036;stroke-width:1.1;"/><path d="M1290.85,1302.95 L1290.85,1305.15 L1295.25,1305.15 L1295.25,1304.05 L1295.25,1303.5172 L1295.9375,1302.95 L1296.35,1302.95 L1296.7625,1302.95 L1297.45,1303.5172 L1297.45,1304.05 L1297.45,1307.35 L1288.65,1307.35 L1288.1172,1307.35 L1287.55,1306.6625 L1287.55,1306.25 L1287.55,1305.8375 L1288.1172,1305.15 L1288.65,1305.15 L1288.65,1305.15 L1288.65,1298.55 L1288.65,1298.55 L1288.1172,1298.55 L1287.55,1297.8625 L1287.55,1297.45 L1287.55,1297.0375 L1288.1172,1296.35 L1288.65,1296.35 L1297.45,1296.35 L1297.45,1299.65 L1297.45,1300.1828 L1296.7625,1300.75 L1296.35,1300.75 L1295.9375,1300.75 L1295.25,1300.1828 L1295.25,1299.65 L1295.25,1298.55 L1290.85,1298.55 L1290.85,1300.75 L1291.95,1300.75 L1291.95,1300.2172 L1291.95,1300.2172 L1292.6375,1299.65 L1293.05,1299.65 L1293.4625,1299.65 L1294.15,1300.2172 L1294.15,1300.75 L1294.15,1302.95 L1294.15,1303.4828 L1293.4625,1304.05 L1293.4625,1304.05 L1293.05,1304.05 L1292.6375,1304.05 L1291.95,1303.4828 L1291.95,1303.4828 L1291.95,1302.95 L1290.85,1302.95 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="13.2" lengthAdjust="spacing" textLength="83.6" x="1307.9" y="1307.2512">Artikelzustand</text><line style="stroke:#A80036;stroke-width:1.6500000000000001;" x1="1277.1" x2="1393.7" y1="1319.45" y2="1319.45"/><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="20.9" x="1282.6" y="1336.4108">Neu</text><text fill="#000000" font-family="sans-serif" font-size="12.1" lengthAdjust="spacing" textLength="56.1" x="1282.6" y="1351.6304">Gebraucht</text><line style="stroke:#A80036;stroke-width:1.6500000000000001;" x1="1277.1" x2="1393.7" y1="1358.6891" y2="1358.6891"/><!--MD5=[6dccb6511877cf74edb742758244a830]
+reverse link Benutzer to Lagerhalter--><path codeLine="213" d="M1060.092,206.437 C1058.343,208.417 1056.616,210.364 1054.9,212.3 C1008.414,264.649 954.371,323.312 915.596,365.035 " fill="none" id="Benutzer-backto-Lagerhalter" style="stroke:#454645;stroke-width:1.1;"/><polygon fill="none" points="1054.394,201.245,1074.689,189.772,1065.977,211.398,1054.394,201.245" style="stroke:#454645;stroke-width:1.1;"/><!--MD5=[b0fe277be30b18ed4fde82d49e5bcde4]
+reverse link Benutzer to Einlagerer--><path codeLine="214" d="M1067.649,204.248 C1063.524,207.196 1059.278,209.902 1054.9,212.3 C963.083,262.57 913.572,195.14 821.7,245.3 C792.792,261.085 798.985,280.797 773.3,301.4 C733.161,333.586 683.056,361.372 640.596,382.019 " fill="none" id="Benutzer-backto-Einlagerer" style="stroke:#454645;stroke-width:1.1;"/><polygon fill="none" points="1062.996,198.099,1084.842,189.959,1072.841,209.946,1062.996,198.099" style="stroke:#454645;stroke-width:1.1;"/><!--MD5=[b2b02d888788e234b2c57dadea133112]
+reverse link Benutzer to WerkstattInhaber--><path codeLine="215" d="M1127.115,211.926 C1119.712,262.724 1111.022,322.388 1104.829,364.914 " fill="none" id="Benutzer-backto-WerkstattInhaber" style="stroke:#454645;stroke-width:1.1;"/><polygon fill="none" points="1119.514,210.694,1130.305,190.036,1134.749,212.916,1119.514,210.694" style="stroke:#454645;stroke-width:1.1;"/><!--MD5=[f5f58811e24763c46178e5fafbafcb0e]
+reverse link Benutzer to Ersatzteilhandler--><path codeLine="216" d="M1204.313,208.857 C1237.214,260.304 1276.363,321.53 1304.094,364.914 " fill="none" id="Benutzer-backto-Ersatzteilhandler" style="stroke:#454645;stroke-width:1.1;"/><polygon fill="none" points="1197.636,212.718,1192.279,190.036,1210.616,204.424,1197.636,212.718" style="stroke:#454645;stroke-width:1.1;"/><!--MD5=[80ca80e80bd15630fdf8cb9aecbdff1b]
+link Lager to Einrichtung--><path codeLine="218" d="M714.01,612.557 C733.755,591.646 756.8,572.803 782.65,561 C908.061,503.745 1284.943,489.874 1403.05,561 C1438.624,582.428 1460.822,623.216 1474.231,659.406 " fill="none" id="Lager-to-Einrichtung" style="stroke:#454645;stroke-width:1.1;"/><polygon fill="none" points="1481.623,657.261,1481.315,680.57,1467.026,662.145,1481.623,657.261" style="stroke:#454645;stroke-width:1.1;"/><!--MD5=[c0d1d29084abad84d315e190ee93ed41]
+link Werkstatt to Einrichtung--><path codeLine="219" d="M1133.847,688.38 C1161.149,647.13 1209.032,586.784 1268.85,561 C1323.63,537.394 1351.955,530.233 1403.05,561 C1438.624,582.428 1460.822,623.216 1474.231,659.406 " fill="none" id="Werkstatt-to-Einrichtung" style="stroke:#454645;stroke-width:1.1;"/><polygon fill="none" points="1481.623,657.261,1481.315,680.57,1467.026,662.145,1481.623,657.261" style="stroke:#454645;stroke-width:1.1;"/><!--MD5=[2fefc778b9f60c1591ebb3185285c5af]
+link Unternehmen to Einrichtung--><path codeLine="220" d="M1402.687,730.4 C1407.923,730.4 1413.17,730.4 1418.406,730.4 " fill="none" id="Unternehmen-to-Einrichtung" style="stroke:#454645;stroke-width:1.1;"/><polygon fill="none" points="1418.659,722.7,1440.659,730.4,1418.659,738.1,1418.659,722.7" style="stroke:#454645;stroke-width:1.1;"/><!--MD5=[26364c601983ad14d9d8f6523ad5235e]
+reverse link Lagerhalter to Lager--><path codeLine="222" d="M783.178,443.399 C732.776,460.801 671.583,491.315 640.2,542.3 C627.352,563.178 621.698,588.005 620.114,612.645 " fill="none" id="Lagerhalter-backto-Lager" style="stroke:#454645;stroke-width:1.1;"/><polygon fill="#454645" points="797.071,438.834,789.4271,436.715,784.5311,442.9559,792.175,445.0749,797.071,438.834" style="stroke:#454645;stroke-width:1.1;"/><polygon fill="#000000" points="641.8839,565.1541,651.1153,560.2321,646.4592,555.746,641.8839,565.1541" style="stroke:#000000;stroke-width:1.1;"/><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="42.9" x="655.6" y="567.0446">besitzt</text><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="7.7" x="780.8057" y="437.0766">1</text><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="22" x="596.1542" y="600.6087">1..*</text><!--MD5=[68f878c15d52a2c8fef6f6e9168b3cc9]
+link Lagerhalter to Werkstatt--><path codeLine="223" d="M908.204,478.786 C956.714,539.363 1032.988,634.612 1076.163,688.534 " fill="none" id="Lagerhalter-Werkstatt" style="stroke:#454645;stroke-width:1.1;"/><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="47.3" x="986.7" y="558.2446">arbeitet</text><polygon fill="#000000" points="1002.2378,574.6733,998.5422,564.8861,993.4953,568.9275,1002.2378,574.6733" style="stroke:#000000;stroke-width:1.1;"/><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="19.8" x="1007.6" y="576.2313">mit</text><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="5.5" x="908.3416" y="502.4645">*</text><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="5.5" x="1064.1385" y="676.506">*</text><!--MD5=[7b381b7a92a5011a5ce70c029f62df5b]
+link Lagerhalter to Termin--><path codeLine="224" d="M863.896,478.786 C864.248,526.845 864.743,596.75 865.139,650.507 " fill="none" id="Lagerhalter-Termin" style="stroke:#454645;stroke-width:1.1;"/><polygon fill="#000000" points="870.1398,566.6932,873.3005,556.7205,866.8351,556.7673,870.1398,566.6932" style="stroke:#000000;stroke-width:1.1;"/><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="60.5" x="880" y="567.0446">vereinbart</text><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="5.5" x="858.0797" y="502.4645">*</text><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="5.5" x="859.2976" y="638.6335">*</text><!--MD5=[8f07e6e56a69e2ff28190650c21626fc]
+link Angebot to Lagerhalter--><path codeLine="225" d="M771.023,212.487 C793.496,263.109 819.841,322.421 838.64,364.771 " fill="none" id="Angebot-Lagerhalter" style="stroke:#454645;stroke-width:1.1;"/><polygon fill="#000000" points="809.568,268.5166,810.6511,278.922,816.5604,276.2982,809.568,268.5166" style="stroke:#000000;stroke-width:1.1;"/><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="39.6" x="821.7" y="279.3946">macht</text><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="5.5" x="768.8916" y="236.1995">*</text><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="7.7" x="827.0821" y="353.1637">1</text><!--MD5=[aa89df01f84eda5ecfe10c8c1d177b42]
+reverse link WerkstattInhaber to Werkstatt--><path codeLine="227" d="M1099.472,493.196 C1101.859,553.63 1105.225,638.726 1107.194,688.534 " fill="none" id="WerkstattInhaber-backto-Werkstatt" style="stroke:#454645;stroke-width:1.1;"/><polygon fill="#454645" points="1098.9,478.786,1094.7646,485.555,1099.4224,491.9757,1103.5577,485.2067,1098.9,478.786" style="stroke:#454645;stroke-width:1.1;"/><polygon fill="#000000" points="1107.9173,566.6891,1110.7545,556.6195,1104.2939,556.8749,1107.9173,566.6891" style="stroke:#000000;stroke-width:1.1;"/><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="42.9" x="1117.6" y="567.0446">besitzt</text><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="7.7" x="1090.9783" y="502.4645">1</text><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="22" x="1082.8698" y="676.506">1..*</text><!--MD5=[6ac2f0f42f938db2e2a58c60c3b31326]
+reverse link Ersatzteilhandler to Unternehmen--><path codeLine="229" d="M1338.788,493.119 C1337.875,556.721 1336.577,647.691 1335.873,696.069 " fill="none" id="Ersatzteilhandler-backto-Unternehmen" style="stroke:#454645;stroke-width:1.1;"/><polygon fill="#454645" points="1338.997,478.786,1334.5032,485.3225,1338.8084,491.9847,1343.3023,485.4482,1338.997,478.786" style="stroke:#454645;stroke-width:1.1;"/><polygon fill="#000000" points="1343.021,566.6928,1346.3964,556.7907,1339.9314,556.6978,1343.021,566.6928" style="stroke:#000000;stroke-width:1.1;"/><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="42.9" x="1353" y="567.0446">besitzt</text><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="7.7" x="1330.6718" y="502.4645">1</text><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="22" x="1311.7018" y="684.4764">1..*</text><!--MD5=[4f32107474d7b04fbf43533d008acc9e]
+link Unternehmen to ErsatzteilArtikel--><path codeLine="230" d="M1335.4,764.753 C1335.4,820.424 1335.4,933.009 1335.4,1000.901 " fill="none" id="Unternehmen-ErsatzteilArtikel" style="stroke:#454645;stroke-width:1.1;"/><polygon fill="#000000" points="1340.9,914.8434,1344.1328,904.8938,1337.6672,904.8938,1340.9,914.8434" style="stroke:#000000;stroke-width:1.1;"/><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="48.4" x="1350.8" y="915.1946">verkauft</text><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="7.7" x="1326.9661" y="787.8777">1</text><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="5.5" x="1329.5133" y="988.9284">*</text><!--MD5=[b928396e1ad9968d2b0a2cf090ce6f4d]
+link Einrichtung to Ort--><path codeLine="232" d="M1474.275,780.043 C1462.802,803.979 1445.708,831.248 1422.3,848.1 C1367.817,887.326 1330.703,843.777 1274.9,881.1 C1241.79,903.243 1214.84,937.519 1194.677,969.925 " fill="none" id="Einrichtung-Ort" style="stroke:#454645;stroke-width:1.1;"/><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="49.5" x="1276" y="897.0446">befindet</text><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="26.4" x="1287.55" y="915.0313">sich</text><polygon fill="#000000" points="1284.6501,930.2568,1294.6972,927.3413,1291.0647,921.9926,1284.6501,930.2568" style="stroke:#000000;stroke-width:1.1;"/><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="19.8" x="1298" y="933.0181">am</text><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="7.7" x="1463.4426" y="803.1714">1</text><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="7.7" x="1190.584" y="958.3049">1</text><!--MD5=[141a7e63b12b68deaa0082af47d11ef8]
+link Termin to Ort--><path codeLine="233" d="M924.946,810.425 C938.256,824.439 953.194,837.815 969.1,848.1 C1010.383,874.808 1038.059,848.309 1074.7,881.1 C1100.847,904.508 1118.524,938.421 1130.261,970.2 " fill="none" id="Termin-Ort" style="stroke:#454645;stroke-width:1.1;"/><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="62.7" x="1115.4" y="906.3946">findetstatt</text><polygon fill="#000000" points="1139.5406,921.9079,1133.6738,913.2461,1129.703,918.3487,1139.5406,921.9079" style="stroke:#000000;stroke-width:1.1;"/><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="19.8" x="1144" y="924.3813">am</text><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="7.7" x="922.5259" y="833.762">1</text><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="7.7" x="1120.1506" y="958.3056">1</text><!--MD5=[3b768a17af4f8ba7fdd2dfd8f737ea29]
+link Einlagerer to Termin--><path codeLine="235" d="M640.453,487.982 C661.947,504.889 684.354,523.622 704,542.3 C738.991,575.575 774.455,615.714 803.22,650.265 " fill="none" id="Einlagerer-Termin" style="stroke:#454645;stroke-width:1.1;"/><polygon fill="#000000" points="746.3949,565.0767,741.6315,555.7624,737.0664,560.3411,746.3949,565.0767" style="stroke:#000000;stroke-width:1.1;"/><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="60.5" x="752.4" y="567.0446">vereinbart</text><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="7.7" x="649.0452" y="490.5456">1</text><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="5.5" x="791.2989" y="638.7822">*</text><!--MD5=[a5f7d79313e68db40b4de8677132a1bb]
+link Lager to Servicezeiten--><path codeLine="238" d="M591.888,848.386 C569.943,906.818 544.786,973.808 529.067,1015.652 " fill="none" id="Lager-Servicezeiten" style="stroke:#454645;stroke-width:1.1;"/><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="15.4" x="598.95" y="897.0446">ist</text><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="56.1" x="578.6" y="915.0313">verfügbar</text><polygon fill="#000000" points="597.5662,932.3156,604.0909,924.1379,598.038,921.8647,597.5662,932.3156" style="stroke:#000000;stroke-width:1.1;"/><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="11" x="608.3" y="933.0181">in</text><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="7.7" x="580.979" y="871.7609">1</text><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="22" x="507.8449" y="1003.9148">1..*</text><!--MD5=[e0cc5c87e4c82ad328a6a8b1d73f1977]
+reverse link Lager to Kondition--><path codeLine="239" d="M647.361,862.829 C651.31,907.731 655.545,955.933 658.812,993.014 " fill="none" id="Lager-backto-Kondition" style="stroke:#454645;stroke-width:1.1;"/><polygon fill="#454645" points="646.085,848.386,642.275,855.3433,647.2316,861.5361,651.0417,854.5788,646.085,848.386" style="stroke:#454645;stroke-width:1.1;"/><polygon fill="#000000" points="658.4181,903.8645,656.0695,914.0591,662.5103,913.4926,658.4181,903.8645" style="stroke:#000000;stroke-width:1.1;"/><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="66" x="668.8" y="915.1946">beschreibt</text><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="7.7" x="638.8174" y="871.7609">1</text><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="5.5" x="652.2958" y="981.3201">*</text><!--MD5=[f4a2fb093265829d0179e05d41c352af]
+link Lager to Stellplatz--><path codeLine="240" d="M527.681,833.899 C462.649,895.499 383.449,970.508 335.577,1015.839 " fill="none" id="Lager-Stellplatz" style="stroke:#454645;stroke-width:1.1;"/><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="40.7" x="476.85" y="906.3946">verfügt</text><polygon fill="#000000" points="477.8067,922.3121,487.2537,917.8176,482.8076,913.1232,477.8067,922.3121" style="stroke:#000000;stroke-width:1.1;"/><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="27.5" x="490.6" y="924.3813">über</text><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="7.7" x="511.4084" y="838.4075">1</text><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="22" x="319.4728" y="1003.8212">1..*</text><!--MD5=[84738dec41693434559f8c830dbff24c]
+link Lager to Service--><path codeLine="241" d="M743.941,830.533 C750.519,836.484 757.042,842.38 763.4,848.1 C828.542,906.697 904.53,973.753 952.16,1015.63 " fill="none" id="Lager-Service" style="stroke:#454645;stroke-width:1.1;"/><polygon fill="#000000" points="868.7106,912.9975,863.4223,903.9709,859.1266,908.8033,868.7106,912.9975" style="stroke:#000000;stroke-width:1.1;"/><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="35.2" x="874.5" y="915.1946">bietet</text><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="7.7" x="752.5153" y="834.7838">1</text><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="5.5" x="937.8624" y="1003.8889">*</text><!--MD5=[252381a4e5c098c656df7476b35b5528]
+link Fahrzeug to FahrzeugKategorie--><path codeLine="243" d="M310.53,509.509 C329.065,548.614 350.999,594.913 369.963,634.898 " fill="none" id="Fahrzeug-FahrzeugKategorie" style="stroke:#454645;stroke-width:1.1;"/><polygon fill="#000000" points="345.2443,556.2234,346.5845,566.5988,352.4271,563.8295,345.2443,556.2234" style="stroke:#000000;stroke-width:1.1;"/><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="19.8" x="357.5" y="567.0446">hat</text><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="7.7" x="306.0252" y="532.6745">1</text><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="7.7" x="358.0876" y="623.2183">1</text><!--MD5=[3dc148e64e969cd4a5a03c1ad07ee517]
+link Fahrzeug to Fahrzeugmarke--><path codeLine="244" d="M174.977,509.443 C165.792,520.014 157.102,531.069 149.6,542.3 C130.779,570.471 115.203,603.977 103.103,634.788 " fill="none" id="Fahrzeug-Fahrzeugmarke" style="stroke:#454645;stroke-width:1.1;"/><polygon fill="#000000" points="157.8359,556.4221,150.0821,563.4453,155.6911,566.6615,157.8359,556.4221" style="stroke:#000000;stroke-width:1.1;"/><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="19.8" x="165" y="567.0446">hat</text><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="7.7" x="158.8231" y="532.6028">1</text><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="7.7" x="97.6102" y="623.4237">1</text><!--MD5=[918ec46628a32088d30a0cfdc46b6016]
+link Fahrzeug to Stellplatz--><path codeLine="246" d="M249.403,509.355 C242.847,541.596 236.423,578.644 233.2,612.7 C223.322,716.859 218.724,744.48 233.2,848.1 C241.527,907.731 262.647,974.248 277.321,1015.751 " fill="none" id="Fahrzeug-Stellplatz" style="stroke:#454645;stroke-width:1.1;"/><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="15.4" x="268.95" y="727.6446">ist</text><polygon fill="#000000" points="239.4972,734.2884,236.817,744.4009,243.2729,744.045,239.4972,734.2884" style="stroke:#000000;stroke-width:1.1;"/><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="70.4" x="248.6" y="745.6313">zugeordnet</text><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="7.7" x="239.6451" y="532.5072">1</text><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="7.7" x="266.2136" y="1004.0315">1</text><!--MD5=[7f8fea6acf5bd4f9dc1c44a859a2efb2]
+link FahrzeugController to Einlagerer--><path codeLine="247" d="M376.156,174.515 C408.903,220.605 453.607,283.536 489.632,334.235 " fill="none" id="FahrzeugController-Einlagerer" style="stroke:#454645;stroke-width:1.1;"/><polygon fill="#000000" points="463.2145,269.0597,466.3417,279.0431,471.6125,275.2983,463.2145,269.0597" style="stroke:#000000;stroke-width:1.1;"/><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="47.3" x="476.3" y="279.3946">benutzt</text><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="7.7" x="373.478" y="198.3064">1</text><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="5.5" x="478.0112" y="322.3249">*</text><!--MD5=[60d0c7e31adf6e6770d5d4c9663e5e1f]
+link FahrzeugController to Fahrzeug--><path codeLine="248" d="M318.483,174.515 C309.32,220.605 296.802,283.536 286.715,334.235 " fill="none" id="FahrzeugController-Fahrzeug" style="stroke:#454645;stroke-width:1.1;"/><polygon fill="#000000" points="309.1271,278.9377,314.2387,269.8099,307.8973,268.5486,309.1271,278.9377" style="stroke:#000000;stroke-width:1.1;"/><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="55" x="320.1" y="279.3946">verwaltet</text><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="7.7" x="308.7761" y="198.3064">1</text><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="5.5" x="282.5937" y="322.3249">*</text><!--MD5=[7caff928dbf69a9f572d4c6ea2e4457c]
+link Fahrzeug to Einlagerer--><path codeLine="250" d="M364.837,421.85 C391.347,421.85 420.266,421.85 447.238,421.85 " fill="none" id="Fahrzeug-to-Einlagerer" style="stroke:#454645;stroke-width:1.1;"/><polygon fill="#454645" points="461.56,421.85,454.96,417.45,448.36,421.85,454.96,426.25,461.56,421.85" style="stroke:#454645;stroke-width:1.1;"/><polygon fill="#000000" points="394.625,408.8434,384.6754,405.6105,384.6754,412.0762,394.625,408.8434" style="stroke:#000000;stroke-width:1.1;"/><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="42.9" x="399.025" y="414.6946">besitzt</text><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="22" x="373.3107" y="437.425">1..*</text><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="7.7" x="445.5425" y="418.3434">1</text><!--MD5=[c5c465cf6be50689862a19c7e99b1b30]
+link Einlagerer to Lager--><path codeLine="251" d="M537.812,509.498 C536.855,532.642 538.241,557.414 544.5,579.7 C547.591,590.689 551.727,601.656 556.545,612.392 " fill="none" id="Einlagerer-Lager" style="stroke:#454645;stroke-width:1.1;"/><polygon fill="#000000" points="549.0149,555.7823,547.6165,566.15,553.9775,564.9919,549.0149,555.7823" style="stroke:#000000;stroke-width:1.1;"/><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="35.2" x="559.9" y="567.0446">sucht</text><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="7.7" x="528.6392" y="532.6625">1</text><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="5.5" x="545.279" y="600.7328">*</text><!--MD5=[2b9a56b904eacc0b21f12f7c03ffeb1c]
+link Anfrage to Einlagerer--><path codeLine="253" d="M551.1,174.515 C551.1,220.605 551.1,283.536 551.1,334.235 " fill="none" id="Anfrage-Einlagerer" style="stroke:#454645;stroke-width:1.1;"/><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="46.2" x="571.45" y="261.2446">schickt</text><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="15.4" x="586.85" y="279.2313">an</text><polygon fill="#000000" points="557.7,285.8668,554.4672,295.8164,560.9328,295.8164,557.7,285.8668" style="stroke:#000000;stroke-width:1.1;"/><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="70.4" x="566.5" y="297.2181">Lagerhalter</text><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="5.5" x="545.2648" y="198.3064">*</text><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="7.7" x="543.033" y="322.3249">1</text><!--MD5=[fb30c87ed2ad3074ae8e06a54bea866f]
+link Anfrage to Lagerhalter--><path codeLine="254" d="M593.131,174.35 C620.62,213.268 658.713,262.889 698.5,301.4 C728.475,330.407 765.875,358.039 797.489,379.39 " fill="none" id="Anfrage-Lagerhalter" style="stroke:#454645;stroke-width:1.1;"/><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="46.2" x="715" y="261.2446">schickt</text><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="15.4" x="730.4" y="279.2313">an</text><polygon fill="#000000" points="701.2174,287.4712,705.9513,296.8005,710.5308,292.2362,701.2174,287.4712" style="stroke:#000000;stroke-width:1.1;"/><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="62.7" x="713.9" y="297.2181">Werkstatt</text><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="5.5" x="592.4184" y="198.1213">*</text><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="7.7" x="780.8381" y="370.0675">1</text><!--MD5=[62f459d78f4fc565a6efc053ca971133]
+link Werkstatt to Service--><path codeLine="256" d="M1077.56,772.288 C1057.221,801.097 1032.064,841.467 1018.6,881.1 C1003.519,925.507 999.383,979.506 998.514,1015.762 " fill="none" id="Werkstatt-Service" style="stroke:#454645;stroke-width:1.1;"/><polygon fill="#000000" points="1022.4016,914.5746,1028.5488,906.1095,1022.3992,904.1129,1022.4016,914.5746" style="stroke:#000000;stroke-width:1.1;"/><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="35.2" x="1034" y="915.1946">bietet</text><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="7.7" x="1064.0482" y="795.5897">1</text><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="22" x="974.5037" y="1004.0444">1..*</text><!--MD5=[989af44fee8e0f15a9213a4a02e2f5b6]
+link Service to Ware--><path codeLine="258" d="M1017.984,1099.472 C1031.943,1129.117 1051.589,1170.818 1070.201,1210.308 " fill="none" id="Service-to-Ware" style="stroke:#454645;stroke-width:1.1;"/><polygon fill="none" points="1077.384,1207.503,1079.793,1230.691,1063.458,1214.07,1077.384,1207.503" style="stroke:#454645;stroke-width:1.1;"/><!--MD5=[67cf1a013d1eec0f0eb42ee34a92d764]
+link ErsatzteilArtikel to Ware--><path codeLine="259" d="M1291.125,1114.553 C1267.53,1144.286 1237.687,1181.906 1209.78,1217.073 " fill="none" id="ErsatzteilArtikel-to-Ware" style="stroke:#454645;stroke-width:1.1;"/><polygon fill="none" points="1215.555,1222.199,1195.843,1234.651,1203.488,1212.629,1215.555,1222.199" style="stroke:#454645;stroke-width:1.1;"/><!--MD5=[205b24e587a09684cafe1cf13c7daa48]
+link ErsatzteilArtikel to Artikelzustand--><path codeLine="260" d="M1335.4,1114.553 C1335.4,1165.175 1335.4,1238.611 1335.4,1283.986 " fill="none" id="ErsatzteilArtikel-Artikelzustand" style="stroke:#454645;stroke-width:1.1;"/><polygon fill="#000000" points="1340.9,1182.6934,1337.6672,1192.643,1344.1328,1192.643,1340.9,1182.6934" style="stroke:#000000;stroke-width:1.1;"/><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="66" x="1350.8" y="1194.0446">beschreibt</text><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="7.7" x="1327.1827" y="1138.227">1</text><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="7.7" x="1327.0142" y="1272.2371">1</text><!--MD5=[37d03710b4867fec0fa4fe1451c9c4cf]
+link Angebot to AngebotStatus--><path codeLine="261" d="M801.944,110 C837.177,110 878.537,110 911.812,110 " fill="none" id="Angebot-AngebotStatus" style="stroke:#454645;stroke-width:1.1;"/><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="66" x="823.9" y="66.5446">beschreibt</text><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="69.3" x="822.25" y="84.5313">den Status</text><polygon fill="#000000" points="839.3,96.6668,849.2496,99.8996,849.2496,93.434,839.3,96.6668" style="stroke:#000000;stroke-width:1.1;"/><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="20.9" x="853.6" y="102.5181">von</text><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="7.7" x="810.6715" y="106.2817">1</text><text fill="#000000" font-family="sans-serif" font-size="14.3" lengthAdjust="spacing" textLength="7.7" x="895.3053" y="106.1245">1</text><!--MD5=[0a6dc11c22c28b9c731d09f4e9b1284e]
+@startuml
+!theme vibrant
+abstract Benutzer {
+  # Id : int
+  # Vornahme : String
+  # Nachname : String
+  # MailAdresse : String
+  SignUp()
+  Login()
+  UpdateProfil(Profil)
+}
+
+abstract  Einrichtung {
+  # Id : int
+  # Name : String
+  # Ort : Ort
+}
+
+abstract Ware {
+  # Id : int
+  # Name : String
+  # Beschreibung : String
+  # Kosten : double
+  AddWare(Ware)
+  RemoveWare(Ware)
+  EditWare(Ware)
+  GetWare(id)
+  GetWaren()
+
+}
+
+class Ort {
+  - longitude : float
+  - latitude : float
+  - Strasse : String
+  - Hausnummer : int
+  - Zusatz : String
+  - Plz : String
+  - Stadt : String
+  - Bundesland : String
+}
+
+class Lagerhalter {
+  - Lager : List<Lager>
+  AddLager(Lager)
+  RemoveLager(id)
+  EditLager(Lager)
+}
+class FahrzeugController{
+GetFahrzeug(id)
+GetFahrzeuge()
+AddFahrzeug(Fahrzeug)
+RemoveFahrzeug(id)
+ EditFahrzeug(Fahrzeug)
+}
+class Einlagerer {
+  - Fahrzeuge : List<Fahrzeug>
+
+  CreateAnfrage(Lager)
+  BookStellplatz(stellplatzId)
+  SearchLager(Stadt)
+  RequestAngebot(Lager)
+  SearchErsatzteile()
+  BookService(Lager)
+  ReserveArtikel(ArtikelId)
+}
+
+class WerkstattInhaber {
+  - Werkstaette : List<Werkstaette>
+  AddWerkstatt(Werkstatt)
+  RemoveWerkstatt(id)
+  EditWerkstatt(Werkstatt)
+}
+
+class Ersatzteilhandler {
+  - Unternehmen : List<Unternehmen>
+  AddUnternehmen(Unternehmen)
+  RemoveUnternehmen(id)
+  EditUnternehmen(Unternehmen)
+}
+
+class Stellplatz {
+  + IstVerfuegbar : boolean
+  - Massen : List<Double>
+}
+
+class Fahrzeug {
+  - Id : int
+  - Kategorie : FahrzeugKategorie
+  - Marke : Fahrzeugmarke
+  - Modell : String
+  + IstFahrbereit : boolean
+  + IstInWartung : boolean
+  - Anmerkung : String
+  AddAnmerkung(string)
+}
+
+class Termin {
+  - Id : int
+  - Beteiligte : List<Benutzer>
+  - Ort : Ort
+  - Datum : Date
+  - Dauer : double
+  - Zweck : String
+  Book()
+}
+
+class Service {
+-Anbieter
+Book(Benutzer)
+}
+
+class Lager {
+  - Id : int
+  - Konditionen : List<Kondition>
+  - Werkstaette : List<Werkstaette>
+
+   + Services : List<Service>
+  - Einlagerungsbetrag : double
+  - Servicezeiten : List<Servicezeiten>
+  - Stellplaetze : List<Stellplatz>
+  - Kapazitaet : int
+  - FreiePlaetze : int
+  StoreFahrzeug(Fahrzeug, Stellplatz)
+  CreateAngebot(Werkstatt)
+}
+
+class Servicezeiten {
+  - Von : Date
+  - Bis : Date
+}
+
+class ErsatzteilArtikel {
+  - Zustand : Artikelzustand
+  - IstReserviert : boolean
+  MarkReserved()
+  MarkAvalibale()
+}
+
+class Werkstatt {
+  + Services : List<Service>
+  + Fahrzeugmarken : List<Fahrzeugmarke>
+}
+
+class Unternehmen {
+  - Waren : List<Ware>
+}
+
+class Anfrage {
+  - Id : int
+  - Von : Benutzer
+  - An : Benutzer
+  - Nachricht : String
+  Send()
+}
+
+class Angebot {
+  - Id : int
+  - Anbieter : Benutzer
+  - Kunde : Benutzer
+  - Ware : Ware
+  - Status : AngebotStatus
+  - Betrag : double
+  - Ablaufsdatum : Date
+  Send()
+  Accept()
+  Reject()
+}
+
+enum AngebotStatus {
+  Angenommen
+  Abgelehnt
+  Bevorstehend
+}
+
+enum Kondition {
+  Beheizt
+  UvGeschuetzt
+  Klimatisiert
+  ImmerZugaenglich
+  Wachschutz
+}
+
+enum FahrzeugKategorie {
+  Cabriolet
+  Kleinstwagen
+  Kleinwagen
+  Kompaktklasse
+  Mittelklasse
+  ObereMittelklasse
+  Luxus
+  Suv
+  Van
+  }
+
+enum Fahrzeugmarke {
+  Porsche
+  Bugatti
+  Volkswagen
+  MercedesBenz
+  BMW
+  Audi
+  Opel
+  Skoda
+  Ford
+  }
+
+enum Artikelzustand {
+  Neu
+  Gebraucht
+}
+
+
+Benutzer <|- - Lagerhalter
+Benutzer <|- - Einlagerer
+Benutzer <|- - WerkstattInhaber
+Benutzer <|- - Ersatzteilhandler
+
+Lager -right-|> Einrichtung
+Werkstatt -right-|> Einrichtung
+Unternehmen -right-|> Einrichtung
+
+Lagerhalter "1" *- - "1..*" Lager : besitzt >
+Lagerhalter "*" - - "*" Werkstatt : arbeitet\nmit >
+Lagerhalter "*" - - "*" Termin : vereinbart >
+Lagerhalter "1" -up- "*" Angebot : macht >
+
+WerkstattInhaber "1" *- - "1..*" Werkstatt : besitzt >
+
+Ersatzteilhandler "1" *- - "1..*" Unternehmen : besitzt >
+Unternehmen "1" - - "*" ErsatzteilArtikel : verkauft >
+
+Einrichtung "1" - - "1" Ort : befindet\nsich\nam >
+Termin "1" - - "1" Ort : findetstatt\nam >
+
+Einlagerer "1" - - "*" Termin : vereinbart >
+
+
+Lager "1" - - "1..*" Servicezeiten : ist\nverfügbar\nin  >
+Lager "1" *- - "*" Kondition : beschreibt <
+Lager "1" - - "1..*" Stellplatz : verfügt\nüber >
+Lager "1" - - "*" Service : bietet >
+
+Fahrzeug "1" - - "1" FahrzeugKategorie : hat <
+Fahrzeug "1" - - "1" Fahrzeugmarke : hat <
+
+Fahrzeug "1" - - "1" Stellplatz : ist\nzugeordnet <
+FahrzeugController "1" - - "*" Einlagerer : benutzt <
+FahrzeugController "1" - - "*" Fahrzeug : verwaltet >
+
+Einlagerer "1" *-left- "1..*" Fahrzeug : besitzt <
+Einlagerer "1" - - "*" Lager : sucht <
+
+Anfrage "*" - - "1" Einlagerer : schickt\nan\nLagerhalter <
+Anfrage "*" - - "1" Lagerhalter : schickt\nan\nWerkstatt <
+
+Werkstatt "1" - - "1..*" Service : bietet >
+
+Service  - -|> Ware
+ErsatzteilArtikel  - -|> Ware
+Artikelzustand "1" -up- "1" ErsatzteilArtikel : beschreibt >
+AngebotStatus "1" -left- "1" Angebot : beschreibt\nden Status\nvon <
+@enduml
+
+@startuml
+skinparam BackgroundColor FFFFFF
+skinparam shadowing false
+skinparam RoundCorner 7
+skinparam ArrowColor 454645
+skinparam FontColor 454645
+skinparam SequenceLifeLineBorderColor 696969
+skinparam SequenceGroupHeaderFontColor 454645
+skinparam SequenceGroupFontColor 696969
+skinparam SequenceGroupBorderColor 696969
+skinparam SequenceGroupBorderThickness 1
+
+skinparam sequenceDivider {
+    BorderColor 454645
+    BorderThickness 1
+    FontColor 454645
+}
+
+skinparam participant {
+    BackgroundColor FF6347
+    BorderColor 454645
+    FontColor FFFFFF
+    BorderThickness 1.5
+}
+
+skinparam database {
+    BackgroundColor 00FFFF
+    BorderColor 454645
+    FontColor 454645
+}
+
+skinparam entity {
+    BackgroundColor FFE552
+    BorderColor 454645
+    FontColor 454645
+}
+
+skinparam note {
+    BackgroundColor 7FFFD4
+    BorderColor 454645
+    FontColor 454645
+    BorderThickness 1.5
+}
+
+skinparam actor {
+    BackgroundColor 454645
+    BorderColor 454645
+    FontColor 454645
+}
+
+skinparam boundary {
+    BackgroundColor FFE552
+    BorderColor 454645
+    FontColor 454645
+}
+
+skinparam control {
+    BackgroundColor FFE552
+    BorderColor 454645
+    FontColor 454645
+}
+
+skinparam collections {
+    BackgroundColor FF5F42
+    BorderColor 454645
+    FontColor 454645
+}
+
+skinparam queue {
+    BackgroundColor FF6347
+    BorderColor 454645
+    FontColor FFF
+    BorderThickness 1.5
+}
+abstract Benutzer {
+  # Id : int
+  # Vornahme : String
+  # Nachname : String
+  # MailAdresse : String
+  SignUp()
+  Login()
+  UpdateProfil(Profil)
+}
+
+abstract  Einrichtung {
+  # Id : int
+  # Name : String
+  # Ort : Ort
+}
+
+abstract Ware {
+  # Id : int
+  # Name : String
+  # Beschreibung : String
+  # Kosten : double
+  AddWare(Ware)
+  RemoveWare(Ware)
+  EditWare(Ware)
+  GetWare(id)
+  GetWaren()
+
+}
+
+class Ort {
+  - longitude : float
+  - latitude : float
+  - Strasse : String
+  - Hausnummer : int
+  - Zusatz : String
+  - Plz : String
+  - Stadt : String
+  - Bundesland : String
+}
+
+class Lagerhalter {
+  - Lager : List<Lager>
+  AddLager(Lager)
+  RemoveLager(id)
+  EditLager(Lager)
+}
+class FahrzeugController{
+GetFahrzeug(id)
+GetFahrzeuge()
+AddFahrzeug(Fahrzeug)
+RemoveFahrzeug(id)
+ EditFahrzeug(Fahrzeug)
+}
+class Einlagerer {
+  - Fahrzeuge : List<Fahrzeug>
+
+  CreateAnfrage(Lager)
+  BookStellplatz(stellplatzId)
+  SearchLager(Stadt)
+  RequestAngebot(Lager)
+  SearchErsatzteile()
+  BookService(Lager)
+  ReserveArtikel(ArtikelId)
+}
+
+class WerkstattInhaber {
+  - Werkstaette : List<Werkstaette>
+  AddWerkstatt(Werkstatt)
+  RemoveWerkstatt(id)
+  EditWerkstatt(Werkstatt)
+}
+
+class Ersatzteilhandler {
+  - Unternehmen : List<Unternehmen>
+  AddUnternehmen(Unternehmen)
+  RemoveUnternehmen(id)
+  EditUnternehmen(Unternehmen)
+}
+
+class Stellplatz {
+  + IstVerfuegbar : boolean
+  - Massen : List<Double>
+}
+
+class Fahrzeug {
+  - Id : int
+  - Kategorie : FahrzeugKategorie
+  - Marke : Fahrzeugmarke
+  - Modell : String
+  + IstFahrbereit : boolean
+  + IstInWartung : boolean
+  - Anmerkung : String
+  AddAnmerkung(string)
+}
+
+class Termin {
+  - Id : int
+  - Beteiligte : List<Benutzer>
+  - Ort : Ort
+  - Datum : Date
+  - Dauer : double
+  - Zweck : String
+  Book()
+}
+
+class Service {
+-Anbieter
+Book(Benutzer)
+}
+
+class Lager {
+  - Id : int
+  - Konditionen : List<Kondition>
+  - Werkstaette : List<Werkstaette>
+
+   + Services : List<Service>
+  - Einlagerungsbetrag : double
+  - Servicezeiten : List<Servicezeiten>
+  - Stellplaetze : List<Stellplatz>
+  - Kapazitaet : int
+  - FreiePlaetze : int
+  StoreFahrzeug(Fahrzeug, Stellplatz)
+  CreateAngebot(Werkstatt)
+}
+
+class Servicezeiten {
+  - Von : Date
+  - Bis : Date
+}
+
+class ErsatzteilArtikel {
+  - Zustand : Artikelzustand
+  - IstReserviert : boolean
+  MarkReserved()
+  MarkAvalibale()
+}
+
+class Werkstatt {
+  + Services : List<Service>
+  + Fahrzeugmarken : List<Fahrzeugmarke>
+}
+
+class Unternehmen {
+  - Waren : List<Ware>
+}
+
+class Anfrage {
+  - Id : int
+  - Von : Benutzer
+  - An : Benutzer
+  - Nachricht : String
+  Send()
+}
+
+class Angebot {
+  - Id : int
+  - Anbieter : Benutzer
+  - Kunde : Benutzer
+  - Ware : Ware
+  - Status : AngebotStatus
+  - Betrag : double
+  - Ablaufsdatum : Date
+  Send()
+  Accept()
+  Reject()
+}
+
+enum AngebotStatus {
+  Angenommen
+  Abgelehnt
+  Bevorstehend
+}
+
+enum Kondition {
+  Beheizt
+  UvGeschuetzt
+  Klimatisiert
+  ImmerZugaenglich
+  Wachschutz
+}
+
+enum FahrzeugKategorie {
+  Cabriolet
+  Kleinstwagen
+  Kleinwagen
+  Kompaktklasse
+  Mittelklasse
+  ObereMittelklasse
+  Luxus
+  Suv
+  Van
+  }
+
+enum Fahrzeugmarke {
+  Porsche
+  Bugatti
+  Volkswagen
+  MercedesBenz
+  BMW
+  Audi
+  Opel
+  Skoda
+  Ford
+  }
+
+enum Artikelzustand {
+  Neu
+  Gebraucht
+}
+
+
+Benutzer <|- - Lagerhalter
+Benutzer <|- - Einlagerer
+Benutzer <|- - WerkstattInhaber
+Benutzer <|- - Ersatzteilhandler
+
+Lager -right-|> Einrichtung
+Werkstatt -right-|> Einrichtung
+Unternehmen -right-|> Einrichtung
+
+Lagerhalter "1" *- - "1..*" Lager : besitzt >
+Lagerhalter "*" - - "*" Werkstatt : arbeitet\nmit >
+Lagerhalter "*" - - "*" Termin : vereinbart >
+Lagerhalter "1" -up- "*" Angebot : macht >
+
+WerkstattInhaber "1" *- - "1..*" Werkstatt : besitzt >
+
+Ersatzteilhandler "1" *- - "1..*" Unternehmen : besitzt >
+Unternehmen "1" - - "*" ErsatzteilArtikel : verkauft >
+
+Einrichtung "1" - - "1" Ort : befindet\nsich\nam >
+Termin "1" - - "1" Ort : findetstatt\nam >
+
+Einlagerer "1" - - "*" Termin : vereinbart >
+
+
+Lager "1" - - "1..*" Servicezeiten : ist\nverfügbar\nin  >
+Lager "1" *- - "*" Kondition : beschreibt <
+Lager "1" - - "1..*" Stellplatz : verfügt\nüber >
+Lager "1" - - "*" Service : bietet >
+
+Fahrzeug "1" - - "1" FahrzeugKategorie : hat <
+Fahrzeug "1" - - "1" Fahrzeugmarke : hat <
+
+Fahrzeug "1" - - "1" Stellplatz : ist\nzugeordnet <
+FahrzeugController "1" - - "*" Einlagerer : benutzt <
+FahrzeugController "1" - - "*" Fahrzeug : verwaltet >
+
+Einlagerer "1" *-left- "1..*" Fahrzeug : besitzt <
+Einlagerer "1" - - "*" Lager : sucht <
+
+Anfrage "*" - - "1" Einlagerer : schickt\nan\nLagerhalter <
+Anfrage "*" - - "1" Lagerhalter : schickt\nan\nWerkstatt <
+
+Werkstatt "1" - - "1..*" Service : bietet >
+
+Service  - -|> Ware
+ErsatzteilArtikel  - -|> Ware
+Artikelzustand "1" -up- "1" ErsatzteilArtikel : beschreibt >
+AngebotStatus "1" -left- "1" Angebot : beschreibt\nden Status\nvon <
+@enduml
+
+PlantUML version 1.2021.16(Wed Dec 08 18:25:22 CET 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: de
+Country: DE
+--></g></svg>
