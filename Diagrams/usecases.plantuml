@@ -1,0 +1,88 @@
+@startuml
+!theme vibrant
+left to right direction
+
+actor Lagerhalter as Lagerhalter
+actor Einlagerer as Einlagerer
+actor Werkstatt as Werkstatt
+actor Erzatzteilhandler as Erzatzhandler
+
+rectangle VintageCarCommunity {
+
+usecase "Einlagerungsangebot\nanfordern" as AngebotAn
+usecase "Einlagerungsangebot\nan-/ablehnen" as Action
+usecase "Anfragen an Lagerhalter" as Anfrage
+usecase "Zusätzliches Angebot buchen" as extraAngebot
+usecase "Termin vereibaren" as ELTermin
+usecase "Werkstatt Konto\n anlegen" as WKRegistrieren
+usecase "Werkstattservice\n anbieten" as W_Angebot
+usecase "Lagehalter Konto\n anlegen" as LHRegisterieren
+usecase "Einlagerungsservices\n anbieten" as Services
+usecase "Kapazitäten angeben" as Capacities
+usecase "Spezialgebiet\n angeben" as Fahrzeugsmarken
+usecase "Informationen bereitstellen" as Info
+usecase "Termin mit werkstatt\n vereinbaren " as LHTermin
+usecase "Einlagerungsangebot\nmachen" as AngebotM
+usecase "Stellplatz suchen" as Platz
+usecase "Ersatzteile zu Fahrzeug suchen" as ETSuche
+usecase "Reparaturanfragen an\nWerkstatt stellen" as Reparaturanfragen
+usecase "Ersatz- und Zubehörteile\nreservieren" as reservieren
+usecase "Ersatzteilhandler Konto\nanlegen" as EHRegisterieren
+usecase "Ersatz- oder Zubehörteile\nverwalten " as anbieten
+
+Anfrage .> AngebotAn : <<extend>>
+AngebotAn .> Action : <<include>>
+W_Angebot .> WKRegistrieren : <<include>>
+
+
+(WKRegistrieren) -[hidden]- (reservieren)
+(WKRegistrieren) -[hidden]- (Platz)
+(WKRegistrieren) -[hidden]- (ETSuche)
+(WKRegistrieren) -[hidden]- (Action)
+(WKRegistrieren) -[hidden]- (anbieten)
+(WKRegistrieren) -[hidden]- (AngebotAn)
+Services -[hidden]- extraAngebot
+WKRegistrieren -[hidden]- Anfrage
+(W_Angebot) -[hidden]- (WKRegistrieren)
+
+(WKRegistrieren) -[hidden]- (EHRegisterieren)
+
+note left of ETSuche: "Sucherergebnisse enthalten \ndie Anschrift zusammen mit\ndessen Merkmalen und vor\nOrt angebotenen Services."
+note left of (Platz) : "Die Suche ist\nnur für deutsche\nGroßstädte möglich"
+note left of EHRegisterieren : "Samt Informationen\nzum Unternehmen"
+note right of (Services) : z.B. Einschweißen des Fahrzeuges
+note right of (LHRegisterieren) : "Samt Ort des Einlagerns,\nEinlagerungskosten,\nServicezeiten \nund Lagerbedingungen"
+note right of Capacities : "Wie viele Plätze in welcher \nKategorie für Fahrzeuge\nverfügbar sind"
+note right of Fahrzeugsmarken : "Auf welche Fahrzeugmarken\nLagerhalter spezialisiert ist"
+note right of Info : "Fahrbereitschaft und\nWartungsstand des\njeweiligen Fahrzeuges"
+note left of Anfrage: "Detailinformationen\nzum Standort anfragen"
+note left of ELTermin: "Entgegennahme\noder Rückgabe \neines Fahrzeuges"
+
+}
+
+(reservieren) -- Einlagerer
+(ELTermin) -- Einlagerer
+(Platz) -- Einlagerer
+Anfrage -- Einlagerer
+ETSuche -- Einlagerer
+extraAngebot -- Einlagerer
+
+Lagerhalter -- Anfrage
+Lagerhalter -- extraAngebot
+Lagerhalter -- Reparaturanfragen
+Lagerhalter -- AngebotM
+Lagerhalter -- LHRegisterieren
+Lagerhalter -- Services
+Lagerhalter -- Capacities
+Lagerhalter -- Fahrzeugsmarken
+Lagerhalter -- Info
+Lagerhalter -- LHTermin
+Lagerhalter -- ELTermin
+
+Werkstatt -- W_Angebot
+Werkstatt -- Reparaturanfragen
+Werkstatt -- LHTermin
+
+EHRegisterieren -- Erzatzhandler
+(anbieten) -- Erzatzhandler
+@enduml
