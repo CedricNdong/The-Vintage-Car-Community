@@ -1,4 +1,6 @@
 @startuml
+!theme vibrant
+
 abstract Benutzer {
   # Id : int 
   # Vornahme : String

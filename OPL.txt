@@ -1,3 +1,13 @@
 Offene Punkte Liste
-Welche Fahrzeugkategorien gibt es?
-Welche Fahrzeugmarken und deutsche Großstädte sollen im System dargestellt werden?
+-------------------
+
+- Welche Fahrzeugkategorien gibt es?
+
+- Welche Fahrzeugmarken und deutsche Großstädte sollen im System dargestellt werden?
+
+- Welche Anforderungen werden priöriesiert?
+
+
+Einrichtung.Name
+Ware.Name
+Benutzer.Name
