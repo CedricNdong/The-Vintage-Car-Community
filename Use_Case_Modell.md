@@ -5,7 +5,7 @@
 
 # Use Case Diagramm
 
-![](Diagrams/usecases.svg)
+![](http://www.plantuml.com/plantuml/svg/XLRDRjms4BxhAQO-EK3NlGT143TrVs07BUAq1b8L1INDIgofaK6Ex5P5doMNFaDEkUsBTSYbH2qtw9u4pNppm_b_vLXP7djJVC4TzWYFkhAAk32uPU01h6uxXaPRh5aFL1Igvi72ZMhHTiemMb1k_Hi1LvgC9-xvwI-oxz3UYsbcuQQVMTPEYYT6RJf5ZOag0Z4IYiBxewWr2BzeOj7zMjdNGz-FfFal-BieHeUrSWXdi-sHMYSIM0rSagBjO1kqTEPrN-x9btHIQlELgWnsX54m12L9NTBMYXI1edLC0ZRo4lZzw7R_ycHqtU7Y0rHZtKNj-2TR5Ub9x1tQNXCyeaLTAHknLpTxUiAb45yFn4FfdJBOHlpTzLjijMEhqUBdf1pQHrrZ4AiqyYpt-v53_g6n53vdwURxlILScyf37AsvtDnjf2UfQ_MW9iqIEIG8cOdGryAeDUir-FO19wrCYrvbUOZ_LdLsmh5rlRBtQxz-yBNHAvzP9AXydDan6XC5FVye7RrcU9fZLyRqKCWFn304vAaIwzMI_XZeDwldU2yUZE89N2gJdpnXfTQws3q8qxWySornzUxM_oIPj_YWhEBHgbJ09QKAMZ__29kRti183RmVA-ns7srmf2IB8SKurslwp-LJuwU2MjVJLLvFkVMXGPkRbtGyASCn6KkD5KNiIhXucQO0F8SNBwJva9gNBuk5B9ZOy06WgJPZWu9OUa8GMMDboA8uF-G_WysldMuQfDysSBuAohF_HuQSdy34B9z0xLzq0XJZTGesXqfmS-Ek-8VpB8jJWYs3ydo9ww6Lp8CJCStAHU0qC4BORyDsReNdS1Q-5grO9EqS0X9t-vefgT4eVhcwirhafj6fliVGzS93GHEyaMxfbK4AvVyus99-j0oniv6GbcbsSNReH4mdY1VVQ8JW2MWdkccqiDrzij3Wo4x89NrdXzq79mEmOOH-zx7r2oHJc3qQ_FDKpt0msagQnXv-9a4HTZrILE9N_jwjsL_lsNJnzONVu-B44-hT1oJnAKrHTBdmJHRunGaVbGRJKK3kovBMm_1-42aIOhG_eTvdmGSshDKA6qsjO8-TJcl06xpJ_gH1Wp8b_R95q0HFQ7ogHU6rOcm7gp44EJqc30mXjPMou3GrkPLiUNXJb-CsQbwuUsP9wsl9xLUITXej-oJdgdsEl3wl92wVkbDRzcKbCrbP3WkJ5JK-Z2NzWP8GerkaLJQoWeWzvGiCMGdwk11klSR1CinpFLCnNnYYuuguHK6GwdeiAGpSjxjFzNshAfImeYPq1yuK_nJ5mNY3pMPz5PxFsdD6R8sC6f-JKMClPzJrrCbOnJenmefgS_9QGyuxseOP86tnZ9wrHywUMo-Zf_BEENb9vcnVLZajtYGvDXsJHJe1XBpCuqFoSGWIUssaoAQICBEhFksPOzuhf6RipNy0)
 
 <hr>
 
@@ -30,7 +30,7 @@
 | Auslösendes Ereignis  | Der Lagerhalter möchte sich registrieren |
 | Vorbedingung | Der Lagerhalter hat eine gültige E-Mail Adresse|
 | Nachbedingung |Der Lagerhalter hat ein Konto erstellt.|
-| Hauptszenario |1. Der Lagerhalter geht auf die Registrierungsseite.<br>2. Das System zeigt die Registrierungsseite an.<br>3. Der Lagerhalter gibt seine E-Mail-Adresse und sein Passwort ein.<br>4. Das System verifiziert die Eingaben.<br>Das System legt ein Lagerkonto an.<br>6. Die Profilseite wird geöffnet.<br>7. Der Lagerhalter gibt seine Daten ein.<br>8. Der Lagerhalter drückt auf die Schaltfläche "Speichern".|
+| Hauptszenario |1. Der Lagerhalter klickt auf " regestrieren".<br>2. Das System zeigt die Registrierungsseite an.<br>3. Der Lagerhalter gibt seine E-Mail-Adresse und sein Passwort ein.<br>4. Das System verifiziert die Eingaben.<br>Das System legt ein Lagerkonto an.<br>6. Die Profilseite wird geöffnet.<br>7. Der Lagerhalter gibt seine Daten ein.<br>8. Der Lagerhalter drückt auf die Schaltfläche "Speichern".|
 | Alternativszenarien |                      |
 | Ausnahme szenarien |4a. Die E-Mail wurde bereits registriert.<br>5. Das System zeigt die Meldung "Ihre E-Mail ist bereits registriert" an.|
 
@@ -55,9 +55,9 @@
 | Auslösendes Ereignis  | Der Lagerhalter möchte eine Service anbieten. |
 | Vorbedingung | Der Lagerhalter hat ein Konto.|
 | Nachbedingung |Der Lagerhalter stellt seine Service zur Verfügung.|
-| Hauptszenario |1. Der Lagerhalter klickt auf "Lager Service anbieten".<br>2. Das System zeigt ein Formular an.<br>3. Der Lagerhalter gibt einen Servicenamen und die Beschreibung der service ein.<br>4. Der Lagerhalter bestätigt seine Eingabe.<br>5. Das System verknüpft die angebotene Dienstleistung mit dem Profil des Lagerhalters.|
+| Hauptszenario |1. Lagerhalter geht auf den "Lagerbereich".<br>2. Das System zeigt eine Ansicht.<br>3. Der Lagerhalter klickt auf "Service anbieten".<br>4. Das System zeigt ein Formular an.<br>5. Der Lagerhalter gibt einen Servicenamen und die Beschreibung der service ein.<br>6. Der Lagerhalter bestätigt seine Eingabe.<br>7. Das System verknüpft die angebotene Dienstleistung mit dem Profil des Lagerhalters.|
 | Alternativszenarien |                      |
-| Ausnahme szenarien |4a. Die E-Mail wurde bereits registriert.<br>5. Das System eigt die Meldung "Ihre E-Mail ist bereits registriert" an.|
+| Ausnahme szenarien |4a. Die E-Mail wurde bereits registriert.<br>5. Das System gibt die Meldung "Ihre E-Mail ist bereits registriert" an.|
 
 <hr>
 
@@ -78,7 +78,7 @@
 | Auslösendes Ereignis  | Lagerhalter möchte die Anzahl der verfügbaren Plätze angeben. |
 | Vorbedingung | Der Lagerhalter hat ein Konto.|
 | Nachbedingung |Kapazitäten sind sichtbar|
-| Hauptszenario |1. Der Lagerhalter geht auf seinem Profil<br>2. Lagerhalter geht in den Kapazitätsbereich<br>3. Lagerhalter drückt auf Bearbeiten<br>4. Das System zeigt im Dialog alle Kapazitäten an<br>5. Der Lagerhalter gibt die Kapazität und die Kategorie ein.<br>6. Der Lagerhalter klickt auf speichern<br>7. Das System zeigt die Kapazitäten an.|
+| Hauptszenario |1. Lagerhalter geht auf den "Lagerbereich".<br/>2. Das System zeigt eine Ansicht.<br/>3. Lagerhalter klickt auf "Kapazitätsbereich"<br>4.  Lagerhalter drückt auf Bearbeiten<br>5. Das System zeigt im Dialog alle Kapazitäten an<br>6. Der Lagerhalter gibt die Kapazitäten und die Kategorien ein.<br>7. Der Lagerhalter klickt auf speichern<br>8. Das System zeigt die Kapazitäten an.|
 | Alternativszenarien |                      |
 | Ausnahme szenarien |...|
 
@@ -101,8 +101,8 @@
 | Auslösendes Ereignis  | Lagerhalter möchte sein Spezialgebiet angeben |
 | Vorbedingung | Lagerhalter hat ein Konto|
 | Nachbedingung | Spezialgebiet wird angezeigt |
-| Hauptszenario | 1. Der Lagerhalter geht auf seiner Profilseite<br>2. Der Lagerhalter geht in den Bereich Spezialgebiet<br>3. Der Lagerhalter drückt auf Bearbeiten<br>4. Das System zeigt eine Liste mit allen Spezialgebieten an<br>5. Der Lagerhalter wählt aus der Liste aus, auf welche Automarken er spezialisiert ist<br>6. Der Lagerhalter klickt auf Speichern<br>7. Das System zeigt die Spezialitäten an. |
-| Alternativszenarien | ... |                      |
+| Hauptszenario | 1. Lagerhalter geht auf den "Lagerbereich".<br/>2. Das System zeigt eine Ansicht.<br/>3. Der Lagerhalter klickt auf  "Spezialgebiet"<br>4. Der Lagerhalter klickt auf "Bearbeiten"<br>5. Das System zeigt eine Liste mit allen Spezialgebieten an<br>6. Der Lagerhalter wählt aus der Liste aus, auf welche Automarken er spezialisiert ist<br>7. Der Lagerhalter klickt auf Speichern<br>8. Das System zeigt die Spezialitäten an. |
+| Alternativszenarien | ... |
 | Ausnahme szenarien |...|
 
 <hr>
@@ -124,8 +124,8 @@
 | Auslösendes Ereignis  | Lagerhalter möchte Informatinen über die Fahrbereitschaft angeben/aktuallisieren |
 | Vorbedingung | Lagerhalter hat ein Konto |
 | Nachbedingung | Fahrbereitschaft wird angezeigt |
-| Hauptszenario | 1. Der Lagerhalter Klickt geht auf "Eingelagerte Autos" bereich.<br>2. das System zeigt dem Lagerhalter eine Tabellenansicht samt Informationen über die eingelagerten Auto.<br>3. Der Lagerhalter wählt ein Auto.<br>5. Der Lagerhalter drückt auf "Bearbeiten".<br>6. Das System öffnet einen Dialog zum Bearbeiten.<br>7. Der Lagerhalter bearbeitet die Fahrbereitschaft.<br>8. Der Lagerhalter klickt auf speichern. |
-| Alternativszenarien | ... |                      |
+| Hauptszenario | 1. Der Lagerhalter Klickt auf den bereich"Fahrzeug" .<br>2. das System zeigt dem Lagerhalter eine Tabellenansicht samt Informationen über die eingelagerten Auto.<br>3. Der Lagerhalter wählt ein Auto.<br>5. Der Lagerhalter drückt auf "Bearbeiten".<br>6. Das System öffnet einen Dialog zum Bearbeiten.<br>7. Der Lagerhalter bearbeitet die Fahrbereitschaft.<br>8. Der Lagerhalter klickt auf speichern. |
+| Alternativszenarien | ... |
 | Ausnahme szenarien | ... |
 <hr>
 
@@ -135,7 +135,7 @@
 | Name |                 Reparaturanfragen an Werkstätten einstellen |
 | Primärer Akteur |            Lagerhalter             |
 | Weitere Akteure |                  Werkstatt                 |
-| Stakeholder-Ziel(e) |      Die Lagerhalter können Anfragen zu Reparaturen und Wartungsarbeiten einstellen.           |
+| Stakeholder-Ziel(e) |      Die Lagerhalter können Anfragen zu Reparaturen und Wartungsarbeiten einstellen.      |
 | Auslösendes Ereignis (Trigger) |              Knopf drücken                  |
 | Beschreibung |             Die Lagerhalter können Anfragen zu Reparaturen und Wartungsarbeiten an registrierte Werkstätten in der Nähe einstellen.            |
 | Beziehung zu anderen Use Cases |           ...          |
@@ -144,12 +144,12 @@
 | --- | --- |
 | Auslösendes Ereignis  | Der Lagerhalter möchte eine Reparaturanfrage an Werkstatt einstellen |
 | Vorbedingung | Lagerhalter hat ein Konto |
-| Nachbedingung | Lagerhalter hat das passende Werkstatt
-gefunden und ein Reparaturanfragen
-eingestellt |
-| Hauptszenario | 1. Der Lagerhalter geht in den Bereich "Werkstätte" und wählt eine Werkstatt aus.<br>2. Das System öffnet die Seite von der gewählten Werkstatt.<br>3. Lagerhalter klickt auf "Reparaturanfrage einstellen".<br>4. Das System öffnet einen Dialog<br>5. Lagerhalter schreibt eine Anfrage<br>6. Der Lagerhalter klickt auf Absenden.<br>7. Das System zeigt die Meldung
-"Reparaturauftrag wurde gestellt" an |
-| Alternativszenarien | ... |                      |
+| Nachbedingung | Lagerhalter hat die passende Werkstatt |
+|gefunden und ein Reparaturanfragen||
+|eingestellt ||
+| Hauptszenario | 1. Der Lagerhalter klickt auf den  Bereich "Werkstätte" .<br>2. Der lagerhalter wählt eine Werkstatt aus.<br>3. Das System öffnet die Seite von der gewählten Werkstatt.<br>4. Lagerhalter klickt auf "Reparaturanfrage einstellen".<br>5. Das System öffnet einen Dialog<br>6. Lagerhalter schreibt eine Anfrage<br>7. Der Lagerhalter klickt auf Absenden.<br>8. Das System zeigt die Meldung |
+|"Reparaturauftrag wurde gestellt" an ||
+| Alternativszenarien | ... |
 | Ausnahme szenarien | ... |
 <hr>
 
@@ -170,8 +170,8 @@ eingestellt |
 | Auslösendes Ereignis  | Button drücken ( Termin mit Werkstatt) |
 | Vorbedingung | Lagerhalter hat ein Konto |
 | Nachbedingung | Lagerhalter bucht einen Termin bei Werkstatt |
-| Hauptszenario | 1. Der Lagerhalter wählt eine Werkstatt aus.<br>2. Der Lagerhalter klickt auf "Termin buchen".<br>3. Das System öffnet einen Dialog mit einem Kalender, in dem die verfügbaren Termine angezeigt werden.<br>4. Der Lagerhalter wählt einen Termin aus.<br>5. Der Lagerhalter klickt auf "Buchen".<br>6. Das System zeigt eine Meldung an: "Termin wurde erfolgreich gebucht." |
-| Alternativszenarien | ... |                      |
+| Hauptszenario | 1. Der Lagerhalter klickt auf den  Bereich "Werkstätte" .<br/>2. Der Lagerhalter wählt eine Werkstatt aus.<br>3. Der Lagerhalter klickt auf "Termin buchen".<br>4. Das System öffnet einen Dialog mit einem Kalender, in dem die verfügbaren Termine angezeigt werden.<br>5. Der Lagerhalter wählt einen Termin aus.<br>6. Der Lagerhalter klickt auf "Buchen".<br>7. Das System zeigt eine Meldung an: "Termin wurde erfolgreich gebucht." |
+| Alternativszenarien | ... |
 | Ausnahme szenarien | ... |
 <hr>
 
@@ -191,8 +191,8 @@ eingestellt |
 | Auslösendes Ereignis  | Der Einlagerer sucht einen passenden Stellplatz |
 | Vorbedingung | Lagerhalter hat ein Konto |
 | Nachbedingung | Der Einlagerer findet einen passenden Stellplatz für sein Fahrzeug |
-| Hauptszenario | 1.Der Einlegerer geht in den Suchbereich.<br>2.Das System zeigt einen Dialog an.<br>3. Der Einlegerer klickt auf "Stellplatz Suchen".<br>4. Der Einlegerer klickt auf "Stadt" Dropdown Menü.<br>5.Das System zeigt eine Liste von Städten an.<br>6.Der Einlegerer wählt eine Stadt aus einer Liste aus.<br>6. Das System zeigt die verfügbaren Stellplätze an.<br> 7. Der Einlagerer wählt einen Stellplatz aus und drückt auf reservieren.<br>8. Das System zeigt eine Meldung "Stellplatz wurde erfolgreich reserviert". |
-| Alternativszenarien | ... |                      |
+| Hauptszenario | 1. Der Einlegerer geht in den "Suchbereich".<br>2. Das System zeigt eine Ansicht an.<br>3. Der Einlegerer klickt auf "Stellplatz Suchen".<br>4. Der Einlegerer klickt auf "Stadt" Dropdown Menü.<br>5. Das System zeigt eine Liste von Städten an.<br>6. Der Einlegerer wählt eine Stadt aus einer Liste aus.<br>6. Das System zeigt die verfügbaren Stellplätze an.<br> 7. Der Einlagerer wählt einen Stellplatz aus und drückt auf reservieren.<br>8. Das System zeigt eine Meldung "Stellplatz wurde erfolgreich reserviert". |
+| Alternativszenarien | ... |
 | Ausnahme szenarien | ... |
 <hr>
 
@@ -213,8 +213,8 @@ eingestellt |
 | Auslösendes Ereignis  | Einlagerer möchte eine Anfrage an Lagerhalter schicken |
 | Vorbedingung | Lagerhalter hat ein Konto |
 | Nachbedingung | Der Einlagerer stellt eine Anfrage an Lagerhalter |
-| Hauptszenario | 1. Der Einlagerer klickt auf den Lagerhalter Bereich.<br>2. Das System öffnet den Lagerhalter Bereich.<br>3. Der Einlagerer klickt auf den Anfrage schicken.<br>4. Das System öffnet einen Dialog .<br>5. Der Einlagerer schreibt eine Nachricht an den Lagerhalter.<br>6. Der Einlagerer klickt auf "Absenden". |
-| Alternativszenarien | ... |                      |
+| Hauptszenario | 1. Der Einlagerer klickt auf den "Lager" Bereich.<br>2. Das System zeigt eine Ansicht.<br/>3. Der Einlagerer klickt auf den "Anfrage schicken".<br>4. Das System öffnet einen Dialog .<br>5. Der Einlagerer schreibt eine Nachricht an den Lagerhalter.<br>6. Der Einlagerer klickt auf "Absenden". |
+| Alternativszenarien | ... |
 | Ausnahme szenarien | ... |
 <hr>
 
@@ -234,9 +234,9 @@ eingestellt |
 | Auslösendes Ereignis  | Einlagerungsangebot annehmen/ablehnen. |
 | Vorbedingung | Einlager hat ein Konto. |
 | Nachbedingung | Die Einlagerer können ein Angebot annehmen oder ablehnen. |
-| Hauptszenario | 1. Der Einlegerer klickt auf "Lagerhalter" Bereich.<br>2. Das System geht zum Lagerhalter Bereich.<br>3.Der Einlegerer klickt auf Angebote.<br>4.Das System zeigt die verfügbaren Angebote an.<br>5.Der Einlegerer klickt auf ein Angebot.
-6.Das System zeigt 2 Buttons"Akzeptieren" und "Ablehnen" an.<br>7. Der Einlegerer klickt einer der beiden Optionen  an. |
-| Alternativszenarien | ... |                      |
+| Hauptszenario | 1. Der Einlagerer klickt auf den "Lager" Bereich.<br/>2. Das System zeigt eine Ansicht.<br/>3. Der Einlagerer klickt auf Angebote.<br>4. Das System zeigt die verfügbaren Angebote an.<br>5. Der Einlegerer klickt auf ein "Angebot".<br>6. Das System zeigt 2 Buttons"Akzeptieren" und "Ablehnen" an.<br/> 7. Der Einlegerer klickt einer der beiden Optionen  an. |
+| ||
+| Alternativszenarien | ... |
 | Ausnahme szenarien | ... |
 <hr>
 
@@ -256,8 +256,8 @@ eingestellt |
 | Auslösendes Ereignis  | Einlagerer möchte Erzatzteile zu Fahrzeug suchen |
 | Vorbedingung | Einlager hat ein Konto. |
 | Nachbedingung | Der Einlager findet Ersatz- und Zubehörteile zu seinem Fahrzeug. |
-| Hauptszenario | 1. Der Einleger geht in den Suchbereich.<br>3. Der Einlagerer klickt auf "Ersatzteil suchen".<br>4. Das System fragt den Einlagerer nach dem Fahrzeugtyp und der Stadt.<br>5. Der Einlagerer wählt den Fahrzeugtyp und die Stadt aus.<br>6. Das System zeigt die verfügbaren Artikel an.<br>7. Der Einlagerer wählt einen Artikel aus. |
-| Alternativszenarien | ... |                      |
+| Hauptszenario | 1. Der Einlagerer klickt auf den "suche" Bereich.<br/>2. Das System zeigt eine Ansicht.<br/>3. Der Einlagerer klickt auf "Ersatzteil suchen".<br>4. Das System fragt den Einlagerer nach dem Fahrzeugtyp und der Stadt.<br>5. Der Einlagerer wählt den Fahrzeugtyp und die Stadt aus.<br>6. Das System zeigt die verfügbaren Artikel an.<br>7. Der Einlagerer wählt einen Artikel aus. |
+| Alternativszenarien | ... |
 | Ausnahme szenarien | ... |
 <hr>
 
@@ -277,8 +277,8 @@ eingestellt |
 | Auslösendes Ereignis  | Einlager drückt auf "Termin vereinbaren" |
 | Vorbedingung | Einlagerer hat ein Konto |
 | Nachbedingung | Einlagerer macht einen Termine für das Entgegennehmen und die Rückgabe ihres Fahrzeuges mit dem Lagerhalter aus. |
-| Hauptszenario | 1. Der Einlagerer geht in den Lagerhalterbereich.<br>2. Das System öffnet Lagerhalterbereich.<br>3. Der  Einlagerer klickt "Termin buchen".<br>4. Das System öffnet einen Dialog.<br>5. Der Einlagerer gibt den Zweck des Termins an (z.B Fahrezug Annehmen oder Rücksenden).<br>6. Das System zeigt freie Termine an.<br>7. Der Einlagerer wählt einen Termin aus.<br>8. Der Einlagerer klickt auf "buchen".<br>9. Das System zeigt eine Meldung an “Termin wurde erfolgreich gebucht”. |
-| Alternativszenarien | ... |                      |
+| Hauptszenario | 1. Der Einlagerer klickt auf den "Lager" Bereich.<br/>2. Das System zeigt eine Ansicht.<br/>3. Der  Einlagerer klickt "Termin buchen".<br>4. Das System öffnet einen Dialog.<br>5. Der Einlagerer gibt den Zweck des Termins an (z.B Fahrezug Annehmen oder Rücksenden).<br>6. Das System zeigt freie Termine an.<br>7. Der Einlagerer wählt einen Termin aus.<br>8. Der Einlagerer klickt auf "buchen".<br>9. Das System zeigt eine Meldung an “Termin wurde erfolgreich gebucht”. |
+| Alternativszenarien | ... |
 | Ausnahme szenarien | ... |
 <hr>
 
@@ -298,34 +298,13 @@ eingestellt |
 | Auslösendes Ereignis  | Einlager möchte zusätlisches Angebot buchen. |
 | Vorbedingung | Einlager hat ein Konto |
 | Nachbedingung | Die Einlager bucht ein zusätzlich Angebot. |
-| Hauptszenario | 1. Der Einlagerer geht in den Lager Bereich.<br>2. Das System zeigt alle Informationen und Services an, die zum Lager gehören.<br>3. Der Einlagerer sucht sich eine Service aus und drückt "buchen" Button.<br>4. Das System benachrichtigt dem Lagerhalter über das Buchen der Service. |
-| Alternativszenarien | ... |                      |
-| Ausnahme szenarien | ... |
-<hr>
-
-### StR.E.8:
-| Abschnitt | Beschreibung |
-| --- | --- |
-| Name |                    Ersatz- und Zubehörteile reservieren                  |
-| Primärer Akteur |            Einlagerer             |
-| Weitere Akteure |                 ...                     |
-| Stakeholder-Ziel(e) |            die angebotenen Ersatz- und Zubehörteile reservieren             |
-| Auslösendes Ereignis (Trigger) |                 Knopf drücken                     |
-| Beschreibung |             angebotene Ersatz- und Zubehörteile reservieren.     |
-| Beziehung zu anderen Use Cases |            ...             |
-
-| Auslösendes Ereignis | Inhalt |
-| --- | --- |
-| Auslösendes Ereignis  | Einlager möchte Ersatz- und Zubehörteile reservieren. |
-| Vorbedingung | Einlagerer hat ein Konto |
-| Nachbedingung | Einlagerer reserviert ein Ersetzteil. |
-| Hauptszenario | ... |
-| Alternativszenarien | ... |                      |
+| Hauptszenario | 1. Der Einlagerer klickt auf den "Lager" Bereich.<br/>2. Das System zeigt eine Ansicht.<br/>3. Das System zeigt alle Informationen und Services an, die zum Lager gehören.<br>4. Der Einlagerer sucht sich eine Service aus und drückt "buchen" Button.<br>5. Das System benachrichtigt dem Lagerhalter über das Buchen der Service. |
+| Alternativszenarien | ... |
 | Ausnahme szenarien | ... |
 <hr>
 
 
-### StR.W.1: 
+### StR.W.1:
 | Abschnitt | Beschreibung |
 | --- | --- |
 | Name |                 Werkstatt Konto anlegen                     |
@@ -334,22 +313,19 @@ eingestellt |
 | Stakeholder-Ziel(e) |             Registrierung der Werkstattinhabern        |
 | Auslösendes Ereignis (Trigger) |                 Knopf drücken                     |
 | Beschreibung |           Werkstattinhaber registriert sich und gibt Informationen über seine Werkstatt            |
-| Beziehung zu anderen Use Cases |            In Werkstattservice anbieten  inkludiert           |
-<br>
+| Beziehung zu anderen Use Cases |           Werkstatt Konto anlegen           |
 
-
-| Auslösendes Ereignis | Inhalt |
+| Abschitt | Inhalt |
 | --- | --- |
-| Auslösendes Ereignis  |Werkstatt Konto anlegen|
-| Vorbedingung |Die Werkstatt hat eine valide E-mail Adresse .|
-| Nachbedingung |Die Werkstatt ist im System registriert|
-| Hauptszenario |1. Der Werkstatt geht auf die Registrierungsseite.<br>2.  Die Werkstatt gibt ihre E-Mail-Adresse und ihr Passwort ein.<br>3. Die Werkstatt klickt auf "Registrieren".<br>4. Das System überprüft die Eingaben.<br>5. Das System erstellt ein Konto für die Werkstatt.<br>6. Die Profilseite öffnet sich.<br>7. Der Werkstatt gibt seine Daten ein.<br>8. Der  Werkstatt klickt auf die Schaltfläche "Speichern"|
-| Alternativszenarien |                         |
-| Ausnahme szenarien |4a. Die E-mail wurde bereits registriert.<br>5a. Das System zeigt die Nachricht" Ihr Email ist schon angemeldet" an.|
-
+| Auslösendes Ereignis  | Werkstatt Konto anlegen |
+| Vorbedingung | Die Werkstatt hat eine valide E-mail Adresse . |
+| Nachbedingung | Die Werkstatt ist im System registriert |
+| Hauptszenario | 1. Der Werkstatt geht auf die Registrierungsseite.<br/>2. Die Werkstatt gibt ihre E-mail Adresse und ihr Passwort ein.<br/>3. Die Werkstatt klickt auf "Registrieren".<br/>4. Das System überprüft die Eingaben.<br/>5. Das System erstellt ein Konto für die Werkstatt.<br/>6. Die Profilseite öffnet sich.<br/>7. Der Werkstatt gibt seine Daten ein.<br/>8. Der Werkstatt klickt auf die Schaltfläche "Speichern" |
+| Alternativszenarien | ... |
+| Ausnahme szenarien | 4a. Die E-mail wurde bereits registriert.<br/>5a. Das System zeigt die Nachricht" Ihr Email ist schon angemeldet"<br/>an. |
 <hr>
 
-### StR.W.2: 
+### StR.W.2:
 
 | Abschnitt | Beschreibung |
 | --- | --- |
@@ -358,23 +334,20 @@ eingestellt |
 | Weitere Akteure |                 ...                     |
 | Stakeholder-Ziel(e) |            Werkstattinhaber können nach der Registrierung angeben, welche Arbeiten angeboten werden und ggf. auf welche Fahrzeughersteller sich der Werkstattinhaber spezialisiert hat.          |
 | Auslösendes Ereignis (Trigger) |            Werkstattinhaber möchte eine Service anbieten |
-| Beschreibung |            Werstatt gibt Welche Fahrzeughersteller sich spezialisiert  ein       und welche Arbeiten Angebot er nimmt ZB Kosten , Arbeitszeit usw. |      |
+| Beschreibung |            Werstatt gibt Welche Fahrzeughersteller sich spezialisiert  ein  und welche Arbeiten Angebot er nimmt ZB Kosten , Arbeitszeit usw. |
 | Beziehung zu anderen Use Cases |            Werkstatt Konto anlegen             |
-<br>
 
-
-| Auslösendes Ereignis | Inhalt |
+| Abschnitt | Inhalt |
 | --- | --- |
-| Auslösendes Ereignis  | Werkstattinhaber Service anbieten |
-| Vorbedingung | Der Werkstattinhaber hat ein Konto.|
-| Nachbedingung | Die Werkstatt erbringt ihren Service . |
-| Hauptszenario |1. Der Werkstattinhaber geht auf die Angebotsseite.<br>2. Der Werkstattinhaber gibt seine Anmeldedaten ein.<br>3. Der Werkstattinhaber klickt auf "Einloggen".<br>4. Das System überprüft die Eingaben.<br>5. die angebotsseite öffnet sich.<br>6. Der Werkstattinhaber klickt auf "Angebot hinzufügen" und füllt das Angebotsformular aus.<br>7. Der Werkstattinhaber klickt auf "Service anbieten".<br>8 Das system gibt das Angebot aus.|
-| Alternativszenarien |                         |
-| Ausnahme szenarien |                 |
-
+| Auslösendes Ereignis  | Werkstattinhaber Service anbieten. |
+| Vorbedingung | Der Werkstattinhaber hat ein Konto. |
+| Nachbedingung | Die Werkstatt erbringt ihren Service. |
+| Hauptszenario | 1. Der Werkstattinhaber klickt auf "Service anbieten".<br/>2. Das System zeigt ein Formular an.<br/>3. Der Werkstattinhaber gibt einen Servicenamen und die Beschreibung der service ein.<br/>4. Der Werkstattinhaber bestätigt seine Eingabe.<br/>5. Das System verknüpft die angebotene Service mit dem Profil des Lagerhalters. |
+| Alternativszenarien | ... |
+| Ausnahme szenarien |  |
 <hr>
 
-### StR.EA.1: 
+### StR.EA.1:
 
 | Abschnitt | Beschreibung |
 | --- | --- |
@@ -385,21 +358,18 @@ eingestellt |
 | Auslösendes Ereignis (Trigger) |                 Button drücken                     |
 | Beschreibung |            Informationen zum Unternehmen eingeben.             |
 | Beziehung zu anderen Use Cases |            ...             |
-<br>
-
 
 | Auslösendes Ereignis | Inhalt |
 | --- | --- |
-| Auslösendes Ereignis  |Ersatzteilhandler Konto anlegen .|
+| Auslösendes Ereignis  | Ersatzteilhandler Konto anlegen . |
 | Vorbedingung | Der Ersatzteilhandler hat eine valide E-mail Adresse . |
 | Nachbedingung | Der Ersatzteilhandler registriert sich im System |
-| Hauptszenario | 1. Der Ersatzteilhandler geht auf die Registrierungsseite..<br>2. Der Ersatzteilhandler gibt seine E-Mail-Adresse und sein Passwort ein.<br>3. Der Ersatzteilhandler klickt auf "Registrieren".<br>4. Das System überprüft die Eingaben.<br>5. Das System erstellt ein Konto für den Ersatzteilhandler.<br>6. Die Profilseite öffnet sich.<br>7. Der Ersatzteilhandler gibt seine Daten ein.<br>8. Der  Ersatzteilhandler drückt auf die Schaltfläche "Speichern|
-| Alternativszenarien |                         |
-| Ausnahme szenarien |  4a. Die E-mail wurde bereits registriert.<br>5a. Das System zeigt die Nachricht" Ihr Email ist schon angemeldet" an.|
-
+| Hauptszenario | 1. Der Ersatzteilhandler geht auf die Registrierungsseite..<br/>2. Der Ersatzteilhandler gibt seine E-Mail-Adresse und sein Passwort<br/>ein.<br/>3. Der Ersatzteilhandler klickt auf "Registrieren".<br/>4. Das System überprüft die Eingaben.<br/>5. Das System erstellt ein Konto für den Ersatzteilhandler.<br/>6. Die Profilseite öffnet sich.<br/>7. Der Ersatzteilhandler gibt seine Daten ein.<br/>8. Der Ersatzteilhandler drückt auf die Schaltfläche "Speichern |
+| Alternativszenarien | ... |
+| Ausnahme szenarien | 4a. Die E-mail wurde bereits registriert.<br/>5a. Das System zeigt die Nachricht" Ihr Email ist schon angemeldet"<br/>an. |
 <hr>
 
-### StR.EA.2: 
+### StR.EA.2: Kurzbeschreibung
 
 | Abschnitt | Beschreibung |
 | --- | --- |
@@ -412,39 +382,50 @@ eingestellt |
 | Beziehung zu anderen Use Cases |                        |
 <br>
 
-
 | Auslösendes Ereignis | Inhalt |
 | --- | --- |
 | Auslösendes Ereignis  | Ersatz- oder Zubehörteile verwalten. |
 | Vorbedingung | Der Ersatzteilhandler hat ein Konto.|
-| Nachbedingung |Die gewünchte Ersatz- oder Zubehörteile  ist werwaltet.|
-| Hauptszenario |1. Der Ersatzteilhandler geht auf die Anmeldeseite und logt sich ein.<br>2. Der Ersatzteilhandler wählt einen Artikel aus.<br>3. Der Ersatzteilhandler klickt auf "Verwalten".<br>4. Der Ersatzteilhandler wählt die gewünschtefunktion aus.<br>5. Das system führt die gewünschtefunktion duch. |
-| Alternativszenarien |                    |
-| Ausnahme szenarien |               
+| Nachbedingung |Der Ersatzteilhändler verwaltet seine Ersatz- oder Zubehörteile |
+| Hauptszenario |1. Der Ersatzteilhändler klickt auf "Verwaltung".<br>2. Das System gibt den angebotenen Artikel zurück.<br>3. Der Ersatzteilhändler wählt den Artikel aus.<br>4. Der Ersatzteilhändler klickt auf "Löschen".<br>5. Das System löscht den Artikel von der Website.|
+| Alternativszenarien |Fall für Bearbeiten<br>4b. Der Ersatzteilhändler klickt auf "edit".<br>5b. Das System gibt die Eintrag frei.<br>6b. Der Ersatzteilhändler gibt die neuen Informationen ein. und klickt auf "Speichern"<br>7b. Das System speichert die neuen Informationen. <br><br>Fall für angebot<br>3c. Der Ersatzteilhändler klickt auf "Hinzufügen".<br>4c. Das System gibt ein Formular aus.<br>5c. Der Ersatzteilhändler fühlt das Formular aus.<br>6c. Der Ersatzteilhändler klickt auf das Angebot.                     |
+| Ausnahme szenarien |                       |
 
 # Sequenzdaigramme
-
+# StR.E.1  
 ![](Diagrams/E1.png)
 <br>
+# StR.E.6
 ![](Diagrams/E6.png)
 <br>
+# StR.L.1
 ![](Diagrams/L1.png)
 <br>
+# StR.L2
 ![](Diagrams/L2.png)
 <br>
+# StR.L3
 ![](Diagrams/L3.png)
 <br>
+# StR.L4
 ![](Diagrams/L4.png)
 <br>
-![](Diagrams/L7.png)
-<br>
+# StR.L6
 ![](Diagrams/L6.png)
 <br>
+# StR.L7
+![](Diagrams/L7.png)
+<br>
+# StR.EA.1
 ![](Diagrams/StR_EA_1.png)
 <br>
-![](Diagrams/StR_W2.png)
-<br>
+# StR.W.1
 ![](Diagrams/StR_W_1.png)
+<br>
+# StR.W.2
+![](Diagrams/StR_W2.png)
+
+
 
 # Domänenmodell
 
