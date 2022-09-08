@@ -1,8 +1,6 @@
 @startuml
-!theme vibrant
-
 abstract Benutzer {
-  # Id : int 
+  # Id : int
   # Vornahme : String
   # Nachname : String
   # MailAdresse : String
@@ -12,13 +10,13 @@ abstract Benutzer {
 }
 
 abstract  Einrichtung {
-  # Id : int 
+  # Id : int
   # Name : String
   # Ort : Ort
 }
 
 abstract Ware {
-  # Id : int 
+  # Id : int
   # Name : String
   # Beschreibung : String
   # Kosten : double
@@ -27,6 +25,7 @@ abstract Ware {
   EditWare(Ware)
   GetWare(id)
   GetWaren()
+
 }
 
 class Ort {
@@ -46,17 +45,19 @@ class Lagerhalter {
   RemoveLager(id)
   EditLager(Lager)
 }
-
+class FahrzeugController{
+GetFahrzeug(id)
+GetFahrzeuge()
+AddFahrzeug(Fahrzeug)
+RemoveFahrzeug(id)
+ EditFahrzeug(Fahrzeug)
+}
 class Einlagerer {
   - Fahrzeuge : List<Fahrzeug>
-  GetFahrzeug(id)
-  GetFahrzeuge()
-  AddFahrzeug(Fahrzeug)
-  RemoveFahrzeug(id)
-  EditFahrzeug(Fahrzeug)
+
   CreateAnfrage(Lager)
   BookStellplatz(stellplatzId)
-  SearchLager(Stadt)
+  SearchLager()
   RequestAngebot(Lager)
   SearchErsatzteile()
   BookService(Lager)
@@ -83,7 +84,7 @@ class Stellplatz {
 }
 
 class Fahrzeug {
-  - Id : int 
+  - Id : int
   - Kategorie : FahrzeugKategorie
   - Marke : Fahrzeugmarke
   - Modell : String
@@ -94,7 +95,7 @@ class Fahrzeug {
 }
 
 class Termin {
-  - Id : int 
+  - Id : int
   - Beteiligte : List<Benutzer>
   - Ort : Ort
   - Datum : Date
@@ -104,11 +105,15 @@ class Termin {
 }
 
 class Service {
+-Anbieter : Benutzer
+Book(Benutzer)
 }
 
 class Lager {
   - Id : int
   - Konditionen : List<Kondition>
+  - Werkstaette : List<Werkstaette>
+   + Services : List<Service>
   - Einlagerungsbetrag : double
   - Servicezeiten : List<Servicezeiten>
   - Stellplaetze : List<Stellplatz>
@@ -140,7 +145,7 @@ class Unternehmen {
 }
 
 class Anfrage {
-  - Id : int 
+  - Id : int
   - Von : Benutzer
   - An : Benutzer
   - Nachricht : String
@@ -148,7 +153,7 @@ class Anfrage {
 }
 
 class Angebot {
-  - Id : int 
+  - Id : int
   - Anbieter : Benutzer
   - Kunde : Benutzer
   - Ware : Ware
@@ -209,7 +214,7 @@ Benutzer <|-- Einlagerer
 Benutzer <|-- WerkstattInhaber
 Benutzer <|-- Ersatzteilhandler
 
-Lager -right-|> Einrichtung  
+Lager -right-|> Einrichtung
 Werkstatt -right-|> Einrichtung
 Unternehmen -right-|> Einrichtung
 
@@ -238,8 +243,12 @@ Fahrzeug "1" -- "1" FahrzeugKategorie : hat <
 Fahrzeug "1" -- "1" Fahrzeugmarke : hat <
 
 Fahrzeug "1" -- "1" Stellplatz : ist\nzugeordnet <
+FahrzeugController "1" -- "*" Einlagerer : benutzt <
+FahrzeugController "1" -- "*" Fahrzeug : verwaltet >
+
 Einlagerer "1" *-left- "1..*" Fahrzeug : besitzt <
-Einlagerer "1" *-- "*" Lager : sucht <
+Einlagerer "1" -- "*" Lager : sucht <
+
 Anfrage "*" -- "1" Einlagerer : schickt\nan\nLagerhalter <
 Anfrage "*" -- "1" Lagerhalter : schickt\nan\nWerkstatt <
 
