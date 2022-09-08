@@ -19,6 +19,7 @@ package "ProfilModule" {
     [Ersatzteilhandler] <<Enum>>
 }
 
+
 package "WareModule" {
     [ErsatzteilArtikel] <<Component>>
     [Service] <<Component>>
