@@ -452,6 +452,31 @@ Werkstattservice anbieten
 
 ![](Diagrams/out/domainmodel/domainmodel.svg)
 
-# UI Erster Entwurf
+# UI Entwurf
 
-![](Diagrams/unknown.png)
+#
+![](UI/Lagerhalter.png)
+<br>
+
+#
+![](UI/)
+<br>
+
+
+#
+![](UI/)
+<br>
+
+#
+![](UI/)
+<br>
+
+
+#
+![](UI/)
+<br>
+
+
+
+
+
