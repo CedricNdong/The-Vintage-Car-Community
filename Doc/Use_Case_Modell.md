@@ -391,40 +391,61 @@
 | Alternativszenarien |Fall für Bearbeiten<br>4b. Der Ersatzteilhändler klickt auf "edit".<br>5b. Das System gibt die Eintrag frei.<br>6b. Der Ersatzteilhändler gibt die neuen Informationen ein. und klickt auf "Speichern"<br>7b. Das System speichert die neuen Informationen. <br><br>Fall für angebot<br>3c. Der Ersatzteilhändler klickt auf "Hinzufügen".<br>4c. Das System gibt ein Formular aus.<br>5c. Der Ersatzteilhändler fühlt das Formular aus.<br>6c. Der Ersatzteilhändler klickt auf das Angebot.                     |
 | Ausnahme szenarien |                       |
 
-# Sequenzdaigramme
-# StR.E.1  
-![](Diagrams/E1.png)
+# Sequenzdaigramme:
+# StR.E.1 
+ Stellplatz suchen 
+ <br>
+![](Diagrams/Sequenzdiagramme/E1.png)
 <br>
-# StR.E.6
-![](Diagrams/E6.png)
+# StR.E.7
+ Zusätzliches Angebot buchen 
+ <br>
+![](Diagrams/Sequenzdiagramme/E6.png)
 <br>
 # StR.L.1
-![](Diagrams/L1.png)
+Lagerhalter Konto anlegen
+<br>
+![](Diagrams/Sequenzdiagramme/L1.png)
 <br>
 # StR.L2
-![](Diagrams/L2.png)
+Einlagerungsservices anbieten
+<br>
+![](Diagrams/Sequenzdiagramme/L2.png)
 <br>
 # StR.L3
-![](Diagrams/L3.png)
+Kapazitäten angeben
+<br>
+![](Diagrams/Sequenzdiagramme/L3.png)
 <br>
 # StR.L4
-![](Diagrams/L4.png)
+Spezialgebiet angeben
+<br>
+![](Diagrams/Sequenzdiagramme/L4.png)
 <br>
 # StR.L6
-![](Diagrams/L6.png)
+Reparaturanfragen an Werkstätten einstellen
+<br>
+![](Diagrams/Sequenzdiagramme/L6.png)
 <br>
 # StR.L7
-![](Diagrams/L7.png)
+Termin mit Werkstatt vereinbaren
+<br>
+![](Diagrams/Sequenzdiagramme/L7.png)
 <br>
 # StR.EA.1
-![](Diagrams/StR_EA_1.png)
+Ersatzteilhandler Konto anlegen
+<br>
+![](Diagrams/Sequenzdiagramme/StR_EA_1.png)
 <br>
 # StR.W.1
-![](Diagrams/StR_W_1.png)
+Werkstatt Konto anlegen
+<br>
+![](Diagrams/Sequenzdiagramme/StR_W_1.png)
 <br>
 # StR.W.2
-![](Diagrams/StR_W2.png)
-
+Werkstattservice anbieten
+<br>
+![](Diagrams/Sequenzdiagramme/StR_W2.png)
 
 
 # Domänenmodell
