@@ -1,13 +1,11 @@
 <mat-sidenav-container class="sidenav-container">
-  <mat-sidenav #drawer class="sidenav"
-  [mode]="'side'"
-  [opened]="false">
-<mat-nav-list>
-  <a mat-list-item [routerLink]="sections['lagerhalter']">Profil</a>
-  <a mat-list-item [routerLink]="sections['lager']">Lager</a>
-  <a mat-list-item [routerLink]="sections['fahrzeug']">Fahrzeug</a>
-</mat-nav-list>
-</mat-sidenav>
+  <mat-sidenav #drawer class="sidenav" [mode]="'side'" [opened]="false">
+    <mat-nav-list>
+      <a mat-list-item [routerLink]="sections['lagerhalter']">Profil</a>
+      <a mat-list-item [routerLink]="sections['lager']">Lager</a>
+      <a mat-list-item [routerLink]="sections['fahrzeug']">Fahrzeug</a>
+    </mat-nav-list>
+  </mat-sidenav>
 
   <mat-sidenav-content>
     <mat-toolbar color="primary">
@@ -17,7 +15,7 @@
       <span><b>VintageCarCommunity</b></span>
     </mat-toolbar>
     <main>
-          <router-outlet></router-outlet>
+      <router-outlet></router-outlet>
     </main>
   </mat-sidenav-content>
 </mat-sidenav-container>

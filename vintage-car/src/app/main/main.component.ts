@@ -14,7 +14,7 @@ export class MainComponent {
   opened: boolean = true;
 
   sections = {
-    lagerhalter: 'profile/lagerhalter',
+    lagerhalter: 'profile/:id',
     lager: 'einrichtung/lager',
     fahrzeug: 'fahrzeug',
   };
