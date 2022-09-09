@@ -57,7 +57,7 @@
 | Nachbedingung |Der Lagerhalter stellt seine Service zur Verfügung.|
 | Hauptszenario |1. Lagerhalter geht auf den "Lagerbereich".<br>2. Das System zeigt eine Ansicht.<br>3. Der Lagerhalter klickt auf "Service anbieten".<br>4. Das System zeigt ein Formular an.<br>5. Der Lagerhalter gibt einen Servicenamen und die Beschreibung der service ein.<br>6. Der Lagerhalter bestätigt seine Eingabe.<br>7. Das System verknüpft die angebotene Dienstleistung mit dem Profil des Lagerhalters.|
 | Alternativszenarien |                      |
-| Ausnahme szenarien |4a. Die E-Mail wurde bereits registriert.<br>5. Das System gibt die Meldung "Ihre E-Mail ist bereits registriert" an.|
+| Ausnahme szenarien |  ...  |
 
 <hr>
 
@@ -111,7 +111,7 @@
 
 | Abschnitt | Beschreibung |
 | --- | --- |
-| Name |                 Infromationen bereitstellen |
+| Name |                 Informationen bereitstellen |
 | Primärer Akteur |            Lagerhalter             |
 | Weitere Akteure |                 ...                     |
 | Stakeholder-Ziel(e) |             Informationen über die Fahrbereitschaft des jeweiligen Fahrzeuges zur Verfügung stellen            |
@@ -121,10 +121,10 @@
 
 | Auslösendes Ereignis | Inhalt |
 | --- | --- |
-| Auslösendes Ereignis  | Lagerhalter möchte Informatinen über die Fahrbereitschaft angeben/aktuallisieren |
+| Auslösendes Ereignis  | Lagerhalter möchte Informationen über die Fahrbereitschaft angeben/aktuallisieren |
 | Vorbedingung | Lagerhalter hat ein Konto |
 | Nachbedingung | Fahrbereitschaft wird angezeigt |
-| Hauptszenario | 1. Der Lagerhalter Klickt auf den bereich"Fahrzeug" .<br>2. das System zeigt dem Lagerhalter eine Tabellenansicht samt Informationen über die eingelagerten Auto.<br>3. Der Lagerhalter wählt ein Auto.<br>5. Der Lagerhalter drückt auf "Bearbeiten".<br>6. Das System öffnet einen Dialog zum Bearbeiten.<br>7. Der Lagerhalter bearbeitet die Fahrbereitschaft.<br>8. Der Lagerhalter klickt auf speichern. |
+| Hauptszenario | 1. Der Lagerhalter Klickt auf den bereich"Fahrzeug" .<br>2. das System zeigt dem Lagerhalter eine Tabellenansicht samt Informationen über die eingelagerten Auto.<br>3. Der Lagerhalter wählt ein Auto.<br>4. Der Lagerhalter drückt auf "Bearbeiten".<br>5. Das System öffnet einen Dialog zum Bearbeiten.<br>6. Der Lagerhalter bearbeitet die Fahrbereitschaft.<br>7. Der Lagerhalter klickt auf "speichern". |
 | Alternativszenarien | ... |
 | Ausnahme szenarien | ... |
 <hr>
@@ -147,8 +147,8 @@
 | Nachbedingung | Lagerhalter hat die passende Werkstatt |
 |gefunden und ein Reparaturanfragen||
 |eingestellt ||
-| Hauptszenario | 1. Der Lagerhalter klickt auf den  Bereich "Werkstätte" .<br>2. Der lagerhalter wählt eine Werkstatt aus.<br>3. Das System öffnet die Seite von der gewählten Werkstatt.<br>4. Lagerhalter klickt auf "Reparaturanfrage einstellen".<br>5. Das System öffnet einen Dialog<br>6. Lagerhalter schreibt eine Anfrage<br>7. Der Lagerhalter klickt auf Absenden.<br>8. Das System zeigt die Meldung |
-|"Reparaturauftrag wurde gestellt" an ||
+| Hauptszenario | 1. Der Lagerhalter klickt auf den  Bereich "Werkstätte" .<br>2. Der Lagerhalter wählt eine Werkstatt aus.<br>3. Das System öffnet die Seite von der gewählten Werkstatt.<br>4. Lagerhalter klickt auf "Reparaturanfrage einstellen".<br>5. Das System öffnet einen Dialog<br>6. Lagerhalter schreibt eine Anfrage<br>7. Der Lagerhalter klickt auf "Absenden".<br>8. Das System zeigt die Meldung "Reparaturauftrag wurde gestellt" an|
+| ||
 | Alternativszenarien | ... |
 | Ausnahme szenarien | ... |
 <hr>
@@ -191,7 +191,7 @@
 | Auslösendes Ereignis  | Der Einlagerer sucht einen passenden Stellplatz |
 | Vorbedingung | Lagerhalter hat ein Konto |
 | Nachbedingung | Der Einlagerer findet einen passenden Stellplatz für sein Fahrzeug |
-| Hauptszenario | 1. Der Einlegerer geht in den "Suchbereich".<br>2. Das System zeigt eine Ansicht an.<br>3. Der Einlegerer klickt auf "Stellplatz Suchen".<br>4. Der Einlegerer klickt auf "Stadt" Dropdown Menü.<br>5. Das System zeigt eine Liste von Städten an.<br>6. Der Einlegerer wählt eine Stadt aus einer Liste aus.<br>6. Das System zeigt die verfügbaren Stellplätze an.<br> 7. Der Einlagerer wählt einen Stellplatz aus und drückt auf reservieren.<br>8. Das System zeigt eine Meldung "Stellplatz wurde erfolgreich reserviert". |
+| Hauptszenario | 1. Der Einlagerer geht in den "Suchbereich".<br>2. Das System zeigt eine Ansicht an.<br>3. Der Einlagerer klickt auf "Stellplatz Suchen".<br>4. Der Einlagerer klickt auf "Stadt" Dropdown Menü.<br>5. Das System zeigt eine Liste von Städten an.<br>6. Der Einlagerer wählt eine Stadt aus einer Liste aus.<br>6. Das System zeigt die verfügbaren Stellplätze an.<br> 7. Der Einlagerer wählt einen Stellplatz aus und drückt auf reservieren.<br>8. Das System zeigt eine Meldung "Stellplatz wurde erfolgreich reserviert". |
 | Alternativszenarien | ... |
 | Ausnahme szenarien | ... |
 <hr>
@@ -232,9 +232,9 @@
 | Auslösendes Ereignis | Inhalt |
 | --- | --- |
 | Auslösendes Ereignis  | Einlagerungsangebot annehmen/ablehnen. |
-| Vorbedingung | Einlager hat ein Konto. |
+| Vorbedingung | Einlagerer hat ein Konto. |
 | Nachbedingung | Die Einlagerer können ein Angebot annehmen oder ablehnen. |
-| Hauptszenario | 1. Der Einlagerer klickt auf den "Lager" Bereich.<br/>2. Das System zeigt eine Ansicht.<br/>3. Der Einlagerer klickt auf Angebote.<br>4. Das System zeigt die verfügbaren Angebote an.<br>5. Der Einlegerer klickt auf ein "Angebot".<br>6. Das System zeigt 2 Buttons"Akzeptieren" und "Ablehnen" an.<br/> 7. Der Einlegerer klickt einer der beiden Optionen  an. |
+| Hauptszenario | 1. Der Einlagerer klickt auf den "Lager" Bereich.<br/>2. Das System zeigt eine Ansicht.<br/>3. Der Einlagerer klickt auf Angebote.<br>4. Das System zeigt die verfügbaren Angebote an.<br>5. Der Einlegerer klickt auf ein "Angebot".<br>6. Das System zeigt 2 Buttons"Akzeptieren" und "Ablehnen" an.<br/> 7. Der Einlagerer klickt einer der beiden Optionen  an. |
 | ||
 | Alternativszenarien | ... |
 | Ausnahme szenarien | ... |
@@ -277,7 +277,7 @@
 | Auslösendes Ereignis  | Einlager drückt auf "Termin vereinbaren" |
 | Vorbedingung | Einlagerer hat ein Konto |
 | Nachbedingung | Einlagerer macht einen Termine für das Entgegennehmen und die Rückgabe ihres Fahrzeuges mit dem Lagerhalter aus. |
-| Hauptszenario | 1. Der Einlagerer klickt auf den "Lager" Bereich.<br/>2. Das System zeigt eine Ansicht.<br/>3. Der  Einlagerer klickt "Termin buchen".<br>4. Das System öffnet einen Dialog.<br>5. Der Einlagerer gibt den Zweck des Termins an (z.B Fahrezug Annehmen oder Rücksenden).<br>6. Das System zeigt freie Termine an.<br>7. Der Einlagerer wählt einen Termin aus.<br>8. Der Einlagerer klickt auf "buchen".<br>9. Das System zeigt eine Meldung an “Termin wurde erfolgreich gebucht”. |
+| Hauptszenario | 1. Der Einlagerer klickt auf den "Lager" Bereich.<br/>2. Das System zeigt eine Ansicht.<br/>3. Der  Einlagerer klickt "Termin buchen".<br>4. Das System öffnet einen Dialog.<br>5. Der Einlagerer gibt den Zweck des Termins an (z.B Fahrzeug Annehmen oder Rücksenden).<br>6. Das System zeigt freie Termine an.<br>7. Der Einlagerer wählt einen Termin aus.<br>8. Der Einlagerer klickt auf "buchen".<br>9. Das System zeigt eine Meldung an “Termin wurde erfolgreich gebucht”. |
 | Alternativszenarien | ... |
 | Ausnahme szenarien | ... |
 <hr>
@@ -297,7 +297,7 @@
 | --- | --- |
 | Auslösendes Ereignis  | Einlager möchte zusätlisches Angebot buchen. |
 | Vorbedingung | Einlager hat ein Konto |
-| Nachbedingung | Die Einlager bucht ein zusätzlich Angebot. |
+| Nachbedingung | Der Einlagerer bucht ein zusätzliches Angebot. |
 | Hauptszenario | 1. Der Einlagerer klickt auf den "Lager" Bereich.<br/>2. Das System zeigt eine Ansicht.<br/>3. Das System zeigt alle Informationen und Services an, die zum Lager gehören.<br>4. Der Einlagerer sucht sich eine Service aus und drückt "buchen" Button.<br>5. Das System benachrichtigt dem Lagerhalter über das Buchen der Service. |
 | Alternativszenarien | ... |
 | Ausnahme szenarien | ... |
