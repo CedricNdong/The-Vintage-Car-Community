@@ -455,29 +455,42 @@ Werkstattservice anbieten
 # UI Entwurf
 
 #
-![](UI/Login.png)
+![](UI/)
 <br>
 
-#
-![](UI/Lagerhalter.png)
+
+
+
+
+# Interaktionsdiagramm OOD
+Einlager Konto anlegen
+<br>
+![](Diagrams/Sequenzdiagramme/E_Konto_anlegen.jpeg)
 <br>
 
-#
-![](UI/Lagerhalter_Fahrzeug.png)
+Termin vereinbaren (Lagerhalter und Einlagerer)
+<br>
+![](Diagrams/Sequenzdiagramme/Termin_vereinbaren.jpeg)
 <br>
 
-#
-![](UI/Lagerhalter_lager.png)
+Lagerhalter Konto anlegen
+<br>
+![](Diagrams/Sequenzdiagramme/L_Konto_anlegen.jpeg)
 <br>
 
-#
-![](UI/Einlagerer_lager.png)
+Einlagerungsservice anbieten
+<br>
+![](Diagrams/Sequenzdiagramme/Einlagerungsgebiet.jpeg)
 <br>
 
-#
-![](UI/Einlagerer_suche.png)
+Kapazitäten angebn
+<br>
+![](Diagrams/Sequenzdiagramme/Kapazität_angeben.jpeg)
 <br>
 
+Spizailgebiet angeben
+<br>
+![](Diagrams/Sequenzdiagramme/spitailgebiet.jpeg)
 
 
 
