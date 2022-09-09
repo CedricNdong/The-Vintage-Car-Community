@@ -450,7 +450,7 @@ Werkstattservice anbieten
 
 # Domänenmodell
 
-![](Diagrams/out/domainmodel/domainmodel.svg)
+![](Diagrams/out/domainmodel/domainmodell.png)
 
 # UI Entwurf
 
