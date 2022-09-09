@@ -30,7 +30,7 @@
 | Auslösendes Ereignis  | Der Lagerhalter möchte sich registrieren |
 | Vorbedingung | Der Lagerhalter hat eine gültige E-Mail Adresse|
 | Nachbedingung |Der Lagerhalter hat ein Konto erstellt.|
-| Hauptszenario |1. Der Lagerhalter klickt auf " regestrieren".<br>2. Das System zeigt die Registrierungsseite an.<br>3. Der Lagerhalter gibt seine E-Mail-Adresse und sein Passwort ein.<br>4. Das System verifiziert die Eingaben.<br>Das System legt ein Lagerkonto an.<br>6. Die Profilseite wird geöffnet.<br>7. Der Lagerhalter gibt seine Daten ein.<br>8. Der Lagerhalter drückt auf die Schaltfläche "Speichern".|
+| Hauptszenario |1. Der Lagerhalter klickt auf " registrieren".<br>2. Das System zeigt die Registrierungsseite an.<br>3. Der Lagerhalter gibt seine E-Mail-Adresse und sein Passwort ein.<br>4. Das System verifiziert die Eingaben.<br>Das System legt ein Lagerkonto an.<br>6. Die Profilseite wird geöffnet.<br>7. Der Lagerhalter gibt seine Daten ein.<br>8. Der Lagerhalter drückt auf die Schaltfläche "Speichern".|
 | Alternativszenarien |                      |
 | Ausnahme szenarien |4a. Die E-Mail wurde bereits registriert.<br>5. Das System zeigt die Meldung "Ihre E-Mail ist bereits registriert" an.|
 
