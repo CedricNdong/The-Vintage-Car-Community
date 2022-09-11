@@ -10,26 +10,26 @@
             </div>
             <!-- Calling SignIn Api from AuthService -->
             <div class="formGroup">
-                <input type="button" class="btn btnPrimary" value="Log in"
-                    (click)="authService.SignIn(userName.value, userPassword.value)">
+                <button mat-button color="primary"
+                    (click)="authService.SignIn(userName.value, userPassword.value)">Login</button>
             </div>
             <div class="formGroup">
-                <span class="or"><span class="orInner">Or</span></span>
+                <span>Or</span>
             </div>
             <!-- Calling GoogleAuth Api from AuthService -->
             <div class="formGroup">
-                <button type="button" class="btn googleBtn" (click)="authService.GoogleAuth()">
+                <button mat-button (click)="authService.GoogleAuth()">
                     <i class="fab fa-google-plus-g"></i>
                     Log in with Google
                 </button>
             </div>
-            <div class="forgotPassword">
-                <span routerLink="/auth/forgot-password">Forgot Password?</span>
+            <div>
+                <button mat-button (click)="forgotPassword()">Forgot Password</button>
             </div>
         </div>
-        <div class="redirectToLogin">
+        <div>
             <span>Don't have an account?
-                <button mat-raised-button (click)="signup()" color="primary">Sign Up</button>
+                <button mat-button color="accent" (click)="signup()">Sign Up</button>
             </span>
         </div>
     </div>

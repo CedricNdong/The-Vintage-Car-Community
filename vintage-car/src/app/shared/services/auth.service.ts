@@ -88,7 +88,7 @@ export class AuthService {
   // Returns true when user is looged in and email is verified
   get isLoggedIn(): boolean {
     const user = JSON.parse(localStorage.getItem('user')!);
-    return user !== null && user.emailVerified !== false;
+    return user !== null;
   }
 
   // Sign in with Google
@@ -104,8 +104,8 @@ export class AuthService {
     return this.firebaseAuthService
       .signInWithPopup(provider)
       .then((userCredential) => {
-        this.router.navigate([`dashboard`]);
         this.SetUserData(userCredential.user);
+        this.router.navigate([`dashboard`]);
       })
       .catch((error) => {
         window.alert(error);
@@ -116,6 +116,8 @@ export class AuthService {
      signing up with username/password and signing in with social auth provider in Firestore database 
      using AngularFirestore + AngularFirestoreDocument service */
   SetUserData(user: any) {
+    this.userData = user;
+
     const userRef: AngularFirestoreDocument<any> = this.firestoreService
       .doc(`users/${user.uid}`);
 

@@ -9,23 +9,24 @@
                 <input type="password" class="formControl" placeholder="Password" #userPwd required />
             </div>
             <div class="formGroup">
-                <input type="button" class="btn btnPrimary" value="Sign Up"
-                    (click)="authService.SignUp(userEmail.value, userPwd.value)" />
+                <button mat-button (click)="authService.SignUp(userEmail.value, userPwd.value)">Sign Up</button>
             </div>
             <div class="formGroup">
-                <span class="or"><span class="orInner">Or</span></span>
+                <span>Or</span>
             </div>
             <!-- Continue with Google -->
             <div class="formGroup">
-                <button type="button" class="btn googleBtn" (click)="authService.GoogleAuth()">
-                    <i class="fab fa-google-plus-g"></i>
-                    Continue with Google
+                Continue with Google
+                <button mat-button (click)="authService.GoogleAuth()">
+                    <!-- <mat-icon fontIcon="google"></mat-icon> -->
                 </button>
             </div>
         </div>
-        <div class="redirectToLogin">
+        <div>
             <span>Already have an account?
-                <span class="redirect" routerLink="/auth/login">Login</span></span>
+                <button mat-button (click)="login()">Login</button>
+            </span>
+
         </div>
     </div>
 </div>

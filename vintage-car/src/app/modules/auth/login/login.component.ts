@@ -9,6 +9,7 @@ import { AuthService } from 'src/app/shared/services/auth.service';
 })
 export class LoginComponent implements OnInit {
 
+
   constructor(
     public authService: AuthService,
     private router: Router
@@ -22,4 +23,7 @@ export class LoginComponent implements OnInit {
     this.router.navigate(['auth/signup']);
   }
 
+  forgotPassword() {
+    this.router.navigate(['auth/forgot-password']);
+  }
 }

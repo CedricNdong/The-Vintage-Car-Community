@@ -10,6 +10,7 @@ import { FahrzeugComponent } from './modules/fahrzeug/fahrzeug/fahrzeug.componen
 import { EinlagererComponent } from './modules/profile/einlagerer/einlagerer.component';
 import { LagerhalterComponent } from './modules/profile/lagerhalter/lagerhalter.component';
 import { AuthGuard } from './shared/guard/auth.guard';
+import { SucheComponent } from './shared/suche/suche.component';
 
 const routes: Routes = [
   {
@@ -42,6 +43,10 @@ const routes: Routes = [
     path: 'dashboard',
     component: DashboardComponent,
     canActivate: [AuthGuard]
+  },
+  {
+    path: 'suche',
+    component: SucheComponent
   },
   {
     path: 'fahrzeug',
