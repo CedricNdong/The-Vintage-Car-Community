@@ -1,32 +1,36 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatIconModule } from '@angular/material/icon';
-import { LayoutModule } from '@angular/cdk/layout';
 import { MatButtonModule } from '@angular/material/button';
 import { MatListModule } from '@angular/material/list';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SucheComponent } from './suche/suche.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatRippleModule } from '@angular/material/core';
 
 
 const MATERIAL_MODULES = [
+  CommonModule,
+  MatInputModule,
+  MatFormFieldModule,
+  MatRippleModule,
   MatToolbarModule,
-  BrowserAnimationsModule,
-  LayoutModule,
   MatIconModule,
   MatButtonModule,
   MatSidenavModule,
-  MatListModule
+  MatListModule,
+  FormsModule,
+  ReactiveFormsModule
 ]
 
 @NgModule({
   declarations: [
     SucheComponent
   ],
-  imports: [
-    CommonModule,
-    MATERIAL_MODULES
-  ]
+  imports: [MATERIAL_MODULES],
+  exports: [MATERIAL_MODULES]
 })
 export class SharedModule { }
