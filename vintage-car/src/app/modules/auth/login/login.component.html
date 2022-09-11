@@ -1,0 +1,36 @@
+<div class="displayTable">
+    <div class="displayTableCell">
+        <div class="authBlock">
+            <h3>Sign In</h3>
+            <div class="formGroup">
+                <input type="text" class="formControl" placeholder="Username" #userName required>
+            </div>
+            <div class="formGroup">
+                <input type="password" class="formControl" placeholder="Password" #userPassword required>
+            </div>
+            <!-- Calling SignIn Api from AuthService -->
+            <div class="formGroup">
+                <button mat-button color="primary"
+                    (click)="authService.SignIn(userName.value, userPassword.value)">Login</button>
+            </div>
+            <div class="formGroup">
+                <span>Or</span>
+            </div>
+            <!-- Calling GoogleAuth Api from AuthService -->
+            <div class="formGroup">
+                <button mat-button (click)="authService.GoogleAuth()">
+                    <i class="fab fa-google-plus-g"></i>
+                    Log in with Google
+                </button>
+            </div>
+            <div>
+                <button mat-button (click)="forgotPassword()">Forgot Password</button>
+            </div>
+        </div>
+        <div>
+            <span>Don't have an account?
+                <button mat-button color="accent" (click)="signup()">Sign Up</button>
+            </span>
+        </div>
+    </div>
+</div>
