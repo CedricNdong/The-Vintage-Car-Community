@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -20,6 +20,36 @@ import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { AuthService } from './shared/services/auth.service';
 import { SharedModule } from './shared/shared.module';
 import { CommonModule } from '@angular/common';
+import { MatInputModule } from '@angular/material/input';
+import { FormsModule } from '@angular/forms';
+import { MatRippleModule } from '@angular/material/core';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { AuthModule } from './modules/auth/auth.module';
+import { ProfileModule } from './modules/profile/profile.module';
+import { DashboardModule } from './modules/dashboard/dashboard.module';
+import { EinrichtungModule } from './modules/einrichtung/einrichtung.module';
+import { FahrzeugModule } from './modules/fahrzeug/fahrzeug.module';
+
+const CORE_MODULES = [
+  AuthModule,
+  ProfileModule,
+  DashboardModule,
+  EinrichtungModule,
+  FahrzeugModule,
+  SharedModule
+];
+
+const MODULES = [
+  MatFormFieldModule,
+  MatRippleModule,
+  MatToolbarModule,
+  MatIconModule,
+  MatButtonModule,
+  MatSidenavModule,
+  MatListModule,
+  FormsModule,
+  MatInputModule,
+];
 
 @NgModule({
   declarations: [
@@ -27,22 +57,21 @@ import { CommonModule } from '@angular/common';
     MainComponent,
   ],
   imports: [
+    CommonModule,
     BrowserModule,
+    BrowserAnimationsModule,
+    LayoutModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
     AngularFirestoreModule,
     AngularFireStorageModule,
     AngularFireDatabaseModule,
-    CommonModule,
-    MatToolbarModule,
-    BrowserAnimationsModule,
-    LayoutModule,
-    MatIconModule,
-    MatButtonModule,
-    MatSidenavModule,
-    MatListModule
+    ...MODULES,
+    ...CORE_MODULES
   ],
+  exports: [...MODULES, ...CORE_MODULES],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [AuthService],
   bootstrap: [AppComponent]
 })
