@@ -5,6 +5,13 @@
             <mat-card-content>
                 <form [formGroup]="signupForm" (ngSubmit)="register()">
                     <mat-form-field appearance="fill">
+                        <mat-label>Benutzername</mat-label>
+                        <input type="name" matInput placeholder="Ex. Saul Goodman" formControlName="name">
+                        <mat-error *ngIf="signupForm.controls['name'].hasError('required')">
+                            Benutzername ist <strong>erforderlich</strong>
+                        </mat-error>
+                    </mat-form-field>
+                    <mat-form-field appearance="fill">
                         <mat-label>Email</mat-label>
                         <input type="email" matInput placeholder="Ex. pat@example.com" formControlName="email">
                         <mat-error
@@ -22,6 +29,14 @@
                             Passwort ist <strong>erforderlich</strong>
                         </mat-error>
                     </mat-form-field>
+                    <mat-form-field appearance="fill">
+                        <mat-label>Ich bin ...</mat-label>
+                        <mat-select formControlName="role">
+                            <mat-option *ngFor="let role of roles" [value]="role">
+                                {{role.valueOf()}}
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
                     <div class="button-end">
                         <button type="submit" [disabled]="signupForm.invalid" color="primary"
                             mat-raised-button>Registerieren</button>
@@ -32,12 +47,6 @@
             <hr>
             <br>
             <mat-card-footer>
-                <div class="button-center">
-                    <button class="button-full-width" mat-raised-button color="accent"
-                        (click)="authService.loginGoogle()">
-                        <mat-icon>login</mat-icon> Mit Google anmelden
-                    </button>
-                </div>
                 <br>
                 <div class="button-center">
                     <button class="button-full-width" color="danger" mat-raised-button

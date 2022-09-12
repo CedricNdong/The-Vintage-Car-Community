@@ -36,3 +36,7 @@ mat-card-content {
 .button-full-width {
     width: 80% !important;
 }
+
+.spacer {
+    flex: 1 1 auto;
+}
