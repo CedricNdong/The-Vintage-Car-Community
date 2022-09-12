@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FahrzeugComponent } from './fahrzeug/fahrzeug.component';
+import {MatTableModule} from "@angular/material/table";
 
 
 
@@ -9,7 +10,7 @@ import { FahrzeugComponent } from './fahrzeug/fahrzeug.component';
     FahrzeugComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
   ]
 })
 export class FahrzeugModule { }

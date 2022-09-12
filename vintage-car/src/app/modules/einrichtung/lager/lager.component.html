@@ -1,1 +1,56 @@
-<p>lager works!</p>
+
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+  <!--- Note that these columns can be defined in any order.
+        The actual rendered columns are set as a property on the row definition" -->
+
+  <!-- Position Column -->
+  <ng-container matColumnDef="position">
+    <th mat-header-cell *matHeaderCellDef> Nr </th>
+    <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+  </ng-container>
+
+  <!-- Name Column -->
+  <ng-container matColumnDef="name">
+    <th mat-header-cell *matHeaderCellDef> Name </th>
+    <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+  </ng-container>
+
+  <!-- Symbol Column -->
+  <ng-container matColumnDef="Kapazitaet">
+    <th mat-header-cell *matHeaderCellDef>    Kapazität     </th>
+    <td mat-cell *matCellDef="let element"> {{element.Kapazitaet}} </td>
+  </ng-container>
+
+  <!-- Weight Column -->
+  <ng-container matColumnDef="Service">
+    <th mat-header-cell *matHeaderCellDef>   Service    </th>
+    <td mat-cell *matCellDef="let element"> {{element.Service}} </td>
+  </ng-container>
+
+
+  <ng-container matColumnDef="Spezialgebiet">
+    <th mat-header-cell *matHeaderCellDef>Spezialgebiet</th>
+    <td mat-cell *matCellDef="let element"> {{element.Spezialgebiet}} </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+  <ng-container matColumnDef="actions">
+    <th  *matHeaderCellDef > Actions </th>
+    <td *matCellDef="let row"  >
+      <button mat-button (click)="edit()" >Edit</button>
+      <button mat-button id="löschen" (click)="remove(row)"  >Remove</button>
+
+    </td>
+  </ng-container>
+
+
+
+</table>
+<div class="button-row">
+  <button mat-raised-button  (click)="add()">Add</button>
+  <button mat-raised-button (click)="save()">Speichern</button>
+
+</div>

@@ -9,6 +9,7 @@ export class FahrzeugComponent implements OnInit {
 
   constructor() { }
 
+
   ngOnInit(): void {
   }
 
