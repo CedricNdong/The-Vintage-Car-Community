@@ -1,19 +1,22 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup } from '@angular/forms';
+import { FormControl, FormGroup, FormGroupName, Validators } from '@angular/forms';
 
 
-export interface PeriodicElement {
-  merkmale: string;
+export interface ErgebnisElement {
+  name: string;
   anschrift: string;
-  service: string;
-  kondition: string;
+  kapazitaet: string;
+  kosten: number;
 }
 
 
-const ELEMENT_DATA: PeriodicElement[] = [
-  {anschrift: 'Peter Straße 2, 61169 Friedberg', merkmale: '24/7 geöffnet', service: '24/7 geöffnet', kondition: 'genug Geld verfügen'},
+
+
+const SUCH_DATA: ErgebnisElement[] = [
+  { name: '24/7 geöffnet', anschrift: 'Peter Straße 2, 61169 Friedberg',kapazitaet: '24/7 geöffnet', kosten: 25 },
 
 ];
+
 
 @Component({
   selector: 'app-suche',
@@ -22,13 +25,78 @@ const ELEMENT_DATA: PeriodicElement[] = [
 })
 export class SucheComponent implements OnInit {
 
-  displayedColumns: string[] = ['anschrift', 'merkmale', 'service', 'kondition'];
-  dataSource = ELEMENT_DATA;
+
+  stadtList = [
+    { stadtName: 'Berlin'},
+    { stadtName: 'Hamburg'},
+    { stadtName: 'München'},
+    { stadtName: 'Köln'},
+    { stadtName: 'Frankfurt am Main'},
+    { stadtName: 'Stuttgart'},
+    { stadtName: 'Düsseldorf'},
+    { stadtName: 'Leipzig'},
+    { stadtName: 'Essen'},
+    { stadtName: 'Bremen'},
+    { stadtName: 'Dresden'},
+    { stadtName: 'Hannover'},
+    { stadtName: 'Nürnberg'},
+    { stadtName: 'Duisburg'}
+];
+
+fahrzeugList = [
+  { fahrzeugMarke: 'Porsche'},
+  { fahrzeugMarke: 'Bugatti'},
+  { fahrzeugMarke: 'Volkswagen'},
+  { fahrzeugMarke: 'Mercedes Benz'},
+  { fahrzeugMarke: 'BMW'},
+  { fahrzeugMarke: 'Audi'},
+  { fahrzeugMarke: 'Opel'},
+  { fahrzeugMarke: 'Skoda'},
+  { fahrzeugMarke: 'Ford'}
+];
+
+
+  displayedColumns: string[] = ['name','anschrift', 'kapazitaet', 'kosten'];
+  suchergebnisse = SUCH_DATA;
   suchForm: FormGroup;
 
+    // Für die Suchergebnisse
+suchStatus: boolean;
 
 
-  constructor() { }
+
+  constructor() {
+    this.suchForm = new FormGroup({
+      stadt: new FormControl('', [Validators.required]),
+      fahrzeug: new FormControl('', [Validators.required])
+    });
+
+
+   }
+
+
+
+
+
+ zeigeSuchErgebnis() {
+    const searchParameters = this.suchForm.value.stadt;
+
+    if (searchParameters === 'Berlin') {
+      console.log(searchParameters);
+      return (this.suchStatus = true);
+      
+    } else {
+      return (this.suchStatus = false);
+      console.log('NNOO');
+
+      
+    }
+
+}
+
+
+
+ 
 
   ngOnInit(): void {
   }

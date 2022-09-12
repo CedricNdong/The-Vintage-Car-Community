@@ -34,7 +34,6 @@ const MATERIAL_MODULES = [
   MatTableModule,
   MatPaginatorModule,
   MatRadioModule
-  
 ]
 
 @NgModule({
