@@ -33,11 +33,11 @@ export class AuthService {
   }
 
   // Sign in with email/password
-  SignIn(email: string, password: string) {
+  login(email: string, password: string) {
     return this.firebaseAuthService
       .signInWithEmailAndPassword(email, password)
       .then((userCredential) => {
-        this.SetUserData(userCredential.user);
+        this.storeUserData(userCredential.user);
         this.firebaseAuthService.authState
           .subscribe((user) => {
             if (user) {
@@ -51,13 +51,13 @@ export class AuthService {
   }
 
   // Sign up with email/password
-  SignUp(email: string, password: string) {
+  register(email: string, password: string) {
     return this.firebaseAuthService
       .createUserWithEmailAndPassword(email, password)
       .then((userCredentials) => {
         /* Send verificaiton mail when new user sign up */
-        this.SendVerificationMail();
-        this.SetUserData(userCredentials.user);
+        this.sendVerificationMail();
+        this.storeUserData(userCredentials.user);
       })
       .catch((error) => {
         window.alert(error.message);
@@ -65,7 +65,7 @@ export class AuthService {
   }
 
   // Send email verfificaiton when new user sign up
-  SendVerificationMail() {
+  sendVerificationMail() {
     return this.firebaseAuthService.currentUser
       .then((user: any) => user.sendEmailVerification())
       .then(() => {
@@ -74,7 +74,7 @@ export class AuthService {
   }
 
   // Reset Forggot password
-  ForgotPassword(passwordResetEmail: string) {
+  forgotPassword(passwordResetEmail: string) {
     return this.firebaseAuthService
       .sendPasswordResetEmail(passwordResetEmail)
       .then(() => {
@@ -92,19 +92,19 @@ export class AuthService {
   }
 
   // Sign in with Google
-  GoogleAuth() {
-    return this.AuthLogin(new auth.GoogleAuthProvider())
+  loginGoogle() {
+    return this.runAuthProvider(new auth.GoogleAuthProvider())
       .then((res: any) => {
         this.router.navigate([`dashboard`]);
       });
   }
 
   // Auth logic to run auth providers
-  AuthLogin(provider: any) {
+  runAuthProvider(provider: any) {
     return this.firebaseAuthService
       .signInWithPopup(provider)
       .then((userCredential) => {
-        this.SetUserData(userCredential.user);
+        this.storeUserData(userCredential.user);
         this.router.navigate([`dashboard`]);
       })
       .catch((error) => {
@@ -115,7 +115,7 @@ export class AuthService {
   /* Setting up user data when signing in with username/password, 
      signing up with username/password and signing in with social auth provider in Firestore database 
      using AngularFirestore + AngularFirestoreDocument service */
-  SetUserData(user: any) {
+  storeUserData(user: any) {
     this.userData = user;
 
     const userRef: AngularFirestoreDocument<any> = this.firestoreService
@@ -134,7 +134,7 @@ export class AuthService {
   }
 
   // Sign out
-  SignOut() {
+  logout() {
     return this.firebaseAuthService.signOut().then(() => {
       localStorage.removeItem('user');
       this.router.navigate(['auth/login']);

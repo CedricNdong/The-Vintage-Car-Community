@@ -1,8 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { 
-    margin: 0 !important; 
-    font-family: Roboto, "Helvetica Neue", sans-serif; 
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0 !important;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
     background-color: #303030;
+}
+
+.mat-form-field {
+    width: 100%;
+    min-width: 300px;
+}
+
+mat-card-title,
+mat-card-content {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.button-end {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button-center {
+    display: flex;
+    justify-content: center;
+}
+
+.button-full-width {
+    width: 80% !important;
 }
