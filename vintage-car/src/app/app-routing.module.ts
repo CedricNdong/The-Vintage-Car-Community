@@ -15,7 +15,7 @@ import { SucheComponent } from './shared/suche/suche.component';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '/auth/login',
+    redirectTo: 'dashboard',
     pathMatch: 'full'
   },
   {
@@ -46,15 +46,18 @@ const routes: Routes = [
   },
   {
     path: 'suche',
-    component: SucheComponent
+    component: SucheComponent,
+    canActivate: [AuthGuard]
   },
   {
     path: 'fahrzeug',
-    component: FahrzeugComponent
+    component: FahrzeugComponent,
+    canActivate: [AuthGuard]
   },
   {
     path: 'profile/:id',
-    component: LagerhalterComponent
+    component: LagerhalterComponent,
+    canActivate: [AuthGuard]
   },
 ];
 

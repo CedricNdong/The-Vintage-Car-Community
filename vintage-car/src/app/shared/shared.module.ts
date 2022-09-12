@@ -11,6 +11,7 @@ import { MatInputModule } from '@angular/material/input';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatRippleModule } from '@angular/material/core';
 import { MatCardModule } from '@angular/material/card';
+import { MatSelectModule } from '@angular/material/select';
 
 const MATERIAL_MODULES = [
   CommonModule,
@@ -24,7 +25,8 @@ const MATERIAL_MODULES = [
   MatListModule,
   FormsModule,
   ReactiveFormsModule,
-  MatCardModule
+  MatCardModule,
+  MatSelectModule
 ]
 
 @NgModule({

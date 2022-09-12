@@ -1,1 +1,5 @@
 <p>fahrzeug works!</p>
+
+<div *ngFor="let fahrzeug of fahrzeuge$ | async">
+    <h3>{{ fahrzeug | json}}</h3>
+</div>
