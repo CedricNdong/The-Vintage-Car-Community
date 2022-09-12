@@ -11,6 +11,16 @@ import { MatInputModule } from '@angular/material/input';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatRippleModule } from '@angular/material/core';
 import { MatCardModule } from '@angular/material/card';
+import {MatTableModule} from '@angular/material/table';
+import { MatRadioModule } from '@angular/material/radio';
+import { MatSelectModule } from '@angular/material/select';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
+
+
+
+
+
+
 
 const MATERIAL_MODULES = [
   CommonModule,
@@ -24,7 +34,14 @@ const MATERIAL_MODULES = [
   MatListModule,
   FormsModule,
   ReactiveFormsModule,
-  MatCardModule
+  MatCardModule,
+  MatTableModule,
+  MatRadioModule,
+  MatSelectModule,
+  FormControl,
+  FormGroup,
+  Validators,
+  
 ]
 
 @NgModule({
@@ -34,4 +51,8 @@ const MATERIAL_MODULES = [
   imports: [MATERIAL_MODULES],
   exports: [MATERIAL_MODULES]
 })
-export class SharedModule { }
+export class SharedModule { 
+
+
+
+}
