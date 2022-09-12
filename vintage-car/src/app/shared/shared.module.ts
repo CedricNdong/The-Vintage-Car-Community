@@ -10,7 +10,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatRippleModule } from '@angular/material/core';
-
+import { MatCardModule } from '@angular/material/card';
 
 const MATERIAL_MODULES = [
   CommonModule,
@@ -23,7 +23,8 @@ const MATERIAL_MODULES = [
   MatSidenavModule,
   MatListModule,
   FormsModule,
-  ReactiveFormsModule
+  ReactiveFormsModule,
+  MatCardModule
 ]
 
 @NgModule({

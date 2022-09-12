@@ -9,7 +9,7 @@
                 <input type="password" class="formControl" placeholder="Password" #userPwd required />
             </div>
             <div class="formGroup">
-                <button mat-button (click)="authService.SignUp(userEmail.value, userPwd.value)">Sign Up</button>
+                <button mat-button (click)="authService.register(userEmail.value, userPwd.value)">Sign Up</button>
             </div>
             <div class="formGroup">
                 <span>Or</span>
@@ -17,7 +17,7 @@
             <!-- Continue with Google -->
             <div class="formGroup">
                 Continue with Google
-                <button mat-button (click)="authService.GoogleAuth()">
+                <button mat-button (click)="authService.loginGoogle()">
                     <!-- <mat-icon fontIcon="google"></mat-icon> -->
                 </button>
             </div>
