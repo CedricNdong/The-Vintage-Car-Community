@@ -1,32 +1,49 @@
-<div class="displayTable">
-    <div class="displayTableCell">
-        <div class="authBlock">
-            <h3>Sign Up</h3>
-            <div class="formGroup">
-                <input type="email" class="formControl" placeholder="Email Address" #userEmail required />
-            </div>
-            <div class="formGroup">
-                <input type="password" class="formControl" placeholder="Password" #userPwd required />
-            </div>
-            <div class="formGroup">
-                <button mat-button (click)="authService.register(userEmail.value, userPwd.value)">Sign Up</button>
-            </div>
-            <div class="formGroup">
-                <span>Or</span>
-            </div>
-            <!-- Continue with Google -->
-            <div class="formGroup">
-                Continue with Google
-                <button mat-button (click)="authService.loginGoogle()">
-                    <!-- <mat-icon fontIcon="google"></mat-icon> -->
-                </button>
-            </div>
-        </div>
-        <div>
-            <span>Already have an account?
-                <button mat-button (click)="login()">Login</button>
-            </span>
-
-        </div>
-    </div>
-</div>
+<div>
+    <span>
+        <mat-card>
+            <mat-card-title>Registerieren</mat-card-title>
+            <mat-card-content>
+                <form [formGroup]="signupForm" (ngSubmit)="register()">
+                    <mat-form-field appearance="fill">
+                        <mat-label>Email</mat-label>
+                        <input type="email" matInput placeholder="Ex. pat@example.com" formControlName="email">
+                        <mat-error
+                            *ngIf="signupForm.controls['email'].hasError('email') && !signupForm.controls['email'].hasError('required')">
+                            Bitte geben Sie eine valide Email Adresse an
+                        </mat-error>
+                        <mat-error *ngIf="signupForm.controls['email'].hasError('required')">
+                            Email Adresse ist <strong>erforderlich</strong>
+                        </mat-error>
+                    </mat-form-field>
+                    <mat-form-field appearance="fill">
+                        <mat-label>Passwort</mat-label>
+                        <input type="password" matInput placeholder="password" formControlName="password">
+                        <mat-error *ngIf="signupForm.controls['password'].hasError('required')">
+                            Passwort ist <strong>erforderlich</strong>
+                        </mat-error>
+                    </mat-form-field>
+                    <div class="button-end">
+                        <button type="submit" [disabled]="signupForm.invalid" color="primary"
+                            mat-raised-button>Registerieren</button>
+                    </div>
+                    <br>
+                </form>
+            </mat-card-content>
+            <hr>
+            <br>
+            <mat-card-footer>
+                <div class="button-center">
+                    <button class="button-full-width" mat-raised-button color="accent"
+                        (click)="authService.loginGoogle()">
+                        <mat-icon>login</mat-icon> Mit Google anmelden
+                    </button>
+                </div>
+                <br>
+                <div class="button-center">
+                    <button class="button-full-width" color="danger" mat-raised-button
+                        (click)="login()">Anmelden</button>
+                </div>
+                <br>
+            </mat-card-footer>
+        </mat-card>
+    </span>
