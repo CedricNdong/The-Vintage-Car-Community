@@ -12,6 +12,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatRippleModule } from '@angular/material/core';
 import { MatCardModule } from '@angular/material/card';
 import { MatSelectModule } from '@angular/material/select';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from "@angular/material/paginator";
+
 
 const MATERIAL_MODULES = [
   CommonModule,
@@ -26,7 +29,9 @@ const MATERIAL_MODULES = [
   FormsModule,
   ReactiveFormsModule,
   MatCardModule,
-  MatSelectModule
+  MatSelectModule,
+  MatTableModule,
+  MatPaginatorModule
 ]
 
 @NgModule({
