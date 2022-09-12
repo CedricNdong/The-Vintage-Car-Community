@@ -11,11 +11,16 @@
 
   <mat-sidenav-content>
     <mat-toolbar color="primary">
-      <button mat-icon-button (click)="drawer.toggle()">
+      <button *ngIf="isLoggedIn()" mat-icon-button (click)="drawer.toggle()">
         <mat-icon>menu</mat-icon>
       </button>
       <span><b>VintageCarCommunity</b></span>
-
+      <span class="spacer"></span>
+      <div *ngIf="isLoggedIn()" class="button-end">
+        <button mat-icon-button (click)="logout()">
+          <mat-icon>logout</mat-icon>
+        </button>
+      </div>
     </mat-toolbar>
     <main>
       <router-outlet></router-outlet>

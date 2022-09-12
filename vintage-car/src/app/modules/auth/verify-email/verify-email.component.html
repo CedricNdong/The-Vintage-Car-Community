@@ -1,22 +1,18 @@
-<div class="displayTable">
-    <div class="displayTableCell">
-        <div class="authBlock">
-            <h3>Thank You for Registering</h3>
-            <div class="formGroup" *ngIf="authService.userData as user">
-                <p class="text-center">We have sent a confirmation email to <strong>{{user.email}}</strong>.</p>
-                <p class="text-center">Please check your email and click on the link to verfiy your email address.</p>
-            </div>
-
-            <!-- Calling SendVerificationMail() method using authService Api -->
-            <div class="formGroup">
-                <button mat-button color="accent" (click)="authService.sendVerificationMail()">
-                    <i class="fas fa-redo-alt"></i>
-                    Resend Verification Email
-                </button>
-            </div>
-        </div>
-        <div>
-            <span>Back to <button mat-button color="primary" (click)="login()">Login</button> </span>
-        </div>
-    </div>
-</div>
+<div>
+    <span>
+        <mat-card>
+            <mat-card-title>Vielen Dank für Ihre Registrierung</mat-card-title>
+            <mat-card-content>
+            </mat-card-content>
+            <hr>
+            <br>
+            <mat-card-footer>
+                <div class="button-center">
+                    <button class="button-full-width" color="danger" mat-raised-button (click)="login()">
+                        Zurück zur Anmeldung
+                    </button>
+                </div>
+                <br>
+            </mat-card-footer>
+        </mat-card>
+    </span>

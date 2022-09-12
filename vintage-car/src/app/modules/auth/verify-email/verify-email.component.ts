@@ -8,8 +8,13 @@ import { AuthService } from 'src/app/shared/services/auth.service';
   styleUrls: ['./verify-email.component.css']
 })
 export class VerifyEmailComponent implements OnInit {
+  user: any;
 
-  constructor(public authService: AuthService, private router: Router) { }
+  constructor(public authService: AuthService, private router: Router) {
+    const navigation = this.router.getCurrentNavigation();
+    const state = navigation.extras?.state as { user: any };
+    this.user = state?.user;
+  }
 
   ngOnInit(): void {
   }

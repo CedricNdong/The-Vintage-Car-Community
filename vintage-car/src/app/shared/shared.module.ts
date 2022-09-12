@@ -11,15 +11,10 @@ import { MatInputModule } from '@angular/material/input';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatRippleModule } from '@angular/material/core';
 import { MatCardModule } from '@angular/material/card';
-import {MatTableModule} from '@angular/material/table';
-import { MatRadioModule } from '@angular/material/radio';
 import { MatSelectModule } from '@angular/material/select';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
-
-
-
-
-
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from "@angular/material/paginator";
+import {MatRadioModule} from '@angular/material/radio';
 
 
 const MATERIAL_MODULES = [
@@ -35,12 +30,10 @@ const MATERIAL_MODULES = [
   FormsModule,
   ReactiveFormsModule,
   MatCardModule,
-  MatTableModule,
-  MatRadioModule,
   MatSelectModule,
-  FormControl,
-  FormGroup,
-  Validators,
+  MatTableModule,
+  MatPaginatorModule,
+  MatRadioModule
   
 ]
 

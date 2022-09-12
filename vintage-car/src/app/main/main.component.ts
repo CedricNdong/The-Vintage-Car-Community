@@ -21,12 +21,22 @@ export class MainComponent {
     suche: 'suche'
   };
 
+  constructor(
+    private breakpointObserver: BreakpointObserver,
+    private authService: AuthService) { }
+
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
     .pipe(
       map(result => result.matches),
       shareReplay()
     );
 
-  constructor(private breakpointObserver: BreakpointObserver, private authService: AuthService) { }
+  isLoggedIn(): boolean {
+    return this.authService.isLoggedIn;
+  }
+
+  logout() {
+    this.authService.logout();
+  }
 
 }

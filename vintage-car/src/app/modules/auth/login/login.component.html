@@ -23,7 +23,8 @@
                         </mat-error>
                     </mat-form-field>
                     <div class="button-end">
-                        <button type="submit" color="primary" mat-raised-button>Login</button>
+                        <button type="submit" [disabled]="loginForm.invalid" color="primary"
+                            mat-raised-button>Login</button>
                     </div>
                     <br>
                 </form>
@@ -31,12 +32,6 @@
             <hr>
             <br>
             <mat-card-footer>
-                <div class="button-center">
-                    <button class="button-full-width" mat-raised-button color="accent"
-                        (click)="authService.loginGoogle()">
-                        <mat-icon>login</mat-icon> Mit Google anmelden
-                    </button>
-                </div>
                 <br>
                 <div class="button-center">
                     <button class="button-full-width" color="danger" mat-raised-button
@@ -45,20 +40,10 @@
                 <br>
                 <div class=" button-center">
                     <button class="button-full-width" color="danger" mat-raised-button (click)="forgotPassword()">
-                        Passwort
-                        vergessen
+                        Passwort vergessen
                     </button>
                 </div>
                 <br>
             </mat-card-footer>
         </mat-card>
     </span>
-
-
-
-    <!-- <div class="formGroup">
-    <button mat-button (click)="authService.loginGoogle()">
-        <i class="fab fa-google-plus-g"></i>
-        Log in with Google
-    </button>
-</div> -->

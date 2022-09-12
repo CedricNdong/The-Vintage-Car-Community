@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SharedModule } from '../shared.module';
+import { FormGroup } from '@angular/forms';
 
 
 export interface PeriodicElement {
@@ -24,6 +24,7 @@ export class SucheComponent implements OnInit {
 
   displayedColumns: string[] = ['anschrift', 'merkmale', 'service', 'kondition'];
   dataSource = ELEMENT_DATA;
+  suchForm: FormGroup;
 
 
 
