@@ -54,10 +54,12 @@ export class AddLagerComponent implements OnInit {
   addLager() {
     const lagerForm = this.addLagerForm.value;
     this.lager.freiePlaetze = lagerForm.kapazitaet;
-    this.fireStore.collection('lager').add(this.lager).then(res => {
-      console.log(res);
-      this.router.navigate(['dashboard']);
-    });
+    this.fireStore.collection('lager')
+      .add(this.lager)
+      .then(res => {
+        console.log(res);
+        this.router.navigate(['dashboard']);
+      });
   }
 
 }

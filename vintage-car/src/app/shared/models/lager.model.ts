@@ -7,7 +7,6 @@ export interface Lager extends Einrichtung {
     services?: LagerService[],
     einlagerungsbetrag: number,
     servicezeiten?: Servicezeiten[],
-    // stellplaetze: Stellplatz[],
     kapazitaet: number,
     freiePlaetze: number
 }
@@ -16,7 +15,7 @@ export enum Kondition {
     Beheizt = 'Beheizt',
     UvGeschuetzt = 'UV-Geschützt',
     Klimatisiert = 'Klimatisiert',
-    ImmerZugaenglich = '24/7',
+    ImmerZugaenglich = '24/7 Geöffnet',
     Wachschutz = 'Wachschutz'
 }
 

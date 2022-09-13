@@ -1,15 +1,17 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { FahrzeugComponent } from './fahrzeug/fahrzeug.component';
+import { AddFahrzeugComponent } from './add-fahrzeug/add-fahrzeug.component';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 
 @NgModule({
   declarations: [
-    FahrzeugComponent
+    FahrzeugComponent,
+    AddFahrzeugComponent
   ],
   imports: [
-    CommonModule
+    SharedModule
   ]
 })
 export class FahrzeugModule { }
