@@ -35,15 +35,16 @@ export class LagerComponent implements OnInit {
     console.log("this is speichern");
   }
 
-  remove(o) : void{
-    const index = this.dataSource.indexOf(o);
-    console.log(index)
-    this.dataSource.splice(index, 1);
+  remove(row) : void{
+    const index = this.dataSource.indexOf(row);
+      this.dataSource = this.dataSource.filter((u) => u.position !== index);
 
     console.log("this is remove");
+
   }
-  edit() : void{
+  edit(row) : void{
     console.log("this is edit");
   }
 
 }
+
