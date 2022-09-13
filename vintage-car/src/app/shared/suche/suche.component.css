@@ -1,0 +1,60 @@
+:host {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0px;
+}
+
+
+mat-table {
+    width: max-content;
+    font-size: medium;
+
+    
+  }
+  .mat-column-anschrift {
+    width: 32px;
+    border: 1px solid currentColor;
+    padding-right: 24px;
+    text-align: center;
+    font-weight: bold;
+
+
+  }
+  
+  .mat-column-merkmale {
+    width: 32px;
+    border: 1px solid currentColor;
+    padding-right: 24px;
+    text-align: center;
+    font-weight: bold;
+
+  }
+  
+  .mat-column-service {
+    width: 32px;
+    border: 1px solid currentColor;
+    padding-right: 24px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .mat-column-kondition {
+    width: 32px;
+    border: 1px solid currentColor;
+    padding-right: 24px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .mat-radio-button ~ .mat-radio-button {
+
+    display: flexbox;
+    margin-left: 25px;
+  
+  }
+  .mat-radio-button  {
+
+    flex-direction: row;
+    margin-left: 30%;
+    margin-bottom: 25px;
+  }

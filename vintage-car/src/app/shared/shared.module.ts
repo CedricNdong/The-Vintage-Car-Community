@@ -14,6 +14,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatSelectModule } from '@angular/material/select';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from "@angular/material/paginator";
+import {MatRadioModule} from '@angular/material/radio';
 
 
 const MATERIAL_MODULES = [
@@ -31,7 +32,9 @@ const MATERIAL_MODULES = [
   MatCardModule,
   MatSelectModule,
   MatTableModule,
-  MatPaginatorModule
+  MatPaginatorModule,
+  MatRadioModule
+  
 ]
 
 @NgModule({
@@ -41,4 +44,8 @@ const MATERIAL_MODULES = [
   imports: [MATERIAL_MODULES],
   exports: [MATERIAL_MODULES]
 })
-export class SharedModule { }
+export class SharedModule { 
+
+
+
+}

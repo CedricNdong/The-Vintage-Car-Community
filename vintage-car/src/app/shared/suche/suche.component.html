@@ -1,1 +1,94 @@
-<p>suche works!</p>
+
+<div class="container">
+    <!-- Für die Suchbereich-->
+    <div>
+        <span>
+            <mat-card>
+                <mat-card-title> 🔎 Hier können Sie Stellplätze oder Ersatzteilen suchen.</mat-card-title>
+                <mat-card-content>
+                    <form [formGroup]="suchForm">
+
+                        <div >
+                            <mat-radio-group aria-label="Select an option">
+                                <mat-radio-button value="1">Stellplatz</mat-radio-button>
+                                <mat-radio-button value="2">Fahrzeug</mat-radio-button>
+                            </mat-radio-group>
+
+                        </div>
+                        <mat-form-field appearance="fill">
+                            <mat-label>Stellplatz</mat-label>
+                            <mat-select required>
+                              <mat-option value="one">First option</mat-option>
+                              <mat-option value="two">Second option</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                        <mat-form-field appearance="fill">
+                            <mat-label>Fahrzeug</mat-label>
+                            <mat-select required>
+                              <mat-option value="one">First option</mat-option>
+                              <mat-option value="two">Second option</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+
+                        <div class="button-center">
+                            <button type="submit" color="primary" mat-raised-button>Suchen</button>
+                        </div>
+                        <br>
+
+                    </form>
+                </mat-card-content>
+                <br>
+                
+            </mat-card>
+        </span>
+    </div>
+    <br>
+
+    <!-- Für die Suchergebnissen-->
+    <div >
+        <span>
+            <mat-card>
+                <mat-card-title> Suchergebnisse</mat-card-title>
+                <mat-card-content>
+                    <mat-table mat-table [dataSource]="dataSource" class="mat-elevation-z8" matSort>
+
+                      
+                        <!-- Anschrift Column -->
+                        <ng-container matColumnDef="anschrift">
+                          <th mat-header-cell *matHeaderCellDef> Anschrift </th>
+                          <td mat-cell *matCellDef="let element"> {{element.anschrift}} </td>
+                        </ng-container>
+                      
+                        <!-- Merkmale Column -->
+                        <ng-container matColumnDef="merkmale">
+                          <th mat-header-cell *matHeaderCellDef> Merkmale </th>
+                          <td mat-cell *matCellDef="let element"> {{element.merkmale}} </td>
+                        </ng-container>
+                      
+                        <!-- Service Column -->
+                        <ng-container matColumnDef="service">
+                          <th mat-header-cell *matHeaderCellDef> Service </th>
+                          <td mat-cell *matCellDef="let element"> {{element.service}} </td>
+                        </ng-container>
+                      
+                        <!-- Kondition Column -->
+                        <ng-container matColumnDef="kondition">
+                          <th mat-header-cell *matHeaderCellDef> Kondition </th>
+                          <td mat-cell *matCellDef="let element"> {{element.kondition}} </td>
+                        </ng-container>
+                      
+                      
+                        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                      </mat-table>
+                      
+                      
+                        <br>
+                </mat-card-content>
+                <br>
+                
+            </mat-card>
+        </span>
+    
+    </div> 
+</div>

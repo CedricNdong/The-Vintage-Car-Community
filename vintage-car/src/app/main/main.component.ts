@@ -18,6 +18,7 @@ export class MainComponent {
     lagerhalter: 'profile/:id',
     lager: 'einrichtung/lager',
     fahrzeug: 'fahrzeug',
+    suche: 'suche'
   };
 
   constructor(
