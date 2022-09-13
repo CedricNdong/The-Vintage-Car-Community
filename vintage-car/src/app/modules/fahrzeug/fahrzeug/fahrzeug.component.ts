@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/compat/firestore';
 import { Observable } from 'rxjs';
-import { Fahrzeug } from '../fahrzeug.model';
+import { Fahrzeug } from '../../../shared/models/fahrzeug.model';
 
 @Component({
   selector: 'app-fahrzeug',
@@ -19,9 +19,6 @@ export class FahrzeugComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.fahrzeugCollection = this.angularFireStore
-      .collection('fahrzeug');
-    this.fahrzeuge$ = this.fahrzeugCollection.valueChanges();
   }
 
 }

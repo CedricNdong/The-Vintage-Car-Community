@@ -14,7 +14,9 @@ import { MatCardModule } from '@angular/material/card';
 import { MatSelectModule } from '@angular/material/select';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from "@angular/material/paginator";
-
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 const MATERIAL_MODULES = [
   CommonModule,
@@ -31,7 +33,10 @@ const MATERIAL_MODULES = [
   MatCardModule,
   MatSelectModule,
   MatTableModule,
-  MatPaginatorModule
+  MatPaginatorModule,
+  MatGridListModule,
+  MatMenuModule,
+  MatCheckboxModule
 ]
 
 @NgModule({

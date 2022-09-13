@@ -15,6 +15,7 @@ export class MainComponent {
   opened: boolean = true;
 
   sections = {
+    dashboard: 'dashboard',
     lagerhalter: 'profile/:id',
     lager: 'einrichtung/lager',
     fahrzeug: 'fahrzeug',
