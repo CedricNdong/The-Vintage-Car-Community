@@ -1,5 +1,5 @@
 import { Injectable, NgZone } from '@angular/core';
-import { User } from './user.model';
+import { SignupApplication, User, UserRole } from '../models/user.model';
 import * as auth from 'firebase/auth';
 import { AngularFireAuth } from '@angular/fire/compat/auth';
 import {
@@ -12,6 +12,12 @@ import { Router } from '@angular/router';
 })
 export class AuthService {
   userData: any; // Save logged in user data
+
+  // Returns true when user is looged in and email is verified
+  get isLoggedIn(): boolean {
+    const user = JSON.parse(localStorage.getItem('user')!);
+    return user !== null;
+  }
 
   constructor(
     public firestoreService: AngularFirestore, // Inject Firestore service
@@ -37,7 +43,6 @@ export class AuthService {
     return this.firebaseAuthService
       .signInWithEmailAndPassword(email, password)
       .then((userCredential) => {
-        this.storeUserData(userCredential.user);
         this.firebaseAuthService.authState
           .subscribe((user) => {
             if (user) {
@@ -51,13 +56,16 @@ export class AuthService {
   }
 
   // Sign up with email/password
-  register(email: string, password: string) {
+  register(user: SignupApplication) {
     return this.firebaseAuthService
-      .createUserWithEmailAndPassword(email, password)
+      .createUserWithEmailAndPassword(user.email, user.password)
       .then((userCredentials) => {
         /* Send verificaiton mail when new user sign up */
         this.sendVerificationMail();
-        this.storeUserData(userCredentials.user);
+        this.storeUserData(userCredentials.user, user);
+        this.router.navigate(
+          ['auth/verify-email'],
+          { state: { user: user } });
       })
       .catch((error) => {
         window.alert(error.message);
@@ -67,10 +75,7 @@ export class AuthService {
   // Send email verfificaiton when new user sign up
   sendVerificationMail() {
     return this.firebaseAuthService.currentUser
-      .then((user: any) => user.sendEmailVerification())
-      .then(() => {
-        this.router.navigate(['auth/verify-email']);
-      });
+      .then((user) => user.sendEmailVerification());
   }
 
   // Reset Forggot password
@@ -85,37 +90,10 @@ export class AuthService {
       });
   }
 
-  // Returns true when user is looged in and email is verified
-  get isLoggedIn(): boolean {
-    const user = JSON.parse(localStorage.getItem('user')!);
-    return user !== null;
-  }
-
-  // Sign in with Google
-  loginGoogle() {
-    return this.runAuthProvider(new auth.GoogleAuthProvider())
-      .then((res: any) => {
-        this.router.navigate([`dashboard`]);
-      });
-  }
-
-  // Auth logic to run auth providers
-  runAuthProvider(provider: any) {
-    return this.firebaseAuthService
-      .signInWithPopup(provider)
-      .then((userCredential) => {
-        this.storeUserData(userCredential.user);
-        this.router.navigate([`dashboard`]);
-      })
-      .catch((error) => {
-        window.alert(error);
-      });
-  }
-
   /* Setting up user data when signing in with username/password, 
      signing up with username/password and signing in with social auth provider in Firestore database 
      using AngularFirestore + AngularFirestoreDocument service */
-  storeUserData(user: any) {
+  storeUserData(user: any, signupApplication?: SignupApplication) {
     this.userData = user;
 
     const userRef: AngularFirestoreDocument<any> = this.firestoreService
@@ -124,9 +102,10 @@ export class AuthService {
     const userData: User = {
       uid: user.uid,
       email: user.email,
-      displayName: user.displayName,
+      displayName: signupApplication.username,
       photoURL: user.photoURL,
       emailVerified: user.emailVerified,
+      role: signupApplication.role
     };
     return userRef.set(userData, {
       merge: true,
