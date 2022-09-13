@@ -29,6 +29,7 @@ import { ProfileModule } from './modules/profile/profile.module';
 import { DashboardModule } from './modules/dashboard/dashboard.module';
 import { EinrichtungModule } from './modules/einrichtung/einrichtung.module';
 import { FahrzeugModule } from './modules/fahrzeug/fahrzeug.module';
+import { LagerModule } from './modules/lager/lager.module';
 
 const CORE_MODULES = [
   AuthModule,
@@ -36,6 +37,7 @@ const CORE_MODULES = [
   DashboardModule,
   EinrichtungModule,
   FahrzeugModule,
+  LagerModule,
   SharedModule
 ];
 
@@ -68,7 +70,7 @@ const MODULES = [
     AngularFireStorageModule,
     AngularFireDatabaseModule,
     ...MODULES,
-    ...CORE_MODULES
+    ...CORE_MODULES,
   ],
   exports: [...MODULES, ...CORE_MODULES],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],

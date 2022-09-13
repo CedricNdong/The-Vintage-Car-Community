@@ -7,6 +7,7 @@ import { VerifyEmailComponent } from './modules/auth/verify-email/verify-email.c
 import { DashboardComponent } from './modules/dashboard/dashboard.component';
 import { LagerComponent } from './modules/einrichtung/lager/lager.component';
 import { FahrzeugComponent } from './modules/fahrzeug/fahrzeug/fahrzeug.component';
+import { AddLagerComponent } from './modules/lager/add-lager/add-lager.component';
 import { EinlagererComponent } from './modules/profile/einlagerer/einlagerer.component';
 import { LagerhalterComponent } from './modules/profile/lagerhalter/lagerhalter.component';
 import { AuthGuard } from './shared/guard/auth.guard';
@@ -57,6 +58,11 @@ const routes: Routes = [
   {
     path: 'profile/:id',
     component: LagerhalterComponent,
+    canActivate: [AuthGuard]
+  },
+  {
+    path: 'lager/add-lager',
+    component: AddLagerComponent,
     canActivate: [AuthGuard]
   },
 ];

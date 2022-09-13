@@ -1,17 +1,19 @@
 import { Injectable, NgZone } from '@angular/core';
 import { SignupApplication, User, UserRole } from '../models/user.model';
-import * as auth from 'firebase/auth';
 import { AngularFireAuth } from '@angular/fire/compat/auth';
 import {
   AngularFirestore,
   AngularFirestoreDocument,
 } from '@angular/fire/compat/firestore';
 import { Router } from '@angular/router';
+import firebase from 'firebase/compat';
+import { map } from 'rxjs/operators';
+import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root',
 })
 export class AuthService {
-  userData: any; // Save logged in user data
+  userData$: Observable<any>;
 
   // Returns true when user is looged in and email is verified
   get isLoggedIn(): boolean {
@@ -26,15 +28,15 @@ export class AuthService {
     public ngZoneService: NgZone // NgZone service to remove outside scope warning
   ) {
 
-    /* Saving user data in localstorage when 
-    logged in and setting up null when logged out */
-
+    /* Saving user data in localstorage when logged in and setting up null when logged out */
     this.firebaseAuthService.authState
       .subscribe((user) => {
-        this.userData = user;
-        const userJSON = user ? JSON.stringify(this.userData) : 'null';
+        let userJSON = 'null';
+        if (user) {
+          this.setUserData(user);
+          userJSON = JSON.stringify(user);
+        }
         localStorage.setItem('user', userJSON);
-        JSON.parse(localStorage.getItem('user')!);
       });
   }
 
@@ -43,11 +45,13 @@ export class AuthService {
     return this.firebaseAuthService
       .signInWithEmailAndPassword(email, password)
       .then((userCredential) => {
+        if (userCredential.user)
+          this.setUserData(userCredential.user);
+
         this.firebaseAuthService.authState
           .subscribe((user) => {
-            if (user) {
+            if (user)
               this.router.navigate([`dashboard`]);
-            }
           });
       })
       .catch((error) => {
@@ -55,17 +59,19 @@ export class AuthService {
       });
   }
 
+  setUserData(user: firebase.User): void {
+    this.userData$ = this.firestoreService.doc(`users/${user.uid}`).valueChanges();
+  }
+
   // Sign up with email/password
-  register(user: SignupApplication) {
+  register(user: SignupApplication): Promise<void> {
     return this.firebaseAuthService
       .createUserWithEmailAndPassword(user.email, user.password)
       .then((userCredentials) => {
         /* Send verificaiton mail when new user sign up */
         this.sendVerificationMail();
         this.storeUserData(userCredentials.user, user);
-        this.router.navigate(
-          ['auth/verify-email'],
-          { state: { user: user } });
+        this.router.navigate(['auth/verify-email'], { state: { user: user } });
       })
       .catch((error) => {
         window.alert(error.message);
@@ -73,13 +79,13 @@ export class AuthService {
   }
 
   // Send email verfificaiton when new user sign up
-  sendVerificationMail() {
+  sendVerificationMail(): Promise<void> {
     return this.firebaseAuthService.currentUser
       .then((user) => user.sendEmailVerification());
   }
 
   // Reset Forggot password
-  forgotPassword(passwordResetEmail: string) {
+  forgotPassword(passwordResetEmail: string): Promise<void> {
     return this.firebaseAuthService
       .sendPasswordResetEmail(passwordResetEmail)
       .then(() => {
@@ -93,30 +99,35 @@ export class AuthService {
   /* Setting up user data when signing in with username/password, 
      signing up with username/password and signing in with social auth provider in Firestore database 
      using AngularFirestore + AngularFirestoreDocument service */
-  storeUserData(user: any, signupApplication?: SignupApplication) {
-    this.userData = user;
-
+  storeUserData(user: any, signupApplication?: SignupApplication): Promise<void> {
     const userRef: AngularFirestoreDocument<any> = this.firestoreService
       .doc(`users/${user.uid}`);
 
-    const userData: User = {
+    const username = signupApplication ? signupApplication?.username : user?.displayName
+    const userData = {
       uid: user.uid,
       email: user.email,
-      displayName: signupApplication.username,
+      displayName: username,
       photoURL: user.photoURL,
       emailVerified: user.emailVerified,
-      role: signupApplication.role
+      role: signupApplication?.role
     };
-    return userRef.set(userData, {
-      merge: true,
-    });
+
+    return userRef.set(userData, { merge: true });
   }
 
-  // Sign out
-  logout() {
-    return this.firebaseAuthService.signOut().then(() => {
-      localStorage.removeItem('user');
-      this.router.navigate(['auth/login']);
-    });
+  logout(): Promise<void> {
+    return this.firebaseAuthService.signOut()
+      .then(() => {
+        localStorage.removeItem('user');
+        this.router.navigate(['auth/login']);
+      });
   }
+
+  getCurrentUserRole(): UserRole {
+    let role: UserRole;
+    this.userData$?.pipe(map((user: User) => role = user.role));
+    return role;
+  }
+
 }
