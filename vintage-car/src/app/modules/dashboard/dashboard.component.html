@@ -1,30 +1,55 @@
 <div class="grid-container">
-    <h1 class="mat-h1">Dashboard</h1>
-    <mat-grid-list cols="2" rowHeight="350px">
+    <mat-grid-list cols="2">
         <mat-grid-tile *ngFor="let card of cards | async" [colspan]="card.cols" [rowspan]="card.rows">
             <mat-card class="dashboard-card">
                 <mat-card-header>
-                    <mat-card-title>
-                        {{card.title}}
-                        <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
-                            <mat-icon>more_vert</mat-icon>
-                        </button>
-                        <mat-menu #menu="matMenu" xPosition="before">
-                            <button mat-menu-item>Expand</button>
-                            <button mat-menu-item>Remove</button>
-                        </mat-menu>
-                    </mat-card-title>
                 </mat-card-header>
-                <mat-card-content class="dashboard-card-content">
+                <mat-card-content>
                     <div *ngIf="authService.userData$ | async as user">
-                        <span *ngIf="card.title === 'Card 1'">
-                            <h1>Hallo, <strong>{{(user.displayName) ? user.displayName : 'Du'}}</strong>!</h1>
+                        <span *ngIf="card.title === 'ObjekteVerwalten'">
+                            <h1>Hallo, <strong>{{(user.displayName) ? user.displayName : 'Du'}}</strong>! 😊</h1>
+
+                            <!-- Lagerhalterbereich -->
                             <div *ngIf="user.role == roles.Lagerhalter">
-                                <button mat-raised-button color="primary" (click)="addLager()">Lager hinzufügen</button>
+                                <div *ngIf="data$ | async as lagerList">
+                                    <div mat-subheader>Lagerübersicht</div>
+                                    <mat-selection-list #lagerSelection [multiple]="false">
+                                        <mat-list-option *ngFor="let lager of lagerList" [value]="lager.payload.doc.id"
+                                            (selectedChange)="navLager(lagerSelection.selectedOptions.selected[0]?.value)">
+                                            <mat-icon mat-list-icon>warehouse</mat-icon>
+                                            <h3 mat-line> {{lager.payload.doc.data().name}}</h3>
+                                            <div mat-line> Ort: {{lager.payload.doc.data().ort.stadt}},
+                                                {{lager.payload.doc.data().ort.bundesland}} </div>
+                                            <div mat-line> Freie Plätze: {{lager.payload.doc.data().freiePlaetze}}</div>
+                                        </mat-list-option>
+                                    </mat-selection-list>
+                                </div>
+                                <br>
+                                <div class="dashboard-card-content">
+                                    <button class="button-full-width" mat-raised-button color="primary"
+                                        (click)="addLager()">
+                                        Lager hinzufügen</button>
+                                </div>
                             </div>
-                            <div *ngIf="user.role == roles.Einlagerer">
-                                <button mat-raised-button color="primary"
-                                    (click)="addFahrzeug()">Fahrzeughinzufügen</button>
+
+                            <!-- Einlagererbereich -->
+                            <div *ngIf="user.role == roles.Einlagerer" class="dashboard-card-content">
+                                <div *ngIf="data$ | async as fahrzeugList">
+                                    <div mat-subheader>Fahrzeugübersicht</div>
+                                    <mat-selection-list #fahrzeugSelection [multiple]="false">
+                                        <mat-list-option *ngFor="let fahrzeug of fahrzeugList"
+                                            [value]="fahrzeug.payload.doc.id"
+                                            (selectedChange)="navFahrzeug(fahrzeugSelection.selectedOptions.selected[0]?.value)">
+                                            <mat-icon mat-list-icon>local_car_wash</mat-icon>
+                                            <h3 mat-line> {{fahrzeug.payload.doc.data().marke}}</h3>
+                                            <div mat-line>{{fahrzeug.payload.doc.data().kategorie}},
+                                                {{fahrzeug.payload.doc.data().modell}} </div>
+                                        </mat-list-option>
+                                    </mat-selection-list>
+                                </div>
+                                <br>
+                                <button mat-raised-button class="button-full-width" color="primary"
+                                    (click)="addFahrzeug()">Fahrzeug hinzufügen</button>
                             </div>
                         </span>
                     </div>

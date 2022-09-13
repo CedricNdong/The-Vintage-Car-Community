@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/compat/firestore';
-import { Observable } from 'rxjs';
+import { AngularFirestore, AngularFirestoreCollection, DocumentReference } from '@angular/fire/compat/firestore';
+import { Router } from '@angular/router';
+import { BehaviorSubject, Observable } from 'rxjs';
 import { Fahrzeug } from '../../../shared/models/fahrzeug.model';
 
 @Component({
@@ -10,12 +11,17 @@ import { Fahrzeug } from '../../../shared/models/fahrzeug.model';
 })
 export class FahrzeugComponent implements OnInit {
   fahrzeugCollection: AngularFirestoreCollection<Fahrzeug>;
-  fahrzeuge$: Observable<Fahrzeug[]>;
+  fahrzeugSubject: BehaviorSubject<Fahrzeug> = new BehaviorSubject<Fahrzeug>(null);
+  fahrzeug$: Observable<Fahrzeug> = this.fahrzeugSubject.asObservable();
+  docRef: DocumentReference<unknown>;
 
-  constructor(private angularFireStore: AngularFirestore) {
-    this.fahrzeugCollection = this.angularFireStore
-      .collection('fahrzeug');
-    this.fahrzeuge$ = this.fahrzeugCollection.valueChanges();
+  constructor(private router: Router,
+    private fireStore: AngularFirestore) {
+
+    const navigation = this.router.getCurrentNavigation();
+    const state = navigation.extras?.state as { docRef: DocumentReference<unknown> };
+    this.docRef = state?.docRef;
+    this.fahrzeug$ = fireStore.doc<Fahrzeug>(`fahrzeug/${this.docRef?.id}`).valueChanges();
   }
 
   ngOnInit(): void {

@@ -7,18 +7,21 @@ import {
 } from '@angular/fire/compat/firestore';
 import { Router } from '@angular/router';
 import firebase from 'firebase/compat';
-import { map } from 'rxjs/operators';
-import { Observable } from 'rxjs';
+import { BehaviorSubject, Observable, of } from 'rxjs';
 @Injectable({
   providedIn: 'root',
 })
 export class AuthService {
-  userData$: Observable<any>;
+  private userSubject = new BehaviorSubject<any>(null);
+  userData$: Observable<any> = this.userSubject.asObservable();
 
   // Returns true when user is looged in and email is verified
   get isLoggedIn(): boolean {
-    const user = JSON.parse(localStorage.getItem('user')!);
-    return user !== null;
+    return this.userData !== null;
+  }
+
+  get userData(): any {
+    return JSON.parse(localStorage.getItem('user')!);
   }
 
   constructor(
@@ -33,6 +36,7 @@ export class AuthService {
       .subscribe((user) => {
         let userJSON = 'null';
         if (user) {
+          this.userSubject.next(user);
           this.setUserData(user);
           userJSON = JSON.stringify(user);
         }
@@ -60,7 +64,9 @@ export class AuthService {
   }
 
   setUserData(user: firebase.User): void {
-    this.userData$ = this.firestoreService.doc(`users/${user.uid}`).valueChanges();
+    this.firestoreService.doc(`users/${user.uid}`)
+      .valueChanges()
+      .subscribe(user => this.userSubject.next(user));
   }
 
   // Sign up with email/password
@@ -123,11 +129,4 @@ export class AuthService {
         this.router.navigate(['auth/login']);
       });
   }
-
-  getCurrentUserRole(): UserRole {
-    let role: UserRole;
-    this.userData$?.pipe(map((user: User) => role = user.role));
-    return role;
-  }
-
 }

@@ -34,7 +34,7 @@ mat-card-content {
 }
 
 .button-full-width {
-    width: 80% !important;
+    width: 100% !important;
     margin-top: 10px !important;
     margin-bottom: 10px !important;
 }
@@ -66,4 +66,9 @@ mat-card-content {
 
 mat-form-field {
     min-width: 100px !important;
+}
+
+.circleImg {
+    border-radius: 100%;
+    max-width: 150px;
 }
