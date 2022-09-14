@@ -68,7 +68,7 @@
                             <!-- Kapazität  -->
                             <ng-container matColumnDef="kapazitaet">
                             <th mat-header-cell *matHeaderCellDef> Kapazität </th>
-                            <td mat-cell *matCellDef="let cell"> {{cell.lakapazitaet}} </td>
+                            <td mat-cell *matCellDef="let cell"> {{cell.kapazitaet}} </td>
                             </ng-container>
                         
                             <!-- Kosten -->
@@ -100,7 +100,7 @@
 
     <ul *ngFor="let lage of getlage |async">
         <li>
-            {{lage.ort['bundesland']}} <br>
+            {{lage.ort['stadt']}} <br>
             {{lage.konditionen}}<br>
             {{lage.einlagerungsbetrag}}<br>
             {{lage.kapazitaet}}

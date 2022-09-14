@@ -98,9 +98,10 @@ getlage: Observable<GetLage[]>;
       }
 
 
-   ngOnInit(): void {
+   ngOnInit() {
     this.getLageCollection = this.angularFireStore.collection("lager");
     this.getlage = this.getLageCollection.valueChanges();
+    
 
 
 
