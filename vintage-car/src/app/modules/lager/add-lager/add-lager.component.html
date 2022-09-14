@@ -1,0 +1,88 @@
+<div>
+    <span>
+        <mat-card>
+            <mat-card-title>Lager hinzufügen</mat-card-title>
+            <mat-card-content>
+                <form [formGroup]="addLagerForm" (ngSubmit)="addLager()">
+                    <span class="display-flex-row">
+                        <mat-form-field class="button-third-width" appearance="fill">
+                            <mat-label>Name</mat-label>
+                            <input [(ngModel)]="lager.name" type="text" matInput formControlName="name">
+                            <mat-error *ngIf="addLagerForm.controls['name'].hasError('required')">
+                                Name ist <strong>erforderlich</strong>
+                            </mat-error>
+                        </mat-form-field>
+                        <mat-form-field class="button-third-width" appearance="fill">
+                            <mat-label>Stellplätze</mat-label>
+                            <input [(ngModel)]="lager.kapazitaet" type="number" matInput formControlName="kapazitaet">
+                            <mat-error *ngIf="addLagerForm.controls['kapazitaet'].hasError('required')">
+                                Kapazität ist <strong>erforderlich</strong>
+                            </mat-error>
+                        </mat-form-field>
+                        <mat-form-field class="button-third-width" appearance="fill">
+                            <mat-label>Einlagerungsbetrag</mat-label>
+                            <input [(ngModel)]="lager.einlagerungsbetrag" type="number" matInput placeholder="0"
+                                floatLabel="always" formControlName="einlagerungsbetrag">
+                            <span matPrefix>€&nbsp;</span>
+                            <span matSuffix>.00</span>
+                            <mat-error *ngIf="addLagerForm.controls['einlagerungsbetrag'].hasError('required')">
+                                Einlagerungsbetrag ist <strong>erforderlich</strong>
+                            </mat-error>
+                        </mat-form-field>
+                    </span>
+                    <span class="display-flex-row">
+                        <mat-form-field class="button-third-width" appearance="fill">
+                            <mat-label>Straße</mat-label>
+                            <input [(ngModel)]="lager.ort.strasse" type="text" matInput formControlName="strasse">
+                            <mat-error *ngIf="addLagerForm.controls['strasse'].hasError('required')">
+                                Straße ist <strong>erforderlich</strong>
+                            </mat-error>
+                        </mat-form-field>
+                        <mat-form-field class="button-third-width" appearance="fill">
+                            <mat-label>Hausnummer</mat-label>
+                            <input [(ngModel)]="lager.ort.hausnummer" type="number" matInput
+                                formControlName="hausnummer">
+                            <mat-error *ngIf="addLagerForm.controls['hausnummer'].hasError('required')">
+                                Hausnummer ist <strong>erforderlich</strong>
+                            </mat-error>
+                        </mat-form-field>
+                        <mat-form-field class="button-third-width" appearance="fill">
+                            <mat-label>PLZ</mat-label>
+                            <input [(ngModel)]="lager.ort.plz" type="text" matInput formControlName="plz">
+                            <mat-error *ngIf="addLagerForm.controls['plz'].hasError('required')">
+                                PLZ ist <strong>erforderlich</strong>
+                            </mat-error>
+                        </mat-form-field>
+                    </span>
+                    <span class="display-flex-row">
+                        <mat-form-field class="button-half-width" appearance="fill">
+                            <mat-label>Stadt</mat-label>
+                            <input [(ngModel)]="lager.ort.stadt" type="text" matInput formControlName="stadt">
+                            <mat-error *ngIf="addLagerForm.controls['stadt'].hasError('required')">
+                                Stadt ist <strong>erforderlich</strong>
+                            </mat-error>
+                        </mat-form-field>
+                        <mat-form-field class="button-half-width" appearance="fill">
+                            <mat-label>Bundesland</mat-label>
+                            <input [(ngModel)]="lager.ort.bundesland" type="text" matInput formControlName="bundesland">
+                            <mat-error *ngIf="addLagerForm.controls['bundesland'].hasError('required')">
+                                Bundesland ist <strong>erforderlich</strong>
+                            </mat-error>
+                        </mat-form-field>
+                    </span>
+
+
+                    <h2>Lagerkonditionen</h2>
+                    <span class="display-flex-row">
+                        <div class="checkbox-in-row" *ngFor="let kondition of konditionen; let i=index">
+                            <mat-checkbox (change)="updateKonditionen($event, kondition)">{{kondition}}</mat-checkbox>
+                        </div>
+                    </span>
+                    <div class="button-center">
+                        <button class="button-full-width" type="submit" color="primary" mat-raised-button
+                            [disabled]="addLagerForm.invalid">Speichern</button>
+                    </div>
+                </form>
+            </mat-card-content>
+        </mat-card>
+    </span>

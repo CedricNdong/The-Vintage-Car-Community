@@ -1,52 +1,62 @@
-<!-- Top navigation -->
-<nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
-    <a class="navbar-brand col-sm-3 col-md-2 mr-0">
-        <img class="brand-logo" src="assets/logo-positronx-white.svg" alt="positronX.io Logo">
-    </a>
-</nav>
-<!-- Sidebar navigation -->
-<div class="container-fluid">
-    <div class="row">
-        <nav class="col-md-2 d-md-block bg-light sidebar">
-            <div class="sidebar-sticky">
-                <ul class="nav flex-column">
-                    <li class="nav-item">
-                        <a class="nav-link active">
-                            <i class="fas fa-user"></i>User Profile
-                        </a>
-                    </li>
-                    <!-- Calling SignOut() Api from AuthService -->
-                    <li class="nav-item">
-                        <a class="nav-link" (click)="authService.logout()">
-                            <i class="fas fa-sign-out-alt"></i>Log out
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <!-- Main content -->
-        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
-            <div class="inner-adjust">
-                <div class="pt-3 pb-2 mb-3 border-bottom">
-                    <h1 class="h2">User Profile</h1>
-                </div>
-                <!-- Show user data when logged in -->
-                <div class="row" *ngIf="authService.userData as user">
-                    <div class="col-md-12">
-                        <div class="media">
-                            <img class="align-self-start mr-5 img-thumbnail rounded-circle"
-                                src="{{(user.photoURL) ? user.photoURL : '/assets/dummy-user.png'}}"
-                                alt="{{user.displayName}}">
-                            <div class="media-body">
-                                <h1>Hello: <strong>{{(user.displayName) ? user.displayName : 'User'}}</strong></h1>
-                                <p>User ID: <strong>{{user.uid}}</strong></p>
-                                <p>Email: <strong>{{user.email}}</strong></p>
-                                <p>Email Verified: <strong>{{user.emailVerified}}</strong></p>
+<div class="grid-container">
+    <mat-grid-list cols="2">
+        <mat-grid-tile *ngFor="let card of cards | async" [colspan]="card.cols" [rowspan]="card.rows">
+            <mat-card class="dashboard-card">
+                <mat-card-header>
+                </mat-card-header>
+                <mat-card-content>
+                    <div *ngIf="authService.userData$ | async as user">
+                        <span *ngIf="card.title === 'ObjekteVerwalten'">
+                            <h1>Hallo, <strong>{{(user.displayName) ? user.displayName : 'Du'}}</strong>! 😊</h1>
+
+                            <!-- Lagerhalterbereich -->
+                            <div *ngIf="user.role == roles.Lagerhalter">
+                                <div *ngIf="data$ | async as lagerList">
+                                    <div mat-subheader>Lagerübersicht</div>
+                                    <mat-selection-list #lagerSelection [multiple]="false">
+                                        <mat-list-option *ngFor="let lager of lagerList" [value]="lager.payload.doc.id"
+                                            (selectedChange)="navLager(lagerSelection.selectedOptions.selected[0]?.value)">
+                                            <mat-icon mat-list-icon>warehouse</mat-icon>
+                                            <h3 mat-line> {{lager.payload.doc.data().name}}</h3>
+                                            <div mat-line> Ort: {{lager.payload.doc.data().ort.stadt}},
+                                                {{lager.payload.doc.data().ort.bundesland}} </div>
+                                            <div mat-line> Freie Plätze: {{lager.payload.doc.data().freiePlaetze}}</div>
+                                        </mat-list-option>
+                                    </mat-selection-list>
+                                </div>
+                                <br>
+                                <div class="dashboard-card-content">
+                                    <button class="button-full-width" mat-raised-button color="primary"
+                                        (click)="addLager()">
+                                        Lager hinzufügen</button>
+                                </div>
                             </div>
-                        </div>
+
+                            <!-- Einlagererbereich -->
+                            <div *ngIf="user.role == roles.Einlagerer">
+                                <div *ngIf="data$ | async as fahrzeugList">
+                                    <div mat-subheader>Fahrzeugübersicht</div>
+                                    <mat-selection-list #fahrzeugSelection [multiple]="false">
+                                        <mat-list-option *ngFor="let fahrzeug of fahrzeugList"
+                                            [value]="fahrzeug.payload.doc.id"
+                                            (selectedChange)="navFahrzeug(fahrzeugSelection.selectedOptions.selected[0]?.value)">
+                                            <mat-icon mat-list-icon>local_car_wash</mat-icon>
+                                            <h3 mat-line> {{fahrzeug.payload.doc.data().marke}}</h3>
+                                            <div mat-line>{{fahrzeug.payload.doc.data().kategorie}},
+                                                {{fahrzeug.payload.doc.data().modell}} </div>
+                                        </mat-list-option>
+                                    </mat-selection-list>
+                                </div>
+                                <br>
+                                <div class="dashboard-card-content">
+                                    <button mat-raised-button class="button-full-width" color="primary"
+                                        (click)="addFahrzeug()">Fahrzeug hinzufügen</button>
+                                </div>
+                            </div>
+                        </span>
                     </div>
-                </div>
-            </div>
-        </main>
-    </div>
+                </mat-card-content>
+            </mat-card>
+        </mat-grid-tile>
+    </mat-grid-list>
 </div>

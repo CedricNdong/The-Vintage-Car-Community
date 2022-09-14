@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { EinlagererComponent } from './einlagerer/einlagerer.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 
@@ -10,7 +9,6 @@ import { SharedModule } from 'src/app/shared/shared.module';
     EinlagererComponent,
   ],
   imports: [
-    CommonModule,
     SharedModule
   ]
 })

@@ -1,0 +1,54 @@
+<div>
+    <span>
+        <mat-card>
+            <mat-card-title>Fahrzeug hinzufügen</mat-card-title>
+            <mat-card-content>
+                <form [formGroup]="addFahrzeugForm" (ngSubmit)="addFahrzeug()">
+                    <span class="display-flex-row">
+                        <mat-form-field class="button-third-width" appearance="fill">
+                            <mat-label>Fahrzeugmarke</mat-label>
+                            <mat-select formControlName="marke">
+                                <mat-option *ngFor="let marke of marken" [value]="marke"
+                                    (onSelectionChange)="fahrzeug.marke = marke">
+                                    {{marke}}
+                                </mat-option>
+                            </mat-select>
+                            <mat-error *ngIf="addFahrzeugForm.controls['marke'].hasError('required')">
+                                Fahrzeugmarke ist <strong>erforderlich</strong>
+                            </mat-error>
+                        </mat-form-field>
+
+                        <mat-form-field class="button-third-width" appearance="fill">
+                            <mat-label>Kategorie</mat-label>
+                            <mat-select formControlName="kategorie">
+                                <mat-option *ngFor="let kategorie of kategorien" [value]="kategorie"
+                                    (onSelectionChange)="fahrzeug.kategorie = kategorie">
+                                    {{kategorie}}
+                                </mat-option>
+                            </mat-select>
+                            <mat-error *ngIf="addFahrzeugForm.controls['kategorie'].hasError('required')">
+                                Kategorie ist <strong>erforderlich</strong>
+                            </mat-error>
+                        </mat-form-field>
+
+                        <mat-form-field class="button-third-width" appearance="fill">
+                            <mat-label>Modell</mat-label>
+                            <input [(ngModel)]="fahrzeug.modell" type="text" matInput formControlName="modell">
+                        </mat-form-field>
+                    </span>
+
+                    <span class="display-flex-row">
+                        <mat-form-field class="button-full-width" appearance="fill">
+                            <mat-label>Anmerkung</mat-label>
+                            <textarea [(ngModel)]="fahrzeug.anmerkung" matInput formControlName="anmerkung"></textarea>
+                        </mat-form-field>
+                    </span>
+
+                    <div class="button-center">
+                        <button class="button-full-width" type="submit" color="primary" mat-raised-button
+                            [disabled]="addFahrzeugForm.invalid">Speichern</button>
+                    </div>
+                </form>
+            </mat-card-content>
+        </mat-card>
+    </span>

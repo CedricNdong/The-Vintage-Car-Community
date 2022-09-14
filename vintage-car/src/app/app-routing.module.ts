@@ -6,7 +6,9 @@ import { SignupComponent } from './modules/auth/signup/signup.component';
 import { VerifyEmailComponent } from './modules/auth/verify-email/verify-email.component';
 import { DashboardComponent } from './modules/dashboard/dashboard.component';
 import { LagerComponent } from './modules/einrichtung/lager/lager.component';
+import { AddFahrzeugComponent } from './modules/fahrzeug/add-fahrzeug/add-fahrzeug.component';
 import { FahrzeugComponent } from './modules/fahrzeug/fahrzeug/fahrzeug.component';
+import { AddLagerComponent } from './modules/lager/add-lager/add-lager.component';
 import { EinlagererComponent } from './modules/profile/einlagerer/einlagerer.component';
 import { LagerhalterComponent } from './modules/profile/lagerhalter/lagerhalter.component';
 import { AuthGuard } from './shared/guard/auth.guard';
@@ -35,11 +37,6 @@ const routes: Routes = [
     component: ForgotPasswordComponent
   },
   {
-    path: 'einrichtung/lager',
-    component: LagerComponent,
-    canActivate: [AuthGuard]
-  },
-  {
     path: 'dashboard',
     component: DashboardComponent,
     canActivate: [AuthGuard]
@@ -50,7 +47,22 @@ const routes: Routes = [
     canActivate: [AuthGuard]
   },
   {
-    path: 'fahrzeug',
+    path: 'einrichtung/lager/:id',
+    component: LagerComponent,
+    canActivate: [AuthGuard]
+  },
+  {
+    path: 'lager/add-lager',
+    component: AddLagerComponent,
+    canActivate: [AuthGuard]
+  },
+  {
+    path: 'fahrzeug/add-fahrzeug',
+    component: AddFahrzeugComponent,
+    canActivate: [AuthGuard]
+  },
+  {
+    path: 'fahrzeug/:id',
     component: FahrzeugComponent,
     canActivate: [AuthGuard]
   },

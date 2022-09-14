@@ -11,6 +11,15 @@ import { MatInputModule } from '@angular/material/input';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatRippleModule } from '@angular/material/core';
 import { MatCardModule } from '@angular/material/card';
+<<<<<<< HEAD
+=======
+import { MatSelectModule } from '@angular/material/select';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from "@angular/material/paginator";
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+>>>>>>> main
 
 const MATERIAL_MODULES = [
   CommonModule,
@@ -25,7 +34,16 @@ const MATERIAL_MODULES = [
   FormsModule,
   ReactiveFormsModule,
   MatCardModule,
+<<<<<<< HEAD
 
+=======
+  MatSelectModule,
+  MatTableModule,
+  MatPaginatorModule,
+  MatGridListModule,
+  MatMenuModule,
+  MatCheckboxModule
+>>>>>>> main
 ]
 
 @NgModule({
