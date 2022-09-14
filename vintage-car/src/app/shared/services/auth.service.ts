@@ -53,7 +53,7 @@ export class AuthService {
           this.setUserData(userCredential.user);
 
         this.firebaseAuthService.authState
-          .subscribe((user) => {
+          .subscribe(user => {
             if (user)
               this.router.navigate([`dashboard`]);
           });
@@ -64,9 +64,10 @@ export class AuthService {
   }
 
   setUserData(user: firebase.User): void {
-    this.firestoreService.doc(`users/${user.uid}`)
-      .valueChanges()
-      .subscribe(user => this.userSubject.next(user));
+    if (user?.uid)
+      this.firestoreService.doc(`users/${user?.uid}`)
+        .valueChanges()
+        .subscribe(user => this.userSubject.next(user));
   }
 
   // Sign up with email/password

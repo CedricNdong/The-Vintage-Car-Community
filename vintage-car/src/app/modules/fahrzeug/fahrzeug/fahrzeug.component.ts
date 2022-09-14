@@ -18,7 +18,8 @@ export class FahrzeugComponent implements OnInit {
   lagerSubject: BehaviorSubject<Lager> = new BehaviorSubject<Lager>(null);
   lager$: Observable<Lager> = this.lagerSubject.asObservable();
 
-  constructor(private router: Router,
+  constructor(
+    private router: Router,
     private fireStore: AngularFirestore) {
 
     const navigation = this.router.getCurrentNavigation();
@@ -47,8 +48,8 @@ export class FahrzeugComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  searchLager() {
-    throw new Error('Method not implemented.');
+  searchLager(): void {
+    this.router.navigate(['suche']);
   }
 
   navLager(lagerId: string) {

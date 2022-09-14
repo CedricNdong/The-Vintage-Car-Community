@@ -20,6 +20,9 @@ export class LoginComponent implements OnInit {
       password: new FormControl('', [Validators.required])
     });
 
+    if (authService.isLoggedIn)
+      this.router.navigate(['dashboard']);
+
   }
 
   ngOnInit(): void {
@@ -31,10 +34,12 @@ export class LoginComponent implements OnInit {
       .login(this.loginForm.value.email, this.loginForm.value.password)
   }
 
+  // navigates to signup component
   signup() {
     this.router.navigate(['auth/signup']);
   }
 
+  // navigates to forgot-password component
   forgotPassword() {
     this.router.navigate(['auth/forgot-password']);
   }

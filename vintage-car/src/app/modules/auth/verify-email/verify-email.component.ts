@@ -19,8 +19,9 @@ export class VerifyEmailComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  login() {
-    this.router.navigate(['auth/login']);
+  // navigates to dashboard component
+  dashboard() {
+    this.router.navigate(['dashboard']);
   }
 
 }
