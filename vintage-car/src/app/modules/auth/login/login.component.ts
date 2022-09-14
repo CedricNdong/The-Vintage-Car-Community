@@ -19,7 +19,6 @@ export class LoginComponent implements OnInit {
       email: new FormControl('', [Validators.required, Validators.email]),
       password: new FormControl('', [Validators.required])
     });
-
   }
 
   ngOnInit(): void {
@@ -31,10 +30,12 @@ export class LoginComponent implements OnInit {
       .login(this.loginForm.value.email, this.loginForm.value.password)
   }
 
+  // navigates to signup component
   signup() {
     this.router.navigate(['auth/signup']);
   }
 
+  // navigates to forgot-password component
   forgotPassword() {
     this.router.navigate(['auth/forgot-password']);
   }

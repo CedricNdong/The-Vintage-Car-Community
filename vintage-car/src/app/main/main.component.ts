@@ -13,23 +13,21 @@ import { AuthService } from '../shared/services/auth.service';
 export class MainComponent {
   @ViewChild(MatSidenav) sidenav: MatSidenav;
   opened: boolean = true;
+  isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset) // Keeps Sidenave responsive
+    .pipe(
+      map(result => result.matches),
+      shareReplay()
+    );
 
-  sections = {
+  sections = { // Sections in sidenave menu
     dashboard: 'dashboard',
-    lagerhalter: 'profile/:id',
-    lager: 'einrichtung/lager',
-    fahrzeug: 'fahrzeug',
+    lager: 'einrichtung/lager/:id',
+    fahrzeug: 'fahrzeug/:id',
   };
 
   constructor(
     private breakpointObserver: BreakpointObserver,
     private authService: AuthService) { }
-
-  isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
-    .pipe(
-      map(result => result.matches),
-      shareReplay()
-    );
 
   isLoggedIn(): boolean {
     return this.authService.isLoggedIn;

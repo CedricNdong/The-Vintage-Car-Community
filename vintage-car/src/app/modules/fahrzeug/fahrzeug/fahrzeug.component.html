@@ -14,7 +14,7 @@
             <div *ngIf="lager$ | async; then lagerBereich else stellplatzSuchen"> </div>
 
             <ng-template #stellplatzSuchen>
-                <div class="dashboard-card-content">
+                <div class="button-center dashboard-card-content">
                     <button class="button-full-width" mat-raised-button color="primary" (click)="searchLager()">
                         Stellplatz suchen</button>
                 </div>

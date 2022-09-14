@@ -6,46 +6,79 @@
                 </mat-card-header>
                 <mat-card-content>
                     <div *ngIf="authService.userData$ | async as user">
+                        <span *ngIf="card.title === 'Profil'">
+
+                        </span>
+
                         <span *ngIf="card.title === 'ObjekteVerwalten'">
                             <h1>Hallo, <strong>{{(user.displayName) ? user.displayName : 'Du'}}</strong>! 😊</h1>
+                            <br>
+                            <div class="display-flex-row ">
+                                <img class="circleImg"
+                                    [src]="user.photoURL? user.photoURL: '../../../assets/imgs/generic-user.jpg'">
+                            </div>
 
-                            <!-- Lagerhalterbereich -->
+
                             <div *ngIf="user.role == roles.Lagerhalter">
-                                <div *ngIf="data$ | async as lagerList">
-                                    <div mat-subheader>Lagerübersicht</div>
-                                    <mat-selection-list #lagerSelection [multiple]="false">
-                                        <mat-list-option *ngFor="let lager of lagerList" [value]="lager.payload.doc.id"
-                                            (selectedChange)="navLager(lagerSelection.selectedOptions.selected[0]?.value)">
-                                            <mat-icon mat-list-icon>warehouse</mat-icon>
-                                            <h3 mat-line> {{lager.payload.doc.data().name}}</h3>
-                                            <div mat-line> Ort: {{lager.payload.doc.data().ort.stadt}},
-                                                {{lager.payload.doc.data().ort.bundesland}} </div>
-                                            <div mat-line> Freie Plätze: {{lager.payload.doc.data().freiePlaetze}}</div>
-                                        </mat-list-option>
-                                    </mat-selection-list>
+                                <div *ngIf="data$[0]?.payload?.doc?.data() | async; then lagerUebersicht else noLager">
                                 </div>
-                                <br>
-                                <div class="dashboard-card-content">
-                                    <button class="button-full-width" mat-raised-button color="primary"
-                                        (click)="addLager()">
-                                        Lager hinzufügen</button>
-                                </div>
+
+                                <ng-template #noLager>
+                                    <br>
+                                    <h3>Du hast noch keinen Lager angelegt, füge jetzt einen hinzu!</h3>
+                                </ng-template>
+
+                                <ng-template #lagerUebersicht>
+                                    <!-- Lagerhalterbereich -->
+                                    <div *ngIf="data$ | async as lagerList">
+                                        <div mat-subheader>Lagerübersicht</div>
+                                        <mat-selection-list #lagerSelection [multiple]="false">
+                                            <mat-list-option *ngFor="let lager of lagerList"
+                                                [value]="lager.payload.doc.id"
+                                                (selectedChange)="navLager(lagerSelection.selectedOptions.selected[0]?.value)">
+                                                <mat-icon mat-list-icon>warehouse</mat-icon>
+                                                <h3 mat-line> {{lager.payload.doc.data().name}}</h3>
+                                                <div mat-line> Ort: {{lager.payload.doc.data().ort.stadt}},
+                                                    {{lager.payload.doc.data().ort.bundesland}} </div>
+                                                <div mat-line> Freie Plätze: {{lager.payload.doc.data().freiePlaetze}}
+                                                </div>
+                                            </mat-list-option>
+                                        </mat-selection-list>
+                                    </div>
+                                    <br>
+                                    <div class="dashboard-card-content">
+                                        <button class="button-full-width" mat-raised-button color="primary"
+                                            (click)="addLager()">
+                                            Lager hinzufügen</button>
+                                    </div>
+                                </ng-template>
                             </div>
 
                             <!-- Einlagererbereich -->
                             <div *ngIf="user.role == roles.Einlagerer">
                                 <div *ngIf="data$ | async as fahrzeugList">
-                                    <div mat-subheader>Fahrzeugübersicht</div>
-                                    <mat-selection-list #fahrzeugSelection [multiple]="false">
-                                        <mat-list-option *ngFor="let fahrzeug of fahrzeugList"
-                                            [value]="fahrzeug.payload.doc.id"
-                                            (selectedChange)="navFahrzeug(fahrzeugSelection.selectedOptions.selected[0]?.value)">
-                                            <mat-icon mat-list-icon>local_car_wash</mat-icon>
-                                            <h3 mat-line> {{fahrzeug.payload.doc.data().marke}}</h3>
-                                            <div mat-line>{{fahrzeug.payload.doc.data().kategorie}},
-                                                {{fahrzeug.payload.doc.data().modell}} </div>
-                                        </mat-list-option>
-                                    </mat-selection-list>
+                                    <div *ngIf="dataIsEmpty$ | async; then fahrzeugUebersicht else noFahrzeug">
+                                    </div>
+
+                                    <ng-template #noFahrzeug>
+                                        <br>
+                                        <h3>Du hast noch keine Fahrzeuge angelegt, füge jetzt eines hinzu!</h3>
+                                    </ng-template>
+
+                                    <ng-template #fahrzeugUebersicht>
+                                        <div mat-subheader>Fahrzeugübersicht</div>
+                                        <mat-selection-list #fahrzeugSelection [multiple]="false">
+                                            <mat-list-option *ngFor="let fahrzeug of fahrzeugList"
+                                                [value]="fahrzeug.payload.doc.id"
+                                                (selectedChange)="navFahrzeug(fahrzeugSelection.selectedOptions.selected[0]?.value)">
+                                                <mat-icon mat-list-icon>local_car_wash</mat-icon>
+                                                <h3 mat-line> {{fahrzeug.payload.doc.data().marke}}</h3>
+                                                <div mat-line>{{fahrzeug.payload.doc.data().kategorie}},
+                                                    {{fahrzeug.payload.doc.data().modell}} </div>
+                                            </mat-list-option>
+                                        </mat-selection-list>
+                                    </ng-template>
+
                                 </div>
                                 <br>
                                 <div class="dashboard-card-content">

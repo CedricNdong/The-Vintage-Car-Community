@@ -28,11 +28,13 @@ export class SignupComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  // navigates to login component
   login() {
     this.router.navigate(['auth/login']);
   }
 
   register() {
+    // include the user role while registering a new account
     const user: SignupApplication = {
       email: this.signupForm.value.email,
       username: this.signupForm.value.name,
