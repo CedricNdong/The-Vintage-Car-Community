@@ -1,29 +1,21 @@
 @startuml
-!theme vibrant
+' !theme vibrant
+left to right direction
 
-rectangle VintageCarCommunity {
+frame VintageCarCommunity {
 
-package "EinrichtungModul" {
-    [Lager] <<Component>>
-    [Werkstatt] <<Component>>
-    [Unternehmen] <<Component>>
-    [Stellplatz] <<Component>>
-    [Servicezeiten] <<Model>>
-    [Kondition] <<Enum>>
+package "AuthModule" {
+    [Login] <<Component>>
+    [Signup] <<Component>>
+    [ForgotPassword] <<Component>>
+    [VerifyEmail] <<Component>>
 }
 
 package "ProfilModule" {
     [Einlagerer] <<Component>>
     [Lagerhalter] <<Component>>
     [WerkstattInhaber] <<Component>>
-    [Ersatzteilhandler] <<Enum>>
-}
-
-
-package "WareModule" {
-    [ErsatzteilArtikel] <<Component>>
-    [Service] <<Component>>
-    [Artikelzustand] <<Enum>>
+    [Ersatzteilhandler] <<Component>>
 }
 
 package "SharedModule" {
@@ -31,12 +23,42 @@ package "SharedModule" {
     [Anfrage] <<Component>>
     [Angebot] <<Component>>
     [Suche] <<Component>>
-    [Fahrzeug] <<Component>>
-    [Ort] <<Model>>
-    [AngebotStatus] <<Enum>>
-    [Fahrzeugmarke] <<Enum>>
-    [FahrzeugKategorie] <<Enum>>
 }
+
+package "AppModule" {
+    [Main] <<Component>>
+    [App] <<Component>>
+}
+
+package "EinrichtungModule" {
+    [Werkstatt] <<Component>>
+    [Unternehmen] <<Component>>
+}
+
+
+package "LagerModule" {
+    [Lager] <<Component>>
+    [AddLager] <<Component>>
+}
+
+package "WareModule" {
+    [ErsatzteilArtikel] <<Component>>
+    [Service] <<Component>>
+}
+
+package "FahrzeugModule" {
+    [Fahrzeug] <<Component>>
+    [AddFahrzeug] <<Component>>
+}
+
+package "DashboardModule" {
+    [Dashboard] <<Component>>
+}
+
+DashboardModule --[hidden]> ProfilModule
+AppModule --[hidden]> FahrzeugModule
+LagerModule --[hidden]> WareModule
+WareModule --[hidden]> AppModule
 
 }
 
