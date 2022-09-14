@@ -51,7 +51,7 @@
 
                     <!-- zu Treffen-->
                     <div *ngIf="suchStatus == true">
-                        <table mat-table [dataSource]="suchergebnisse" class="mat-elevation-z8" matSort>
+                        <table  *ngFor="let lage of getlage |async" mat-table [dataSource]="suchergebnisse" class="mat-elevation-z8" matSort>
 
                             <!-- Name  -->
                             <ng-container matColumnDef="name">
@@ -68,7 +68,7 @@
                             <!-- Kapazität  -->
                             <ng-container matColumnDef="kapazitaet">
                             <th mat-header-cell *matHeaderCellDef> Kapazität </th>
-                            <td mat-cell *matCellDef="let cell"> {{cell.kapazitaet}} </td>
+                            <td mat-cell *matCellDef="let cell"> {{cell.lakapazitaet}} </td>
                             </ng-container>
                         
                             <!-- Kosten -->
@@ -96,5 +96,15 @@
         </span>
     
     </div> 
+
+
+    <ul *ngFor="let lage of getlage |async">
+        <li>
+            {{lage.ort['bundesland']}} <br>
+            {{lage.konditionen}}<br>
+            {{lage.einlagerungsbetrag}}<br>
+            {{lage.kapazitaet}}
+        </li>
+    </ul>
 
 </div>

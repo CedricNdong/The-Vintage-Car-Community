@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/compat/firestore';
+
 import { FormControl, FormGroup, FormGroupName, Validators } from '@angular/forms';
+import { Observable } from 'rxjs';
 
 
 export interface ErgebnisElement {
@@ -9,6 +12,14 @@ export interface ErgebnisElement {
   kosten: number;
 }
 
+interface GetLage{
+  ort: string ;
+  konditionen: string;
+  einlagerungsbetrag: number;
+  kapazitaet: number;
+
+  
+}
 
 
 
@@ -16,6 +27,9 @@ const SUCH_DATA: ErgebnisElement[] = [
   { name: '24/7 geöffnet', anschrift: 'Peter Straße 2, 61169 Friedberg',kapazitaet: '24/7 geöffnet', kosten: 25 },
 
 ];
+
+
+
 
 
 @Component({
@@ -64,23 +78,49 @@ fahrzeugList = [
 suchStatus: boolean;
 
 
+getLageCollection: AngularFirestoreCollection<GetLage>;
 
-  constructor() {
-    this.suchForm = new FormGroup({
-      stadt: new FormControl('', [Validators.required]),
-      fahrzeug: new FormControl('', [Validators.required])
-    });
-
-   }
+getlage: Observable<GetLage[]>;
 
 
+
+  constructor(
+    private angularFireStore: AngularFirestore
+
+  ) 
+  
+      {
+        this.suchForm = new FormGroup({
+          stadt: new FormControl('', [Validators.required]),
+          fahrzeug: new FormControl('', [Validators.required])
+        });
+
+      }
+
+
+   ngOnInit(): void {
+    this.getLageCollection = this.angularFireStore.collection("lager");
+    this.getlage = this.getLageCollection.valueChanges();
+
+
+
+
+
+
+
+
+
+
+  }
 
 
 
  zeigeSuchErgebnis() {
+ 
     const searchParameters = this.suchForm.value.stadt;
+   
 
-    if (searchParameters === 'Berlin') {
+    if (searchParameters.stadtName === "Berlin") {
       console.log(searchParameters);
       return (this.suchStatus = true);
       
@@ -97,7 +137,6 @@ suchStatus: boolean;
 
  
 
-  ngOnInit(): void {
-  }
+  
 
 }

@@ -15,6 +15,9 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from "@angular/material/paginator";
 import {MatRadioModule} from '@angular/material/radio';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 
 const MATERIAL_MODULES = [
@@ -33,7 +36,10 @@ const MATERIAL_MODULES = [
   MatSelectModule,
   MatTableModule,
   MatPaginatorModule,
-  MatRadioModule
+  MatRadioModule,
+  MatGridListModule,
+  MatMenuModule,
+  MatCheckboxModule
 ]
 
 @NgModule({
