@@ -24,7 +24,8 @@ const MATERIAL_MODULES = [
   MatListModule,
   FormsModule,
   ReactiveFormsModule,
-  MatCardModule
+  MatCardModule,
+
 ]
 
 @NgModule({

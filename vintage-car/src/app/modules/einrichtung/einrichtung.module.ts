@@ -5,6 +5,8 @@ import {MatTableModule} from "@angular/material/table";
 import {MatIconModule} from '@angular/material/icon';
 import {MatInputModule} from '@angular/material/input';
 import {FormsModule} from "@angular/forms";
+import {MatRadioModule} from "@angular/material/radio";
+import {MatListModule} from "@angular/material/list";
 
 
 
@@ -17,7 +19,9 @@ import {FormsModule} from "@angular/forms";
     MatTableModule,
     MatIconModule,
     MatInputModule,
-    FormsModule
+    FormsModule,
+    MatRadioModule,
+    MatListModule
   ]
 })
 export class EinrichtungModule { }

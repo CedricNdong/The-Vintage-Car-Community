@@ -1,17 +1,24 @@
 import { Component, OnInit } from '@angular/core';
+import { AngularFirestore, AngularFirestoreCollection, DocumentReference } from '@angular/fire/compat/firestore';
+import { AuthService } from 'src/app/shared/services/auth.service';
+import { Router } from '@angular/router';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 
-export interface PeriodicElement {
-  position: number;
-  name: string;
-  Kapazitaet: number;
-  Service: string;
-  Spezialgebiet : string;
+
+export interface service{
+  nr : number
+  service_name: string;
 }
-const ELEMENT_DATA: PeriodicElement[] = [
-  {position: 1, name: 'Hydrogen', Kapazitaet: 1, Service: 'H' ,Spezialgebiet : 'Spezialgebiet' },
-  {position: 2, name: 'Hydrogen', Kapazitaet: 1, Service: 'H' ,Spezialgebiet : 'Spezialgebiet' },
-  {position: 3, name: 'Hydrogen', Kapazitaet: 1, Service: 'H' ,Spezialgebiet : 'Spezialgebiet' }]
+export interface angebot{
+  anbieter : string;
+}
 
+const ELEMENT_DATA: service[] = [
+  {nr:1,service_name:"einschweißen"},
+  {nr:2,service_name:"einschweißen"},
+  {nr:3,service_name:"einschweißen"},
+  {nr:4,service_name:"einschweißen"},
+];
 @Component({
   selector: 'app-lager',
   templateUrl: './lager.component.html',
@@ -19,32 +26,23 @@ const ELEMENT_DATA: PeriodicElement[] = [
 })
 export class LagerComponent implements OnInit {
 
-  constructor() { }
+  lager : any={};
+  user: any = {};
 
-  displayedColumns: string[] = ['position', 'name', 'Kapazitaet', 'Service' , 'Spezialgebiet' ,'actions' ];
-  dataSource = ELEMENT_DATA;
+  constructor() {
+    authService.userData$.subscribe(user => this.lager.userId = user?.uid);
+    });
+
+
+
+  displayedColumns: string[] = [ 'Nr','service','buchen' ];
+  dataSource = ELEMENT_DATA ;
+   angeboten : string[] =["lager1","lager2"];
 
   ngOnInit(): void {
-  }
-  add() : void{
-    console.log("this is add ");
-  }
-
-
-  save() : void{
-    console.log("this is speichern");
-  }
-
-  remove(row) : void{
-    const index = this.dataSource.indexOf(row);
-      this.dataSource = this.dataSource.filter((u) => u.position !== index);
-
-    console.log("this is remove");
 
   }
-  edit(row) : void{
-    console.log("this is edit");
-  }
+
 
 }
 

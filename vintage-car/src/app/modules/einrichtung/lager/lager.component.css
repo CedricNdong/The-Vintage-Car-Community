@@ -1,14 +1,20 @@
-table {
+th , td{
   margin: 10px 10px 10px 10px;
-  width: 90%;
 }
-.btn {
-  background-color:#c2185b;
-  margin-right: 50px;
-  margin-top: 10px ;
-  margin-left: 5px;
-  border-radius: 50%;
-  border: 1px solid ;
+table{
+  width: 80%;
 }
+.kap{
+  width: 40px;
+  margin: 2px 2px 2px 2px;
 
+}
+.termin{
+  width: 40px;
+  margin: 2px 2px 2px 2px;
 
+}
+.rd{
+  margin: 10px 10px 10px 10px;
+
+}
