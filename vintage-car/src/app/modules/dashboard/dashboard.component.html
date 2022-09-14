@@ -33,7 +33,7 @@
                             </div>
 
                             <!-- Einlagererbereich -->
-                            <div *ngIf="user.role == roles.Einlagerer" class="dashboard-card-content">
+                            <div *ngIf="user.role == roles.Einlagerer">
                                 <div *ngIf="data$ | async as fahrzeugList">
                                     <div mat-subheader>Fahrzeugübersicht</div>
                                     <mat-selection-list #fahrzeugSelection [multiple]="false">
@@ -48,8 +48,10 @@
                                     </mat-selection-list>
                                 </div>
                                 <br>
-                                <button mat-raised-button class="button-full-width" color="primary"
-                                    (click)="addFahrzeug()">Fahrzeug hinzufügen</button>
+                                <div class="dashboard-card-content">
+                                    <button mat-raised-button class="button-full-width" color="primary"
+                                        (click)="addFahrzeug()">Fahrzeug hinzufügen</button>
+                                </div>
                             </div>
                         </span>
                     </div>

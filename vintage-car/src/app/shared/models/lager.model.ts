@@ -5,6 +5,7 @@ export interface Lager extends Einrichtung {
     halterId: string,
     konditionen: Kondition[],
     services?: LagerService[],
+    stellplaetze?: Stellplatz[],
     einlagerungsbetrag: number,
     servicezeiten?: Servicezeiten[],
     kapazitaet: number,
@@ -24,8 +25,8 @@ export interface Servicezeiten {
     bis: Date
 }
 
-
 export interface Stellplatz {
     istVerfuegbar: boolean,
+    fahrzeugId?: string,
     massen: number[]
 }

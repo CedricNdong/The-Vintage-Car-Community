@@ -1,3 +1,38 @@
-<p>fahrzeug works!</p>
+<mat-card>
+    <div *ngIf="fahrzeug$ | async as fahrzeug">
+        <span>
+            <!-- Fahrzeugbereich -->
+            <div mat-subheader><b>Übersicht</b></div>
+            <mat-selection-list #fahrzeugSelection [multiple]="false">
+                <mat-list-option>
+                    <h3 mat-line> Marke: {{fahrzeug.marke}}</h3>
+                    <div mat-line> Kategorie: {{fahrzeug.kategorie}} </div>
+                    <div mat-line> Modell: {{fahrzeug.modell}}</div>
+                </mat-list-option>
+            </mat-selection-list>
+            <br>
+            <div *ngIf="lager$ | async; then lagerBereich else stellplatzSuchen"> </div>
 
-<h3>{{ fahrzeug$ | async | json}}</h3>
+            <ng-template #stellplatzSuchen>
+                <div class="dashboard-card-content">
+                    <button class="button-full-width" mat-raised-button color="primary" (click)="searchLager()">
+                        Stellplatz suchen</button>
+                </div>
+            </ng-template>
+
+            <!-- lagerbereich -->
+            <ng-template #lagerBereich>
+                <div mat-subheader><b>Lagerinformationen</b></div>
+                <mat-selection-list #lagerSelection [multiple]="false">
+                    <mat-list-option *ngIf="lager$ | async as lager" [value]="lager.id"
+                        (selectedChange)="navLager(lagerSelection.selectedOptions.selected[0]?.value)">
+                        <mat-icon mat-list-icon>warehouse</mat-icon>
+                        <h3 mat-line> {{lager.name}}</h3>
+                        <div mat-line> Ort: {{lager.ort.stadt}},
+                            {{lager.ort.bundesland}} </div>
+                    </mat-list-option>
+                </mat-selection-list>
+            </ng-template>
+        </span>
+    </div>
+</mat-card>
