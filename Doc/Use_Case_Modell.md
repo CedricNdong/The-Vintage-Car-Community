@@ -21,8 +21,18 @@
            15. [StR.W.2](#str.w.2)<br>
            16. [StR.EA.1](#str.ea.1)<br>
            17. [StR.EA.2](#str.ea.2)<br>
-   3. [Sequenzdaigramme](#sequenzdiagramme)
-          1. [StR.E.1](#str.e1)
+   3. [Sequenzdaigramme](#sequenzdiagramme)<br>
+          1. [StR.E.1](#str.e1)<br>
+          2. [StR.E.7](#str.e7)<br>
+          3. [StR.L.1](#str.l1)<br>
+          4. [StR.L.2](#str.l2)<br>
+          5. [StR.L.3](#str.l3)<br>
+          6. [StR.L.4](#str.l4)<br>
+          7. [StR.L.6](#str.l6)<br>
+          8. [StR.L.7](#str.l7)<br>
+          9. [StR.EA.7](#str.ea1)<br>
+          10. [StR.W.1](#str.w1)<br>
+          11. [StR.W.2](#str.w2)<br>
 2. [OOD-Systementwurf](#ood_systementwurf)
     1. [Domänenmodell](#domainmodell)
     2. [UI Entwurf](#ui_entwurf)
@@ -46,6 +56,7 @@
 
 
 ## Anforderungsspezifikationenn <a name="anforderungen"></a>
+#### Hier werden alle Anforderungsspezifikationenn von Stakholder analysiert
 
 ### StR.L.1 <a name="str.l.1"></a>
 
@@ -428,69 +439,72 @@
 | Ausnahme szenarien |                       |
 
 ## Sequenzdaigramme <a name="sequenzdiagramme"></a>
-# StR.E.1   <a name="str.e1"></a>
+### Nun werden die Use Case nur auf die folgendnen Sequenzdaigramme beschränkt
+ beschränkt
+### StR.E.1   <a name="str.e1"></a>
  Stellplatz suchen 
  <br>
 ![](Diagrams/Sequenzdiagramme/E1.png)
 <br>
-# StR.E.7
+### StR.E.7  <a name="str.e7"></a>
  Zusätzliches Angebot buchen 
  <br>
 ![](Diagrams/Sequenzdiagramme/E6.png)
 <br>
-# StR.L.1
+### StR.L.1   <a name="str.l1"></a>
 Lagerhalter Konto anlegen
 <br>
 ![](Diagrams/Sequenzdiagramme/L1.png)
 <br>
-# StR.L2
+### StR.L2   <a name="str.l2"></a>
 Einlagerungsservices anbieten
 <br>
 ![](Diagrams/Sequenzdiagramme/L2.png)
 <br>
-# StR.L3
+### StR.L3   <a name="str.l3"></a>
 Kapazitäten angeben
 <br>
 ![](Diagrams/Sequenzdiagramme/L3.png)
 <br>
-# StR.L4
+### StR.L4   <a name="str.l4"></a>
 Spezialgebiet angeben
 <br>
 ![](Diagrams/Sequenzdiagramme/L4.png)
 <br>
-# StR.L6
+### StR.L6   <a name="str.l6"></a>
 Reparaturanfragen an Werkstätten einstellen
 <br>
 ![](Diagrams/Sequenzdiagramme/L6.png)
 <br>
-# StR.L7
+### StR.L7  <a name="str.l7"></a>
 Termin mit Werkstatt vereinbaren
 <br>
 ![](Diagrams/Sequenzdiagramme/L7.png)
 <br>
-# StR.EA.1
+### StR.EA.1   <a name="str.ea1"></a>
 Ersatzteilhandler Konto anlegen
 <br>
 ![](Diagrams/Sequenzdiagramme/StR_EA_1.png)
 <br>
-# StR.W.1
+### StR.W.1   <a name="str.w1"></a>
 Werkstatt Konto anlegen
 <br>
 ![](Diagrams/Sequenzdiagramme/StR_W_1.png)
 <br>
-# StR.W.2
+### StR.W.2     <a name="str.w2"></a>
 Werkstattservice anbieten
 <br>
 ![](Diagrams/Sequenzdiagramme/StR_W2.png)
 
 ## OOD-Systementwurf <a name="ood_systementwurf"></a>
 
-## Domänenmodell <a name="domainmodell"></a>
+### Domänenmodell <a name="domainmodell"></a>
 
 ![](Diagrams/out/domainmodel/domainmodell.png)
 
-# UI Entwurf <a name="ui_entwurf"></a>
-
+### UI Entwurf <a name="ui_entwurf"></a>
+<br>
+### Im UI Entwurf beschränken wir auf die Use Case, die  Lagerhalter und Einlagerer Akturen
 
 ![](UI/VintageCarCommunity1.jpg)
 <br>
