@@ -19,6 +19,10 @@ export class LoginComponent implements OnInit {
       email: new FormControl('', [Validators.required, Validators.email]),
       password: new FormControl('', [Validators.required])
     });
+
+    if (authService.isLoggedIn)
+      this.router.navigate(['dashboard']);
+
   }
 
   ngOnInit(): void {

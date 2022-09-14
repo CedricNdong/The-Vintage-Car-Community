@@ -19,3 +19,8 @@
 .dashboard-card-content {
     text-align: center;
 }
+
+.mat-subheader {
+    font-size: x-large;
+    margin-top: 10px;
+}

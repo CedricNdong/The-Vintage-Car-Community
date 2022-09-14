@@ -83,7 +83,7 @@ export class DashboardComponent implements OnInit {
   addLager(): void {
     this.authService.userData$
       .subscribe(user =>
-        this.router.navigate(['lager/add-lager'], { state: { user: user } })
+        this.router.navigate(['lager/add-lager'])
       );
   }
 

@@ -9,7 +9,6 @@ import { LagerComponent } from './modules/einrichtung/lager/lager.component';
 import { AddFahrzeugComponent } from './modules/fahrzeug/add-fahrzeug/add-fahrzeug.component';
 import { FahrzeugComponent } from './modules/fahrzeug/fahrzeug/fahrzeug.component';
 import { AddLagerComponent } from './modules/lager/add-lager/add-lager.component';
-import { EinlagererComponent } from './modules/profile/einlagerer/einlagerer.component';
 import { LagerhalterComponent } from './modules/profile/lagerhalter/lagerhalter.component';
 import { AuthGuard } from './shared/guard/auth.guard';
 import { SucheComponent } from './shared/suche/suche.component';
@@ -47,11 +46,6 @@ const routes: Routes = [
     canActivate: [AuthGuard]
   },
   {
-    path: 'einrichtung/lager/:id',
-    component: LagerComponent,
-    canActivate: [AuthGuard]
-  },
-  {
     path: 'lager/add-lager',
     component: AddLagerComponent,
     canActivate: [AuthGuard]
@@ -62,13 +56,13 @@ const routes: Routes = [
     canActivate: [AuthGuard]
   },
   {
-    path: 'fahrzeug/:id',
-    component: FahrzeugComponent,
+    path: 'einrichtung/lager/:id',
+    component: LagerComponent,
     canActivate: [AuthGuard]
   },
   {
-    path: 'profile/:id',
-    component: LagerhalterComponent,
+    path: 'fahrzeug/:id',
+    component: FahrzeugComponent,
     canActivate: [AuthGuard]
   },
 ];

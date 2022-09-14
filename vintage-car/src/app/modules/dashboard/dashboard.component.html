@@ -20,7 +20,7 @@
 
 
                             <div *ngIf="user.role == roles.Lagerhalter">
-                                <div *ngIf="data$[0]?.payload?.doc?.data() | async; then lagerUebersicht else noLager">
+                                <div *ngIf="dataIsEmpty$ | async; then lagerUebersicht else noLager">
                                 </div>
 
                                 <ng-template #noLager>
