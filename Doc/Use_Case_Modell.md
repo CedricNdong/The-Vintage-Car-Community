@@ -37,6 +37,12 @@
     1. [Domänenmodell](#domainmodell)
     2. [UI Entwurf](#ui_entwurf)
     3. [Interaktionsdiagramm OOD](#interaktionendaigramm_ood)
+           1. [Einlagerer Konto anlegen](#konto_anlegen)<br>
+           3. [Termin vereinbaren](#termin_vereinbaren)<br>
+           4. [Lagerhalter Konto anlegen](#lagerhalter_konto_anlegen)<br>
+           5. [Einlagerungsservice anbieten](#einlagerungsservice_anbieten)<br>
+           6. [Kapazitäten angebn](#kapazitäten_angebn)<br>
+           7. [Spizailgebiet angeben](#spizailgebiet_angeben)<br>
 3. [Another paragraph](#paragraph2)
 
 
@@ -440,7 +446,7 @@
 
 ## Sequenzdaigramme <a name="sequenzdiagramme"></a>
 ### Nun werden die Use Case nur auf die folgendnen Sequenzdaigramme beschränkt
- beschränkt
+ 
 ### StR.E.1   <a name="str.e1"></a>
  Stellplatz suchen 
  <br>
@@ -503,8 +509,7 @@ Werkstattservice anbieten
 ![](Diagrams/out/domainmodel/domainmodell.png)
 
 ### UI Entwurf <a name="ui_entwurf"></a>
-<br>
-### Im UI Entwurf beschränken wir auf die Use Case, die  Lagerhalter und Einlagerer Akturen
+### Im UI Entwurf beschränken wir auf die Use Case, auf sie sich die Lagerhalter und Einlagerer Akturen beziehen
 
 ![](UI/VintageCarCommunity1.jpg)
 <br>
@@ -524,34 +529,30 @@ Werkstattservice anbieten
 
 
 
-# Interaktionsdiagramm OOD <a name="interaktionendaigramm_ood"></a>
-Einlager Konto anlegen
-<br>
+## Interaktionsdiagramm OOD <a name="interaktionendaigramm_ood"></a>
+### In diesem Phase beschränken wir weiter auf die folgenden Use Case Diagramme
+
+### Einlagerer Konto anlegen <a name="konto_anlegen"></a>
 ![](Diagrams/Sequenzdiagramme/E_Konto_anlegen.jpeg)
 <br>
 
-Termin vereinbaren (Lagerhalter und Einlagerer)
-<br>
+### Termin vereinbaren <a name="termin_vereinbaren"></a>
 ![](Diagrams/Sequenzdiagramme/Termin_vereinbaren.jpeg)
 <br>
 
-Lagerhalter Konto anlegen
-<br>
+#### Lagerhalter Konto anlegen  <a name="lagerhalter_konto_anlegen"></a>
 ![](Diagrams/Sequenzdiagramme/L_Konto_anlegen.jpeg)
 <br>
 
-Einlagerungsservice anbieten
-<br>
+#### Einlagerungsservice anbieten   <a name="einlagerungsservice_anbieten"></a>
 ![](Diagrams/Sequenzdiagramme/Einlagerungsgebiet.jpeg)
 <br>
 
-Kapazitäten angebn
-<br>
+#### Kapazitäten angebn   <a name="kapazitäten_angebn"></a>
 ![](Diagrams/Sequenzdiagramme/Kapazität_angeben.jpeg)
 <br>
 
-Spizailgebiet angeben
-<br>
+#### Spizailgebiet angeben    <a name="spizailgebiet_angeben"></a>
 ![](Diagrams/Sequenzdiagramme/spitailgebiet.jpeg)
 
 
