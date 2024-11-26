@@ -12,4 +12,7 @@ export class SucheComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
+
+
 }
